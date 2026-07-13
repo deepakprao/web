@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assessment on 2025 session 1</title>
+    <style> .main_heading{
+      text-align: center;   /* centers text horizontally */
+      margin-top: 50px;     /* pushes it down a bit */
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+       body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 20px;
+    }
+
+    /* Title */
+    #title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Subtitle */
+    #subtitle {
+      text-align: center;
+      font-size: 20px;
+      color: gray;
+      margin-bottom: 30px;
+    }
+
+    /* Question box */
+    .question {
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      font-size: large;
+    }
+
+    /* Buttons */
+    .option-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border:2 px solid gray;
+      border-radius: 20px;
+      background-color: white;
+      color: black;
+      font-size: large;
+     /* cursor: pointer;*/
+      font-family: 'Times New Roman', Times, serif;
+      text-align: left;
+    }
+
+    .option-btn:hover {
+      background-color: rgb(239, 236, 236);
+    }
+    .year{
+      text-align: right;
+    }
+    .ques{
+      font-size: large;
+      text-align: justify;
+    }
+    .sub{
+      border-radius: 20px;
+      background-color: blue;
+    }
+
+    table {
+  border-collapse: collapse;
+  margin: 20px;
+  font-family: "Times New Roman", serif;
+  text-align: center;
+}
+
+th, td {
+  border: 2px solid black;
+  padding: 8px 12px;
+  font-size: large;
+}
+
+/* Header styling */
+th {
+  font-size: large;
+  font-weight: normal;
+}
+
+/* First column (initially column) */
+.first-col {
+  width: 120px;
+}
+
+/* Optional: adjust spacing */
+td {
+  min-width: 40px;
+}
+    
+    .row12 {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .column12 {
+      width: 45%;
+    }
+
+    .title12 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .code12 {
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: large;
+    }
+    </style>
+   
+    <link rel="icon" type="image/x-icon" href="11zon_cropped.png">
+</head>
+<body>
+    <p class="main_heading">Computer Organization and Architecture Previous Year Questions</p>
+
+ <!-- Question 1 -->
+<div class="question">
+    <p class="ques"><b>Q1.</b> Consider the following two statements about interrupt handling mechanisms in a CPU.<br><br>
+
+    S1: In non-vectored interrupt mechanism, it usually takes more time to start the Interrupt Service Routine (ISR) when compared to that in a vectored interrupt mechanism.<br><br>
+
+    S2: In daisy-chain interrupt mechanism, the CPU polls all the input devices individually to determine the source of the interrupt.<br><br>
+
+    Which one of the following options is correct with respect to S1 and S2?</p>
+
+    <button class="option-btn" onclick="checkAnswer(18, 'A', this)">A) Both S1 and S2 are true</button>
+    <button class="option-btn" onclick="checkAnswer(18, 'B', this)">B) Both S1 and S2 are false</button>
+    <button class="option-btn" onclick="checkAnswer(18, 'C', this)">C) S1 is true and S2 is false</button>
+    <button class="option-btn" onclick="checkAnswer(18, 'D', this)">D) S1 is false and S2 is true</button>
+
+    <p class="year"><i>Gate CSE 2026 Session 2</i></p>
+    <div id="explanation18" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 2 -->
+<div class="question">
+    <p class="ques"><b>Q2.</b> Consider a processor that has 16 general purpose registers and it uses 2-byte instruction format for all its instructions. Variable-sized opcodes are permitted. There are three different types of instructions; M-type, R-type, and C-type. Each M-type instruction has 2 register operands and a 6-bit immediate operand. Each R-type instruction has 3 register operands. Each C-type instruction has a register operand and a 6-bit offset value. If there are 2 unique M-type opcodes and 7 unique R-type opcodes, which one of the following options gives the maximum number of unique opcodes possible for C-type instructions?</p>
+
+    <button class="option-btn" onclick="checkAnswer(44, 'A', this)">A) 8</button>
+    <button class="option-btn" onclick="checkAnswer(44, 'B', this)">B) 4</button>
+    <button class="option-btn" onclick="checkAnswer(44, 'C', this)">C) 64</button>
+    <button class="option-btn" onclick="checkAnswer(44, 'D', this)">D) 16</button>
+
+    <p class="year"><i>Gate CSE 2026 Session 2</i></p>
+    <div id="explanation44" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 3 -->
+<div class="question">
+    <p class="ques"><b>Q3.</b> Consider a system with a processor and a 4 KB direct mapped cache with block size of 16 bytes. The system has a 16 MB physical memory. Four words P, Q, R, and S are accessed by the processor in the same order 10 times. That is, there are a total of 40 memory references in the sequence P, Q, R, S, P, Q, R, S, ...<br><br>
+
+    Assume that the cache memory is initially empty. The physical addresses of the words are given below (1 word = 1 byte).<br><br>
+
+    P: 0x845B32, Q: 0x845B26, R: 0x845B36, S: 0x846B32<br><br>
+
+    Which of the following statements is/are true?<br><br>
+
+    <i>Note: 1K = 2<sup>10</sup> and 1M = 2<sup>20</sup></i></p>
+
+    <button class="option-btn" onclick="checkAnswer(52, 'A', this)">A) Every access to P results in a cache miss</button>
+    <button class="option-btn" onclick="checkAnswer(52, 'B', this)">B) Every access to R results in a cache hit</button>
+    <button class="option-btn" onclick="checkAnswer(52, 'C', this)">C) Every access to Q results in a cache miss</button>
+    <button class="option-btn" onclick="checkAnswer(52, 'D', this)">D) Except the first access to S, all subsequent accesses to S result in cache hits</button>
+
+    <p class="year"><i>Gate CSE 2026 Session 2</i></p>
+    <div id="explanation2" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 4 -->
+<div class="question">
+    <p class="ques"><b>Q4.</b> Consider a system with 1 MB physical memory and a word length of 1 byte. The system uses a direct mapped cache, with block numbers starting from 0. The word with physical address 0xA2C28 is mapped to the cache block number 176<sub>10</sub>. The maximum possible size of the cache (in KB) for this configuration is __________.<br><br>
+
+    <i>Note: 1K = 2<sup>10</sup> and 1M = 2<sup>20</sup></i></p>
+
+    
+
+    <p class="year"><i>Gate CSE 2026 Session 2</i></p>
+    <div id="explanation56" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 5 -->
+<div class="question">
+    <p class="ques"><b>Q5.</b> A non-pipelined instruction execution unit that operates at 1.6 GHz clock takes an average of 5 clock cycles to complete the execution of an instruction. To improve the performance, the system was pipelined with a goal of achieving an average throughput of one instruction per clock cycle. However, it could operate only at 1.2 GHz due to pipeline overheads. While executing a program in the pipelined design, 30% instructions encountered a stall of 2 cycles due to pipeline hazards. The speed-up obtained by the pipelined design over the non-pipelined one for this program is __________ (rounded off to two decimal places).<br><br>
+
+    <i>Note: 1G = 10<sup>9</sup></i></p>
+
+   
+
+    <p class="year"><i>Gate CSE 2026 Session 2</i></p>
+    <div id="explanation57" class="explanation"></div>
+</div>
+
+
+</body>
