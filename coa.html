@@ -470,70 +470,101 @@ td {
 <div class="question">
     <p class="ques"><b>Q17.</b> A partial data path of a processor is given in the figure, where RA, RB, and RZ are 32-bit registers. Which option(s) is/are CORRECT related to arithmetic operations using the data path as shown?</p>
 
-    <div style="text-align:center; margin:15px 0; overflow-x:auto;">
-        <svg width="620" height="340" xmlns="http://www.w3.org/2000/svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="700" height="420">
+  <defs>
+    <!-- Arrow marker definition -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000000" />
+    </marker>
+  </defs>
 
-            <!-- RA Register -->
-            <rect x="170" y="10" width="90" height="40" fill="white" stroke="black"/>
-            <text x="192" y="35" font-size="15">RA (32 bit)</text>
+  <style>
+    .label { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; fill: #000000; }
+    .label-bold { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #000000; }
+    .box { fill: #ffffff; stroke: #000000; stroke-width: 1.5; }
+    .line { stroke: #000000; stroke-width: 1.5; fill: none; }
+  </style>
 
-            <!-- RB Register -->
-            <rect x="360" y="10" width="90" height="40" fill="white" stroke="black"/>
-            <text x="382" y="35" font-size="15">RB (32 bit)</text>
+  <!-- ==================== REGISTERS ==================== -->
+  <!-- RA (32 bit) -->
+  <rect x="230" y="20" width="100" height="50" class="box" />
+  <text x="280" y="50" text-anchor="middle" class="label">RA (32 bit)</text>
 
-            <!-- Immediate labels -->
-            <text x="15" y="65" font-size="14">Immediate value</text>
-            <text x="40" y="83" font-size="14">32 bit</text>
+  <!-- RB (32 bit) -->
+  <rect x="390" y="20" width="100" height="50" class="box" />
+  <text x="440" y="50" text-anchor="middle" class="label">RB (32 bit)</text>
 
-            <text x="485" y="65" font-size="14">Immediate value</text>
-            <text x="510" y="83" font-size="14">32 bit</text>
+  <!-- RZ (32 bit) -->
+  <rect x="300" y="340" width="100" height="50" class="box" />
+  <text x="350" y="370" text-anchor="middle" class="label">RZ (32 bit)</text>
 
-            <!-- Mux A -->
-            <polygon points="150,90 280,90 255,130 175,130"
-                     fill="white" stroke="black"/>
-            <text x="188" y="114" font-size="14">Mux_A</text>
+  <!-- ==================== MULTIPLEXERS ==================== -->
+  <!-- Mux_A -->
+  <polygon points="210,130 310,130 290,170 230,170" class="box" />
+  <text x="260" y="155" text-anchor="middle" class="label">Mux_A</text>
 
-            <!-- Mux B -->
-            <polygon points="340,90 470,90 445,130 365,130"
-                     fill="white" stroke="black"/>
-            <text x="378" y="114" font-size="14">Mux_B</text>
+  <!-- Mux_B -->
+  <polygon points="410,130 510,130 490,170 430,170" class="box" />
+  <text x="460" y="155" text-anchor="middle" class="label">Mux_B</text>
 
-            <!-- Select labels -->
-            <text x="75" y="145" font-size="13">Select RA / Immediate</text>
-            <text x="405" y="145" font-size="13">Select RB / Immediate</text>
+  <!-- ==================== ALU ==================== -->
+  <polygon points="210,240 340,240 350,252 360,240 490,240 450,300 250,300" class="box" />
+  <text x="350" y="280" text-anchor="middle" class="label">ALU</text>
 
-            <!-- Inputs -->
-            <line x1="215" y1="50" x2="215" y2="90" stroke="black"/>
-            <line x1="90" y1="75" x2="150" y2="100" stroke="black"/>
+  <!-- ==================== CONNECTIONS & ARROWS ==================== -->
+  <!-- RA to Mux_A -->
+  <path d="M 280,70 L 280,130" class="line" marker-end="url(#arrow)" />
+  <!-- Bus slash for RA path -->
+  <line x1="275" y1="95" x2="285" y2="85" class="line" />
 
-            <line x1="405" y1="50" x2="405" y2="90" stroke="black"/>
-            <line x1="530" y1="75" x2="470" y2="100" stroke="black"/>
+  <!-- RB to Mux_B -->
+  <path d="M 440,70 L 440,130" class="line" marker-end="url(#arrow)" />
+  <!-- Bus slash for RB path -->
+  <line x1="435" y1="95" x2="445" y2="85" class="line" />
 
-            <!-- Outputs to ALU -->
-            <line x1="215" y1="130" x2="215" y2="175" stroke="black"/>
-            <line x1="405" y1="130" x2="405" y2="175" stroke="black"/>
+  <!-- Immediate Value Left to Mux_A -->
+  <path d="M 120,100 L 235,100 L 235,130" class="line" marker-end="url(#arrow)" />
+  <line x1="175" y1="105" x2="185" y2="95" class="line" />
+  <text x="165" y="75" text-anchor="middle" class="label" style="font-family: 'Times New Roman', Times, serif;">immediate value</text>
+  <text x="175" y="92" text-anchor="middle" class="label" style="font-family: 'Times New Roman', Times, serif;">32 bit</text>
 
-            <!-- ALU -->
-            <polygon points="165,175 455,175 430,240 190,240"
-                     fill="white" stroke="black"/>
-            <text x="292" y="213" font-size="18">ALU</text>
+  <!-- Select RA/immediate -->
+  <path d="M 120,150 L 220,150" class="line" marker-end="url(#arrow)" />
+  <text x="195" y="170" text-anchor="end" class="label" style="font-family: 'Times New Roman', Times, serif;">Select RA/immediate</text>
 
-            <!-- ALU Control -->
-            <text x="20" y="205" font-size="14">ALU Control</text>
-            <line x1="100" y1="195" x2="165" y2="195" stroke="black"/>
-            <line x1="100" y1="205" x2="165" y2="205" stroke="black"/>
-            <line x1="100" y1="215" x2="165" y2="215" stroke="black"/>
+  <!-- Immediate Value Right to Mux_B -->
+  <path d="M 580,100 L 485,100 L 485,130" class="line" marker-end="url(#arrow)" />
+  <line x1="520" y1="105" x2="530" y2="95" class="line" />
+  <text x="545" y="75" text-anchor="middle" class="label" style="font-family: 'Times New Roman', Times, serif;">immediate value</text>
+  <text x="545" y="92" text-anchor="middle" class="label" style="font-family: 'Times New Roman', Times, serif;">32 bit</text>
 
-            <!-- Output -->
-            <line x1="310" y1="240" x2="310" y2="275" stroke="black"/>
+  <!-- Select RB/immediate -->
+  <path d="M 580,150 L 500,150" class="line" marker-end="url(#arrow)" />
+  <text x="585" y="155" text-anchor="start" class="label">Select RB/immediate</text>
 
-            <!-- RZ Register -->
-            <rect x="260" y="275" width="100" height="40"
-                  fill="white" stroke="black"/>
-            <text x="282" y="300" font-size="15">RZ (32 bit)</text>
+  <!-- Mux_A to ALU -->
+  <path d="M 260,170 L 260,240" class="line" marker-end="url(#arrow)" />
+  <line x1="255" y1="210" x2="265" y2="200" class="line" />
 
-        </svg>
-    </div>
+  <!-- Mux_B to ALU -->
+  <path d="M 460,170 L 460,240" class="line" marker-end="url(#arrow)" />
+  <line x1="455" y1="210" x2="465" y2="200" class="line" />
+
+  <!-- ALU Controls -->
+  <path d="M 170,265 L 225,265" class="line" marker-end="url(#arrow)" />
+  <path d="M 170,280 L 232,280" class="line" marker-end="url(#arrow)" />
+  <!-- Vertical bracket dots -->
+  <text x="155" y="266" text-anchor="middle" class="label-bold" font-size="18px">.</text>
+  <text x="155" y="273" text-anchor="middle" class="label-bold" font-size="18px">.</text>
+  <text x="155" y="280" text-anchor="middle" class="label-bold" font-size="18px">.</text>
+  <!-- Bracket wrapper symbol -->
+  <text x="140" y="280" text-anchor="middle" class="label" font-size="28px">{</text>
+  <text x="80" y="278" text-anchor="middle" class="label">ALU control</text>
+
+  <!-- ALU to RZ -->
+  <path d="M 350,300 L 350,340" class="line" marker-end="url(#arrow)" />
+  <line x1="345" y1="325" x2="355" y2="315" class="line" />
+</svg>
 
     <button class="option-btn" onclick="checkAnswer(27, 'A', this)">A) The data path can implement arithmetic operations involving two registers.</button>
 
@@ -543,7 +574,7 @@ td {
 
     <button class="option-btn" onclick="checkAnswer(27, 'D', this)">D) The data path can only implement arithmetic operations involving one register and one immediate value.</button>
 
-    <p class="year"><i>Gate CSE 2025 Session 1</i></p>
+    <p class="year"><i>Gate CSE 2025</i></p>
     <div id="explanation27" class="explanation"></div>
 </div>
 
@@ -589,7 +620,7 @@ td {
     <p class="ques"><b>Q20.</b> A computer has a memory hierarchy consisting of two-level cache (L1 and L2) and a main memory. If the processor needs to access data from memory, it first looks into L1 cache. If the data is not found in L1 cache, it goes to L2 cache. If it fails to get the data from L2 cache, it goes to main memory, where the data is definitely available. Hit rates and access times of various memory units are shown in the figure. The average memory access time in nanoseconds (<i>ns</i>) is __________. <i>(rounded off to two decimal places)</i></p>
 
     <div style="text-align:center; margin:20px 0; overflow-x:auto;">
-        <svg width="520" height="500" xmlns="http://www.w3.org/2000/svg">
+        <svg width="520" height="500" >
 
             <!-- Arrow Marker -->
             <defs>
@@ -641,9 +672,6 @@ td {
 
         </svg>
     </div>
-
-    <input type="number" step="0.01" class="nat-input" id="nat53" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(53, 12.5)">Check Answer</button>
 
     <p class="year"><i>Gate CSE 2025 Session 1</i></p>
     <div id="explanation53" class="explanation"></div>
@@ -707,9 +735,6 @@ td {
 <div class="question">
     <p class="ques"><b>Q23.</b> A processor with 16 general purpose registers uses a 32-bit instruction format. The instruction format consists of an opcode field, an addressing mode field, two register operand fields, and a 16-bit scalar field. If 8 addressing modes are to be supported, the maximum number of unique opcodes possible for every addressing mode is __________.</p>
 
-    <input type="number" class="nat-input" id="nat57" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(57, 16)">Check Answer</button>
-
     <p class="year"><i>Gate CSE 2024 Session 2</i></p>
     <div id="explanation57" class="explanation"></div>
 </div>
@@ -719,9 +744,6 @@ td {
 <!-- Question 24 -->
 <div class="question">
     <p class="ques"><b>Q24.</b> A non-pipelined instruction execution unit operating at 2 GHz takes an average of 6 cycles to execute an instruction of a program P. The unit is then redesigned to operate on a 5-stage pipeline at 2 GHz. Assume that the ideal throughput of the pipelined unit is 1 instruction per cycle. In the execution of program P, 20% instructions incur an average of 2 cycles stall due to data hazards and 20% instructions incur an average of 3 cycles stall due to control hazards. The speedup (<i>rounded off to one decimal place</i>) obtained by the pipelined design over the non-pipelined design is __________.</p>
-
-    <input type="number" step="0.1" class="nat-input" id="nat58" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(58, 4.0)">Check Answer</button>
 
     <p class="year"><i>Gate CSE 2024 Session 2</i></p>
     <div id="explanation58" class="explanation"></div>
@@ -734,7 +756,7 @@ td {
     <p class="ques"><b>Q25.</b> A processor uses a 32-bit instruction format and supports byte-addressable memory access. The ISA of the processor has 150 distinct instructions. The instructions are equally divided into two types, namely R-type and I-type, whose formats are shown below.</p>
 
     <div style="text-align:center; margin:20px 0; overflow-x:auto;">
-        <svg width="760" height="210" xmlns="http://www.w3.org/2000/svg">
+        <svg width="760" height="210">
 
             <!-- R-Type -->
             <text x="10" y="25" font-size="20" font-weight="bold">R-type Instruction Format</text>
@@ -777,9 +799,6 @@ td {
 
         Let <i>X</i> be the number of bits used to encode the UNUSED field, <i>Y</i> be the number of bits used to encode the OPCODE field, and <i>Z</i> be the number of bits used to encode the immediate value/address field. The value of <i>X + 2Y + Z</i> is __________.
     </p>
-
-    <input type="number" class="nat-input" id="nat59" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(59, 43)">Check Answer</button>
 
     <p class="year"><i>Gate CSE 2024 Session 2</i></p>
     <div id="explanation59" class="explanation"></div>
@@ -871,9 +890,6 @@ td {
 
     The number of cores that minimize the execution time of the program is __________.</p>
 
-    <input type="number" class="nat-input" id="nat55" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(55, 4)">Check Answer</button>
-
     <p class="year"><i>Gate CSE 2024 Session 1</i></p>
     <div id="explanation55" class="explanation"></div>
 </div>
@@ -884,8 +900,6 @@ td {
 <div class="question">
     <p class="ques"><b>Q30.</b> A given program has 25% load/store instructions. Suppose the ideal CPI (cycles per instruction) without any memory stalls is 2. The program exhibits 2% miss rate on instruction cache and 8% miss rate on data cache. The miss penalty is 100 cycles. The speedup (<i>rounded off to two decimal places</i>) achieved with a perfect cache (i.e., with NO data or instruction cache misses) is __________.</p>
 
-    <input type="number" step="0.01" class="nat-input" id="nat56" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(56, 2.56)">Check Answer</button>
 
     <p class="year"><i>Gate CSE 2024 Session 1</i></p>
     <div id="explanation56" class="explanation"></div>
@@ -898,9 +912,6 @@ td {
     <p class="ques"><b>Q31.</b> Consider a 3-stage pipelined processor having a delay of 10 ns (nanoseconds), 20 ns, and 14 ns, for the first, second, and the third stages, respectively. Assume that there is no other delay and the processor does not suffer from any pipeline hazards. Also assume that one instruction is fetched every cycle.<br><br>
 
     The total execution time for executing 100 instructions on this processor is __________ ns.</p>
-
-    <input type="number" class="nat-input" id="nat33" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(33, 2040)">Check Answer</button>
 
     <p class="year"><i>Gate CSE 2023</i></p>
     <div id="explanation33" class="explanation"></div>
@@ -916,9 +927,6 @@ td {
 
     The ratio <i>T</i><sub>1</sub> / <i>T</i><sub>2</sub> is __________. <i>(Rounded off to one decimal place)</i></p>
 
-    <input type="number" step="0.1" class="nat-input" id="nat34" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(34, 10.2)">Check Answer</button>
-
     <p class="year"><i>Gate CSE 2023</i></p>
     <div id="explanation34" class="explanation"></div>
 </div>
@@ -930,7 +938,7 @@ td {
     <p class="ques"><b>Q33.</b> Consider the given C-code and its corresponding assembly code, with a few operands U1–U4 being unknown. Some useful information as well as the semantics of each unique assembly instruction is annotated as inline comments in the code. The memory is byte-addressable.</p>
 
     <div style="text-align:center; margin:15px 0; overflow-x:auto;">
-        <svg width="860" height="400" xmlns="http://www.w3.org/2000/svg">
+        <svg width="860" height="400">
 
             <!-- Left Panel -->
             <text x="20" y="25" font-size="18" font-weight="bold">C-code</text>
@@ -982,7 +990,7 @@ td {
     The input memory addresses (IA11–IA0), in decimal, for the starting locations (Addr=0) of each block (indicated as X1, X2, X3, X4 in the figure) are among the options given below. Which one of the following options is CORRECT?</p>
 
     <div style="text-align:center; margin:15px 0; overflow-x:auto;">
-        <svg width="820" height="430" xmlns="http://www.w3.org/2000/svg">
+        <svg width="820" height="430">
 
             <!-- Address lines -->
             <text x="10" y="25" font-size="14">IA11</text>
@@ -1059,9 +1067,6 @@ td {
 
     The number of bits in the TAG is __________.</p>
 
-    <input type="number" class="nat-input" id="nat64" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(64, 16)">Check Answer</button>
-
     <p class="year"><i>Gate CSE 2023</i></p>
     <div id="explanation64" class="explanation"></div>
 </div>
@@ -1113,9 +1118,6 @@ td {
 <div class="question">
     <p class="ques"><b>Q38.</b> A cache memory that has a hit rate of 0.8 has an access latency 10 ns and miss penalty 100 ns. An optimization is done on the cache to reduce the miss rate. However, the optimization results in an increase of cache access latency to 15 ns, whereas the miss penalty is not affected. The minimum hit rate (<i>rounded off to two decimal places</i>) needed after the optimization such that it should not increase the average memory access time is __________.</p>
 
-    <input type="number" step="0.01" class="nat-input" id="nat33" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(33, 0.85)">Check Answer</button>
-
     <p class="year"><i>Gate CSE 2022</i></p>
     <div id="explanation33" class="explanation"></div>
 </div>
@@ -1127,7 +1129,7 @@ td {
     <p class="ques"><b>Q39.</b> Consider a digital display system (DDS) shown in the figure that displays the contents of register X. A 16-bit code word is used to load a word in X, either from S or from R. S is a 1024-word memory segment and R is a 32-word register file. Based on the value of mode bit M, T selects an input word to load in X. P and Q interface with the corresponding bits in the code word to choose the addressed word. Which one of the following represents the functionality of P, Q, and T?</p>
 
     <div style="text-align:center; margin:20px 0; overflow-x:auto;">
-        <svg width="700" height="470" xmlns="http://www.w3.org/2000/svg">
+        <svg width="700" height="470">
 
             <!-- Code Word -->
             <rect x="120" y="20" width="70" height="50" fill="white" stroke="black"/>
@@ -1246,9 +1248,6 @@ td {
 <div class="question">
     <p class="ques"><b>Q41.</b> A processor X<sub>1</sub> operating at 2 GHz has a standard 5-stage RISC instruction pipeline having a base CPI (cycles per instruction) of one without any pipeline hazards. For a given program P that has 30% branch instructions, control hazards incur 2 cycles stall for every branch. A new version of the processor X<sub>2</sub> operating at same clock frequency has an additional branch predictor unit (BPU) that completely eliminates stalls for correctly predicted branches. There is neither any savings nor any additional stalls for wrong predictions. There are no structural hazards and data hazards for X<sub>1</sub> and X<sub>2</sub>. If the BPU has a prediction accuracy of 80%, the speed up (<i>rounded off to two decimal places</i>) obtained by X<sub>2</sub> over X<sub>1</sub> in executing P is __________.</p>
 
-    <input type="number" step="0.01" class="nat-input" id="nat61" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(61, 1.32)">Check Answer</button>
-
     <p class="year"><i>Gate CSE 2022</i></p>
     <div id="explanation61" class="explanation"></div>
 </div>
@@ -1259,9 +1258,6 @@ td {
 <div class="question">
     <p class="ques"><b>Q42.</b> Consider a set-associative cache of size 2 KB (1 KB = 2<sup>10</sup> bytes) with cache block size of 64 bytes. Assume that the cache is byte-addressed and a 32-bit address is used for accessing the cache. If the width of the tag field is 22 bits, the associativity of the cache is __________.</p>
 
-    <input type="number" class="nat-input" id="nat19" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(19, 2)">Check Answer</button>
-
     <p class="year"><i>Gate CSE 2021 Session 2</i></p>
     <div id="explanation19" class="explanation"></div>
 </div>
@@ -1271,9 +1267,6 @@ td {
 <!-- Question 43 -->
 <div class="question">
     <p class="ques"><b>Q43.</b> Consider a computer system with DMA support. The DMA module is transferring one 8-bit character in one CPU cycle from a device to memory through <i>cycle stealing</i> at regular intervals. Consider a 2 MHz processor. If 0.5% processor cycles are used for DMA, the data transfer rate of the device is __________ bits per second.</p>
-
-    <input type="number" class="nat-input" id="nat20" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(20, 80000)">Check Answer</button>
 
     <p class="year"><i>Gate CSE 2021 Session 2</i></p>
     <div id="explanation20" class="explanation"></div>
@@ -1352,10 +1345,7 @@ td {
         The <b>Speedup</b> achieved in executing the given instruction sequence on the pipelined processor (<i>rounded to 2 decimal places</i>) is __________.
     </p>
 
-    <input type="number" step="0.01" class="nat-input" id="nat53" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(53, 1.25)">Check Answer</button>
-
-    <p class="year"><i>Gate CSE 2021 Session 2</i></p>
+      <p class="year"><i>Gate CSE 2021 Session 2</i></p>
     <div id="explanation53" class="explanation"></div>
 </div>
 
@@ -1364,9 +1354,6 @@ td {
 <!-- Question 47 -->
 <div class="question">
     <p class="ques"><b>Q47.</b> Consider a computer system with a byte-addressable primary memory of size 2<sup>32</sup> bytes. Assume the computer system has a direct-mapped cache of size 32 KB (1 KB = 2<sup>10</sup> bytes), and each cache block is of size 64 bytes. The size of the tag field is __________ bits.</p>
-
-    <input type="number" class="nat-input" id="nat22" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(22, 17)">Check Answer</button>
 
     <p class="year"><i>Gate CSE 2021 Session 1</i></p>
     <div id="explanation22" class="explanation"></div>
@@ -1377,9 +1364,6 @@ td {
 <!-- Question 48 -->
 <div class="question">
     <p class="ques"><b>Q48.</b> A five-stage pipeline has stage delays of 150, 120, 150, 160 and 140 nanoseconds. The registers that are used between the pipeline stages have a delay of 5 nanoseconds each. The total time to execute 100 independent instructions on this pipeline, assuming there are no pipeline stalls, is __________ nanoseconds.</p>
-
-    <input type="number" class="nat-input" id="nat53" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(53, 17160)">Check Answer</button>
 
     <p class="year"><i>Gate CSE 2021 Session 1</i></p>
     <div id="explanation53" class="explanation"></div>
@@ -1447,11 +1431,10 @@ td {
         After the execution of the program, the content of memory location <b>3010</b> is __________.
     </p>
 
-    <input type="number" class="nat-input" id="nat55" placeholder="Enter your answer">
-    <button class="check-btn" onclick="checkNAT(55, 51)">Check Answer</button>
-
     <p class="year"><i>Gate CSE 2021 Session 1</i></p>
     <div id="explanation55" class="explanation"></div>
 </div>
-    
+
+
+
 </body>
