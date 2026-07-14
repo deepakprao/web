@@ -543,12 +543,915 @@ td {
 
     <button class="option-btn" onclick="checkAnswer(27, 'D', this)">D) The data path can only implement arithmetic operations involving one register and one immediate value.</button>
 
-    <p class="year"><i>Gate CSE 2025</i></p>
+    <p class="year"><i>Gate CSE 2025 Session 1</i></p>
     <div id="explanation27" class="explanation"></div>
+</div>
+
+
+<!-- Question 18 -->
+<div class="question">
+    <p class="ques"><b>Q18.</b> Consider a memory system with 1M bytes of main memory and 16K bytes of cache memory. Assume that the processor generates 20-bit memory address, and the cache block size is 16 bytes. If the cache uses direct mapping, how many bits will be required to store all the <i>tag</i> values? [Assume memory is byte addressable, 1K=2<sup>10</sup>, 1M=2<sup>20</sup>.]</p>
+
+    <button class="option-btn" onclick="checkAnswer(36, 'A', this)">A) 6 × 2<sup>10</sup></button>
+    <button class="option-btn" onclick="checkAnswer(36, 'B', this)">B) 8 × 2<sup>10</sup></button>
+    <button class="option-btn" onclick="checkAnswer(36, 'C', this)">C) 2<sup>12</sup></button>
+    <button class="option-btn" onclick="checkAnswer(36, 'D', this)">D) 2<sup>14</sup></button>
+
+    <p class="year"><i>Gate CSE 2025 Session 1</i></p>
+    <div id="explanation36" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 19 -->
+<div class="question">
+    <p class="ques"><b>Q19.</b> A processor has 64 general-purpose registers and 50 distinct instruction types. An instruction is encoded in 32-bits. What is the maximum number of bits that can be used to store the immediate operand for the given instruction?</p>
+
+    <div style="text-align:center; margin:15px 0;">
+        <code style="font-size:22px; font-weight:bold;">
+            ADD R1, #25&nbsp;&nbsp;&nbsp;&nbsp;// R1 = R1 + 25
+        </code>
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer(37, 'A', this)">A) 16</button>
+    <button class="option-btn" onclick="checkAnswer(37, 'B', this)">B) 20</button>
+    <button class="option-btn" onclick="checkAnswer(37, 'C', this)">C) 22</button>
+    <button class="option-btn" onclick="checkAnswer(37, 'D', this)">D) 24</button>
+
+    <p class="year"><i>Gate CSE 2025 Session 1</i></p>
+    <div id="explanation37" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 20 -->
+<div class="question">
+    <p class="ques"><b>Q20.</b> A computer has a memory hierarchy consisting of two-level cache (L1 and L2) and a main memory. If the processor needs to access data from memory, it first looks into L1 cache. If the data is not found in L1 cache, it goes to L2 cache. If it fails to get the data from L2 cache, it goes to main memory, where the data is definitely available. Hit rates and access times of various memory units are shown in the figure. The average memory access time in nanoseconds (<i>ns</i>) is __________. <i>(rounded off to two decimal places)</i></p>
+
+    <div style="text-align:center; margin:20px 0; overflow-x:auto;">
+        <svg width="520" height="500" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Arrow Marker -->
+            <defs>
+                <marker id="arrow" markerWidth="10" markerHeight="10"
+                        refX="8" refY="3" orient="auto"
+                        markerUnits="strokeWidth">
+                    <path d="M0,0 L8,3 L0,6 Z" fill="black"/>
+                </marker>
+            </defs>
+
+            <!-- Processor -->
+            <rect x="185" y="10" width="150" height="70"
+                  fill="white" stroke="black"/>
+            <text x="225" y="52" font-size="18">Processor</text>
+
+            <!-- Arrow -->
+            <line x1="260" y1="80" x2="260" y2="120"
+                  stroke="black" marker-end="url(#arrow)"/>
+
+            <!-- L1 Cache -->
+            <rect x="110" y="120" width="300" height="90"
+                  fill="white" stroke="black"/>
+            <text x="205" y="145" font-size="18">L1 Cache</text>
+            <text x="175" y="170" font-size="16">Hit rate = 95%</text>
+            <text x="160" y="195" font-size="16">Access time = 10 ns</text>
+
+            <!-- Arrow -->
+            <line x1="260" y1="210" x2="260" y2="250"
+                  stroke="black" marker-end="url(#arrow)"/>
+
+            <!-- L2 Cache -->
+            <rect x="60" y="250" width="400" height="110"
+                  fill="white" stroke="black"/>
+            <text x="205" y="278" font-size="18">L2 Cache</text>
+            <text x="175" y="305" font-size="16">Hit rate = 85%</text>
+            <text x="80" y="330" font-size="16">Access time (including L1 cache miss penalty)</text>
+            <text x="185" y="350" font-size="16">= 20 ns</text>
+
+            <!-- Arrow -->
+            <line x1="260" y1="360" x2="260" y2="395"
+                  stroke="black" marker-end="url(#arrow)"/>
+
+            <!-- Main Memory -->
+            <rect x="60" y="395" width="400" height="90"
+                  fill="white" stroke="black"/>
+            <text x="175" y="422" font-size="18">Main Memory</text>
+            <text x="85" y="445" font-size="16">Access time (including L1 and L2 cache miss penalty)</text>
+            <text x="185" y="468" font-size="16">= 200 ns</text>
+
+        </svg>
+    </div>
+
+    <input type="number" step="0.01" class="nat-input" id="nat53" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(53, 12.5)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2025 Session 1</i></p>
+    <div id="explanation53" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 21 -->
+<div class="question">
+    <p class="ques"><b>Q21.</b> Consider a computer with a 4 MHz processor. Its DMA controller can transfer 8 bytes in 1 cycle from a device to main memory through cycle stealing at regular intervals. Which one of the following is the data transfer rate (<i>in bits per second</i>) of the DMA controller if 1% of the processor cycles are used for DMA?</p>
+
+    <button class="option-btn" onclick="checkAnswer(11, 'A', this)">A) 2,56,000</button>
+    <button class="option-btn" onclick="checkAnswer(11, 'B', this)">B) 3,200</button>
+    <button class="option-btn" onclick="checkAnswer(11, 'C', this)">C) 25,60,000</button>
+    <button class="option-btn" onclick="checkAnswer(11, 'D', this)">D) 32,000</button>
+
+    <p class="year"><i>Gate CSE 2024 Session 2</i></p>
+    <div id="explanation11" class="explanation"></div>
 </div>
 
 
 
 
+<!-- Question 22 -->
+<div class="question">
+    <p class="ques"><b>Q22.</b> An instruction format has the following structure:</p>
 
+    <div style="text-align:center; margin:12px 0; font-size:18px;">
+        <b>Instruction Format:</b>
+        <i>Opcode destination reg, source reg-1, source reg-2</i>
+    </div>
+
+    <p class="ques">
+        Consider the following sequence of instructions to be executed in a pipelined processor:
+    </p>
+
+    <div style="margin:15px 0 15px 50px; line-height:2; font-family:'Courier New', monospace; font-size:18px;">
+        I1: DIV R3, R1, R2<br>
+        I2: SUB R5, R3, R4<br>
+        I3: ADD R3, R5, R6<br>
+        I4: MUL R7, R3, R8
+    </div>
+
+    <p class="ques">Which of the following statements is/are TRUE?</p>
+
+    <button class="option-btn" onclick="checkAnswer(31, 'A', this)">A) There is a RAW dependency on R3 between I1 and I2</button>
+
+    <button class="option-btn" onclick="checkAnswer(31, 'B', this)">B) There is a WAR dependency on R3 between I1 and I3</button>
+
+    <button class="option-btn" onclick="checkAnswer(31, 'C', this)">C) There is a RAW dependency on R3 between I2 and I3</button>
+
+    <button class="option-btn" onclick="checkAnswer(31, 'D', this)">D) There is a WAW dependency on R3 between I3 and I4</button>
+
+    <p class="year"><i>Gate CSE 2024 Session 2</i></p>
+    <div id="explanation31" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 23 -->
+<div class="question">
+    <p class="ques"><b>Q23.</b> A processor with 16 general purpose registers uses a 32-bit instruction format. The instruction format consists of an opcode field, an addressing mode field, two register operand fields, and a 16-bit scalar field. If 8 addressing modes are to be supported, the maximum number of unique opcodes possible for every addressing mode is __________.</p>
+
+    <input type="number" class="nat-input" id="nat57" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(57, 16)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2024 Session 2</i></p>
+    <div id="explanation57" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 24 -->
+<div class="question">
+    <p class="ques"><b>Q24.</b> A non-pipelined instruction execution unit operating at 2 GHz takes an average of 6 cycles to execute an instruction of a program P. The unit is then redesigned to operate on a 5-stage pipeline at 2 GHz. Assume that the ideal throughput of the pipelined unit is 1 instruction per cycle. In the execution of program P, 20% instructions incur an average of 2 cycles stall due to data hazards and 20% instructions incur an average of 3 cycles stall due to control hazards. The speedup (<i>rounded off to one decimal place</i>) obtained by the pipelined design over the non-pipelined design is __________.</p>
+
+    <input type="number" step="0.1" class="nat-input" id="nat58" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(58, 4.0)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2024 Session 2</i></p>
+    <div id="explanation58" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 25 -->
+<div class="question">
+    <p class="ques"><b>Q25.</b> A processor uses a 32-bit instruction format and supports byte-addressable memory access. The ISA of the processor has 150 distinct instructions. The instructions are equally divided into two types, namely R-type and I-type, whose formats are shown below.</p>
+
+    <div style="text-align:center; margin:20px 0; overflow-x:auto;">
+        <svg width="760" height="210" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- R-Type -->
+            <text x="10" y="25" font-size="20" font-weight="bold">R-type Instruction Format</text>
+
+            <rect x="10" y="40" width="110" height="45" fill="white" stroke="black"/>
+            <text x="30" y="68" font-size="16">OPCODE</text>
+
+            <rect x="120" y="40" width="110" height="45" fill="white" stroke="black"/>
+            <text x="145" y="68" font-size="16">UNUSED</text>
+
+            <rect x="230" y="40" width="170" height="45" fill="white" stroke="black"/>
+            <text x="250" y="68" font-size="16">DST Register</text>
+
+            <rect x="400" y="40" width="170" height="45" fill="white" stroke="black"/>
+            <text x="415" y="68" font-size="16">SRC Register1</text>
+
+            <rect x="570" y="40" width="170" height="45" fill="white" stroke="black"/>
+            <text x="585" y="68" font-size="16">SRC Register2</text>
+
+            <!-- I-Type -->
+            <text x="10" y="120" font-size="20" font-weight="bold">I-type Instruction Format</text>
+
+            <rect x="10" y="135" width="110" height="45" fill="white" stroke="black"/>
+            <text x="30" y="163" font-size="16">OPCODE</text>
+
+            <rect x="120" y="135" width="145" height="45" fill="white" stroke="black"/>
+            <text x="140" y="163" font-size="16">DST Register</text>
+
+            <rect x="265" y="135" width="145" height="45" fill="white" stroke="black"/>
+            <text x="285" y="163" font-size="16">SRC Register</text>
+
+            <rect x="410" y="135" width="330" height="45" fill="white" stroke="black"/>
+            <text x="470" y="163" font-size="16"># Immediate value/address</text>
+
+        </svg>
+    </div>
+
+    <p class="ques">
+        In the OPCODE, 1 bit is used to distinguish between I-type and R-type instructions and the remaining bits indicate the operation. The processor has 50 architectural registers, and all register fields in the instructions are of equal size.<br><br>
+
+        Let <i>X</i> be the number of bits used to encode the UNUSED field, <i>Y</i> be the number of bits used to encode the OPCODE field, and <i>Z</i> be the number of bits used to encode the immediate value/address field. The value of <i>X + 2Y + Z</i> is __________.
+    </p>
+
+    <input type="number" class="nat-input" id="nat59" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(59, 43)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2024 Session 2</i></p>
+    <div id="explanation59" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 26 -->
+<div class="question">
+    <p class="ques"><b>Q26.</b> Which one of the following statements is FALSE?</p>
+
+    <button class="option-btn" onclick="checkAnswer(15, 'A', this)">
+        A) In the cycle stealing mode of DMA, one word of data is transferred between an I/O device and main memory in a stolen cycle.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(15, 'B', this)">
+        B) For bulk data transfer, the burst mode of DMA has a higher throughput than the cycle stealing mode.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(15, 'C', this)">
+        C) Programmed I/O mechanism has a better CPU utilization than the interrupt driven I/O mechanism.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(15, 'D', this)">
+        D) The CPU can start executing an interrupt service routine faster with vectored interrupts than with non-vectored interrupts.
+    </button>
+
+    <p class="year"><i>Gate CSE 2024 Session 1</i></p>
+    <div id="explanation15" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 27-->
+<div class="question">
+    <p class="ques"><b>Q27.</b> Consider a 5-stage pipelined processor with Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory Access (MEM), and Register Writeback (WB) stages. Which of the following statements about <i>forwarding</i> is/are CORRECT?</p>
+
+    <button class="option-btn" onclick="checkAnswer(30, 'A', this)">
+        A) In a pipelined execution, forwarding means the result from a source stage of an earlier instruction is passed on to the destination stage of a later instruction.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(30, 'B', this)">
+        B) In forwarding, data from the output of the MEM stage can be passed on to the input of the EX stage of the next instruction.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(30, 'C', this)">
+        C) Forwarding cannot prevent all pipeline stalls.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(30, 'D', this)">
+        D) Forwarding does not require any extra hardware to retrieve the data from the pipeline stages.
+    </button>
+
+    <p class="year"><i>Gate CSE 2024 Session 1</i></p>
+    <div id="explanation30" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 28 -->
+<div class="question">
+    <p class="ques"><b>Q28.</b> Consider two set-associative cache memory architectures: <b>WBC</b>, which uses the write back policy, and <b>WTC</b>, which uses the write through policy. Both of them use the LRU (Least Recently Used) block replacement policy. The cache memory is connected to the main memory. Which of the following statements is/are TRUE?</p>
+
+    <button class="option-btn" onclick="checkAnswer(53, 'A', this)">
+        A) A read miss in <b>WBC</b> never evicts a dirty block.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(53, 'B', this)">
+        B) A read miss in <b>WTC</b> never triggers a write back operation of a cache block to main memory.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(53, 'C', this)">
+        C) A write hit in <b>WBC</b> can modify the value of the dirty bit of a cache block.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(53, 'D', this)">
+        D) A write miss in <b>WTC</b> always writes the victim cache block to main memory before loading the missed block to the cache.
+    </button>
+
+    <p class="year"><i>Gate CSE 2024 Session 1</i></p>
+    <div id="explanation53" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 29 -->
+<div class="question">
+    <p class="ques"><b>Q29.</b> The baseline execution time of a program on a 2 GHz single core machine is 100 nanoseconds (<i>ns</i>). The code corresponding to 90% of the execution time can be fully parallelized. The overhead for using an additional core is 10 <i>ns</i> when running on a multicore system. Assume that all cores in the multicore system run their share of the parallelized code for an equal amount of time.<br><br>
+
+    The number of cores that minimize the execution time of the program is __________.</p>
+
+    <input type="number" class="nat-input" id="nat55" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(55, 4)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2024 Session 1</i></p>
+    <div id="explanation55" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 30 -->
+<div class="question">
+    <p class="ques"><b>Q30.</b> A given program has 25% load/store instructions. Suppose the ideal CPI (cycles per instruction) without any memory stalls is 2. The program exhibits 2% miss rate on instruction cache and 8% miss rate on data cache. The miss penalty is 100 cycles. The speedup (<i>rounded off to two decimal places</i>) achieved with a perfect cache (i.e., with NO data or instruction cache misses) is __________.</p>
+
+    <input type="number" step="0.01" class="nat-input" id="nat56" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(56, 2.56)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2024 Session 1</i></p>
+    <div id="explanation56" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 31 -->
+<div class="question">
+    <p class="ques"><b>Q31.</b> Consider a 3-stage pipelined processor having a delay of 10 ns (nanoseconds), 20 ns, and 14 ns, for the first, second, and the third stages, respectively. Assume that there is no other delay and the processor does not suffer from any pipeline hazards. Also assume that one instruction is fetched every cycle.<br><br>
+
+    The total execution time for executing 100 instructions on this processor is __________ ns.</p>
+
+    <input type="number" class="nat-input" id="nat33" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(33, 2040)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2023</i></p>
+    <div id="explanation33" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 32 -->
+<div class="question">
+    <p class="ques"><b>Q32.</b> A keyboard connected to a computer is used at a rate of 1 keystroke per second. The computer system polls the keyboard every 10 ms (milli seconds) to check for a keystroke and consumes 100 <i>μs</i> (micro seconds) for each poll. If it is determined after polling that a key has been pressed, the system consumes an additional 200 <i>μs</i> to process the keystroke. Let <i>T</i><sub>1</sub> denote the fraction of a second spent in polling and processing a keystroke.<br><br>
+
+    In an alternative implementation, the system uses interrupts instead of polling. An interrupt is raised for every keystroke. It takes a total of 1 ms for servicing an interrupt and processing a keystroke. Let <i>T</i><sub>2</sub> denote the fraction of a second spent in servicing the interrupt and processing a keystroke.<br><br>
+
+    The ratio <i>T</i><sub>1</sub> / <i>T</i><sub>2</sub> is __________. <i>(Rounded off to one decimal place)</i></p>
+
+    <input type="number" step="0.1" class="nat-input" id="nat34" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(34, 10.2)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2023</i></p>
+    <div id="explanation34" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 33 -->
+<div class="question">
+    <p class="ques"><b>Q33.</b> Consider the given C-code and its corresponding assembly code, with a few operands U1–U4 being unknown. Some useful information as well as the semantics of each unique assembly instruction is annotated as inline comments in the code. The memory is byte-addressable.</p>
+
+    <div style="text-align:center; margin:15px 0; overflow-x:auto;">
+        <svg width="860" height="400" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Left Panel -->
+            <text x="20" y="25" font-size="18" font-weight="bold">C-code</text>
+
+            <line x1="390" y1="10" x2="390" y2="380" stroke="black"/>
+
+            <text x="20" y="60" font-size="16" font-family="Courier New">int a[10], b[10], i;</text>
+            <text x="20" y="85" font-size="16" font-family="Courier New">// int is 32-bit</text>
+            <text x="20" y="115" font-size="16" font-family="Courier New">for (i = 0; i &lt; 10; i++)</text>
+            <text x="60" y="145" font-size="16" font-family="Courier New">a[i] = b[i] * 8;</text>
+
+            <!-- Right Panel -->
+            <text x="410" y="25" font-size="18" font-weight="bold">Assembly Code</text>
+
+            <text x="410" y="50" font-size="14" font-family="Courier New">; r1-r5 are 32-bit integer registers</text>
+            <text x="410" y="70" font-size="14" font-family="Courier New">; initialize r1=0, r2=10</text>
+            <text x="410" y="90" font-size="14" font-family="Courier New">; initialize r3,r4 with base address of a,b</text>
+
+            <text x="410" y="125" font-size="15" font-family="Courier New">L01: jeq r1, r2, end</text>
+            <text x="410" y="145" font-size="15" font-family="Courier New">L02: lw  r5, 0(r4)</text>
+            <text x="410" y="165" font-size="15" font-family="Courier New">L03: shl r5, r5, U1</text>
+            <text x="410" y="185" font-size="15" font-family="Courier New">L04: sw  r5, 0(r3)</text>
+            <text x="410" y="205" font-size="15" font-family="Courier New">L05: add r3, r3, U2</text>
+            <text x="410" y="225" font-size="15" font-family="Courier New">L06: add r4, r4, U3</text>
+            <text x="410" y="245" font-size="15" font-family="Courier New">L07: add r1, r1, 1</text>
+            <text x="410" y="265" font-size="15" font-family="Courier New">L08: jmp U4</text>
+            <text x="410" y="285" font-size="15" font-family="Courier New">L09: end</text>
+
+        </svg>
+    </div>
+
+    <p class="ques">Which one of the following options is a CORRECT replacement for operands in the position (U1, U2, U3, U4) in the above assembly code?</p>
+
+    <button class="option-btn" onclick="checkAnswer(41, 'A', this)">A) (8, 4, 1, L02)</button>
+    <button class="option-btn" onclick="checkAnswer(41, 'B', this)">B) (3, 4, 4, L01)</button>
+    <button class="option-btn" onclick="checkAnswer(41, 'C', this)">C) (8, 1, 1, L02)</button>
+    <button class="option-btn" onclick="checkAnswer(41, 'D', this)">D) (3, 1, 1, L01)</button>
+
+    <p class="year"><i>Gate CSE 2023</i></p>
+    <div id="explanation41" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 34 -->
+<div class="question">
+    <p class="ques"><b>Q34.</b> A 4 kilobyte (KB) byte-addressable memory is realized using four 1 KB memory blocks. Two input address lines (IA4 and IA3) are connected to the chip select (CS) port of these memory blocks through a decoder as shown in the figure. The remaining ten input address lines from IA11–IA0 are connected to the address port of these blocks. The chip select (CS) is active high.<br><br>
+
+    The input memory addresses (IA11–IA0), in decimal, for the starting locations (Addr=0) of each block (indicated as X1, X2, X3, X4 in the figure) are among the options given below. Which one of the following options is CORRECT?</p>
+
+    <div style="text-align:center; margin:15px 0; overflow-x:auto;">
+        <svg width="820" height="430" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Address lines -->
+            <text x="10" y="25" font-size="14">IA11</text>
+            <text x="10" y="45" font-size="14">IA10</text>
+            <text x="10" y="65" font-size="14">IA9</text>
+            <text x="10" y="85" font-size="14">IA8</text>
+            <text x="10" y="105" font-size="14">IA7</text>
+            <text x="10" y="125" font-size="14">IA6</text>
+            <text x="10" y="145" font-size="14">IA5</text>
+            <text x="10" y="165" font-size="14">IA4</text>
+            <text x="10" y="185" font-size="14">IA3</text>
+            <text x="10" y="205" font-size="14">IA2</text>
+            <text x="10" y="225" font-size="14">IA1</text>
+            <text x="10" y="245" font-size="14">IA0</text>
+
+            <!-- Memory blocks -->
+            <rect x="180" y="40" width="90" height="220" fill="white" stroke="black"/>
+            <text x="198" y="70">1KB</text>
+            <text x="192" y="90">Memory</text>
+            <text x="200" y="150">Addr</text>
+            <text x="188" y="240">X1</text>
+            <text x="235" y="240">CS</text>
+
+            <rect x="330" y="40" width="90" height="220" fill="white" stroke="black"/>
+            <text x="348" y="70">1KB</text>
+            <text x="342" y="90">Memory</text>
+            <text x="350" y="150">Addr</text>
+            <text x="338" y="240">X2</text>
+            <text x="385" y="240">CS</text>
+
+            <rect x="480" y="40" width="90" height="220" fill="white" stroke="black"/>
+            <text x="498" y="70">1KB</text>
+            <text x="492" y="90">Memory</text>
+            <text x="500" y="150">Addr</text>
+            <text x="488" y="240">X3</text>
+            <text x="535" y="240">CS</text>
+
+            <rect x="630" y="40" width="90" height="220" fill="white" stroke="black"/>
+            <text x="648" y="70">1KB</text>
+            <text x="642" y="90">Memory</text>
+            <text x="650" y="150">Addr</text>
+            <text x="638" y="240">X4</text>
+            <text x="685" y="240">CS</text>
+
+            <!-- Decoder -->
+            <rect x="90" y="290" width="100" height="90" fill="white" stroke="black"/>
+            <text x="110" y="340">Decoder</text>
+
+            <text x="60" y="315" font-size="14">IA4</text>
+            <text x="60" y="345" font-size="14">IA3</text>
+
+            <text x="195" y="310" font-size="14">Q0</text>
+            <text x="195" y="330" font-size="14">Q1</text>
+            <text x="195" y="350" font-size="14">Q2</text>
+            <text x="195" y="370" font-size="14">Q3</text>
+
+        </svg>
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer(42, 'A', this)">A) (0, 1, 2, 3)</button>
+    <button class="option-btn" onclick="checkAnswer(42, 'B', this)">B) (0, 1024, 2048, 3072)</button>
+    <button class="option-btn" onclick="checkAnswer(42, 'C', this)">C) (0, 8, 16, 24)</button>
+    <button class="option-btn" onclick="checkAnswer(42, 'D', this)">D) (0, 0, 0, 0)</button>
+
+    <p class="year"><i>Gate CSE 2023</i></p>
+    <div id="explanation42" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 35 -->
+<div class="question">
+    <p class="ques"><b>Q35.</b> An 8-way set associative cache of size 64 KB (1 KB = 1024 bytes) is used in a system with 32-bit address. The address is sub-divided into TAG, INDEX, and BLOCK OFFSET.<br><br>
+
+    The number of bits in the TAG is __________.</p>
+
+    <input type="number" class="nat-input" id="nat64" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(64, 16)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2023</i></p>
+    <div id="explanation64" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 36 -->
+<div class="question">
+    <p class="ques"><b>Q36.</b> Which one of the following facilitates transfer of bulk data from hard disk to main memory with the highest throughput?</p>
+
+    <button class="option-btn" onclick="checkAnswer(17, 'A', this)">A) DMA based I/O transfer</button>
+    <button class="option-btn" onclick="checkAnswer(17, 'B', this)">B) Interrupt driven I/O transfer</button>
+    <button class="option-btn" onclick="checkAnswer(17, 'C', this)">C) Polling based I/O transfer</button>
+    <button class="option-btn" onclick="checkAnswer(17, 'D', this)">D) Programmed I/O transfer</button>
+
+    <p class="year"><i>Gate CSE 2022</i></p>
+    <div id="explanation17" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 37 -->
+<div class="question">
+    <p class="ques"><b>Q37.</b> Let WB and WT be two set associative cache organizations that use LRU algorithm for cache block replacement. WB is a write back cache and WT is a write through cache. Which of the following statements is/are FALSE?</p>
+
+    <button class="option-btn" onclick="checkAnswer(24, 'A', this)">
+        A) Each cache block in WB and WT has a dirty bit.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(24, 'B', this)">
+        B) Every write hit in WB leads to a data transfer from cache to main memory.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(24, 'C', this)">
+        C) Eviction of a block from WT will not lead to data transfer from cache to main memory.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(24, 'D', this)">
+        D) A read miss in WB will never lead to eviction of a dirty block from WB.
+    </button>
+
+    <p class="year"><i>Gate CSE 2022</i></p>
+    <div id="explanation24" class="explanation"></div>
+</div>
+    
+
+
+<!-- Question 38 -->
+<div class="question">
+    <p class="ques"><b>Q38.</b> A cache memory that has a hit rate of 0.8 has an access latency 10 ns and miss penalty 100 ns. An optimization is done on the cache to reduce the miss rate. However, the optimization results in an increase of cache access latency to 15 ns, whereas the miss penalty is not affected. The minimum hit rate (<i>rounded off to two decimal places</i>) needed after the optimization such that it should not increase the average memory access time is __________.</p>
+
+    <input type="number" step="0.01" class="nat-input" id="nat33" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(33, 0.85)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2022</i></p>
+    <div id="explanation33" class="explanation"></div>
+</div>
+
+    
+
+<!-- Question 39 -->
+<div class="question">
+    <p class="ques"><b>Q39.</b> Consider a digital display system (DDS) shown in the figure that displays the contents of register X. A 16-bit code word is used to load a word in X, either from S or from R. S is a 1024-word memory segment and R is a 32-word register file. Based on the value of mode bit M, T selects an input word to load in X. P and Q interface with the corresponding bits in the code word to choose the addressed word. Which one of the following represents the functionality of P, Q, and T?</p>
+
+    <div style="text-align:center; margin:20px 0; overflow-x:auto;">
+        <svg width="700" height="470" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Code Word -->
+            <rect x="120" y="20" width="70" height="50" fill="white" stroke="black"/>
+            <rect x="190" y="20" width="260" height="50" fill="white" stroke="black"/>
+            <rect x="450" y="20" width="220" height="50" fill="white" stroke="black"/>
+
+            <text x="305" y="10" font-size="22">Code Word</text>
+            <text x="145" y="50" font-size="20">M</text>
+            <text x="275" y="50" font-size="20">S-address</text>
+            <text x="530" y="50" font-size="20">R-address</text>
+
+            <!-- M line -->
+            <line x1="155" y1="70" x2="155" y2="280" stroke="black"/>
+
+            <!-- P -->
+            <rect x="250" y="110" width="90" height="60" fill="white" stroke="black"/>
+            <text x="287" y="147" font-size="24">P</text>
+
+            <!-- Q -->
+            <rect x="500" y="110" width="90" height="60" fill="white" stroke="black"/>
+            <text x="537" y="147" font-size="24">Q</text>
+
+            <!-- Connections -->
+            <line x1="320" y1="70" x2="320" y2="110" stroke="black"/>
+            <line x1="560" y1="70" x2="560" y2="110" stroke="black"/>
+
+            <!-- S -->
+            <rect x="360" y="190" width="80" height="100" fill="white" stroke="black"/>
+            <text x="390" y="245" font-size="24">S</text>
+
+            <!-- R -->
+            <rect x="470" y="190" width="80" height="100" fill="white" stroke="black"/>
+            <text x="500" y="245" font-size="24">R</text>
+
+            <!-- P to S -->
+            <line x1="340" y1="140" x2="360" y2="140" stroke="black"/>
+            <line x1="360" y1="140" x2="360" y2="190" stroke="black"/>
+
+            <!-- Q to R -->
+            <line x1="500" y1="140" x2="470" y2="140" stroke="black"/>
+            <line x1="470" y1="140" x2="470" y2="190" stroke="black"/>
+
+            <!-- T -->
+            <rect x="330" y="330" width="210" height="70" fill="white" stroke="black"/>
+            <text x="430" y="373" font-size="24">T</text>
+
+            <!-- Connections -->
+            <line x1="400" y1="290" x2="400" y2="330" stroke="black"/>
+            <line x1="510" y1="290" x2="510" y2="330" stroke="black"/>
+            <line x1="155" y1="280" x2="155" y2="365" stroke="black"/>
+            <line x1="155" y1="365" x2="330" y2="365" stroke="black"/>
+
+            <!-- X -->
+            <rect x="360" y="430" width="120" height="40" fill="white" stroke="black"/>
+            <text x="412" y="456" font-size="22">X</text>
+
+            <!-- DDS -->
+            <rect x="480" y="430" width="120" height="40" fill="white" stroke="black"/>
+            <text x="515" y="456" font-size="22">DDS</text>
+
+            <line x1="435" y1="400" x2="435" y2="430" stroke="black"/>
+
+        </svg>
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer(40, 'A', this)">
+        A) P is 10:1 multiplexer;&nbsp;&nbsp;&nbsp; Q is 5:1 multiplexer;&nbsp;&nbsp;&nbsp; T is 2:1 multiplexer
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(40, 'B', this)">
+        B) P is 10:2<sup>10</sup> decoder;&nbsp;&nbsp;&nbsp; Q is 5:2<sup>5</sup> decoder;&nbsp;&nbsp;&nbsp; T is 2:1 encoder
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(40, 'C', this)">
+        C) P is 10:2<sup>10</sup> decoder;&nbsp;&nbsp;&nbsp; Q is 5:2<sup>5</sup> decoder;&nbsp;&nbsp;&nbsp; T is 2:1 multiplexer
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(40, 'D', this)">
+        D) P is 1:10 de-multiplexer;&nbsp;&nbsp;&nbsp; Q is 1:5 de-multiplexer;&nbsp;&nbsp;&nbsp; T is 2:1 multiplexer
+    </button>
+
+    <p class="year"><i>Gate CSE 2022</i></p>
+    <div id="explanation40" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 40 -->
+<div class="question">
+    <p class="ques"><b>Q40.</b> Consider a system with 2 KB direct mapped data cache with a block size of 64 bytes. The system has a physical address space of 64 KB and a word length of 16 bits. During the execution of a program, four data words P, Q, R, and S are accessed in that order 10 times (<i>i.e.</i>, PQRSPQRS...). Hence, there are 40 accesses to data cache altogether. Assume that the data cache is initially empty and no other data words are accessed by the program. The addresses of the first bytes of P, Q, R, and S are 0xA248, 0xC28A, 0xCA8A, and 0xA262, respectively. For the execution of the above program, which of the following statements is/are TRUE with respect to the data cache?</p>
+
+    <button class="option-btn" onclick="checkAnswer(54, 'A', this)">
+        A) Every access to S is a hit.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(54, 'B', this)">
+        B) Once P is brought to the cache it is never evicted.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(54, 'C', this)">
+        C) At the end of the execution only R and S reside in the cache.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(54, 'D', this)">
+        D) Every access to R evicts Q from the cache.
+    </button>
+
+    <p class="year"><i>Gate CSE 2022</i></p>
+    <div id="explanation54" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 41 -->
+<div class="question">
+    <p class="ques"><b>Q41.</b> A processor X<sub>1</sub> operating at 2 GHz has a standard 5-stage RISC instruction pipeline having a base CPI (cycles per instruction) of one without any pipeline hazards. For a given program P that has 30% branch instructions, control hazards incur 2 cycles stall for every branch. A new version of the processor X<sub>2</sub> operating at same clock frequency has an additional branch predictor unit (BPU) that completely eliminates stalls for correctly predicted branches. There is neither any savings nor any additional stalls for wrong predictions. There are no structural hazards and data hazards for X<sub>1</sub> and X<sub>2</sub>. If the BPU has a prediction accuracy of 80%, the speed up (<i>rounded off to two decimal places</i>) obtained by X<sub>2</sub> over X<sub>1</sub> in executing P is __________.</p>
+
+    <input type="number" step="0.01" class="nat-input" id="nat61" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(61, 1.32)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2022</i></p>
+    <div id="explanation61" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 42 -->
+<div class="question">
+    <p class="ques"><b>Q42.</b> Consider a set-associative cache of size 2 KB (1 KB = 2<sup>10</sup> bytes) with cache block size of 64 bytes. Assume that the cache is byte-addressed and a 32-bit address is used for accessing the cache. If the width of the tag field is 22 bits, the associativity of the cache is __________.</p>
+
+    <input type="number" class="nat-input" id="nat19" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(19, 2)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2021 Session 2</i></p>
+    <div id="explanation19" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 43 -->
+<div class="question">
+    <p class="ques"><b>Q43.</b> Consider a computer system with DMA support. The DMA module is transferring one 8-bit character in one CPU cycle from a device to memory through <i>cycle stealing</i> at regular intervals. Consider a 2 MHz processor. If 0.5% processor cycles are used for DMA, the data transfer rate of the device is __________ bits per second.</p>
+
+    <input type="number" class="nat-input" id="nat20" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(20, 80000)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2021 Session 2</i></p>
+    <div id="explanation20" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 44 -->
+<div class="question">
+    <p class="ques"><b>Q44.</b> Assume a two-level inclusive cache hierarchy, L1 and L2, where L2 is the larger of the two. Consider the following statements.</p>
+
+    <div style="margin:15px 0 20px 40px; line-height:1.8;">
+        <b>S<sub>1</sub>:</b> Read misses in a write through L1 cache do not result in writebacks of dirty lines to the L2.<br><br>
+
+        <b>S<sub>2</sub>:</b> Write allocate policy <i>must</i> be used in conjunction with write through caches and no-write allocate policy is used with writeback caches.
+    </div>
+
+    <p class="ques">Which of the following statements is correct?</p>
+
+    <button class="option-btn" onclick="checkAnswer(27, 'A', this)">A) S<sub>1</sub> is true and S<sub>2</sub> is false</button>
+
+    <button class="option-btn" onclick="checkAnswer(27, 'B', this)">B) S<sub>1</sub> is false and S<sub>2</sub> is true</button>
+
+    <button class="option-btn" onclick="checkAnswer(27, 'C', this)">C) S<sub>1</sub> is true and S<sub>2</sub> is true</button>
+
+    <button class="option-btn" onclick="checkAnswer(27, 'D', this)">D) S<sub>1</sub> is false and S<sub>2</sub> is false</button>
+
+    <p class="year"><i>Gate CSE 2021 Session 2</i></p>
+    <div id="explanation27" class="explanation"></div>
+</div>
+
+
+<!-- Question 45 -->
+<div class="question">
+    <p class="ques"><b>Q45.</b> If the numerical value of a 2-byte unsigned integer on a little endian computer is 255 more than that on a big endian computer, which of the following choices represent(s) the unsigned integer on a little endian computer?</p>
+
+    <button class="option-btn" onclick="checkAnswer(44, 'A', this)">A) 0x6665</button>
+    <button class="option-btn" onclick="checkAnswer(44, 'B', this)">B) 0x0001</button>
+    <button class="option-btn" onclick="checkAnswer(44, 'C', this)">C) 0x4243</button>
+    <button class="option-btn" onclick="checkAnswer(44, 'D', this)">D) 0x0100</button>
+
+    <p class="year"><i>Gate CSE 2021 Session 2</i></p>
+    <div id="explanation44" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 46 -->
+<div class="question">
+    <p class="ques"><b>Q46.</b> Consider a pipelined processor with 5 stages, Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory Access (MEM), and Write Back (WB). Each stage of the pipeline, except the EX stage, takes one cycle. Assume that the ID stage merely decodes the instruction and the register read is performed in the EX stage. The EX stage takes one cycle for <b>ADD</b> instruction and two cycles for <b>MUL</b> instruction. Ignore pipeline register latencies.<br><br>
+
+    Consider the following sequence of 8 instructions:</p>
+
+    <div style="text-align:center; margin:12px 0; font-family:'Courier New', monospace; font-size:18px;">
+        ADD,&nbsp; MUL,&nbsp; ADD,&nbsp; MUL,&nbsp; ADD,&nbsp; MUL,&nbsp; ADD,&nbsp; MUL
+    </div>
+
+    <p class="ques">
+        Assume that every <b>MUL</b> instruction is data-dependent on the <b>ADD</b> instruction just before it and every <b>ADD</b> instruction (except the first <b>ADD</b>) is data-dependent on the <b>MUL</b> instruction just before it.
+    </p>
+
+    <div style="text-align:center; margin:15px 0; font-size:18px;">
+        <b>Speedup</b> =
+        <span style="display:inline-block; text-align:center; vertical-align:middle;">
+            <span style="display:block; border-bottom:1px solid black; padding:0 8px;">
+                Execution time without operand forwarding
+            </span>
+            <span style="display:block; padding-top:4px;">
+                Execution time with operand forwarding
+            </span>
+        </span>
+    </div>
+
+    <p class="ques">
+        The <b>Speedup</b> achieved in executing the given instruction sequence on the pipelined processor (<i>rounded to 2 decimal places</i>) is __________.
+    </p>
+
+    <input type="number" step="0.01" class="nat-input" id="nat53" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(53, 1.25)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2021 Session 2</i></p>
+    <div id="explanation53" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 47 -->
+<div class="question">
+    <p class="ques"><b>Q47.</b> Consider a computer system with a byte-addressable primary memory of size 2<sup>32</sup> bytes. Assume the computer system has a direct-mapped cache of size 32 KB (1 KB = 2<sup>10</sup> bytes), and each cache block is of size 64 bytes. The size of the tag field is __________ bits.</p>
+
+    <input type="number" class="nat-input" id="nat22" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(22, 17)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2021 Session 1</i></p>
+    <div id="explanation22" class="explanation"></div>
+</div>
+
+    
+
+<!-- Question 48 -->
+<div class="question">
+    <p class="ques"><b>Q48.</b> A five-stage pipeline has stage delays of 150, 120, 150, 160 and 140 nanoseconds. The registers that are used between the pipeline stages have a delay of 5 nanoseconds each. The total time to execute 100 independent instructions on this pipeline, assuming there are no pipeline stalls, is __________ nanoseconds.</p>
+
+    <input type="number" class="nat-input" id="nat53" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(53, 17160)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2021 Session 1</i></p>
+    <div id="explanation53" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 49 -->
+<div class="question">
+    <p class="ques"><b>Q49.</b> Consider the following instruction sequence where registers R1, R2 and R3 are general purpose and MEMORY[X] denotes the content at the memory location X.</p>
+
+    <div style="overflow-x:auto; margin:15px 0;">
+        <table class="gate-table">
+            <tr>
+                <th>Instruction</th>
+                <th>Semantics</th>
+                <th>Instruction Size (bytes)</th>
+            </tr>
+            <tr>
+                <td>MOV R1, (5000)</td>
+                <td>R1 &larr; MEMORY[5000]</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>MOV R2, (R3)</td>
+                <td>R2 &larr; MEMORY[R3]</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>ADD R2, R1</td>
+                <td>R2 &larr; R1 + R2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>MOV (R3), R2</td>
+                <td>MEMORY[R3] &larr; R2</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>INC R3</td>
+                <td>R3 &larr; R3 + 1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>DEC R1</td>
+                <td>R1 &larr; R1 - 1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>BNZ 1004</td>
+                <td>Branch if not zero to the given absolute address</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>HALT</td>
+                <td>Stop</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+
+    <p class="ques">
+        Assume that the content of the memory location 5000 is 10, and the content of the register R3 is 3000. The content of each of the memory locations from 3000 to 3010 is 50. The instruction sequence starts from the memory location 1000. All the numbers are in decimal format. Assume that the memory is byte addressable.<br><br>
+
+        After the execution of the program, the content of memory location <b>3010</b> is __________.
+    </p>
+
+    <input type="number" class="nat-input" id="nat55" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(55, 51)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2021 Session 1</i></p>
+    <div id="explanation55" class="explanation"></div>
+</div>
+    
 </body>
