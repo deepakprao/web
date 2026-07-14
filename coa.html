@@ -99,6 +99,7 @@ th {
 /* Optional: adjust spacing */
 td {
   min-width: 40px;
+ text-align: left;
 }
     
     .row12 {
@@ -212,6 +213,342 @@ td {
     <p class="year"><i>Gate CSE 2026 Session 2</i></p>
     <div id="explanation57" class="explanation"></div>
 </div>
+
+
+<!-- Question 6 -->
+<div class="question">
+    <p class="ques"><b>Q6.</b> Match each addressing mode in <b>List I</b> with a data element or an element of a data structure (in a high-level language) in <b>List II</b>.</p>
+
+    <table >
+        <tr>
+            <th>List I</th>
+            <th>List II</th>
+        </tr>
+        <tr>
+            <td>P. Immediate</td>
+            <td>1. Element of an array</td>
+        </tr>
+        <tr>
+            <td>Q. Indirect</td>
+            <td>2. Pointer</td>
+        </tr>
+        <tr>
+            <td>R. Base with index</td>
+            <td>3. Element of a record</td>
+        </tr>
+        <tr>
+            <td>S. Base with offset/displacement</td>
+            <td>4. Constant</td>
+        </tr>
+    </table>
+
+    <button class="option-btn" onclick="checkAnswer(14, 'A', this)">A) P–4, Q–3, R–1, S–2</button>
+    <button class="option-btn" onclick="checkAnswer(14, 'B', this)">B) P–4, Q–2, R–1, S–3</button>
+    <button class="option-btn" onclick="checkAnswer(14, 'C', this)">C) P–1, Q–4, R–3, S–2</button>
+    <button class="option-btn" onclick="checkAnswer(14, 'D', this)">D) P–2, Q–3, R–1, S–4</button>
+
+    <p class="year"><i>Gate CSE 2026 Session 1</i></p>
+    <div id="explanation14" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 7 -->
+<div class="question">
+    <p class="ques"><b>Q7.</b> Consider a processor P whose instruction set architecture is the load-store architecture. The instruction format is such that the first operand of any instruction is the destination operand.<br><br>
+
+    Which one of the following sequences of instructions corresponds to the high-level language statement Z = X + Y?<br><br>
+
+    <i>Note: X, Y, and Z are memory operands. R0, R1, and R2 are registers.</i></p>
+
+    <button class="option-btn" onclick="checkAnswer(15, 'A', this)">
+        A) ADD Z, X, Y
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(15, 'B', this)">
+        B) LOAD R0, X<br>
+        ADD Z, R0, Y
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(15, 'C', this)">
+        C) ADD R0, X, Y<br>
+        STORE Z, R0
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(15, 'D', this)">
+        D) LOAD R0, X<br>
+        LOAD R1, Y<br>
+        ADD R2, R0, R1<br>
+        STORE Z, R2
+    </button>
+
+    <p class="year"><i>Gate CSE 2026 Session 1</i></p>
+    <div id="explanation15" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 8 -->
+<div class="question">
+    <p class="ques"><b>Q8.</b> Which one of the following dependencies among the register operands of different instructions can cause a data hazard in a pipelined processor?</p>
+
+    <button class="option-btn" onclick="checkAnswer(16, 'A', this)">A) Read-after-read</button>
+    <button class="option-btn" onclick="checkAnswer(16, 'B', this)">B) Read-after-write</button>
+    <button class="option-btn" onclick="checkAnswer(16, 'C', this)">C) Write-after-read</button>
+    <button class="option-btn" onclick="checkAnswer(16, 'D', this)">D) Write-after-write</button>
+
+    <p class="year"><i>Gate CSE 2026 Session 1</i></p>
+    <div id="explanation16" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 9 -->
+<div class="question">
+    <p class="ques"><b>Q9.</b> The size of the physical address space of a processor is 2<sup>32</sup> bytes. The capacity of a cache memory unit is 2<sup>23</sup> bytes. The cache block size is 128 bytes. The cache memory unit can be built as a direct mapped cache or as a <i>K</i>-way set-associative cache, where <i>K</i> = 2<sup>L</sup> and <i>L</i> ∈ {1, 2, 3}. Let the length of the TAG field be <i>M</i> bits for the direct mapped cache, and <i>N</i> bits for the set-associative cache.<br><br>
+
+    Which one of the following options is true?</p>
+
+    <button class="option-btn" onclick="checkAnswer(38, 'A', this)">A) <i>N</i> = <i>M</i> + <i>L</i></button>
+    <button class="option-btn" onclick="checkAnswer(38, 'B', this)">B) <i>N</i> = <i>M</i> − <i>L</i></button>
+    <button class="option-btn" onclick="checkAnswer(38, 'C', this)">C) <i>N</i> = <i>M</i> + <i>K</i></button>
+    <button class="option-btn" onclick="checkAnswer(38, 'D', this)">D) <i>N</i> = <i>M</i> − <i>K</i></button>
+
+    <p class="year"><i>Gate CSE 2026 Session 1</i></p>
+    <div id="explanation38" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 10 -->
+<div class="question">
+    <p class="ques"><b>Q10.</b> The EX stage of a pipelined processor performs the memory read operations for LOAD instructions, and the operations for the arithmetic and logic instructions. Let <i>t</i><sub>EX</sub> denote the time taken by the EX stage to perform the operation for an instruction. For each instruction type, the values of <i>t</i><sub>EX</sub> and <i>M</i> (the number of instructions of that type in a sequence of 100 instructions for a program P), are given in the table below.<br><br>
+
+    The duration of the pipeline clock cycle is 1 nanosecond. Assume that the latch time for the interstage buffers in the pipeline is negligible.<br><br>
+
+    <table>
+        <tr>
+            <th>Instruction</th>
+            <th><i>t</i><sub>EX</sub> in<br> nanoseconds</th>
+            <th style="text-align: left;"><i>M</i></th>
+        </tr>
+        <tr><td>LOAD</td><td>1.8</td><td>15</td></tr>
+        <tr><td>IMUL</td><td>1.5</td><td>10</td></tr>
+        <tr><td>IDIV</td><td>2.5</td><td>5</td></tr>
+        <tr><td>FADD</td><td>1.7</td><td>10</td></tr>
+        <tr><td>FSUB</td><td>1.7</td><td>5</td></tr>
+        <tr><td>FMUL</td><td>2.8</td><td>15</td></tr>
+        <tr><td>FDIV</td><td>3.2</td><td>5</td></tr>
+        <tr><td>All other<br> instructions</td><td>Less than<br> 1.0</td><td>35</td></tr>
+    </table><br>
+
+    When program P is executed, the number of clock cycles for which the pipeline is stalled due to structural hazards in the EX stage is ________. <i>(answer in integer)</i></p>
+
+
+    <p class="year"><i>Gate CSE 2026Session 1</i></p>
+    <div id="explanation60" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 11 -->
+<div class="question">
+    <p class="ques"><b>Q11.</b> Which of the following is/are part of an Instruction Set Architecture of a processor?</p>
+
+    <button class="option-btn" onclick="checkAnswer(28, 'A', this)">A) The size of the cache memory</button>
+    <button class="option-btn" onclick="checkAnswer(28, 'B', this)">B) The clock frequency of the processor</button>
+    <button class="option-btn" onclick="checkAnswer(28, 'C', this)">C) The number of cache memory levels</button>
+    <button class="option-btn" onclick="checkAnswer(28, 'D', this)">D) The total number of registers</button>
+
+    <p class="year"><i>Gate CSE 2025 Session 2</i></p>
+    <div id="explanation28" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 12 -->
+<div class="question">
+    <p class="ques"><b>Q12.</b> For a direct-mapped cache, 4 bits are used for the tag field and 12 bits are used to index into a cache block. The size of each cache block is one byte. Assume that there is no other information stored for each cache block.<br><br>
+
+    Which ONE of the following is the CORRECT option for the sizes of the main memory and the cache memory in this system (byte addressable), respectively?</p>
+
+    <button class="option-btn" onclick="checkAnswer(39, 'A', this)">A) 64 KB and 4 KB</button>
+    <button class="option-btn" onclick="checkAnswer(39, 'B', this)">B) 128 KB and 16 KB</button>
+    <button class="option-btn" onclick="checkAnswer(39, 'C', this)">C) 64 KB and 8 KB</button>
+    <button class="option-btn" onclick="checkAnswer(39, 'D', this)">D) 128 KB and 6 KB</button>
+
+    <p class="year"><i>Gate CSE 2025 Session 2</i></p>
+    <div id="explanation39" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 13 -->
+<div class="question">
+    <p class="ques"><b>Q13.</b> Given a computing system with two levels of cache (L1 and L2) and a main memory. The first level (L1) cache access time is 1 nanosecond (ns) and the "hit rate" for L1 cache is 90% while the processor is accessing the data from L1 cache. Whereas, for the second level (L2) cache, the "hit rate" is 80% and the "miss penalty" for transferring data from L2 cache to L1 cache is 10 ns. The "miss penalty" for the data to be transferred from main memory to L2 cache is 100 ns.<br><br>
+
+    Then the average memory access time in this system in nanoseconds is __________. <i>(rounded off to one decimal place)</i></p>
+
+
+    <p class="year"><i>Gate CSE 2025 Session 2</i></p>
+    <div id="explanation55" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 14 -->
+<div class="question">
+    <p class="ques"><b>Q14.</b> A 5-stage instruction pipeline has stage delays of 180, 250, 150, 170, and 250, respectively, in nanoseconds. The delay of an inter-stage latch is 10 nanoseconds. Assume that there are no pipeline stalls due to branches and other hazards. The time taken to process 1000 instructions in microseconds is __________. <i>(rounded off to two decimal places)</i></p>
+
+    <p class="year"><i>Gate CSE 2025 Session 2</i></p>
+    <div id="explanation56" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 15 -->
+<div class="question">
+    <p class="ques"><b>Q15.</b> An application executes 6.4 × 10<sup>8</sup> number of instructions in 6.3 seconds. There are four types of instructions, the details of which are given in the table. The duration of a clock cycle in nanoseconds is __________. <i>(rounded off to one decimal place)</i></p>
+
+    <table class="gate-table">
+        <tr>
+            <th>Instruction <br>type</th>
+            <th>Clock cycles <br>required per <br>instruction (CPI)</th>
+            <th>Number of <br>instructions <br>executed</th>
+        </tr>
+        <tr>
+            <td>Branch</td>
+            <td style="text-align: center;">2</td>
+            <td>2.25 × 10<sup>8</sup></td>
+        </tr>
+        <tr>
+            <td>Load</td>
+            <td style="text-align: center;">5</td>
+            <td>1.20 × 10<sup>8</sup></td>
+        </tr>
+        <tr>
+            <td>Store</td>
+            <td style="text-align: center;">4</td>
+            <td>1.65 × 10<sup>8</sup></td>
+        </tr>
+        <tr>
+            <td>Arithmetic</td>
+            <td style="text-align: center;">3</td>
+            <td>1.30 × 10<sup>8</sup></td>
+        </tr>
+    </table><br>   
+
+    <p class="year"><i>Gate CSE 2025 Session 2</i></p>
+    <div id="explanation61" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 16 -->
+<div class="question">
+    <p class="ques"><b>Q16.</b> Suppose a program is running on a non-pipelined single processor computer system. The computer is connected to an external device that can interrupt the processor asynchronously. The processor needs to execute the interrupt service routine (ISR) to serve this interrupt. The following steps (not necessarily in order) are taken by the processor when the interrupt arrives:<br><br>
+
+    (i)&nbsp;&nbsp;&nbsp;&nbsp;The processor saves the content of the program counter.<br>
+    (ii)&nbsp;&nbsp;&nbsp;&nbsp;The program counter is loaded with the start address of the ISR.<br>
+    (iii)&nbsp;&nbsp;The processor finishes the present instruction.<br><br>
+
+    Which ONE of the following is the CORRECT sequence of steps?</p>
+
+    <button class="option-btn" onclick="checkAnswer(11, 'A', this)">A) (iii), (i), (ii)</button>
+    <button class="option-btn" onclick="checkAnswer(11, 'B', this)">B) (i), (iii), (ii)</button>
+    <button class="option-btn" onclick="checkAnswer(11, 'C', this)">C) (i), (ii), (iii)</button>
+    <button class="option-btn" onclick="checkAnswer(11, 'D', this)">D) (iii), (ii), (i)</button>
+
+    <p class="year"><i>Gate CSE 2025 Session 1</i></p>
+    <div id="explanation11" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 17 -->
+<div class="question">
+    <p class="ques"><b>Q17.</b> A partial data path of a processor is given in the figure, where RA, RB, and RZ are 32-bit registers. Which option(s) is/are CORRECT related to arithmetic operations using the data path as shown?</p>
+
+    <div style="text-align:center; margin:15px 0; overflow-x:auto;">
+        <svg width="620" height="340" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- RA Register -->
+            <rect x="170" y="10" width="90" height="40" fill="white" stroke="black"/>
+            <text x="192" y="35" font-size="15">RA (32 bit)</text>
+
+            <!-- RB Register -->
+            <rect x="360" y="10" width="90" height="40" fill="white" stroke="black"/>
+            <text x="382" y="35" font-size="15">RB (32 bit)</text>
+
+            <!-- Immediate labels -->
+            <text x="15" y="65" font-size="14">Immediate value</text>
+            <text x="40" y="83" font-size="14">32 bit</text>
+
+            <text x="485" y="65" font-size="14">Immediate value</text>
+            <text x="510" y="83" font-size="14">32 bit</text>
+
+            <!-- Mux A -->
+            <polygon points="150,90 280,90 255,130 175,130"
+                     fill="white" stroke="black"/>
+            <text x="188" y="114" font-size="14">Mux_A</text>
+
+            <!-- Mux B -->
+            <polygon points="340,90 470,90 445,130 365,130"
+                     fill="white" stroke="black"/>
+            <text x="378" y="114" font-size="14">Mux_B</text>
+
+            <!-- Select labels -->
+            <text x="75" y="145" font-size="13">Select RA / Immediate</text>
+            <text x="405" y="145" font-size="13">Select RB / Immediate</text>
+
+            <!-- Inputs -->
+            <line x1="215" y1="50" x2="215" y2="90" stroke="black"/>
+            <line x1="90" y1="75" x2="150" y2="100" stroke="black"/>
+
+            <line x1="405" y1="50" x2="405" y2="90" stroke="black"/>
+            <line x1="530" y1="75" x2="470" y2="100" stroke="black"/>
+
+            <!-- Outputs to ALU -->
+            <line x1="215" y1="130" x2="215" y2="175" stroke="black"/>
+            <line x1="405" y1="130" x2="405" y2="175" stroke="black"/>
+
+            <!-- ALU -->
+            <polygon points="165,175 455,175 430,240 190,240"
+                     fill="white" stroke="black"/>
+            <text x="292" y="213" font-size="18">ALU</text>
+
+            <!-- ALU Control -->
+            <text x="20" y="205" font-size="14">ALU Control</text>
+            <line x1="100" y1="195" x2="165" y2="195" stroke="black"/>
+            <line x1="100" y1="205" x2="165" y2="205" stroke="black"/>
+            <line x1="100" y1="215" x2="165" y2="215" stroke="black"/>
+
+            <!-- Output -->
+            <line x1="310" y1="240" x2="310" y2="275" stroke="black"/>
+
+            <!-- RZ Register -->
+            <rect x="260" y="275" width="100" height="40"
+                  fill="white" stroke="black"/>
+            <text x="282" y="300" font-size="15">RZ (32 bit)</text>
+
+        </svg>
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer(27, 'A', this)">A) The data path can implement arithmetic operations involving two registers.</button>
+
+    <button class="option-btn" onclick="checkAnswer(27, 'B', this)">B) The data path can implement arithmetic operations involving one register and one immediate value.</button>
+
+    <button class="option-btn" onclick="checkAnswer(27, 'C', this)">C) The data path can implement arithmetic operations involving two immediate values.</button>
+
+    <button class="option-btn" onclick="checkAnswer(27, 'D', this)">D) The data path can only implement arithmetic operations involving one register and one immediate value.</button>
+
+    <p class="year"><i>Gate CSE 2025</i></p>
+    <div id="explanation27" class="explanation"></div>
+</div>
+
+
+
 
 
 </body>
