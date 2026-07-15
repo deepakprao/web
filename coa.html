@@ -1436,5 +1436,373 @@ td {
 </div>
 
 
+<!-- Question 50 -->
+<div class="question">
+    <p class="ques"><b>Q50.</b> Consider the following statements.</p>
 
+    <div style="margin:15px 0 20px 40px; line-height:1.8;">
+        <b>I.</b> Daisy chaining is used to assign priorities in attending interrupts.<br><br>
+
+        <b>II.</b> When a device raises a vectored interrupt, the CPU does polling to identify the source of interrupt.<br><br>
+
+        <b>III.</b> In polling, the CPU periodically checks the status bits to know if any device needs its attention.<br><br>
+
+        <b>IV.</b> During DMA, both the CPU and DMA controller can be bus masters at the same time.
+    </div>
+
+    <p class="ques">Which of the above statements is/are TRUE?</p>
+
+    <button class="option-btn" onclick="checkAnswer(3, 'A', this)">A) I and II only</button>
+    <button class="option-btn" onclick="checkAnswer(3, 'B', this)">B) I and IV only</button>
+    <button class="option-btn" onclick="checkAnswer(3, 'C', this)">C) I and III only</button>
+    <button class="option-btn" onclick="checkAnswer(3, 'D', this)">D) III only</button>
+
+    <p class="year"><i>Gate CSE 2020</i></p>
+    <div id="explanation3" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 51 -->
+<div class="question">
+    <p class="ques"><b>Q51.</b> Consider the following data path diagram.</p>
+
+    <div style="text-align:center; margin:15px 0; overflow-x:auto;">
+
+        <svg width="820" height="320" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- BUS -->
+            <line x1="40" y1="35" x2="780" y2="35" stroke="black" stroke-width="2"/>
+            <polygon points="35,35 45,30 45,40" fill="black"/>
+            <polygon points="785,35 775,30 775,40" fill="black"/>
+            <text x="390" y="20" font-size="20">BUS</text>
+
+            <!-- MAR -->
+            <line x1="70" y1="35" x2="70" y2="70" stroke="black"/>
+            <polygon points="66,66 70,74 74,66" fill="black"/>
+            <rect x="45" y="75" width="50" height="35" fill="white" stroke="black"/>
+            <text x="57" y="97" font-size="16">MAR</text>
+            <line x1="70" y1="110" x2="70" y2="145" stroke="black"/>
+            <polygon points="66,141 70,149 74,141" fill="black"/>
+            <text x="28" y="170" font-size="15">To Memory</text>
+
+            <!-- MDR -->
+            <line x1="145" y1="35" x2="145" y2="70" stroke="black"/>
+            <polygon points="141,66 145,74 149,66" fill="black"/>
+            <rect x="120" y="75" width="50" height="35" fill="white" stroke="black"/>
+            <text x="132" y="97" font-size="16">MDR</text>
+            <line x1="145" y1="110" x2="145" y2="145" stroke="black"/>
+            <polygon points="141,141 145,149 149,141" fill="black"/>
+            <polygon points="141,114 145,106 149,114" fill="black"/>
+
+            <!-- IR -->
+            <line x1="220" y1="35" x2="220" y2="70" stroke="black"/>
+            <polygon points="216,66 220,74 224,66" fill="black"/>
+            <rect x="195" y="75" width="50" height="35" fill="white" stroke="black"/>
+            <text x="213" y="97" font-size="16">IR</text>
+
+            <!-- PC -->
+            <line x1="295" y1="35" x2="295" y2="70" stroke="black"/>
+            <polygon points="291,66 295,74 299,66" fill="black"/>
+            <rect x="270" y="75" width="50" height="35" fill="white" stroke="black"/>
+            <text x="285" y="97" font-size="16">PC</text>
+
+            <!-- Register File -->
+            <line x1="390" y1="35" x2="390" y2="70" stroke="black"/>
+            <polygon points="386,66 390,74 394,66" fill="black"/>
+            <rect x="360" y="75" width="60" height="110" fill="white" stroke="black"/>
+            <text x="378" y="95" font-size="15">R0</text>
+            <text x="378" y="115" font-size="15">R1</text>
+            <text x="387" y="140" font-size="18">⋮</text>
+            <text x="378" y="170" font-size="15">R7</text>
+
+            <!-- TEMP2 -->
+            <line x1="500" y1="35" x2="500" y2="185" stroke="black"/>
+            <rect x="470" y="185" width="60" height="35" fill="white" stroke="black"/>
+            <text x="480" y="208" font-size="16">TEMP2</text>
+
+            <!-- TEMP1 -->
+            <line x1="675" y1="35" x2="675" y2="70" stroke="black"/>
+            <polygon points="671,66 675,74 679,66" fill="black"/>
+            <rect x="645" y="75" width="60" height="35" fill="white" stroke="black"/>
+            <text x="655" y="97" font-size="16">TEMP1</text>
+
+            <!-- ALU -->
+            <polygon points="600,145 740,145 715,230 625,230"
+                     fill="white" stroke="black" stroke-width="2"/>
+            <text x="655" y="190" font-size="20">ALU</text>
+
+            <!-- TEMP1 to ALU -->
+            <line x1="675" y1="110" x2="675" y2="145" stroke="black"/>
+            <polygon points="671,141 675,149 679,141" fill="black"/>
+
+            <!-- BUS to ALU -->
+            <line x1="600" y1="35" x2="600" y2="145" stroke="black"/>
+            <polygon points="596,141 600,149 604,141" fill="black"/>
+
+            <!-- ALU to TEMP2 -->
+            <line x1="670" y1="230" x2="670" y2="250" stroke="black"/>
+            <line x1="670" y1="250" x2="500" y2="250" stroke="black"/>
+            <line x1="500" y1="250" x2="500" y2="220" stroke="black"/>
+            <polygon points="496,224 500,216 504,224" fill="black"/>
+
+        </svg>
+
+    </div>
+
+    <p class="ques">
+        Consider an instruction: <b>R0 &larr; R1 + R2</b>. The following steps are used to execute it over the given data path.
+        Assume that PC is incremented appropriately. The subscripts <b>r</b> and <b>w</b> indicate read and write operations, respectively.
+    </p>
+
+    <div style="margin:15px 0 20px 35px; line-height:1.8; font-family:'Courier New', monospace;">
+        1.&nbsp; R2<sub>r</sub>, TEMP1<sub>r</sub>, ALU<sub>add</sub>, TEMP2<sub>w</sub><br>
+        2.&nbsp; R1<sub>r</sub>, TEMP1<sub>w</sub><br>
+        3.&nbsp; PC<sub>r</sub>, MAR<sub>w</sub>, MEM<sub>r</sub><br>
+        4.&nbsp; TEMP2<sub>r</sub>, R0<sub>w</sub><br>
+        5.&nbsp; MDR<sub>r</sub>, IR<sub>w</sub>
+    </div>
+
+    <p class="ques">Which one of the following is the correct order of execution of the above steps?</p>
+
+    <button class="option-btn" onclick="checkAnswer(4, 'A', this)">A) 2, 1, 4, 5, 3</button>
+    <button class="option-btn" onclick="checkAnswer(4, 'B', this)">B) 1, 2, 4, 3, 5</button>
+    <button class="option-btn" onclick="checkAnswer(4, 'C', this)">C) 3, 5, 2, 1, 4</button>
+    <button class="option-btn" onclick="checkAnswer(4, 'D', this)">D) 3, 5, 1, 2, 4</button>
+
+    <p class="year"><i>Gate CSE 2020</i></p>
+    <div id="explanation4" class="explanation"></div>
+</div>
+
+
+<!-- Question 52 -->
+<div class="question">
+    <p class="ques"><b>Q52.</b> A direct mapped cache memory of 1 MB has a block size of 256 bytes. The cache has an access time of 3 ns and a hit rate of 94%. During a cache miss, it takes 20 ns to bring the first word of a block from the main memory, while each subsequent word takes 5 ns. The word size is 64 bits. The average memory access time in ns (<i>round off to 1 decimal place</i>) is __________.</p>
+
+    <input type="number" step="0.1" class="nat-input" id="natAMAT" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('AMAT', 13.8)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2020</i></p>
+    <div id="explanationAMAT" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 53 -->
+<div class="question">
+    <p class="ques"><b>Q53.</b> A computer system with a word length of 32 bits has a 16 MB byte-addressable main memory and a 64 KB, 4-way set associative cache memory with a block size of 256 bytes. Consider the following four physical addresses represented in hexadecimal notation.</p>
+
+    <div style="margin:15px 0; text-align:center; font-family:'Courier New', monospace; font-size:17px;">
+        A1 = 0x42C8A4,&nbsp;
+        A2 = 0x546888,&nbsp;
+        A3 = 0x6A289C,&nbsp;
+        A4 = 0x5E4880
+    </div>
+
+    <p class="ques">Which one of the following is TRUE?</p>
+
+    <button class="option-btn" onclick="checkAnswer(30, 'A', this)">
+        A) A1 and A4 are mapped to different cache sets.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(30, 'B', this)">
+        B) A2 and A3 are mapped to the same cache set.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(30, 'C', this)">
+        C) A3 and A4 are mapped to the same cache set.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer(30, 'D', this)">
+        D) A1 and A3 are mapped to the same cache set.
+    </button>
+
+    <p class="year"><i>Gate CSE 2020</i></p>
+    <div id="explanation30" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 54 -->
+<div class="question">
+    <p class="ques"><b>Q54.</b> Consider a non-pipelined processor operating at 2.5 GHz. It takes 5 clock cycles to complete an instruction. You are going to make a 5-stage pipeline out of this processor. Overheads associated with pipelining force you to operate the pipelined processor at 2 GHz. In a given program, assume that 30% are memory instructions, 60% are ALU instructions and the rest are branch instructions. 5% of the memory instructions cause stalls of 50 clock cycles each due to cache misses and 50% of the branch instructions cause stalls of 2 cycles each. Assume that there are no stalls associated with the execution of ALU instructions. For this program, the speedup achieved by the pipelined processor over the non-pipelined processor (<i>round off to 2 decimal places</i>) is __________.</p>
+
+    <input type="number" step="0.01" class="nat-input" id="nat1" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(1, 1.85)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2020</i></p>
+    <div id="explanation1" class="explanation"></div>
+</div>
+
+
+<!-- Question 55 -->
+<div class="question">
+    <p class="ques"><b>Q55.</b> A processor has 64 registers and uses 16-bit instruction format. It has two types of instructions: I-type and R-type. Each I-type instruction contains an opcode, a register name, and a 4-bit immediate value. Each R-type instruction contains an opcode and two register names. If there are 8 distinct I-type opcodes, then the maximum number of distinct R-type opcodes is __________.</p>
+
+    <input type="number" class="nat-input" id="nat2" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT(2, 24)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2020</i></p>
+    <div id="explanation2" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 56 -->
+<div class="question">
+    <p class="ques"><b>Q56.</b> A certain processor uses a fully associative cache of size 16 kB. The cache block size is 16 bytes. Assume that the main memory is byte addressable and uses a 32-bit address. How many bits are required for the <b>Tag</b> and the <b>Index</b> fields respectively in the addresses generated by the processor?</p>
+
+    <button class="option-btn" onclick="checkAnswer('FA1', 'A', this)">A) 24 bits and 0 bits</button>
+    <button class="option-btn" onclick="checkAnswer('FA1', 'B', this)">B) 28 bits and 4 bits</button>
+    <button class="option-btn" onclick="checkAnswer('FA1', 'C', this)">C) 24 bits and 4 bits</button>
+    <button class="option-btn" onclick="checkAnswer('FA1', 'D', this)">D) 28 bits and 0 bits</button>
+
+    <p class="year"><i>Gate CSE 2019</i></p>
+    <div id="explanationFA1" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 57-->
+<div class="question">
+    <p class="ques"><b>Q57.</b> A certain processor deploys a single-level cache. The cache block size is 8 words and the word size is 4 bytes. The memory system uses a 60-MHz clock. To service a cache miss, the memory controller first takes 1 cycle to accept the starting address of the block, it then takes 3 cycles to fetch all the eight words of the block, and finally transmits the words of the requested block at the rate of 1 word per cycle. The maximum bandwidth for the memory system when the program running on the processor issues a series of read operations is __________ × 10<sup>6</sup> bytes/sec.</p>
+
+    <input type="number" class="nat-input" id="natBandwidth" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('Bandwidth', 160)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2019</i></p>
+    <div id="explanationBandwidth" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 58 -->
+<div class="question">
+    <p class="ques"><b>Q.58</b> Consider the following processor design characteristics.</p>
+
+    <div style="margin:15px 0 20px 40px; line-height:1.8;">
+        <b>I.</b> Register-to-register arithmetic operations only<br><br>
+
+        <b>II.</b> Fixed-length instruction format<br><br>
+
+        <b>III.</b> Hardwired control unit
+    </div>
+
+    <p class="ques">Which of the characteristics above are used in the design of a RISC processor?</p>
+
+    <button class="option-btn" onclick="checkAnswer('RISC1', 'A', this)">A) I and II only</button>
+    <button class="option-btn" onclick="checkAnswer('RISC1', 'B', this)">B) II and III only</button>
+    <button class="option-btn" onclick="checkAnswer('RISC1', 'C', this)">C) I and III only</button>
+    <button class="option-btn" onclick="checkAnswer('RISC1', 'D', this)">D) I, II and III</button>
+
+    <p class="year"><i>Gate CSE 2018</i></p>
+    <div id="explanationRISC1" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 59 -->
+<div class="question">
+    <p class="ques"><b>Q59.</b> A 32-bit wide main memory unit with a capacity of 1 GB is built using 256M × 4-bit DRAM chips. The number of rows of memory cells in the DRAM chip is 2<sup>14</sup>. The time taken to perform one refresh operation is 50 nanoseconds. The refresh period is 2 milliseconds. The percentage (<i>rounded to the closest integer</i>) of the time available for performing the memory read/write operations in the main memory unit is __________.</p>
+
+    <input type="number" class="nat-input" id="natDRAMRefresh" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('DRAMRefresh', 59)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2018</i></p>
+    <div id="explanationDRAMRefresh" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 60 -->
+<div class="question">
+    <p class="ques"><b>Q60.</b> The size of the physical address space of a processor is 2<sup>P</sup> bytes. The word length is 2<sup>W</sup> bytes. The capacity of cache memory is 2<sup>N</sup> bytes. The size of each cache block is 2<sup>M</sup> words. For a <i>K</i>-way set-associative cache memory, the length (in number of bits) of the tag field is</p>
+
+    <button class="option-btn" onclick="checkAnswer('TAG2018', 'A', this)">
+        A) P − N − log<sub>2</sub>K
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('TAG2018', 'B', this)">
+        B) P − N + log<sub>2</sub>K
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('TAG2018', 'C', this)">
+        C) P − N − M − W − log<sub>2</sub>K
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('TAG2018', 'D', this)">
+        D) P − N − M − W + log<sub>2</sub>K
+    </button>
+
+    <p class="year"><i>Gate CSE 2018</i></p>
+    <div id="explanationTAG2018" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 61 -->
+<div class="question">
+    <p class="ques"><b>Q61.</b> The instruction pipeline of a RISC processor has the following stages: Instruction Fetch (IF), Instruction Decode (ID), Operand Fetch (OF), Perform Operation (PO) and Writeback (WB). The IF, ID, OF and WB stages take 1 clock cycle each for every instruction. Consider a sequence of 100 instructions. In the PO stage, 40 instructions take 3 clock cycles each, 35 instructions take 2 clock cycles each, and the remaining 25 instructions take 1 clock cycle each. Assume that there are no data hazards and no control hazards.</p>
+
+    <p class="ques">The number of clock cycles required for completion of execution of the sequence of instructions is ________.</p>
+
+    <input type="number" class="nat-input" id="natPipe2018" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('Pipe2018', 226)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2018</i></p>
+    <div id="explanationPipe2018" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 62 -->
+<div class="question">
+    <p class="ques"><b>Q62.</b> A processor has 16 integer registers (R0, R1, ..., R15) and 64 floating point registers (F0, F1, ..., F63). It uses a 2-byte instruction format. There are four categories of instructions: Type-1, Type-2, Type-3, and Type-4.</p>
+
+    <div style="margin:15px 0 20px 20px; line-height:1.8;">
+        Type-1 category consists of four instructions, each with 3 integer register operands (3Rs).<br><br>
+
+        Type-2 category consists of eight instructions, each with 2 floating point register operands (2Fs).<br><br>
+
+        Type-3 category consists of fourteen instructions, each with one integer register operand and one floating point register operand (1R+1F).<br><br>
+
+        Type-4 category consists of <b>N</b> instructions, each with a floating point register operand (1F).
+    </div>
+
+    <p class="ques">The maximum value of <b>N</b> is ________.</p>
+
+    <input type="number" class="nat-input" id="natISA2018" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('ISA2018', 4064)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2018</i></p>
+    <div id="explanationISA2018" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 63 -->
+<div class="question">
+    <p class="ques"><b>Q63.</b> In a two-level cache system, the access times of <i>L</i><sub>1</sub> and <i>L</i><sub>2</sub> caches are 1 and 8 clock cycles, respectively. The miss penalty from the <i>L</i><sub>2</sub> cache to main memory is 18 clock cycles. The miss rate of <i>L</i><sub>1</sub> cache is twice that of <i>L</i><sub>2</sub>. The average memory access time (AMAT) of this cache system is 2 cycles. The miss rates of <i>L</i><sub>1</sub> and <i>L</i><sub>2</sub> respectively are:</p>
+
+    <button class="option-btn" onclick="checkAnswer('AMAT2017S2', 'A', this)">
+        A) 0.111 and 0.056
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('AMAT2017S2', 'B', this)">
+        B) 0.056 and 0.111
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('AMAT2017S2', 'C', this)">
+        C) 0.0892 and 0.1784
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('AMAT2017S2', 'D', this)">
+        D) 0.1784 and 0.0892
+    </button>
+
+    <p class="year"><i>Gate CSE 2017 Session 2</i></p>
+    <div id="explanationAMAT2017S2" class="explanation"></div>
+</div>
+    
+    
 </body>
