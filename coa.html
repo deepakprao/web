@@ -1803,6 +1803,529 @@ td {
     <p class="year"><i>Gate CSE 2017 Session 2</i></p>
     <div id="explanationAMAT2017S2" class="explanation"></div>
 </div>
+
+
+<!-- Question 64 -->
+<div class="question">
+    <p class="ques"><b>Q64.</b> The read access times and the hit ratios for different caches in a memory hierarchy are as given below.</p>
+
+    <div style="display:flex;justify-content:center;margin:15px 0;">
+        <table style="border-collapse:collapse;text-align:center;">
+            <tr>
+                <th style="border:1px solid #000;padding:8px;">Cache</th>
+                <th style="border:1px solid #000;padding:8px;">Read access time<br>(in nanoseconds)</th>
+                <th style="border:1px solid #000;padding:8px;">Hit ratio</th>
+            </tr>
+            <tr>
+                <td style="border:1px solid #000;padding:8px;">I-cache</td>
+                <td style="border:1px solid #000;padding:8px;">2</td>
+                <td style="border:1px solid #000;padding:8px;">0.8</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #000;padding:8px;">D-cache</td>
+                <td style="border:1px solid #000;padding:8px;">2</td>
+                <td style="border:1px solid #000;padding:8px;">0.9</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #000;padding:8px;">L2-cache</td>
+                <td style="border:1px solid #000;padding:8px;">8</td>
+                <td style="border:1px solid #000;padding:8px;">0.9</td>
+            </tr>
+        </table>
+    </div>
+
+    <p class="ques">
+        The read access time of main memory is 90 nanoseconds. Assume that the caches use the referenced-word-first read policy and the write back policy. Assume that all the caches are direct mapped caches. Assume that the dirty bit is always 0 for all the blocks in the caches. In execution of a program, 60% of memory reads are for instruction fetch and 40% are for memory operand fetch.
+    </p>
+
+    <p class="ques">
+        The average read access time in nanoseconds (<i>up to 2 decimal places</i>) is ________.
+    </p>
+
+    <input type="number" step="0.01" class="nat-input" id="natReadAccess" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('ReadAccess', 8.28)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2017 Session 2</i></p>
+    <div id="explanationReadAccess" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 65-->
+<div class="question">
+    <p class="ques"><b>Q65.</b> Consider a machine with a byte addressable main memory of 2<sup>32</sup> bytes divided into blocks of size 32 bytes. Assume that a direct mapped cache having 512 cache lines is used with this machine. The size of the tag field in bits is __________.</p>
+
+    <input type="number" class="nat-input" id="natTag2017S2" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('Tag2017S2', 18)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2017 Session 2</i></p>
+    <div id="explanationTag2017S2" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 66 -->
+<div class="question">
+    <p class="ques"><b>Q66.</b> Consider a two-level cache hierarchy with L1 and L2 caches. An application incurs 1.4 memory accesses per instruction on average. For this application, the miss rate of L1 cache is 0.1; the L2 cache experiences, on average, 7 misses per 1000 instructions. The miss rate of L2 expressed correct to two decimal places is __________.</p>
+
+    <input type="number" step="0.01" class="nat-input" id="natL2MissRate" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('L2MissRate', 0.05)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2017 Session 1</i></p>
+    <div id="explanationL2MissRate" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 67 -->
+<div class="question">
+    <p class="ques"><b>Q67.</b> Consider a RISC machine where each instruction is exactly 4 bytes long. Conditional and unconditional branch instructions use PC-relative addressing mode with <b>Offset</b> specified in bytes to the target location of the branch instruction. Further, the Offset is always with respect to the address of the next instruction in the program sequence. Consider the following instruction sequence.</p>
+
+    <div style="display:flex;justify-content:center;margin:15px 0;">
+        <table style="border-collapse:collapse;text-align:center;">
+            <tr>
+                <th style="border:1px solid #000;padding:8px;">Instr. No.</th>
+                <th style="border:1px solid #000;padding:8px;">Instruction</th>
+            </tr>
+            <tr>
+                <td style="border:1px solid #000;padding:8px;">i</td>
+                <td style="border:1px solid #000;padding:8px;font-family:'Courier New',monospace;">add&nbsp;&nbsp;R2, R3, R4</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #000;padding:8px;">i+1</td>
+                <td style="border:1px solid #000;padding:8px;font-family:'Courier New',monospace;">sub&nbsp;&nbsp;R5, R6, R7</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #000;padding:8px;">i+2</td>
+                <td style="border:1px solid #000;padding:8px;font-family:'Courier New',monospace;">cmp&nbsp;&nbsp;R1, R9, R10</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #000;padding:8px;">i+3</td>
+                <td style="border:1px solid #000;padding:8px;font-family:'Courier New',monospace;">beq&nbsp;&nbsp;R1, Offset</td>
+            </tr>
+        </table>
+    </div>
+
+    <p class="ques">If the target of the branch instruction is <b>i</b>, then the decimal value of the <b>Offset</b> is __________.</p>
+
+    <input type="number" class="nat-input" id="natPCRelative" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('PCRelative', -16)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2017 Session 1</i></p>
+    <div id="explanationPCRelative" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 68 -->
+<div class="question">
+    <p class="ques"><b>Q68.</b> Instruction execution in a processor is divided into 5 stages, <i>Instruction Fetch (IF)</i>, <i>Instruction Decode (ID)</i>, <i>Operand Fetch (OF)</i>, <i>Execute (EX)</i>, and <i>Write Back (WB)</i>. These stages take <b>5, 4, 20, 10, and 3 nanoseconds (ns)</b> respectively. A pipelined implementation of the processor requires buffering between each pair of consecutive stages with a delay of <b>2 ns</b>. Two pipelined implementations of the processor are contemplated:</p>
+
+    <div style="margin:15px 0 20px 25px; line-height:1.8;">
+        (i) a naive pipeline implementation (<b>NP</b>) with 5 stages<br><br>
+
+        (ii) an efficient pipeline (<b>EP</b>) where the OF stage is divided into stages <b>OF1</b> and <b>OF2</b> with execution times of <b>12 ns</b> and <b>8 ns</b> respectively.
+    </div>
+
+    <p class="ques">The speedup (<i>correct to two decimal places</i>) achieved by <b>EP</b> over <b>NP</b> in executing <b>20 independent instructions</b> with no hazards is __________.</p>
+
+    <input type="number" step="0.01" class="nat-input" id="natPipeline2017" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('Pipeline2017', 1.28)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2017 Session 1</i></p>
+    <div id="explanationPipeline2017" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 69 -->
+<div class="question">
+    <p class="ques"><b>Q69.</b> A cache memory unit with capacity of <i>N</i> words and block size of <i>B</i> words is to be designed. If it is designed as a direct mapped cache, the length of the <b>TAG</b> field is 10 bits. If the cache unit is now designed as a 16-way set-associative cache, the length of the <b>TAG</b> field is __________ bits.</p>
+
+    <input type="number" class="nat-input" id="natTag2017" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('Tag2017', 4)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2017 Session 1</i></p>
+    <div id="explanationTag2017" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 70 -->
+<div class="question">
+    <p class="ques"><b>Q70.</b> The width of the physical address on a machine is 40 bits. The width of the tag field in a 512 KB 8-way associative cache is __________ bits.</p>
+
+    <input type="number" class="nat-input" id="natTag2016S2" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('Tag2016S2', 24)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2016 Set 2</i></p>
+    <div id="explanationTag2016S2" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 71 -->
+<div class="question">
+    <p class="ques"><b>Q71.</b> A file system uses an in-memory cache to cache disk blocks. The miss rate of the cache is shown in the figure.</p>
+
+    <div style="text-align:center; margin:15px 0; overflow-x:auto;">
+
+        <svg width="420" height="330" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Axes -->
+            <line x1="60" y1="270" x2="360" y2="270" stroke="black" stroke-width="2"/>
+            <line x1="60" y1="270" x2="60" y2="30" stroke="black" stroke-width="2"/>
+
+            <!-- Arrowheads -->
+            <polygon points="360,270 352,266 352,274" fill="black"/>
+            <polygon points="60,30 56,38 64,38" fill="black"/>
+
+            <!-- Grid -->
+            <g stroke="#cccccc" stroke-dasharray="4,4">
+                <line x1="90" y1="30" x2="90" y2="270"/>
+                <line x1="120" y1="30" x2="120" y2="270"/>
+                <line x1="150" y1="30" x2="150" y2="270"/>
+                <line x1="180" y1="30" x2="180" y2="270"/>
+                <line x1="210" y1="30" x2="210" y2="270"/>
+                <line x1="240" y1="30" x2="240" y2="270"/>
+                <line x1="270" y1="30" x2="270" y2="270"/>
+                <line x1="300" y1="30" x2="300" y2="270"/>
+
+                <line x1="60" y1="240" x2="360" y2="240"/>
+                <line x1="60" y1="210" x2="360" y2="210"/>
+                <line x1="60" y1="180" x2="360" y2="180"/>
+                <line x1="60" y1="150" x2="360" y2="150"/>
+                <line x1="60" y1="120" x2="360" y2="120"/>
+                <line x1="60" y1="90" x2="360" y2="90"/>
+                <line x1="60" y1="60" x2="360" y2="60"/>
+            </g>
+
+            <!-- Axis Labels -->
+            <text x="170" y="315" font-size="15">Cache Size (MB)</text>
+
+            <text x="18" y="170"
+                  transform="rotate(-90 18,170)"
+                  font-size="15">
+                Miss Rate (%)
+            </text>
+
+            <!-- X labels -->
+            <text x="85" y="290" font-size="12">10</text>
+            <text x="115" y="290" font-size="12">20</text>
+            <text x="145" y="290" font-size="12">30</text>
+            <text x="175" y="290" font-size="12">40</text>
+            <text x="205" y="290" font-size="12">50</text>
+            <text x="235" y="290" font-size="12">60</text>
+            <text x="265" y="290" font-size="12">70</text>
+            <text x="295" y="290" font-size="12">80</text>
+
+            <!-- Y labels -->
+            <text x="32" y="245" font-size="12">10</text>
+            <text x="32" y="215" font-size="12">20</text>
+            <text x="32" y="185" font-size="12">30</text>
+            <text x="32" y="155" font-size="12">40</text>
+            <text x="32" y="125" font-size="12">50</text>
+            <text x="32" y="95" font-size="12">60</text>
+            <text x="32" y="65" font-size="12">70</text>
+            <text x="32" y="35" font-size="12">80</text>
+
+            <!-- Curve -->
+            <polyline
+                points="
+                90,30
+                120,90
+                150,150
+                180,165
+                210,180
+                240,195
+                270,210
+                300,225"
+                fill="none"
+                stroke="black"
+                stroke-width="2"/>
+
+            <!-- Points -->
+            <circle cx="90" cy="30" r="4"/>
+            <circle cx="120" cy="90" r="4"/>
+            <circle cx="150" cy="150" r="4"/>
+            <circle cx="180" cy="165" r="4"/>
+            <circle cx="210" cy="180" r="4"/>
+            <circle cx="240" cy="195" r="4"/>
+            <circle cx="270" cy="210" r="4"/>
+            <circle cx="300" cy="225" r="4"/>
+
+        </svg>
+
+    </div>
+
+    <p class="ques">
+        The latency to read a block from the cache is 1 ms and to read a block from the disk is 10 ms.
+        Assume that the cost of checking whether a block exists in the cache is negligible.
+        Available cache sizes are in multiples of 10 MB.
+    </p>
+
+    <p class="ques">
+        The smallest cache size required to ensure an average read latency of less than
+        <b>6 ms</b> is __________ MB.
+    </p>
+
+    <input type="number" class="nat-input" id="natOSCache2016" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('OSCache2016', 40)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2016 Set 2</i></p>
+    <div id="explanationOSCache2016" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 72 -->
+<div class="question">
+    <p class="ques"><b>Q72.</b> A processor has 40 distinct instructions and 24 general purpose registers. A 32-bit instruction word has an opcode, two register operands and an immediate operand. The number of bits available for the immediate operand field is __________.</p>
+
+    <input type="number" class="nat-input" id="nat2016Q1" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('2016Q1', 16)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2016 Set 2</i></p>
+    <div id="explanation2016Q1" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 73 -->
+<div class="question">
+    <p class="ques"><b>Q73.</b> Consider a processor with 64 registers and an instruction set size twelve. Each instruction has five distinct fields, namely, opcode, two source register identifiers, one destination register identifier, and a twelve-bit immediate value. Each instruction must be stored in memory in a byte-aligned fashion. If a program has 100 instructions, the amount of memory (in bytes) consumed by the program text is __________.</p>
+
+    <input type="number" class="nat-input" id="nat2016Q2" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('2016Q2', 500)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2016 Set 2</i></p>
+    <div id="explanation2016Q2" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 74 -->
+<div class="question">
+    <p class="ques"><b>Q74.</b> Consider a 3 GHz (gigahertz) processor with a three-stage pipeline and stage latencies <i>t</i><sub>1</sub>, <i>t</i><sub>2</sub>, and <i>t</i><sub>3</sub> such that <i>t</i><sub>1</sub> = 3<i>t</i><sub>2</sub>/4 = 2<i>t</i><sub>3</sub>. If the longest pipeline stage is split into two pipeline stages of equal latency, the new frequency is __________ GHz, ignoring delays in the pipeline registers.</p>
+
+    <input type="number" step="0.1" class="nat-input" id="nat2016Q3" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('2016Q3', 4)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2016 Set 2</i></p>
+    <div id="explanation2016Q3" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 75 -->
+<div class="question">
+    <p class="ques"><b>Q75.</b> Suppose functions <i>F</i> and <i>G</i> can be computed in 5 and 3 nanoseconds by functional units <i>U</i><sub>F</sub> and <i>U</i><sub>G</sub>, respectively. Given two instances of <i>U</i><sub>F</sub> and two instances of <i>U</i><sub>G</sub>, it is required to implement the computation <i>F(G(X<sub>i</sub>))</i> for 1 ≤ <i>i</i> ≤ 10. Ignoring all other delays, the minimum time required to complete this computation is __________ nanoseconds.</p>
+
+    <input type="number" class="nat-input" id="nat2016Q4" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('2016Q4', 31)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2016 Set 2</i></p>
+    <div id="explanation2016Q4" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 76 -->
+<div class="question">
+    <p class="ques"><b>Q76.</b> A processor can support a maximum memory of <b>4 GB</b>, where the memory is <b>word-addressable</b> (a word consists of two bytes). The size of the address bus of the processor is at least __________ bits.</p>
+
+    <input type="number" class="nat-input" id="natAddrBus2016S1" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('AddrBus2016S1', 31)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2016 Set 1</i></p>
+    <div id="explanationAddrBus2016S1" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 77 -->
+<div class="question">
+    <p class="ques"><b>Q77.</b> The stage delays in a 4-stage pipeline are <b>800, 500, 400</b> and <b>300</b> picoseconds. The first stage (with delay <b>800 picoseconds</b>) is replaced with a functionally equivalent design involving two stages with respective delays <b>600</b> and <b>350</b> picoseconds. The throughput increase of the pipeline is __________ percent.</p>
+
+    <input type="number" step="0.01" class="nat-input" id="natPipeline2016S1" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('Pipeline2016S1', 33.33)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2016 Set 1</i></p>
+    <div id="explanationPipeline2016S1" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 78 -->
+<div class="question">
+    <p class="ques"><b>Q78.</b> The size of the data count register of a DMA controller is <b>16 bits</b>. The processor needs to transfer a file of <b>29.154 kilobytes</b> from disk to main memory. The main memory is <b>byte addressable</b>. The minimum number of times the DMA controller needs to get the control of the system bus from the processor to transfer the file from the disk to main memory is __________.</p>
+
+    <input type="number" class="nat-input" id="natDMA2016S1" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('DMA2016S1', 1)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2016 Set 1</i></p>
+    <div id="explanationDMA2016S1" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 79 -->
+<div class="question">
+    <p class="ques"><b>Q79.</b> Consider a machine with a <b>byte-addressable</b> main memory of <b>2<sup>20</sup></b> bytes, block size of <b>16 bytes</b> and a <b>direct mapped cache</b> having <b>2<sup>12</sup></b> cache lines. Let the addresses of two consecutive bytes in main memory be <b>(E201F)<sub>16</sub></b> and <b>(E2020)<sub>16</sub></b>. What are the <b>tag</b> and <b>cache line address</b> (in hexadecimal) for main memory address <b>(E201F)<sub>16</sub></b>?</p>
+
+    <div class="options">
+        <label><input type="radio" name="q2015s3q1" value="A"> (A) E, 201</label>
+        <label><input type="radio" name="q2015s3q1" value="B"> (B) F, 201</label>
+        <label><input type="radio" name="q2015s3q1" value="C"> (C) E, 220</label>
+        <label><input type="radio" name="q2015s3q1" value="D"> (D) 2, 01F</label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2015s3q1','D')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2015 Set 3</i></p>
+    <div id="explanationq2015s3q1" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 80 -->
+<div class="question">
+    <p class="ques"><b>Q80.</b> Consider the following code sequence having five instructions <i>I</i><sub>1</sub> to <i>I</i><sub>5</sub>. Each of these instructions has the following format,</p>
+
+    <div style="text-align:center; margin:15px 0;">
+        <b>OP Ri, Rj, Rk</b><br>
+        where operation OP is performed on contents of registers Rj and Rk and the result is stored in register Ri.
+    </div>
+
+    <div style="display:flex; justify-content:center; margin:15px 0;">
+        <table style="border-collapse:collapse;">
+            <tr>
+                <td style="padding:6px 20px;"><b>I<sub>1</sub>:</b> ADD R1, R2, R3</td>
+                <td style="padding:6px 20px;"><b>I<sub>2</sub>:</b> MUL R7, R1, R3</td>
+            </tr>
+            <tr>
+                <td style="padding:6px 20px;"><b>I<sub>3</sub>:</b> SUB R4, R1, R5</td>
+                <td style="padding:6px 20px;"><b>I<sub>4</sub>:</b> ADD R3, R2, R4</td>
+            </tr>
+            <tr>
+                <td style="padding:6px 20px;" colspan="2"><b>I<sub>5</sub>:</b> MUL R7, R8, R9</td>
+            </tr>
+        </table>
+    </div>
+
+    <p class="ques">
+        Consider the following three statements:
+    </p>
+
+    <div style="margin-left:20px; line-height:1.8;">
+        S1: There is an anti-dependence between instructions I<sub>2</sub> and I<sub>5</sub>.<br>
+        S2: There is an anti-dependence between instructions I<sub>2</sub> and I<sub>4</sub>.<br>
+        S3: Within an instruction pipeline an anti-dependence always creates one or more stalls.
+    </div>
+
+    <p class="ques">Which one of the above statements is/are correct?</p>
+
+    <div class="options">
+        <label><input type="radio" name="q2015s3q2" value="A"> (A) Only S1 is true</label>
+        <label><input type="radio" name="q2015s3q2" value="B"> (B) Only S2 is true</label>
+        <label><input type="radio" name="q2015s3q2" value="C"> (C) Only S1 and S3 are true</label>
+        <label><input type="radio" name="q2015s3q2" value="D"> (D) Only S2 and S3 are true</label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2015s3q2','B')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2015 Set 3</i></p>
+    <div id="explanationq2015s3q2" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 81 -->
+<div class="question">
+    <p class="ques"><b>Q81.</b> Consider the following reservation table for a pipeline having three stages <b>S<sub>1</sub></b>, <b>S<sub>2</sub></b> and <b>S<sub>3</sub></b>.</p>
+
+    <div style="text-align:center; margin:20px 0; overflow-x:auto;">
+
+        <svg width="360" height="210" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Labels -->
+            <text x="145" y="20" font-size="16" font-weight="bold">Time</text>
+
+            <text x="25" y="70">S₁</text>
+            <text x="25" y="110">S₂</text>
+            <text x="25" y="150">S₃</text>
+
+            <!-- Grid -->
+            <g stroke="black">
+                <line x1="60" y1="40" x2="260" y2="40"/>
+                <line x1="60" y1="80" x2="260" y2="80"/>
+                <line x1="60" y1="120" x2="260" y2="120"/>
+                <line x1="60" y1="160" x2="260" y2="160"/>
+
+                <line x1="60" y1="40" x2="60" y2="160"/>
+                <line x1="100" y1="40" x2="100" y2="160"/>
+                <line x1="140" y1="40" x2="140" y2="160"/>
+                <line x1="180" y1="40" x2="180" y2="160"/>
+                <line x1="220" y1="40" x2="220" y2="160"/>
+                <line x1="260" y1="40" x2="260" y2="160"/>
+            </g>
+
+            <!-- Time -->
+            <text x="76" y="35">1</text>
+            <text x="116" y="35">2</text>
+            <text x="156" y="35">3</text>
+            <text x="196" y="35">4</text>
+            <text x="236" y="35">5</text>
+
+            <!-- X marks -->
+            <text x="76" y="67" font-size="16">X</text>
+            <text x="236" y="67" font-size="16">X</text>
+
+            <text x="116" y="107" font-size="16">X</text>
+            <text x="196" y="107" font-size="16">X</text>
+
+            <text x="156" y="147" font-size="16">X</text>
+
+        </svg>
+
+    </div>
+
+    <p class="ques">The minimum average latency (MAL) is __________.</p>
+
+    <input type="number" class="nat-input" id="nat2015MAL" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('2015MAL', 2)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2015 Set 3</i></p>
+    <div id="explanation2015MAL" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 82-->
+<div class="question">
+    <p class="ques"><b>Q82.</b> Assume that for a certain processor, a read request takes <b>50 nanoseconds</b> on a cache miss and <b>5 nanoseconds</b> on a cache hit. Suppose while running a program, it was observed that <b>80%</b> of the processor's read requests result in a cache hit. The average read access time in nanoseconds is __________.</p>
+
+    <input type="number" class="nat-input" id="natAMAT2015S2" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('AMAT2015S2', 14)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2015 Set 2</i></p>
+    <div id="explanationAMAT2015S2" class="explanation"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     
 </body>
