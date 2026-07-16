@@ -2343,6 +2343,415 @@ td {
 
 
 
+<!-- Question 85 -->
+<div class="question">
+    <p class="ques"><b>Q85.</b> For computers based on <b>three-address instruction formats</b>, each address field can be used to specify which of the following?</p>
+
+    <div style="margin-left:20px; line-height:1.8;">
+        S1: A memory operand<br>
+        S2: A processor register<br>
+        S3: An implied accumulator register
+    </div>
+
+    <div class="options">
+        <label><input type="radio" name="q2015s1q1" value="A"> (A) Either S1 or S2</label>
+        <label><input type="radio" name="q2015s1q1" value="B"> (B) Either S2 or S3</label>
+        <label><input type="radio" name="q2015s1q1" value="C"> (C) Only S2 and S3</label>
+        <label><input type="radio" name="q2015s1q1" value="D"> (D) All of S1, S2 and S3</label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2015s1q1','A')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2015 Set 1</i></p>
+    <div id="explanationq2015s1q1" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 86 -->
+<div class="question">
+    <p class="ques"><b>Q86.</b> Consider a non-pipelined processor with a clock rate of <b>2.5 gigahertz</b> and average cycles per instruction of <b>4</b>. The same processor is upgraded to a pipelined processor with <b>five stages</b>; but due to the internal pipeline delay, the clock speed is reduced to <b>2 gigahertz</b>. Assume that there are no stalls in the pipeline. The speed up achieved in this pipelined processor is __________.</p>
+
+    <input type="number" step="0.01" class="nat-input" id="natPipeline2015S1" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('Pipeline2015S1', 3.2)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2015 Set 1</i></p>
+    <div id="explanationPipeline2015S1" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 87 -->
+<div class="question">
+    <p class="ques"><b>Q87.</b> Consider a disk pack with a <b>seek time of 4 milliseconds</b> and rotational speed of <b>10000 rotations per minute (RPM)</b>. It has <b>600 sectors per track</b> and each sector can store <b>512 bytes</b> of data. Consider a file stored in the disk. The file contains <b>2000 sectors</b>. Assume that every sector access necessitates a seek, and the average rotational latency for accessing each sector is half the time for one complete rotation. The total time (in milliseconds) needed to read the entire file is __________.</p>
+
+    <input type="number" class="nat-input" id="natDisk2015S1" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('Disk2015S1', 11000)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2015 Set 1</i></p>
+    <div id="explanationDisk2015S1" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 88 -->
+<div class="question">
+    <p class="ques"><b>Q88.</b> The memory access time is <b>1 nanosecond</b> for a read operation with a hit in cache, <b>5 nanoseconds</b> for a read operation with a miss in cache, <b>2 nanoseconds</b> for a write operation with a hit in cache and <b>10 nanoseconds</b> for a write operation with a miss in cache.</p>
+
+    <p class="ques">
+        Execution of a sequence of instructions involves
+        <b>100 instruction fetch operations</b>,
+        <b>60 memory operand read operations</b> and
+        <b>40 memory operand write operations</b>.
+        The cache hit-ratio is <b>0.9</b>.
+        The average memory access time (in nanoseconds) in executing the sequence of instructions is __________.
+    </p>
+
+    <input type="number" class="nat-input" id="natAMAT2014S3" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('AMAT2014S3', 292)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2014 Set 3</i></p>
+    <div id="explanationAMAT2014S3" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 89 -->
+<div class="question">
+    <p class="ques"><b>Q89.</b> Consider the following processors (ns stands for nanoseconds). Assume that the pipeline registers have zero latency.</p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        <b>P1:</b> Four-stage pipeline with stage latencies 1 ns, 2 ns, 2 ns, 1 ns.<br>
+
+        <b>P2:</b> Four-stage pipeline with stage latencies 1 ns, 1.5 ns, 1.5 ns, 1.5 ns.<br>
+
+        <b>P3:</b> Five-stage pipeline with stage latencies 0.5 ns, 1 ns, 1 ns, 0.6 ns, 1 ns.<br>
+
+        <b>P4:</b> Five-stage pipeline with stage latencies 0.5 ns, 0.5 ns, 1 ns, 1 ns, 1.1 ns.
+    </div>
+
+    <p class="ques">Which processor has the highest peak clock frequency?</p>
+
+    <div class="options">
+        <label><input type="radio" name="q2014s3q1" value="A"> (A) P1</label>
+        <label><input type="radio" name="q2014s3q1" value="B"> (B) P2</label>
+        <label><input type="radio" name="q2014s3q1" value="C"> (C) P3</label>
+        <label><input type="radio" name="q2014s3q1" value="D"> (D) P4</label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2014s3q1','D')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2014 Set 3</i></p>
+    <div id="explanationq2014s3q1" class="explanation"></div>
+</div>
+
+
+<!-- Question 89 -->
+<div class="question">
+    <p class="ques"><b>Q89.</b> An instruction pipeline has five stages, namely, instruction fetch (IF), instruction decode and register fetch (ID/RF), instruction execution (EX), memory access (MEM), and register writeback (WB) with stage latencies <b>1 ns, 2.2 ns, 2 ns, 1 ns, and 0.75 ns</b> respectively.</p>
+
+    <p class="ques">
+        To gain in terms of frequency, the designers have decided to split the ID/RF stage into three stages
+        (<b>ID</b>, <b>RF1</b>, <b>RF2</b>) each of latency <b>2.2/3 ns</b>.
+        Also, the EX stage is split into two stages (<b>EX1</b>, <b>EX2</b>) each of latency <b>1 ns</b>.
+        The new design has a total of eight pipeline stages.
+    </p>
+
+    <p class="ques">
+        A program has <b>20%</b> branch instructions which execute in the EX stage and produce the next instruction pointer at the end of the EX stage in the old design and at the end of the EX2 stage in the new design.
+        The IF stage stalls after fetching a branch instruction until the next instruction pointer is computed.
+        All instructions other than the branch instruction have an average CPI of one in both the designs.
+        The execution times of this program on the old and the new design are <b>P</b> and <b>Q</b> nanoseconds, respectively.
+        The value of <b>P/Q</b> is __________.
+    </p>
+
+    <input type="number" step="0.01" class="nat-input" id="nat2014S3Pipeline" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('2014S3Pipeline', 0.97)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2014 Set 3</i></p>
+    <div id="explanation2014S3Pipeline" class="explanation"></div>
+</div>
+
+
+<!-- Question 90 -->
+<div class="question">
+    <p class="ques"><b>Q90.</b> A <b>4-way set-associative</b> cache memory unit with a capacity of <b>16 KB</b> is built using a block size of <b>8 words</b>. The word length is <b>32 bits</b>. The size of the physical address space is <b>4 GB</b>. The number of bits for the <b>TAG</b> field is __________.</p>
+
+    <input type="number" class="nat-input" id="nat2014S2Tag" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('2014S2Tag', 18)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2014 Set 2</i></p>
+    <div id="explanation2014S2Tag" class="explanation"></div>
+</div>
+
+
+<!-- Question 91 -->
+<div class="question">
+    <p class="ques"><b>Q91.</b> In designing a computer's cache system, the cache block (or cache line) size is an important parameter. Which one of the following statements is correct in this context?</p>
+
+    <div class="options">
+        <label><input type="radio" name="q2014s2q2" value="A"> (A) A smaller block size implies better spatial locality.</label>
+
+        <label><input type="radio" name="q2014s2q2" value="B"> (B) A smaller block size implies a smaller cache tag and hence lower cache tag overhead.</label>
+
+        <label><input type="radio" name="q2014s2q2" value="C"> (C) A smaller block size implies a larger cache tag and hence lower cache hit time.</label>
+
+        <label><input type="radio" name="q2014s2q2" value="D"> (D) A smaller block size incurs a lower cache miss penalty.</label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2014s2q2','D')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2014 Set 2</i></p>
+    <div id="explanationq2014s2q2" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 92 -->
+<div class="question">
+    <p class="ques"><b>Q92.</b> If the associativity of a processor cache is doubled while keeping the capacity and block size unchanged, which one of the following is guaranteed to <b>NOT</b> be affected?</p>
+
+    <div class="options">
+        <label><input type="radio" name="q2014s2q3" value="A"> (A) Width of tag comparator</label>
+
+        <label><input type="radio" name="q2014s2q3" value="B"> (B) Width of set index decoder</label>
+
+        <label><input type="radio" name="q2014s2q3" value="C"> (C) Width of way selection multiplexer</label>
+
+        <label><input type="radio" name="q2014s2q3" value="D"> (D) Width of processor to main memory data bus</label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2014s2q3','D')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2014 Set 2</i></p>
+    <div id="explanationq2014s2q3" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 93 -->
+<div class="question">
+    <p class="ques"><b>Q93.</b> Consider a main memory system that consists of <b>8 memory modules</b> attached to the system bus, which is one word wide. When a write request is made, the bus is occupied for <b>100 nanoseconds (ns)</b> by the data, address, and control signals. During the same <b>100 ns</b>, and for <b>500 ns</b> thereafter, the addressed memory module executes one cycle accepting and storing the data. The (internal) operation of different memory modules may overlap in time, but only one request can be on the bus at any time.</p>
+
+    <p class="ques">
+        The maximum number of stores (of one word each) that can be initiated in
+        <b>1 millisecond</b> is __________.
+    </p>
+
+    <input type="number" class="nat-input" id="natMemory2014S2" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('Memory2014S2', 10000)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2014 Set 2</i></p>
+    <div id="explanationMemory2014S2" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 94 -->
+<div class="question">
+    <p class="ques"><b>Q94.</b> An access sequence of cache block addresses of length <b>N</b> contains <b>n</b> unique block addresses. The number of unique block addresses between two consecutive accesses to the same block address is bounded above by <b>k</b>. What is the miss ratio if the access sequence is passed through a cache of associativity <b>A ≥ k</b> exercising <b>Least Recently Used (LRU)</b> replacement policy?</p>
+
+    <div class="options">
+        <label><input type="radio" name="q2014s1q1" value="A"> (A) n/N</label>
+
+        <label><input type="radio" name="q2014s1q1" value="B"> (B) 1/N</label>
+
+        <label><input type="radio" name="q2014s1q1" value="C"> (C) 1/A</label>
+
+        <label><input type="radio" name="q2014s1q1" value="D"> (D) k/n</label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2014s1q1','A')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2014 Set 1</i></p>
+    <div id="explanationq2014s1q1" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 95 -->
+<div class="question">
+    <p class="ques"><b>Q95.</b> A machine has a <b>32-bit architecture</b>, with <b>1-word</b> long instructions. It has <b>64 registers</b>, each of which is <b>32 bits</b> long. It needs to support <b>45 instructions</b>, which have an immediate operand in addition to two register operands. Assuming that the immediate operand is an <b>unsigned integer</b>, the maximum value of the immediate operand is __________.</p>
+
+    <input type="number" class="nat-input" id="nat2014S1Imm" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('2014S1Imm', 1023)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2014 Set 1</i></p>
+    <div id="explanation2014S1Imm" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 96 -->
+<div class="question">
+    <p class="ques"><b>Q96.</b> Consider a <b>6-stage instruction pipeline</b>, where all stages are perfectly balanced. Assume that there is no cycle-time overhead of pipelining. When an application is executing on this 6-stage pipeline, the speedup achieved with respect to non-pipelined execution if <b>25%</b> of the instructions incur <b>2 pipeline stall cycles</b> is __________.</p>
+
+    <input type="number" step="0.01" class="nat-input" id="nat2014S1Pipe" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('2014S1Pipe', 4)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2014 Set 1</i></p>
+    <div id="explanation2014S1Pipe" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 97 -->
+<div class="question">
+    <p class="ques"><b>Q97.</b> Consider two processors <b>P<sub>1</sub></b> and <b>P<sub>2</sub></b> executing the same instruction set. Assume that under identical conditions, for the same input, a program running on <b>P<sub>2</sub></b> takes <b>25%</b> less time but incurs <b>20%</b> more CPI (clock cycles per instruction) as compared to the program running on <b>P<sub>1</sub></b>. If the clock frequency of <b>P<sub>1</sub></b> is <b>1 GHz</b>, then the clock frequency of <b>P<sub>2</sub></b> (in GHz) is __________.</p>
+
+    <input type="number" step="0.01" class="nat-input" id="nat2014S1CPU" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('2014S1CPU', 1.6)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2014 Set 1</i></p>
+    <div id="explanation2014S1CPU" class="explanation"></div>
+</div>
+    
+
+
+<!-- Question 98 -->
+<div class="question">
+    <p class="ques"><b>Q98.</b> In a <b>k-way set associative</b> cache, the cache is divided into <b>v</b> sets, each of which consists of <b>k</b> lines. The lines of a set are placed in sequence one after another. The lines in set <b>s</b> are sequenced before the lines in set <b>(s + 1)</b>. The main memory blocks are numbered from <b>0</b> onwards. The main memory block numbered <b>j</b> must be mapped to any one of the cache lines from</p>
+
+    <div class="options">
+        <label><input type="radio" name="q2013q1" value="A">
+            (A) (j mod v) * k to (j mod v) * k + (k − 1)
+        </label>
+
+        <label><input type="radio" name="q2013q1" value="B">
+            (B) (j mod v) * (j mod v) + (k − 1)
+        </label>
+
+        <label><input type="radio" name="q2013q1" value="C">
+            (C) (j mod k) to (j mod k) + (v − 1)
+        </label>
+
+        <label><input type="radio" name="q2013q1" value="D">
+            (D) (j mod k) * v to (j mod k) * v + (v − 1)
+        </label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2013q1','A')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2013</i></p>
+    <div id="explanationq2013q1" class="explanation"></div>
+</div>
+
+
+    
+
+<!-- Question 99 -->
+<div class="question">
+    <p class="ques"><b>Q99.</b> A RAM chip has capacity of <b>1024 words of 8 bits</b> each (<b>1K × 8</b>). The number of <b>2 × 4 decoders</b> with enable line needed to construct a <b>16K × 16</b> RAM from <b>1K × 8</b> RAM is</p>
+
+    <div class="options">
+        <label><input type="radio" name="q2013q2" value="A"> (A) 4</label>
+
+        <label><input type="radio" name="q2013q2" value="B"> (B) 5</label>
+
+        <label><input type="radio" name="q2013q2" value="C"> (C) 6</label>
+
+        <label><input type="radio" name="q2013q2" value="D"> (D) 7</label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2013q2','B')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2013</i></p>
+    <div id="explanationq2013q2" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 100 -->
+<div class="question">
+    <p class="ques"><b>Q100.</b> Consider the following sequence of micro-operations.</p>
+
+    <div style="margin-left:30px; line-height:1.8;">
+        MBR ← PC<br>
+        MAR ← X<br>
+        PC ← Y<br>
+        Memory ← MBR
+    </div>
+
+    <p class="ques">Which one of the following is a possible operation performed by this sequence?</p>
+
+    <div class="options">
+        <label><input type="radio" name="q2013q3" value="A"> (A) Instruction fetch</label>
+
+        <label><input type="radio" name="q2013q3" value="B"> (B) Operand fetch</label>
+
+        <label><input type="radio" name="q2013q3" value="C"> (C) Conditional branch</label>
+
+        <label><input type="radio" name="q2013q3" value="D"> (D) Initiation of interrupt service</label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2013q3','D')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2013</i></p>
+    <div id="explanationq2013q3" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 101 -->
+<div class="question">
+    <p class="ques"><b>Q101.</b> Consider an instruction pipeline with five stages without any branch prediction:</p>
+
+    <div style="margin-left:20px; line-height:1.8;">
+        Fetch Instruction (FI), Decode Instruction (DI), Fetch Operand (FO),
+        Execute Instruction (EI), and Write Operand (WO).
+    </div>
+
+    <p class="ques">
+        The stage delays for FI, DI, FO, EI and WO are
+        <b>5 ns, 7 ns, 10 ns, 8 ns and 6 ns</b>, respectively.
+        There are intermediate storage buffers after each stage and the delay of each buffer is <b>1 ns</b>.
+    </p>
+
+    <p class="ques">
+        A program consisting of <b>12 instructions</b> I<sub>1</sub>, I<sub>2</sub>, …, I<sub>12</sub> is executed in this pipeline processor.
+        Instruction <b>I<sub>4</sub></b> is the only branch instruction and its branch target is <b>I<sub>9</sub></b>.
+        If the branch is taken during the execution of this program, the time (in ns) needed to complete the program is
+    </p>
+
+    <div class="options">
+        <label><input type="radio" name="q2013q4" value="A"> (A) 132</label>
+
+        <label><input type="radio" name="q2013q4" value="B"> (B) 165</label>
+
+        <label><input type="radio" name="q2013q4" value="C"> (C) 176</label>
+
+        <label><input type="radio" name="q2013q4" value="D"> (D) 328</label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2013q4','C')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2013</i></p>
+    <div id="explanationq2013q4" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 102 -->
+<div class="question">
+    <p class="ques"><b>Q102.</b> Consider a hard disk with <b>16 recording surfaces</b> (0–15) having <b>16384 cylinders</b> (0–16383) and each cylinder contains <b>64 sectors</b> (0–63). Data storage capacity in each sector is <b>512 bytes</b>. Data are organized cylinder-wise and the addressing format is <b>&lt;cylinder no., surface no., sector no.&gt;</b>. A file of size <b>42797 KB</b> is stored in the disk and the starting disk location of the file is <b>&lt;1200, 9, 40&gt;</b>. What is the cylinder number of the last sector of the file, if it is stored in a contiguous manner?</p>
+
+    <div class="options">
+        <label><input type="radio" name="q2013disk" value="A"> (A) 1281</label>
+
+        <label><input type="radio" name="q2013disk" value="B"> (B) 1282</label>
+
+        <label><input type="radio" name="q2013disk" value="C"> (C) 1283</label>
+
+        <label><input type="radio" name="q2013disk" value="D"> (D) 1284</label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2013disk','B')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2013</i></p>
+    <div id="explanationq2013disk" class="explanation"></div>
+</div>    
 
 
 
@@ -2351,19 +2760,7 @@ td {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
     
 </body>
