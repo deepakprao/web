@@ -2243,9 +2243,127 @@ td {
 </div>
 
 
+<!-- Question 83 -->
+<div class="question">
+    <p class="ques"><b>Q83.</b> Consider the sequence of machine instructions given below:</p>
+
+    <div style="display:flex;justify-content:center;margin:15px 0;">
+        <table style="border-collapse:collapse;">
+            <tr><td style="padding:6px 20px;">MUL</td><td style="padding:6px 20px;">R5, R0, R1</td></tr>
+            <tr><td style="padding:6px 20px;">DIV</td><td style="padding:6px 20px;">R6, R2, R3</td></tr>
+            <tr><td style="padding:6px 20px;">ADD</td><td style="padding:6px 20px;">R7, R5, R6</td></tr>
+            <tr><td style="padding:6px 20px;">SUB</td><td style="padding:6px 20px;">R8, R7, R4</td></tr>
+        </table>
+    </div>
+
+    <p class="ques">
+        In the above sequence, R0 to R8 are general purpose registers. In the instructions shown,
+        the first register stores the result of the operation performed on the second and the third registers.
+    </p>
+
+    <p class="ques">
+        This sequence of instructions is to be executed in a pipelined instruction processor with the
+        following four stages:
+    </p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        (1) Instruction Fetch and Decode (IF)<br>
+        (2) Operand Fetch (OF)<br>
+        (3) Perform Operation (PO)<br>
+        (4) Write Back (WB)
+    </div>
+
+    <p class="ques">
+        The IF, OF and WB stages take one clock cycle each for any instruction.
+        The PO stage takes one clock cycle for ADD or SUB instruction,
+        three clock cycles for MUL instruction and five clock cycles for DIV instruction.
+        The pipelined processor uses operand forwarding from the PO stage to the OF stage.
+    </p>
+
+    <p class="ques">
+        The number of clock cycles taken for the execution of the above instruction sequence is __________.
+    </p>
+
+    <input type="number" class="nat-input" id="nat2015S2Q264" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('2015S2Q264', 13)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2015 Set 2</i></p>
+    <div id="explanation2015S2Q264" class="explanation"></div>
+</div>
+
+
+<!-- Question 83 -->
+<div class="question">
+    <p class="ques"><b>Q83.</b> Consider a processor with byte-addressable memory. Assume that all registers, including Program Counter (PC) and Program Status Word (PSW), are of size <b>2 bytes</b>. A stack in the main memory is implemented from memory location <b>(0100)<sub>16</sub></b> and it grows upward. The Stack Pointer (SP) points to the top element of the stack.</p>
+
+    <p class="ques">
+        The current value of <b>SP</b> is <b>(016E)<sub>16</sub></b>. The <b>CALL</b> instruction is of two words,
+        the first word is the opcode and the second word is the starting address of the subroutine
+        (one word = 2 bytes).
+    </p>
+
+    <p class="ques">The CALL instruction is implemented as follows:</p>
+
+    <ul style="margin-left:25px;line-height:1.8;">
+        <li>Store the current value of PC in the stack.</li>
+        <li>Store the value of PSW register in the stack.</li>
+        <li>Load the starting address of the subroutine in PC.</li>
+    </ul>
+
+    <p class="ques">
+        The content of PC just before the fetch of a CALL instruction is
+        <b>(5FA0)<sub>16</sub></b>. After execution of the CALL instruction,
+        the value of the stack pointer is
+    </p>
+
+    <div class="options">
+        <label><input type="radio" name="q2015s2q265" value="A"> (A) (016A)<sub>16</sub></label>
+        <label><input type="radio" name="q2015s2q265" value="B"> (B) (016C)<sub>16</sub></label>
+        <label><input type="radio" name="q2015s2q265" value="C"> (C) (0170)<sub>16</sub></label>
+        <label><input type="radio" name="q2015s2q265" value="D"> (D) (0172)<sub>16</sub></label>
+    </div>
+
+    <button class="check-btn" onclick="checkMCQ('q2015s2q265','D')">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2015 Set 2</i></p>
+    <div id="explanationq2015s2q265" class="explanation"></div>
+</div>
+
+
+<!-- Question 84 -->
+<div class="question">
+    <p class="ques"><b>Q84.</b> Consider a typical disk that rotates at <b>15000 rotations per minute (RPM)</b> and has a transfer rate of <b>50 × 10<sup>6</sup></b> bytes/sec. If the average seek time of the disk is twice the average rotational delay and the controller's transfer time is <b>10 times</b> the disk transfer time, the average time (in milliseconds) to read or write a <b>512 byte</b> sector of the disk is __________.</p>
+
+    <input type="number" step="0.01" class="nat-input" id="natDisk2015S2" placeholder="Enter your answer">
+    <button class="check-btn" onclick="checkNAT('Disk2015S2', 6.12)">Check Answer</button>
+
+    <p class="year"><i>Gate CSE 2015 Set 2</i></p>
+    <div id="explanationDisk2015S2" class="explanation"></div>
+</div>
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 </body>
