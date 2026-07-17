@@ -4913,12 +4913,3430 @@ Branch to label if temp is non-zero
 
 
 
+<!-- Question 171 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q171.</b> Which one of the following <b>DMA transfer modes</b> and
+        <b>interrupt handling mechanisms</b> will enable the
+        <b>highest I/O bandwidth</b>?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q171','C',this)">
+        A) Transparent DMA and Polling interrupts
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q171','C',this)">
+        B) Cycle-stealing and Vectored interrupts
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q171','C',this)">
+        C) Block transfer and Vectored interrupts
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q171','C',this)">
+        D) Block transfer and Polling interrupts
+    </button>
+
+    <p class="year"><i>Gate CSE 2006</i></p>
+    <div id="explanationQ171" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 172 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q172.</b> A <b>dynamic RAM</b> has a memory cycle time of
+        <b>64 ns</b>. It has to be refreshed <b>100 times per msec</b> and each
+        refresh takes <b>100 ns</b>. What percentage of the memory cycle time is
+        used for refreshing?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q172','C',this)">
+        A) 10
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q172','C',this)">
+        B) 6.4
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q172','C',this)">
+        C) 1
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q172','C',this)">
+        D) 0.64
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ172" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 173 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q173.</b> Increasing the <b>RAM</b> of a computer typically improves
+        performance because
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q173','C',this)">
+        A) Virtual memory increases
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q173','C',this)">
+        B) Larger RAMs are faster
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q173','C',this)">
+        C) Fewer page faults occur
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q173','C',this)">
+        D) Fewer segmentation faults occur
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ173" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 174 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q174.</b> Consider a <b>direct mapped cache</b> of size
+        <b>32 KB</b> with block size <b>32 bytes</b>. The CPU generates
+        <b>32-bit addresses</b>. The number of bits needed for
+        <b>cache indexing</b> and the number of <b>tag bits</b> are respectively
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q174','A',this)">
+        A) 10, 17
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q174','A',this)">
+        B) 10, 22
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q174','A',this)">
+        C) 15, 17
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q174','A',this)">
+        D) 5, 17
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ174" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 175 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q175.</b> Consider a three word machine instruction
+        <b>ADD A[R0], @B</b>.
+    </p>
+
+    <p class="ques">
+        The first operand (destination) <b>A[R0]</b> uses
+        <b>indexed addressing mode</b> with <b>R0</b> as the index register.
+        The second operand (source) <b>@B</b> uses
+        <b>indirect addressing mode</b>. A and B are memory addresses residing
+        at the second and third words, respectively. The first word of the
+        instruction specifies the opcode, the index register designation and
+        the source and destination addressing modes.
+    </p>
+
+    <p class="ques">
+        During execution of the <b>ADD</b> instruction, the two operands are
+        added and stored in the destination (first operand). The number of
+        memory cycles needed during the <b>execution cycle</b> of the
+        instruction is
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q175','D',this)">
+        A) 3
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q175','D',this)">
+        B) 4
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q175','D',this)">
+        C) 5
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q175','D',this)">
+        D) 6
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ175" class="explanation"></div>
+
+</div>
+
+
+
+    
+<!-- Question 176 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q176.</b> Match <b>List-I</b> with <b>List-II</b> and select the
+        correct answer.
+    </p>
+
+    <table class="gate-table">
+        <tr>
+            <th>List-I</th>
+            <th>List-II</th>
+        </tr>
+        <tr>
+            <td>A. A[i] = B[j];</td>
+            <td>1. Indirect addressing</td>
+        </tr>
+        <tr>
+            <td>B. while(*A++);</td>
+            <td>2. Indexed addressing</td>
+        </tr>
+        <tr>
+            <td>C. int temp = *x;</td>
+            <td>3. Autoincrement</td>
+        </tr>
+    </table>
+
+    <p class="ques"><b>Codes:</b></p>
+
+    <table class="gate-table">
+        <tr>
+            <th>Option</th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        <tr>
+            <td>(A)</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>(B)</td>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>(C)</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>(D)</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <button class="option-btn" onclick="checkAnswer('Q176','C',this)">
+        A) 3, 2, 1
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q176','C',this)">
+        B) 1, 3, 2
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q176','C',this)">
+        C) 2, 3, 1
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q176','C',this)">
+        D) 1, 2, 3
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ176" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 177 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q177.</b> A <b>5-stage pipelined CPU</b> has the following sequence of stages:
+    </p>
+
+    <table class="gate-table">
+        <tr>
+            <th>Stage</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>IF</td>
+            <td>Instruction fetch from instruction memory</td>
+        </tr>
+        <tr>
+            <td>RD</td>
+            <td>Instruction decode and register read</td>
+        </tr>
+        <tr>
+            <td>EX</td>
+            <td>Execute: ALU operation for data and address computation</td>
+        </tr>
+        <tr>
+            <td>MA</td>
+            <td>Data memory access – for write access the register read at RD stage is used</td>
+        </tr>
+        <tr>
+            <td>WB</td>
+            <td>Register write back</td>
+        </tr>
+    </table>
+
+    <p class="ques">
+        Consider the following sequence of instructions:
+    </p>
+
+    <table class="gate-table">
+        <tr>
+            <th>Instruction</th>
+            <th>Operation</th>
+        </tr>
+        <tr>
+            <td>I<sub>1</sub>: L R0, Loc1</td>
+            <td>R0 &larr; M[Loc1]</td>
+        </tr>
+        <tr>
+            <td>I<sub>2</sub>: A R0, R0</td>
+            <td>R0 &larr; R0 + R0</td>
+        </tr>
+        <tr>
+            <td>I<sub>3</sub>: A R2, R0</td>
+            <td>R2 &larr; R2 − R0</td>
+        </tr>
+    </table>
+
+    <p class="ques">
+        Let each stage take <b>one clock cycle</b>. What is the number of
+        clock cycles taken to complete the above instruction sequence
+        starting from the fetch of <b>I<sub>1</sub></b>?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q177','B',this)">
+        A) 8
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q177','B',this)">
+        B) 10
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q177','B',this)">
+        C) 12
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q177','B',this)">
+        D) 15
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ177" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 178 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q178.</b> <b>Common Data for Q.2.23 &amp; Q.2.24</b>
+    </p>
+
+    <p class="ques">
+        Consider the following data path of a CPU.
+    </p>
+
+    <div style="text-align:center; margin:20px 0; overflow-x:auto;">
+
+        <svg width="700" height="280" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Common Bus -->
+            <line x1="70" y1="90" x2="620" y2="90" stroke="black" stroke-width="2"/>
+
+            <!-- MAR -->
+            <rect x="130" y="20" width="60" height="30" fill="white" stroke="black"/>
+            <text x="145" y="40" font-size="15">MAR</text>
+            <line x1="160" y1="50" x2="160" y2="90" stroke="black"/>
+            <polygon points="156,82 160,90 164,82" fill="black"/>
+            <polygon points="156,58 160,50 164,58" fill="black"/>
+
+            <!-- MDR -->
+            <rect x="300" y="20" width="60" height="30" fill="white" stroke="black"/>
+            <text x="315" y="40" font-size="15">MDR</text>
+            <line x1="330" y1="50" x2="330" y2="90" stroke="black"/>
+            <polygon points="326,82 330,90 334,82" fill="black"/>
+            <polygon points="326,58 330,50 334,58" fill="black"/>
+
+            <!-- IR -->
+            <rect x="40" y="120" width="60" height="30" fill="white" stroke="black"/>
+            <text x="58" y="140" font-size="15">IR</text>
+            <line x1="70" y1="90" x2="70" y2="120" stroke="black"/>
+            <polygon points="66,98 70,90 74,98" fill="black"/>
+            <polygon points="66,112 70,120 74,112" fill="black"/>
+
+            <!-- PC -->
+            <rect x="230" y="120" width="60" height="30" fill="white" stroke="black"/>
+            <text x="248" y="140" font-size="15">PC</text>
+            <line x1="260" y1="90" x2="260" y2="120" stroke="black"/>
+            <polygon points="256,98 260,90 264,98" fill="black"/>
+            <polygon points="256,112 260,120 264,112" fill="black"/>
+
+            <!-- GPR -->
+            <rect x="380" y="120" width="70" height="35" fill="white" stroke="black"/>
+            <text x="395" y="142" font-size="15">GPRs</text>
+            <line x1="415" y1="90" x2="415" y2="120" stroke="black"/>
+            <polygon points="411,98 415,90 419,98" fill="black"/>
+            <polygon points="411,112 415,120 419,112" fill="black"/>
+
+            <!-- ALU -->
+            <polygon points="520,120 565,120 585,160 500,160"
+                     fill="white" stroke="black"/>
+
+            <text x="605" y="148" font-size="16">ALU</text>
+
+            <!-- S -->
+            <rect x="505" y="80" width="24" height="26" fill="white" stroke="black"/>
+            <text x="512" y="98" font-size="14">S</text>
+
+            <!-- T -->
+            <rect x="555" y="80" width="24" height="26" fill="white" stroke="black"/>
+            <text x="562" y="98" font-size="14">T</text>
+
+            <line x1="517" y1="106" x2="517" y2="120" stroke="black"/>
+            <line x1="567" y1="106" x2="567" y2="120" stroke="black"/>
+
+            <!-- ALU Output -->
+            <line x1="542" y1="160" x2="542" y2="90" stroke="black"/>
+            <polygon points="538,98 542,90 546,98" fill="black"/>
+
+        </svg>
+
+    </div>
+
+    <p class="ques">
+        The ALU, the bus and all the registers in the data path are of identical size.
+        All operations including incrementing the <b>PC</b> and the <b>GPRs</b> are carried
+        out in the ALU. Two clock cycles are needed for a memory read operation:
+        the first for loading the address into the <b>MAR</b> and the next for loading
+        data from memory into the <b>MDR</b>.
+    </p>
+
+</div>
+
+
+
+<!-- Question 179 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q179.</b> The instruction <b>ADD R0, R1</b> has the register transfer
+        interpretation <b>R0 &larr; R0 + R1</b>.
+        The minimum number of clock cycles needed for the execution cycle of this
+        instruction is
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q179','B',this)">
+        A) 2
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q179','B',this)">
+        B) 3
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q179','B',this)">
+        C) 4
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q179','B',this)">
+        D) 5
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ179" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 180 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q180.</b> The instruction <b>CALL Rn, sub</b> is a two-word instruction.
+        Assume that <b>PC</b> is incremented during the fetch cycle of the first
+        word of the instruction. Its register transfer interpretation is:
+    </p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        Rn &larr; PC + 1;<br>
+        PC &larr; M[PC];
+    </div>
+
+    <p class="ques">
+        The minimum number of CPU clock cycles needed during the execution cycle
+        of this instruction is
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q180','D',this)">
+        A) 2
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q180','D',this)">
+        B) 3
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q180','D',this)">
+        C) 4
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q180','D',this)">
+        D) 5
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ180" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 181 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q181.</b> We have two designs <b>D1</b> and <b>D2</b> for a synchronous
+        pipeline processor.
+    </p>
+
+    <p class="ques">
+        <b>D1</b> has <b>5 pipeline stages</b> with execution times of
+        <b>3 ns, 2 ns, 4 ns, 2 ns</b> and <b>3 ns</b>, while the design
+        <b>D2</b> has <b>8 pipeline stages</b>, each with an execution time of
+        <b>2 ns</b>.
+    </p>
+
+    <p class="ques">
+        How much time can be saved using design <b>D2</b> over design
+        <b>D1</b> for executing <b>100 instructions</b>?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q181','B',this)">
+        A) 214 nsec
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q181','B',this)">
+        B) 202 nsec
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q181','B',this)">
+        C) 86 nsec
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q181','B',this)">
+        D) ~200 nsec
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ181" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 182 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q182.</b> Normally user programs are prevented from handling
+        <b>I/O</b> directly by I/O instructions in them. For CPUs having
+        explicit I/O instructions, such I/O protection is ensured by having
+        the I/O instructions privileged.
+    </p>
+
+    <p class="ques">
+        In a CPU with <b>memory mapped I/O</b>, there is no explicit I/O
+        instruction. Which one of the following is true for a CPU with
+        memory mapped I/O?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q182','B',this)">
+        A) I/O protection is ensured by operating system routine(s)
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q182','B',this)">
+        B) I/O protection is ensured by a hardware trap
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q182','B',this)">
+        C) I/O protection is ensured during system configuration
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q182','B',this)">
+        D) I/O protection is not possible
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ182" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 183 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q183.</b> Which one of the following is true for a CPU having a
+        <b>single interrupt request line</b> and a <b>single interrupt grant
+        line</b>?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q183','C',this)">
+        A) Neither vectored interrupt nor multiple interrupting devices are possible
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q183','C',this)">
+        B) Vectored interrupts are not possible but multiple interrupting devices are possible
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q183','C',this)">
+        C) Vectored interrupts and multiple interrupting devices are both possible
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q183','C',this)">
+        D) Vectored interrupt is possible but multiple interrupting devices are not possible
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ183" class="explanation"></div>
+
+</div>
+
+
+    
+<!-- Question 184 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q184.</b> A hardwired CPU uses <b>10 control signals</b>
+        <b>S1</b> to <b>S10</b> in various time steps
+        <b>T1</b> to <b>T5</b> to implement four instructions
+        <b>I1</b> to <b>I4</b> as shown below.
+    </p>
+
+    <div style="overflow-x:auto; margin:20px 0;">
+
+        <table class="gate-table">
+            <tr>
+                <th></th>
+                <th>T1</th>
+                <th>T2</th>
+                <th>T3</th>
+                <th>T4</th>
+                <th>T5</th>
+            </tr>
+
+            <tr>
+                <th>I<sub>1</sub></th>
+                <td>S1, S3, S5</td>
+                <td>S2, S4, S6</td>
+                <td>S1, S7</td>
+                <td>S10</td>
+                <td>S3, S8</td>
+            </tr>
+
+            <tr>
+                <th>I<sub>2</sub></th>
+                <td>S1, S3, S5</td>
+                <td>S8, S9, S10</td>
+                <td>S5, S6, S7</td>
+                <td>S6</td>
+                <td>S10</td>
+            </tr>
+
+            <tr>
+                <th>I<sub>3</sub></th>
+                <td>S1, S3, S5</td>
+                <td>S7, S8, S10</td>
+                <td>S2, S6, S9</td>
+                <td>S10</td>
+                <td>S1, S3</td>
+            </tr>
+
+            <tr>
+                <th>I<sub>4</sub></th>
+                <td>S1, S3, S5</td>
+                <td>S2, S6, S7</td>
+                <td>S5, S10</td>
+                <td>S6, S9</td>
+                <td>S10</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <p class="ques">
+        Which one of the following pairs of expressions represent the circuit
+        for generating control signals <b>S5</b> and <b>S10</b> respectively?
+        <br><br>
+        <b>[(IJ + IK)Tn]</b> indicates that the control signal should be generated
+        in time step <b>Tn</b> if the instruction being executed is
+        <b>IJ</b> or <b>IK</b>.
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q184','C',this)">
+        A) S5 = T1 + I2.T3 and S10 = (I1 + I3).T4 + (I2 + I4).T5
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q184','C',this)">
+        B) S5 = T1 + (I2 + I4).T3 and S10 = (I1 + I3).T4 + (I2 + I4).T5
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q184','C',this)">
+        C) S5 = T1 + (I2 + I4).T3 and S10 = (I2 + I3 + I4).T2 + (I1 + I3).T4 + (I2 + I4).T5
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q184','C',this)">
+        D) S5 = T1 + (I2 + I4).T3 and S10 = (I2 + I3).T2 + I4.T3 + (I1 + I3).T4 + (I2 + I4).T5
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ184" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 185 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q185.</b> A line <b>L</b> in a circuit is said to have a
+        <b>stuck-at-0</b> fault if the line permanently has a logic value
+        <b>0</b>. Similarly, a line <b>L</b> in a circuit is said to have a
+        <b>stuck-at-1</b> fault if the line permanently has a logic value
+        <b>1</b>.
+    </p>
+
+    <p class="ques">
+        A circuit is said to have a <b>multiple stuck-at fault</b> if one or
+        more lines have stuck-at faults. The total number of distinct multiple
+        stuck-at faults possible in a circuit with <b>N</b> lines is
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q185','B',this)">
+        A) 3<sup>N</sup>
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q185','B',this)">
+        B) 3<sup>N</sup> − 1
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q185','B',this)">
+        C) 2<sup>N</sup> − 1
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q185','B',this)">
+        D) 2<sup>N</sup>
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ185" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 186 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q186.</b> An instruction set of a processor has
+        <b>125 control signals</b> which can be divided into
+        <b>5 groups</b> of mutually exclusive signals as follows:
+    </p>
+
+    <table class="gate-table">
+        <tr>
+            <th>Group</th>
+            <th>Number of Signals</th>
+        </tr>
+        <tr>
+            <td>Group 1</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Group 2</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>Group 3</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Group 4</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Group 5</td>
+            <td>23</td>
+        </tr>
+    </table>
+
+    <p class="ques">
+        How many bits of the <b>control word</b> can be saved by using
+        <b>vertical microprogramming</b> over
+        <b>horizontal microprogramming</b>?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q186','B',this)">
+        A) 0
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q186','B',this)">
+        B) 103
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q186','B',this)">
+        C) 22
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q186','B',this)">
+        D) 55
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ186" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 187 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q187.</b> <b>Linked Answer Questions 4.16 and 4.17</b>
+    </p>
+
+    <p class="ques">
+        A disk has <b>8 equidistant tracks</b>. The diameters of the
+        <b>innermost</b> and <b>outermost</b> tracks are
+        <b>1 cm</b> and <b>8 cm</b> respectively.
+        The innermost track has a storage capacity of <b>10 MB</b>.
+    </p>
+
+    <p class="ques">
+        What is the total amount of data that can be stored on the disk if it
+        is used with a drive that rotates it with
+    </p>
+
+    <p class="ques" style="margin-left:20px;">
+        (i) <b>Constant Linear Velocity (CLV)</b><br>
+        (ii) <b>Constant Angular Velocity (CAV)</b>?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q187','B',this)">
+        A) (i) 80 MB &nbsp;&nbsp; (ii) 2040 MB
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q187','B',this)">
+        B) (i) 2040 MB &nbsp;&nbsp; (ii) 80 MB
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q187','B',this)">
+        C) (i) 80 MB &nbsp;&nbsp; (ii) 360 MB
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q187','B',this)">
+        D) (i) 360 MB &nbsp;&nbsp; (ii) 80 MB
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ187" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 188 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q188.</b> If the disk has <b>20 sectors per track</b> and is currently
+        at the end of the <b>5<sup>th</sup> sector</b> of the innermost track,
+        and the head can move at a speed of
+        <b>10 meters/sec</b> while the disk rotates at a
+        <b>constant angular velocity of 6000 RPM</b>,
+        how much time will it take to read <b>1 MB</b> contiguous data
+        starting from the <b>4<sup>th</sup> sector</b> of the outermost track?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q188','A',this)">
+        A) 13.5 ms
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q188','A',this)">
+        B) 10 ms
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q188','A',this)">
+        C) 9.5 ms
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q188','A',this)">
+        D) 20 ms
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ188" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 189 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q189.</b> What is the <b>swap space</b> in the disk used for?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q189','B',this)">
+        A) Saving temporary HTML pages
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q189','B',this)">
+        B) Saving process data
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q189','B',this)">
+        C) Storing the superblock
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q189','B',this)">
+        D) Storing device drivers
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ189" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 190 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q190.</b> A device with data transfer rate
+        <b>10 KB/sec</b> is connected to a CPU.
+        Data is transferred <b>byte-wise</b>.
+    </p>
+
+    <p class="ques">
+        Let the <b>interrupt overhead</b> be
+        <b>4 &micro;sec</b>. The byte transfer time between the device interface
+        register and CPU or memory is negligible.
+    </p>
+
+    <p class="ques">
+        What is the minimum performance gain of operating the device under
+        <b>interrupt mode</b> over operating it under
+        <b>program controlled mode</b>?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q190','B',this)">
+        A) 15
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q190','B',this)">
+        B) 25
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q190','B',this)">
+        C) 35
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q190','B',this)">
+        D) 45
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ190" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 191 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q191.</b> Consider a disk drive with the following specifications:
+    </p>
+
+    <table class="gate-table">
+        <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Surfaces</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>Tracks / Surface</td>
+            <td>512</td>
+        </tr>
+        <tr>
+            <td>Sectors / Track</td>
+            <td>512</td>
+        </tr>
+        <tr>
+            <td>Sector Size</td>
+            <td>1 KB</td>
+        </tr>
+        <tr>
+            <td>Rotation Speed</td>
+            <td>3000 rpm</td>
+        </tr>
+    </table>
+
+    <p class="ques">
+        The disk is operated in <b>cycle stealing DMA mode</b> whereby whenever
+        one <b>byte word</b> is ready it is sent to memory. Similarly, for
+        writing, the disk interface reads a <b>4 byte word</b> from memory in
+        each DMA cycle.
+    </p>
+
+    <p class="ques">
+        Memory cycle time is <b>40 nsec</b>. The maximum percentage of time that
+        the CPU gets blocked during DMA operation is
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q191','A',this)">
+        A) 10
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q191','A',this)">
+        B) 25
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q191','A',this)">
+        C) 40
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q191','A',this)">
+        D) 50
+    </button>
+
+    <p class="year"><i>Gate CSE 2005</i></p>
+    <div id="explanationQ191" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 192 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q192.</b> Consider a system with a <b>2 level cache</b>. Access times of
+        <b>Level 1 cache</b>, <b>Level 2 cache</b> and <b>main memory</b> are
+        <b>1 ns</b>, <b>10 ns</b>, and <b>500 ns</b>, respectively.
+    </p>
+
+    <p class="ques">
+        The hit rates of <b>Level 1</b> and <b>Level 2</b> caches are
+        <b>0.8</b> and <b>0.9</b>, respectively.
+        What is the average access time of the system
+        <b>ignoring the search time within the cache</b>?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q192','C',this)">
+        A) 13.0 ns
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q192','C',this)">
+        B) 12.8 ns
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q192','C',this)">
+        C) 12.6 ns
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q192','C',this)">
+        D) 12.4 ns
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ192" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 193 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q193.</b> Consider a small
+        <b>two-way set-associative cache memory</b>,
+        consisting of <b>four blocks</b>.
+        For choosing the block to be replaced, use the
+        <b>Least Recently Used (LRU)</b> scheme.
+    </p>
+
+    <p class="ques">
+        The number of cache misses for the following sequence of block
+        addresses is
+    </p>
+
+    <div style="margin-left:20px;font-weight:bold;">
+        8,&nbsp;12,&nbsp;0,&nbsp;12,&nbsp;8
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer('Q193','B',this)">
+        A) 2
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q193','B',this)">
+        B) 3
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q193','B',this)">
+        C) 4
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q193','B',this)">
+        D) 5
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ193" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 194 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q194.</b> Which of the following <b>addressing modes</b> are suitable for
+        <b>program relocation at run time</b>?
+    </p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        1. Absolute addressing<br>
+        2. Based addressing<br>
+        3. Relative addressing<br>
+        4. Indirect addressing
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer('Q194','C',this)">
+        A) 1 and 4
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q194','C',this)">
+        B) 1 and 2
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q194','C',this)">
+        C) 2 and 3
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q194','C',this)">
+        D) 1, 2 and 4
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ194" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 195 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q195.</b> Using <b>4-bit 2's complement arithmetic</b>, which of the following
+        additions will result in an <b>overflow</b>?
+    </p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        (i) 1100 + 1100<br>
+        (ii) 0011 + 0111<br>
+        (iii) 1111 + 0111
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer('Q195','B',this)">
+        A) (i) only
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q195','B',this)">
+        B) (ii) only
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q195','B',this)">
+        C) (iii) only
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q195','B',this)">
+        D) (i) and (iii) only
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ195" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 196 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q196.</b> If we use <b>internal data forwarding</b> to speed up the performance of a CPU
+        (<b>R1, R2 and R3</b> are registers and <b>M[100]</b> is a memory reference), then the sequence
+        of operations
+    </p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        R1 → M[100]<br>
+        M[100] → R2<br>
+        M[100] → R3
+    </div>
+
+    <p class="ques">can be replaced by</p>
+
+    <button class="option-btn" onclick="checkAnswer('Q196','D',this)">
+        A) R1 → R3<br>&nbsp;&nbsp;&nbsp;&nbsp;R2 → M[100]
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q196','D',this)">
+        B) M[100] → R2<br>&nbsp;&nbsp;&nbsp;&nbsp;R1 → R2<br>&nbsp;&nbsp;&nbsp;&nbsp;R1 → R3
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q196','D',this)">
+        C) R1 → M[100]<br>&nbsp;&nbsp;&nbsp;&nbsp;R2 → R3
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q196','D',this)">
+        D) R1 → R2<br>&nbsp;&nbsp;&nbsp;&nbsp;R1 → R3<br>&nbsp;&nbsp;&nbsp;&nbsp;R1 → M[100]
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ196" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 197 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q197.</b> Consider a pipeline processor with <b>4 stages (S1 to S4)</b>. We want to execute the following loop:
+    </p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        for (i = 1; i ≤ 1000; i++) { I1, I2, I3, I4 }
+    </div>
+
+    <p class="ques">
+        The time taken (in <b>ns</b>) by instructions <b>I1</b> to <b>I4</b> for stages <b>S1</b> to <b>S4</b> are:
+    </p>
+
+    <div style="text-align:center;margin:15px 0;overflow-x:auto;">
+
+        <svg width="360" height="220" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Outer Border -->
+            <rect x="40" y="20" width="280" height="170" fill="white" stroke="black"/>
+
+            <!-- Vertical Lines -->
+            <line x1="96" y1="20" x2="96" y2="190" stroke="black"/>
+            <line x1="152" y1="20" x2="152" y2="190" stroke="black"/>
+            <line x1="208" y1="20" x2="208" y2="190" stroke="black"/>
+            <line x1="264" y1="20" x2="264" y2="190" stroke="black"/>
+
+            <!-- Horizontal Lines -->
+            <line x1="40" y1="54" x2="320" y2="54" stroke="black"/>
+            <line x1="40" y1="88" x2="320" y2="88" stroke="black"/>
+            <line x1="40" y1="122" x2="320" y2="122" stroke="black"/>
+            <line x1="40" y1="156" x2="320" y2="156" stroke="black"/>
+
+            <!-- Headers -->
+            <text x="60" y="42" font-size="16"> </text>
+            <text x="112" y="42" font-size="16">S1</text>
+            <text x="168" y="42" font-size="16">S2</text>
+            <text x="224" y="42" font-size="16">S3</text>
+            <text x="280" y="42" font-size="16">S4</text>
+
+            <!-- Row Labels -->
+            <text x="58" y="76" font-size="16">I1</text>
+            <text x="58" y="110" font-size="16">I2</text>
+            <text x="58" y="144" font-size="16">I3</text>
+            <text x="58" y="178" font-size="16">I4</text>
+
+            <!-- Values -->
+            <text x="118" y="76" font-size="16">1</text>
+            <text x="174" y="76" font-size="16">2</text>
+            <text x="230" y="76" font-size="16">1</text>
+            <text x="286" y="76" font-size="16">2</text>
+
+            <text x="118" y="110" font-size="16">2</text>
+            <text x="174" y="110" font-size="16">1</text>
+            <text x="230" y="110" font-size="16">2</text>
+            <text x="286" y="110" font-size="16">1</text>
+
+            <text x="118" y="144" font-size="16">1</text>
+            <text x="174" y="144" font-size="16">1</text>
+            <text x="230" y="144" font-size="16">2</text>
+            <text x="286" y="144" font-size="16">1</text>
+
+            <text x="118" y="178" font-size="16">2</text>
+            <text x="174" y="178" font-size="16">1</text>
+            <text x="230" y="178" font-size="16">2</text>
+            <text x="286" y="178" font-size="16">1</text>
+
+        </svg>
+
+    </div>
+
+    <p class="ques">
+        The output of <b>I1</b> for <b>i = 2</b> will be available after
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q197','C',this)">
+        A) 11 ns
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q197','C',this)">
+        B) 12 ns
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q197','C',this)">
+        C) 13 ns
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q197','C',this)">
+        D) 28 ns
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ197" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 198 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q198.</b> In an enhancement of a design of a CPU, the speed of a
+        <b>floating point unit</b> has been increased by <b>20%</b> and the speed of a
+        <b>fixed point unit</b> has been increased by <b>10%</b>.
+        What is the overall speedup achieved if the ratio of the number of
+        floating point operations to the number of fixed point operations is
+        <b>2 : 3</b> and the floating point operation used to take
+        <b>twice</b> the time taken by the fixed point operation in the original design?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q198','B',this)">
+        A) 1.155
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q198','B',this)">
+        B) 1.185
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q198','B',this)">
+        C) 1.255
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q198','B',this)">
+        D) 1.285
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ198" class="explanation"></div>
+
+</div>
+
+
+    
+<!-- Common Data for Questions 216 to 218 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Common Data for Q.216 to Q.218</b><br>
+        Consider the following program segment for a hypothetical CPU having three user registers
+        <b>R1, R2</b> and <b>R3</b>.
+    </p>
+
+    <div style="text-align:center;margin:20px 0;overflow-x:auto;">
+
+        <svg width="760" height="220" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Outer Border -->
+            <rect x="10" y="10" width="740" height="190" fill="white" stroke="black"/>
+
+            <!-- Horizontal Lines -->
+            <line x1="10" y1="50" x2="750" y2="50" stroke="black"/>
+            <line x1="10" y1="80" x2="750" y2="80" stroke="black"/>
+            <line x1="10" y1="110" x2="750" y2="110" stroke="black"/>
+            <line x1="10" y1="140" x2="750" y2="140" stroke="black"/>
+            <line x1="10" y1="170" x2="750" y2="170" stroke="black"/>
+
+            <!-- Vertical Lines -->
+            <line x1="180" y1="10" x2="180" y2="200" stroke="black"/>
+            <line x1="600" y1="10" x2="600" y2="200" stroke="black"/>
+
+            <!-- Headers -->
+            <text x="65" y="35" font-size="18">Instruction</text>
+            <text x="330" y="35" font-size="18">Operation</text>
+            <text x="645" y="28" font-size="18">Instruction</text>
+            <text x="670" y="48" font-size="18">Size (words)</text>
+
+            <!-- Row 1 -->
+            <text x="20" y="70" font-size="16">MOV R1,5000</text>
+            <text x="200" y="70" font-size="16">R1 ← Memory[5000]</text>
+            <text x="690" y="70" font-size="16">2</text>
+
+            <!-- Row 2 -->
+            <text x="20" y="100" font-size="16">MOV R2,(R1)</text>
+            <text x="200" y="100" font-size="16">R2 ← Memory[(R1)]</text>
+            <text x="690" y="100" font-size="16">1</text>
+
+            <!-- Row 3 -->
+            <text x="20" y="130" font-size="16">ADD R2,R3</text>
+            <text x="200" y="130" font-size="16">R2 ← R2 + R3</text>
+            <text x="690" y="130" font-size="16">1</text>
+
+            <!-- Row 4 -->
+            <text x="20" y="160" font-size="16">MOV 6000,R2</text>
+            <text x="200" y="160" font-size="16">Memory[6000] ← R2</text>
+            <text x="690" y="160" font-size="16">2</text>
+
+            <!-- Row 5 -->
+            <text x="20" y="190" font-size="16">HALT</text>
+            <text x="200" y="190" font-size="16">Machine halts</text>
+            <text x="690" y="190" font-size="16">1</text>
+
+        </svg>
+
+    </div>
+
+</div>
+
+
+
+<!-- Question 216 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q216.</b> Consider that the memory is <b>byte addressable</b> with size
+        <b>32 bits</b>, and the program has been loaded starting from memory location
+        <b>1000 (decimal)</b>.
+    </p>
+
+    <p class="ques">
+        If an interrupt occurs while the CPU has been halted after executing the
+        <b>HALT</b> instruction, the return address (in decimal) saved in the stack will be
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q216','D',this)">
+        A) 1007
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q216','D',this)">
+        B) 1020
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q216','D',this)">
+        C) 1024
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q216','D',this)">
+        D) 1028
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ216" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 217 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q217.</b> Consider that the memory is <b>word addressable</b> with size
+        <b>32 bits</b> and the program has been loaded starting from memory location
+        <b>1000 (decimal)</b>.
+    </p>
+
+    <p class="ques">
+        If an interrupt occurs during the <b>ADD</b> instruction, what will be the
+        return address pushed on to the stack?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q217','C',this)">
+        A) 1007
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q217','C',this)">
+        B) 1004
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q217','C',this)">
+        C) 1005
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q217','C',this)">
+        D) 1016
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ217" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 218 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q218.</b> Let the clock cycles required for various operations be as follows:
+    </p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        Register to/from memory transfer : <b>3 clock cycles</b><br>
+        ADD with both operands in register : <b>1 clock cycle</b><br>
+        Instruction fetch and decode : <b>2 clock cycles per word</b>
+    </div>
+
+    <p class="ques">
+        The total number of <b>clock cycles</b> required to execute the program is
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q218','A',this)">
+        A) 29
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q218','A',this)">
+        B) 24
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q218','A',this)">
+        C) 23
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q218','A',this)">
+        D) 20
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ218" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 219 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q219.</b> A <b>4-stage pipeline</b> has the stage delays as
+        <b>150 ns, 120 ns, 160 ns</b> and <b>140 ns</b>, respectively.
+        Registers used between the stages have a delay of <b>5 ns</b> each.
+        Assuming a constant clock rate, the total time taken to process
+        <b>1000 data items</b> on this pipeline will be
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q219','C',this)">
+        A) 120.4 microseconds
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q219','C',this)">
+        B) 160.5 microseconds
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q219','C',this)">
+        C) 165.5 microseconds
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q219','C',this)">
+        D) 590.0 microseconds
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ219" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 220 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q220.</b> What is the minimum size of <b>ROM</b> required to store the
+        complete truth table of an <b>8-bit × 8-bit multiplier</b>?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q220','B',this)">
+        A) 32 K × 16 bits
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q220','B',this)">
+        B) 64 K × 16 bits
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q220','B',this)">
+        C) 16 K × 32 bits
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q220','B',this)">
+        D) 64 K × 32 bits
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ220" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 221 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q221.</b> A CPU has only three instructions <b>I1, I2</b> and <b>I3</b>,
+        which use the following signals in time steps <b>T1–T5</b>.
+    </p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        <b>I1</b><br>
+        T1 : Ain, Bout, Cin<br>
+        T2 : PCout, Bin<br>
+        T3 : Zout, Ain<br>
+        T4 : PCin, Bout<br>
+        T5 : End
+        <br><br>
+
+        <b>I2</b><br>
+        T1 : Cin, Bout, Din<br>
+        T2 : Aout, Bin<br>
+        T3 : Zout, Ain<br>
+        T4 : Bin, Cout<br>
+        T5 : End
+        <br><br>
+
+        <b>I3</b><br>
+        T1 : Din, Aout<br>
+        T2 : Din, Bout<br>
+        T3 : Zout, Ain<br>
+        T4 : Dout, Ain<br>
+        T5 : End
+    </div>
+
+    <p class="ques">
+        Which of the following logic functions will generate the hardwired
+        control for the signal <b>Ain</b>?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q221','B',this)">
+        A) T1.I1 + T2.I3 + T4.I3 + T3
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q221','B',this)">
+        B) (T1 + T2 + T3).I3 + T1.I1
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q221','B',this)">
+        C) (T1 + T2).I1 + (T2 + T4).I3 + T3
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q221','B',this)">
+        D) (T1 + T2).I2 + (T1 + T3).I1 + T3
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ221" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 222 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q222.</b> The microinstructions stored in the control memory of a processor have a width of
+        <b>26 bits</b>. Each microinstruction is divided into three fields:
+        a <b>micro-operation field of 13 bits</b>, a <b>next address field (X)</b>,
+        and a <b>MUX select field (Y)</b>. There are
+        <b>8 status bits</b> in the inputs of the MUX.
+    </p>
+
+    <div style="text-align:center;margin:20px 0;overflow-x:auto;">
+
+        <svg width="720" height="340" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Control Address Register -->
+            <rect x="470" y="20" width="180" height="60" fill="white" stroke="black"/>
+            <text x="500" y="45" font-size="16">Control</text>
+            <text x="485" y="65" font-size="16">Address Register</text>
+
+            <!-- Control Memory -->
+            <rect x="495" y="130" width="130" height="70" fill="white" stroke="black"/>
+            <text x="520" y="160" font-size="16">Control</text>
+            <text x="522" y="180" font-size="16">Memory</text>
+
+            <!-- MUX -->
+            <polygon points="140,170 140,250 220,225 220,195"
+                     fill="white" stroke="black"/>
+            <text x="165" y="215" font-size="16">MUX</text>
+
+            <!-- Status bits -->
+            <line x1="70" y1="210" x2="140" y2="210" stroke="black"/>
+            <polygon points="140,210 132,206 132,214" fill="black"/>
+            <text x="15" y="205" font-size="16">Status Bits</text>
+            <text x="92" y="228" font-size="14">8</text>
+
+            <!-- MUX to CAR -->
+            <line x1="220" y1="205" x2="330" y2="205" stroke="black"/>
+            <line x1="330" y1="205" x2="330" y2="35" stroke="black"/>
+            <line x1="330" y1="35" x2="470" y2="35" stroke="black"/>
+            <polygon points="470,35 462,31 462,39" fill="black"/>
+            <text x="250" y="195" font-size="16">Load</text>
+
+            <!-- Increment -->
+            <line x1="330" y1="65" x2="470" y2="65" stroke="black"/>
+            <polygon points="470,65 462,61 462,69" fill="black"/>
+
+            <!-- Inverter -->
+            <polygon points="360,58 380,65 360,72"
+                     fill="white" stroke="black"/>
+            <circle cx="384" cy="65" r="3" fill="white" stroke="black"/>
+            <text x="345" y="88" font-size="14">Increment</text>
+
+            <!-- CAR to Control Memory -->
+            <line x1="560" y1="80" x2="560" y2="130" stroke="black"/>
+            <polygon points="560,130 556,122 564,122" fill="black"/>
+
+            <!-- Micro-operation output -->
+            <line x1="625" y1="165" x2="690" y2="165" stroke="black"/>
+            <polygon points="690,165 682,161 682,169" fill="black"/>
+            <text x="630" y="155" font-size="15">13</text>
+            <text x="635" y="185" font-size="15">Micro-operations</text>
+
+            <!-- X field -->
+            <line x1="495" y1="200" x2="495" y2="300" stroke="black"/>
+            <line x1="495" y1="300" x2="330" y2="300" stroke="black"/>
+            <line x1="330" y1="300" x2="330" y2="235" stroke="black"/>
+            <line x1="330" y1="235" x2="220" y2="235" stroke="black"/>
+            <polygon points="220,235 228,231 228,239" fill="black"/>
+            <text x="410" y="292" font-size="16">X</text>
+
+            <!-- Y field -->
+            <line x1="495" y1="175" x2="310" y2="175" stroke="black"/>
+            <line x1="310" y1="175" x2="310" y2="250" stroke="black"/>
+            <line x1="310" y1="250" x2="220" y2="250" stroke="black"/>
+            <polygon points="220,250 228,246 228,254" fill="black"/>
+            <text x="350" y="168" font-size="16">Y</text>
+
+        </svg>
+
+    </div>
+
+    <p class="ques">
+        How many bits are there in the <b>X</b> and <b>Y</b> fields, and what is the size of the
+        <b>control memory</b> in number of words?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q222','A',this)">
+        A) 10, 3, 1024
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q222','A',this)">
+        B) 8, 5, 256
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q222','A',this)">
+        C) 5, 8, 2048
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q222','A',this)">
+        D) 10, 3, 512
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ222" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 223 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q223.</b> A hard disk with a transfer rate of
+        <b>10 Mbytes/second</b> is constantly transferring data to memory using
+        <b>DMA</b>. The processor runs at <b>600 MHz</b>, and takes
+        <b>300</b> and <b>900</b> clock cycles to initiate and complete DMA transfer,
+        respectively. If the size of the transfer is <b>20 Kbytes</b>, what is the
+        percentage of processor time consumed for the transfer operation?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q223','D',this)">
+        A) 5.0%
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q223','D',this)">
+        B) 1.0%
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q223','D',this)">
+        C) 0.5%
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q223','D',this)">
+        D) 0.1%
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ223" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 224 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q224.</b> The storage area of a disk has innermost diameter of
+        <b>10 cm</b> and outermost diameter of <b>20 cm</b>. The maximum storage
+        density of the disk is <b>1400 bits/cm</b>. The disk rotates at a speed of
+        <b>4200 RPM</b>. The main memory of a computer has
+        <b>64-bit</b> word length and <b>1 μs</b> cycle time.
+        If <b>cycle stealing</b> is used for data transfer from the disk,
+        the percentage of memory cycles stolen for transferring one word is
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q224','A',this)">
+        A) 0.5%
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q224','A',this)">
+        B) 1%
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q224','A',this)">
+        C) 5%
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q224','A',this)">
+        D) 10%
+    </button>
+
+    <p class="year"><i>Gate CSE 2004</i></p>
+    <div id="explanationQ224" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 225 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q225.</b> For a <b>pipelined CPU</b> with a <b>single ALU</b>, consider the
+        following situations:
+    </p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        1. The (j + 1)<sup>st</sup> instruction uses the result of the
+        j<sup>th</sup> instruction as an operand.<br><br>
+
+        2. The execution of a conditional jump instruction.<br><br>
+
+        3. The j<sup>th</sup> and (j + 1)<sup>st</sup> instructions require the
+        ALU at the same time.
+    </div>
+
+    <p class="ques">
+        Which of the above can cause a <b>hazard</b>?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q225','D',this)">
+        A) 1 and 2 only
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q225','D',this)">
+        B) 2 and 3 only
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q225','D',this)">
+        C) 3 only
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q225','D',this)">
+        D) All the three
+    </button>
+
+    <p class="year"><i>Gate CSE 2003</i></p>
+    <div id="explanationQ225" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 226 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q226.</b> Consider the following assembly language program for a hypothetical
+        processor. <b>A</b>, <b>B</b> and <b>C</b> are 8-bit registers. The meanings of
+        various instructions are shown as comments.
+    </p>
+
+    <div class="code-box">
+<pre>
+MOV B,#0      ; B ← 0
+MOV C,#8      ; C ← 8
+
+Z:
+CMP C,#0      ; Compare C with 0
+JZ  X         ; Jump to X if 0 flag is set
+SUB C,#1      ; C ← C − 1
+RRC A,#1      ; Rotate right A through carry by one bit
+JC  Y         ; Jump to Y if carry flag is set
+JMP Z
+
+Y:
+ADD B,#1      ; B ← B + 1
+JMP Z
+
+X:
+</pre>
+    </div>
+
+    <p class="ques">
+        If the initial value of register <b>A</b> is <b>A<sub>0</sub></b>, the value of
+        register <b>B</b> after the program execution will be
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q226','B',this)">
+        A) the number of 0 bits in A<sub>0</sub>
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q226','B',this)">
+        B) the number of 1 bits in A<sub>0</sub>
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q226','B',this)">
+        C) A<sub>0</sub>
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q226','B',this)">
+        D) 8
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q226')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2003</i></p>
+
+    <div id="explanationQ226" class="explanation">
+      
+    </div>
+
+</div>
+
+
+
+<!-- Question 227 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q227.</b> Consider the same assembly language program shown above.
+    </p>
+
+    <p class="ques">
+        Which of the following instructions when inserted at location
+        <b>X</b> will ensure that the value of register
+        <b>A</b> after program execution is the same as its initial value?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q227','A',this)">
+        A) RRC A,#1
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q227','A',this)">
+        B) NOP
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q227','A',this)">
+        C) LRC A,#1
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q227','A',this)">
+        D) ADD A,#1
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q227')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2003</i></p>
+
+    <div id="explanationQ227" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 228 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q228.</b> Consider an array multiplier for multiplying two
+        <b>n-bit</b> numbers. If each gate in the circuit has a
+        <b>unit delay</b>, the total delay of the multiplier is
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q228','C',this)">
+        A) Θ(1)
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q228','C',this)">
+        B) Θ(log n)
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q228','C',this)">
+        C) Θ(n)
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q228','C',this)">
+        D) Θ(n²)
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q228')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2003</i></p>
+
+    <div id="explanationQ228" class="explanation">
+
+    </div>
+
+</div>
+
+
+
+<!-- Question 229 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q229.</b> Which of the following is <b>not</b> a form of memory?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q229','',this)">
+        A) Instruction cache
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q229','',this)">
+        B) Instruction Register
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q229','',this)">
+        C) Instruction opcode
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q229','',this)">
+        D) Translation look aside buffer
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q229')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2002</i></p>
+
+    <div id="explanationQ229" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 230 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q230.</b> In serial data transmission, every byte of data is padded
+        with a <b>'0'</b> in the beginning and one or two <b>'1'</b>s at the end
+        of the byte because
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q230','',this)">
+        A) Receiver is to be synchronized for byte reception
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q230','',this)">
+        B) Receiver recovers lost '0's and '1's from these padded bits
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q230','',this)">
+        C) Padded bits are useful in parity computation
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q230','',this)">
+        D) None of the above
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q230')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2002</i></p>
+
+    <div id="explanationQ230" class="explanation">
+    </div>
+
+</div>
+
+
+
+
+<!-- Question 231 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q231.</b> In 2's complement addition, overflow
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q231','',this)">
+        A) is flagged whenever there is carry from sign bit addition
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q231','',this)">
+        B) cannot occur when a +ve value is added to a −ve value
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q231','',this)">
+        C) is flagged when the carries from sign bit and previous bit match
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q231','',this)">
+        D) None of the above
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q231')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2002</i></p>
+
+    <div id="explanationQ231" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 232 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q232.</b> The performance of a pipelined processor suffers if
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q232','',this)">
+        A) the pipeline stages have different delays
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q232','',this)">
+        B) consecutive instructions are dependent on each other
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q232','',this)">
+        C) the pipeline stages share hardware resources
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q232','',this)">
+        D) All of the above
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q232')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2002</i></p>
+
+    <div id="explanationQ232" class="explanation">
+    </div>
+
+</div>
+
+
+
+
+<!-- Question 233 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q233.</b> A device employing <b>INTR</b> line for device interrupt
+        puts the <b>CALL</b> instruction on the data bus while
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q233','',this)">
+        A) INTA is active
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q233','',this)">
+        B) HOLD is active
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q233','',this)">
+        C) READY is active
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q233','',this)">
+        D) None of these
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q233')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2002</i></p>
+
+    <div id="explanationQ233" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 234 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q234.</b> The absolute addressing mode
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q234','',this)">
+        A) the operand is inside the instruction
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q234','',this)">
+        B) the address of the operand is inside the instruction
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q234','',this)">
+        C) the register containing the address of the operand is specified inside the instruction
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q234','',this)">
+        D) the location of the operand is implicit
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q234')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2002</i></p>
+
+    <div id="explanationQ234" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 235 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q235.</b> Horizontal microprogramming
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q235','',this)">
+        A) does not require use of signal decoders
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q235','',this)">
+        B) results in larger sized microinstructions than vertical microprogramming
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q235','',this)">
+        C) uses one bit for each control signal
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q235','',this)">
+        D) All of the above
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q235')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2002</i></p>
+
+    <div id="explanationQ235" class="explanation">
+    </div>
+
+</div>   
+
+
+
+
+<!-- Question 236 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q236.</b> Which of the following requires a device driver?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q236','',this)">
+        A) Register
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q236','',this)">
+        B) Cache
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q236','',this)">
+        C) Main memory
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q236','',this)">
+        D) Disk
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q236')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2001</i></p>
+
+    <div id="explanationQ236" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 237 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q237.</b> More than one word are put in one cache block to
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q237','',this)">
+        A) exploit the temporal locality of reference in a program
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q237','',this)">
+        B) exploit the spatial locality of reference in a program
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q237','',this)">
+        C) reduce the miss penalty
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q237','',this)">
+        D) None of the above
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q237')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2001</i></p>
+
+    <div id="explanationQ237" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 238 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q238.</b> Which of the following statements is false?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q238','',this)">
+        A) Virtual memory implements the translation of a program's address space into physical memory address space
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q238','',this)">
+        B) Virtual memory allows each program to exceed the size of the primary memory
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q238','',this)">
+        C) Virtual memory increases the degree of multiprogramming
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q238','',this)">
+        D) Virtual memory reduces the context switching overhead
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q238')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2001</i></p>
+
+    <div id="explanationQ238" class="explanation">
+    </div>
+
+</div>
+
+
+
+
+<!-- Question 239 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q239.</b> A processor needs software interrupt to
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q239','',this)">
+        A) test the interrupt system of the processor
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q239','',this)">
+        B) implement co-routines
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q239','',this)">
+        C) obtain system services which need execution of privileged instructions
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q239','',this)">
+        D) return from subroutine
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q239')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2001</i></p>
+
+    <div id="explanationQ239" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 240 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q240.</b> Which is the most appropriate match for the items in the
+        first column with the items in the second column?
+    </p>
+
+    <table class="gate-table">
+        <tr>
+            <th>List-I</th>
+            <th>List-II</th>
+        </tr>
+        <tr>
+            <td>
+                X. Indirect Addressing<br>
+                Y. Indexed Addressing<br>
+                Z. Base Register Addressing
+            </td>
+            <td>
+                I. Array implementation<br>
+                II. Writing re-locatable code<br>
+                III. Passing array as parameter
+            </td>
+        </tr>
+    </table>
+
+    <button class="option-btn" onclick="checkAnswer('Q240','',this)">
+        A) (X, III) (Y, I) (Z, II)
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q240','',this)">
+        B) (X, II) (Y, III) (Z, I)
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q240','',this)">
+        C) (X, III) (Y, II) (Z, I)
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q240','',this)">
+        D) (X, I) (Y, III) (Z, II)
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q240')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2001</i></p>
+
+    <div id="explanationQ240" class="explanation">
+    </div>
+
+</div>
+
+    
+
+<!-- Question 241 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q241.</b> Consider the following data path of a simple non-pipelined CPU.
+        The registers <b>A</b>, <b>B</b>, <b>A<sub>1</sub></b>, <b>A<sub>2</sub></b>,
+        <b>MDR</b>, the bus and the ALU are 8-bit wide.
+        <b>SP</b> and <b>MAR</b> are 16-bit registers.
+        The MUX is of size <b>8 × (2:1)</b> and the DEMUX is of size
+        <b>8 × (1:2)</b>. Each memory operation takes
+        <b>2 CPU clock cycles</b> and uses <b>MAR</b> (Memory Address Register)
+        and <b>MDR</b> (Memory Data Register). <b>SP</b> can be decremented locally.
+    </p>
+
+    <div style="text-align:center;margin:20px 0;overflow-x:auto;">
+
+<svg width="760" height="280" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Top Bus -->
+    <line x1="40" y1="40" x2="720" y2="40" stroke="black" stroke-width="2"/>
+
+    <!-- Bus arrows -->
+    <line x1="120" y1="40" x2="120" y2="70" stroke="black"/>
+    <polygon points="116,66 120,74 124,66" fill="black"/>
+
+    <line x1="190" y1="70" x2="190" y2="40" stroke="black"/>
+    <polygon points="186,44 190,36 194,44" fill="black"/>
+
+    <line x1="260" y1="40" x2="260" y2="70" stroke="black"/>
+    <polygon points="256,66 260,74 264,66" fill="black"/>
+
+    <line x1="320" y1="70" x2="320" y2="40" stroke="black"/>
+    <polygon points="316,44 320,36 324,44" fill="black"/>
+
+    <line x1="380" y1="40" x2="380" y2="70" stroke="black"/>
+    <polygon points="376,66 380,74 384,66" fill="black"/>
+
+    <line x1="470" y1="70" x2="470" y2="40" stroke="black"/>
+    <polygon points="466,44 470,36 474,44" fill="black"/>
+
+    <line x1="560" y1="40" x2="560" y2="70" stroke="black"/>
+    <polygon points="556,66 560,74 564,66" fill="black"/>
+
+    <line x1="660" y1="70" x2="660" y2="40" stroke="black"/>
+    <polygon points="656,44 660,36 664,44" fill="black"/>
+
+    <!-- A2 -->
+    <rect x="80" y="70" width="40" height="35" fill="white" stroke="black"/>
+    <text x="92" y="92">A₂</text>
+
+    <!-- A1 -->
+    <rect x="170" y="70" width="40" height="35" fill="white" stroke="black"/>
+    <text x="182" y="92">A₁</text>
+
+    <!-- B -->
+    <rect x="250" y="70" width="40" height="35" fill="white" stroke="black"/>
+    <text x="264" y="92">B</text>
+
+    <!-- A -->
+    <rect x="310" y="70" width="40" height="35" fill="white" stroke="black"/>
+    <text x="324" y="92">A</text>
+
+    <!-- MUX -->
+    <rect x="410" y="70" width="55" height="55" fill="white" stroke="black"/>
+    <text x="422" y="92" font-size="12">MUX</text>
+    <text x="420" y="108" font-size="11">1 : 2</text>
+
+    <!-- SP -->
+    <rect x="425" y="150" width="40" height="38" fill="white" stroke="black"/>
+    <text x="437" y="173">SP</text>
+
+    <line x1="445" y1="125" x2="445" y2="150" stroke="black"/>
+    <polygon points="441,146 445,154 449,146" fill="black"/>
+
+    <text x="388" y="175" font-size="12">decr</text>
+    <line x1="405" y1="170" x2="425" y2="170" stroke="black"/>
+    <polygon points="421,166 429,170 421,174" fill="black"/>
+
+    <!-- DEMUX -->
+    <rect x="515" y="70" width="60" height="55" fill="white" stroke="black"/>
+    <text x="522" y="92" font-size="12">DEMUX</text>
+    <text x="523" y="108" font-size="11">1 : 2</text>
+
+    <!-- MAR -->
+    <rect x="525" y="155" width="45" height="38" fill="white" stroke="black"/>
+    <text x="536" y="178">MAR</text>
+
+    <line x1="545" y1="125" x2="545" y2="155" stroke="black"/>
+    <polygon points="541,151 545,159 549,151" fill="black"/>
+
+    <!-- MDR -->
+    <rect x="640" y="70" width="45" height="38" fill="white" stroke="black"/>
+    <text x="651" y="93">MDR</text>
+
+    <!-- ALU -->
+    <line x1="100" y1="105" x2="115" y2="160" stroke="black"/>
+    <line x1="190" y1="105" x2="175" y2="160" stroke="black"/>
+    <polygon points="125,160 165,160 150,195 140,210 125,160"
+             fill="white" stroke="black"/>
+
+    <line x1="145" y1="210" x2="145" y2="40" stroke="black"/>
+    <polygon points="141,44 145,36 149,44" fill="black"/>
+
+</svg>
+
+    </div>
+
+    <p class="ques">
+        The CPU instruction <b>"push r"</b>, where
+        <b>r = A</b> or <b>B</b>, has the specification
+    </p>
+
+    <div style="margin-left:30px;line-height:1.8;">
+        M[SP] &larr; r<br>
+        SP &larr; SP − 1
+    </div>
+
+    <p class="ques">
+        How many CPU clock cycles are needed to execute the
+        <b>"push r"</b> instruction?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q241','',this)">
+        A) 2
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q241','',this)">
+        B) 3
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q241','',this)">
+        C) 4
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q241','',this)">
+        D) 5
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q241')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2001</i></p>
+
+    <div id="explanationQ241" class="explanation">
+    </div>
+
+</div>
+
+    
+
+<!-- Question 242 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q242.</b> A graphics card has on board memory of
+        <b>1 MB</b>. Which of the following modes can the card
+        <b>not</b> support?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q242','',this)">
+        A) 1600 × 400 resolution with 256 colours on a 17 inch monitor
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q242','',this)">
+        B) 1600 × 400 resolution with 16 million colours on a 14 inch monitor
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q242','',this)">
+        C) 800 × 400 resolution with 16 million colours on a 17 inch monitor
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q242','',this)">
+        D) 800 × 800 resolution with 256 colours on a 14 inch monitor
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q242')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2000</i></p>
+
+    <div id="explanationQ242" class="explanation">
+    </div>
+
+</div>
+
+
+
+
+<!-- Question 243 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q243.</b> Comparing the time <b>T1</b> taken for a single
+        instruction on a pipelined CPU with time <b>T2</b> taken on a
+        non-pipelined but identical CPU, we can say that
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q243','',this)">
+        A) T1 ≤ T2
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q243','',this)">
+        B) T1 ≥ T2
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q243','',this)">
+        C) T1 &lt; T2
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q243','',this)">
+        D) T1 plus T2 is the time taken for one instruction fetch cycle
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q243')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2000</i></p>
+
+    <div id="explanationQ243" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 244 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q244.</b> The most appropriate matching for the following pairs
+    </p>
+
+    <table class="gate-table">
+        <tr>
+            <th>List-I</th>
+            <th>List-II</th>
+        </tr>
+        <tr>
+            <td>
+                X. Indirect addressing<br>
+                Y. Immediate addressing<br>
+                Z. Auto decrement addressing
+            </td>
+            <td>
+                1. Loops<br>
+                2. Pointers<br>
+                3. Constants
+            </td>
+        </tr>
+    </table>
+
+    <button class="option-btn" onclick="checkAnswer('Q244','',this)">
+        A) X – 3 &nbsp;&nbsp; Y – 2 &nbsp;&nbsp; Z – 1
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q244','',this)">
+        B) X – 1 &nbsp;&nbsp; Y – 3 &nbsp;&nbsp; Z – 2
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q244','',this)">
+        C) X – 2 &nbsp;&nbsp; Y – 3 &nbsp;&nbsp; Z – 1
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q244','',this)">
+        D) X – 3 &nbsp;&nbsp; Y – 1 &nbsp;&nbsp; Z – 2
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q244')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 2000</i></p>
+
+    <div id="explanationQ244" class="explanation">
+    </div>
+
+</div>
+
+
+
+
+<!-- Question 245 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q245.</b> The main memory of a computer has
+        <b>2cm</b> blocks while the cache has <b>2c</b> blocks.
+        If the cache uses the <b>set associative mapping</b> scheme
+        with <b>2 blocks per set</b>, then block <b>k</b> of the main
+        memory maps to the set
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q245','',this)">
+        A) (k mod m) of the cache
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q245','',this)">
+        B) (k mod c) of the cache
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q245','',this)">
+        C) (k mod 2c) of the cache
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q245','',this)">
+        D) (k mod 2cm) of the cache
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q245')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 1999</i></p>
+
+    <div id="explanationQ245" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 246 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q246.</b> Which of the following is/are advantage of virtual
+        memory?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q246','',this)">
+        A) Faster access to memory on an average.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q246','',this)">
+        B) Processes can be given protected address spaces.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q246','',this)">
+        C) Linker can assign addresses independent of where the program will be loaded in physical memory.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q246','',this)">
+        D) Programs larger than the physical memory size can be run.
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q246')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 1999</i></p>
+
+    <div id="explanationQ246" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 247 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q247.</b> RAID configurations of disks are used to provide
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q247','',this)">
+        A) fault-tolerance
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q247','',this)">
+        B) high speed
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q247','',this)">
+        C) high data density
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q247','',this)">
+        D) None of these
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q247')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 1999</i></p>
+
+    <div id="explanationQ247" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 248 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q248.</b> Arrange the following configuration for CPU in
+        <b>decreasing order of operating speeds</b>:
+        Hard wired control, vertical micro-programming,
+        horizontal micro-programming.
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q248','',this)">
+        A) Hard wired control, vertical micro-programming, horizontal micro-programming.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q248','',this)">
+        B) Hard wired control, horizontal micro-programming, vertical micro-programming.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q248','',this)">
+        C) Horizontal micro-programming, vertical micro-programming, Hard wired control.
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q248','',this)">
+        D) Vertical micro-programming, horizontal micro-programming, hard wired control.
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q248')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 1999</i></p>
+
+    <div id="explanationQ248" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 249 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q249.</b> The main difference(s) between a <b>CISC</b> and a
+        <b>RISC</b> processor is/are that a RISC processor typically
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q249','',this)">
+        A) has fewer instructions
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q249','',this)">
+        B) has fewer addressing modes
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q249','',this)">
+        C) has more registers
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q249','',this)">
+        D) is easier to implement using hard-wired control logic
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q249')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>Gate CSE 1999</i></p>
+
+    <div id="explanationQ249" class="explanation">
+    </div>
+
+</div>
+
+
+
+
+
+<!-- Question 250 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q250.</b> Formatting of floppy disk refers to
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q250','',this)">
+        A) arranging the data on the disk in contiguous fashion
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q250','',this)">
+        B) writing the directory
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q250','',this)">
+        C) erasing the system area
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q250','',this)">
+        D) writing identification information on all tracks and sectors
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q250')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>1998 </i></p>
+
+    <div id="explanationQ250" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 251 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q251.</b> When an interrupt occurs, an operating system
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q251','',this)">
+        A) ignores the interrupt
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q251','',this)">
+        B) always changes state of interrupted process after processing the interrupt
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q251','',this)">
+        C) always resumes execution of interrupted process after processing the interrupt
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q251','',this)">
+        D) may change state of interrupted process to 'blocked' and schedule another process
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q251')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>1997 </i></p>
+
+    <div id="explanationQ251" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 252 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q252.</b> The correct matching for the following pairs is
+        <br><br>
+        A. DMA I/O &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. High speed RAM<br>
+        B. Cache &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Disk<br>
+        C. Interrupt I/O &nbsp;&nbsp; 3. Printer<br>
+        D. Condition code Register &nbsp;&nbsp; 4. ALU
+        <br><br>
+        <b>Codes:</b>
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q252','',this)">
+        A) A – 4, B – 3, C – 1, D – 2
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q252','',this)">
+        B) A – 2, B – 1, C – 3, D – 4
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q252','',this)">
+        C) A – 4, B – 3, C – 2, D – 1
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q252','',this)">
+        D) A – 2, B – 3, C – 4, D – 1
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q252')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>1997 </i></p>
+
+    <div id="explanationQ252" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 253 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q253.</b> I/O redirection
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q253','',this)">
+        A) implies changing the name of a file
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q253','',this)">
+        B) can be employed to use an existing file as input file for a program
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q253','',this)">
+        C) implies connection 2 programs through a pipe
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q253','',this)">
+        D) None of the above
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q253')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>1997 </i></p>
+
+    <div id="explanationQ253" class="explanation">
+    </div>
+
+</div>
+    
+
+
+
+<!-- Question 254 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q254.</b> For the daisy chain scheme of connecting I/O devices, which of the following statements is true?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q254','',this)">
+        A) It gives non-uniform priority to various devices
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q254','',this)">
+        B) It gives uniform priority to all devices
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q254','',this)">
+        C) It is only useful for connecting slow devices to a processor device
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q254','',this)">
+        D) It requires a separate interrupt pin on the processor for each device
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q254')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>1996 </i></p>
+
+    <div id="explanationQ254" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 255 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q255.</b> A micro program control unit is required to generate a total of 25 control signals. Assume that during any microinstruction at most two control signals are active. Minimum number of bits required in the control word to generate the required control signal
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q255','',this)">
+        A) 2
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q255','',this)">
+        B) 25
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q255','',this)">
+        C) 10
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q255','',this)">
+        D) 12
+    </button>
+
+    <button class="check-btn" onclick="showExplanation('Q255')">
+        Show Explanation
+    </button>
+
+    <p class="year"><i>1996 </i></p>
+
+    <div id="explanationQ255" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 256 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q256.</b> If the disk is rotating at 3600 rpm, determine the effective data transfer rate which is defined as the number of bytes transferred per second between disk and memory. (Given size of track = 512 bytes)
+    </p>
+
+    <p class="year"><i>1995 </i></p>
+
+    <div id="explanationQ256" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 257 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q257.</b> A certain moving arm disk storage, with one head, has the following specifications:
+        <br><br>
+        Number of tracks/recording surface = 200<br>
+        Disk rotation speed = 2400 rpm<br>
+        Track storage capacity = 62,500 bits
+        <br><br>
+        The average latency of this device is <b>P</b> msec and the data transfer rate is <b>Q</b> bits/sec. Write the value of <b>P</b> and <b>Q</b>. Write the value of P and Q
+    </p>
+
+
+    <p class="year"><i>1993 </i></p>
+
+    <div id="explanationQ257" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 258 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q258.</b> The total size of address space in a virtual memory system is limited by
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q258','',this)">
+        A) the length of MAR
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q258','',this)">
+        B) the available secondary storage
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q258','',this)">
+        C) the available main memory
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q258','',this)">
+        D) All of the above
+    </button>
+
+
+    <p class="year"><i>1991 </i></p>
+
+    <div id="explanationQ258" class="explanation">
+    </div>
+
+</div>
+
+
+
+
+<!-- Question 259 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q259.</b> A certain moving arm disk storage, with one head, has the following specifications:
+        <br><br>
+        Number of tracks/recording surface = 200<br>
+        Disk rotation speed = 2400 rpm<br>
+        Track storage capacity = 62,500 bits
+        <br><br>
+        The average latency of this device is <b>P</b> msec and the data transfer rate is <b>Q</b> bits/sec. Write the value of <b>P</b> and <b>Q</b>. Write the value of P and Q
+    </p>
+
+
+    <p class="year"><i>1993</i></p>
+
+    <div id="explanationQ257" class="explanation">
+    </div>
+
+</div>
+    
+
+
+<!-- Question 259 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q259.</b> A block-set associative cache memory consists of 128 blocks divided into four block sets. The main memory consists of 16,384 blocks and each block contains 256 eight bit words.
+        <br><br>
+        (i) How many bits are required for addressing the main memory?
+        <br>
+        (ii) How many bits are needed to represent the <b>TAG</b>, <b>SET</b> and <b>WORD</b> fields?
+    </p>
+
+
+    <p class="year"><i>1990 </i></p>
+
+    <div id="explanationQ259" class="explanation">
+    </div>
+
+</div>
+
+
+
+
+<!-- Question 260 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q260.</b> In a two-level virtual memory, the memory access time for main memory, <b>t<sub>A</sub></b> = 10<sup>−8</sup> sec, and the memory access time for the secondary memory, <b>t<sub>S</sub></b> = 10<sup>−3</sup> sec. What must be the hit ratio, <b>H</b>, such that the access efficiency is within 80 percent of its maximum value.
+    </p>
+
+    <p class="year"><i>1990</i></p>
+
+    <div id="explanationQ260" class="explanation">
+    </div>
+
+</div>
+
+
+
+
+<!-- Question 261 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q261.</b> The data transfer between memory and I/O devices using programmed I/O is faster than interrupt driven I/O.
+    </p>
+
+
+    <p class="year"><i>1990 </i></p>
+
+    <div id="explanationQ261" class="explanation">
+    </div>
+
+</div>
+
+
+
+<!-- Question 262 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q262.</b> The flags are affected when conditional <b>CALL</b> or <b>JUMP</b> instructions are executed.
+    </p>
+
+    <p class="year"><i>1990</i></p>
+
+    <div id="explanationQ262" class="explanation">
+    </div>
+
+</div>
+
+
+
+
+<!-- Question 263 -->
+<div class="question">
+
+    <p class="ques">
+        <b>Q263.</b> Transferring data in blocks from the main memory to the cache memory enables an interleaved main memory unit to operate at its maximum speed.
+    </p>
+
+    <p class="year"><i>1990 </i></p>
+
+    <div id="explanationQ263" class="explanation">
+    </div>
+
+</div>
+
+
+
+
+
+
 
 
 
 
     
-
+    
     
 
     
