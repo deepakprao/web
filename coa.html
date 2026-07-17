@@ -2774,7 +2774,7 @@ td {
 
 
 
-<!-- Question 111-->
+<!-- Question 111 -->
 <div class="question">
 
     <p class="ques"><b>Q111.</b> On a non-pipelined sequential processor, a program segment, which is a part of the interrupt service routine, is given to transfer <b>500 bytes</b> from an I/O device to memory.</p>
@@ -2790,46 +2790,27 @@ td {
     </div>
 
     <p class="ques">
-        Assume that each statement in this program is equivalent to a machine instruction which takes
-        <b>one clock cycle</b> to execute if it is a non-load/store instruction. The load-store instructions
-        take <b>two clock cycles</b> to execute.
+        Assume that each statement in this program is equivalent to a machine instruction which takes <b>one clock cycle</b> to execute if it is a non-load/store instruction. The load-store instructions take <b>two clock cycles</b> to execute.
     </p>
 
     <p class="ques">
-        The designer of the system also has an alternate approach of using the <b>DMA controller</b> to
-        implement the same transfer. The DMA controller requires <b>20 clock cycles</b> for initialization
-        and other overhead. Each DMA transfer cycle takes <b>two clock cycles</b> to transfer one byte of
-        data from the device to memory.
+        The designer of the system also has an alternate approach of using the <b>DMA controller</b> to implement the same transfer. The DMA controller requires <b>20 clock cycles</b> for initialization and other overhead. Each DMA transfer cycle takes <b>two clock cycles</b> to transfer one byte of data from the device to memory.
     </p>
 
     <p class="ques">
         The speedup achieved by the DMA based transfer over interrupt driven program based input-output is
     </p>
 
-    <div class="options">
-        <label><input type="radio" name="q2011q5" value="A">
-            (A) 3.4
-        </label>
-
-        <label><input type="radio" name="q2011q5" value="B">
-            (B) 4.4
-        </label>
-
-        <label><input type="radio" name="q2011q5" value="C">
-            (C) 5.1
-        </label>
-
-        <label><input type="radio" name="q2011q5" value="D">
-            (D) 6.7
-        </label>
-    </div>
-
-    <button class="check-btn" onclick="checkMCQ('q2011q5','A')">Check Answer</button>
+    <button class="option-btn" onclick="checkAnswer('Q111', 'A', this)">A) 3.4</button>
+    <button class="option-btn" onclick="checkAnswer('Q111', 'B', this)">B) 4.4</button>
+    <button class="option-btn" onclick="checkAnswer('Q111', 'C', this)">C) 5.1</button>
+    <button class="option-btn" onclick="checkAnswer('Q111', 'D', this)">D) 6.7</button>
 
     <p class="year"><i>Gate CSE 2011</i></p>
-    <div id="explanationq2011q5" class="explanation"></div>
+    <div id="explanationQ111" class="explanation"></div>
 
 </div>
+
 
 
 
@@ -2838,31 +2819,15 @@ td {
 
     <p class="ques"><b>Q112.</b> An application loads <b>100 libraries</b> at start-up. Loading each library requires exactly <b>one disk access</b>. The seek time of the disk to a random location is given as <b>10 ms</b>. Rotational speed of the disk is <b>6000 rpm</b>. If all 100 libraries are loaded from random locations on the disk, how long does it take to load all libraries? (The time to transfer data from the disk block once the head has been positioned at the start of the block may be neglected.)</p>
 
-    <div class="options">
-        <label><input type="radio" name="q2011q6" value="A">
-            (A) 0.50 s
-        </label>
-
-        <label><input type="radio" name="q2011q6" value="B">
-            (B) 1.50 s
-        </label>
-
-        <label><input type="radio" name="q2011q6" value="C">
-            (C) 1.25 s
-        </label>
-
-        <label><input type="radio" name="q2011q6" value="D">
-            (D) 1.00 s
-        </label>
-    </div>
-
-    <button class="check-btn" onclick="checkMCQ('q2011q6','B')">Check Answer</button>
+    <button class="option-btn" onclick="checkAnswer('Q112', 'A', this)">A) 0.50 s</button>
+    <button class="option-btn" onclick="checkAnswer('Q112', 'B', this)">B) 1.50 s</button>
+    <button class="option-btn" onclick="checkAnswer('Q112', 'C', this)">C) 1.25 s</button>
+    <button class="option-btn" onclick="checkAnswer('Q112', 'D', this)">D) 1.00 s</button>
 
     <p class="year"><i>Gate CSE 2011</i></p>
-    <div id="explanationq2011q6" class="explanation"></div>
+    <div id="explanationQ112" class="explanation"></div>
 
 </div>
-
 
 
 <!-- Question 113 -->
@@ -2870,31 +2835,15 @@ td {
 
     <p class="ques"><b>Q113.</b> A main memory unit with a capacity of <b>4 megabytes</b> is built using <b>1M × 1-bit DRAM</b> chips. Each DRAM chip has <b>1K rows</b> of cells with <b>1K cells</b> in each row. The time taken for a single refresh operation is <b>100 nanoseconds</b>. The time required to perform one refresh operation on all the cells in the memory unit is</p>
 
-    <div class="options">
-        <label><input type="radio" name="q2010q133" value="A">
-            (A) 100 nanoseconds
-        </label>
-
-        <label><input type="radio" name="q2010q133" value="B">
-            (B) 100 × 2<sup>10</sup> nanoseconds
-        </label>
-
-        <label><input type="radio" name="q2010q133" value="C">
-            (C) 100 × 2<sup>20</sup> nanoseconds
-        </label>
-
-        <label><input type="radio" name="q2010q133" value="D">
-            (D) 3200 × 2<sup>20</sup> nanoseconds
-        </label>
-    </div>
-
-    <button class="check-btn" onclick="checkMCQ('q2010q133','B')">Check Answer</button>
+    <button class="option-btn" onclick="checkAnswer('Q113', 'A', this)">A) 100 nanoseconds</button>
+    <button class="option-btn" onclick="checkAnswer('Q113', 'B', this)">B) 100 × 2<sup>10</sup> nanoseconds</button>
+    <button class="option-btn" onclick="checkAnswer('Q113', 'C', this)">C) 100 × 2<sup>20</sup> nanoseconds</button>
+    <button class="option-btn" onclick="checkAnswer('Q113', 'D', this)">D) 3200 × 2<sup>20</sup> nanoseconds</button>
 
     <p class="year"><i>Gate CSE 2010</i></p>
-    <div id="explanationq2010q133" class="explanation"></div>
+    <div id="explanationQ113" class="explanation"></div>
 
-</div>  
-
+</div>
     
 
 <!-- Question 114 -->
@@ -2906,31 +2855,15 @@ td {
         When there is a miss in <b>L1 cache</b> and a hit in <b>L2 cache</b>, a block is transferred from L2 cache to L1 cache. What is the time taken for this transfer?
     </p>
 
-    <div class="options">
-        <label><input type="radio" name="q2010q134" value="A">
-            (A) 2 nanoseconds
-        </label>
-
-        <label><input type="radio" name="q2010q134" value="B">
-            (B) 20 nanoseconds
-        </label>
-
-        <label><input type="radio" name="q2010q134" value="C">
-            (C) 22 nanoseconds
-        </label>
-
-        <label><input type="radio" name="q2010q134" value="D">
-            (D) 88 nanoseconds
-        </label>
-    </div>
-
-    <button class="check-btn" onclick="checkMCQ('q2010q134','D')">Check Answer</button>
+    <button class="option-btn" onclick="checkAnswer('Q114', 'A', this)">A) 2 nanoseconds</button>
+    <button class="option-btn" onclick="checkAnswer('Q114', 'B', this)">B) 20 nanoseconds</button>
+    <button class="option-btn" onclick="checkAnswer('Q114', 'C', this)">C) 22 nanoseconds</button>
+    <button class="option-btn" onclick="checkAnswer('Q114', 'D', this)">D) 88 nanoseconds</button>
 
     <p class="year"><i>Gate CSE 2010</i></p>
-    <div id="explanationq2010q134" class="explanation"></div>
+    <div id="explanationQ114" class="explanation"></div>
 
 </div>
-
 
 
 <!-- Question 115 -->
@@ -2942,28 +2875,13 @@ td {
         When there is a miss in both <b>L1 cache</b> and <b>L2 cache</b>, first a block is transferred from <b>main memory</b> to <b>L2 cache</b>, and then a block is transferred from <b>L2 cache</b> to <b>L1 cache</b>. What is the total time taken for these transfers?
     </p>
 
-    <div class="options">
-        <label><input type="radio" name="q2010q135" value="A">
-            (A) 222 nanoseconds
-        </label>
-
-        <label><input type="radio" name="q2010q135" value="B">
-            (B) 888 nanoseconds
-        </label>
-
-        <label><input type="radio" name="q2010q135" value="C">
-            (C) 902 nanoseconds
-        </label>
-
-        <label><input type="radio" name="q2010q135" value="D">
-            (D) 968 nanoseconds
-        </label>
-    </div>
-
-    <button class="check-btn" onclick="checkMCQ('q2010q135','C')">Check Answer</button>
+    <button class="option-btn" onclick="checkAnswer('Q115', 'A', this)">A) 222 nanoseconds</button>
+    <button class="option-btn" onclick="checkAnswer('Q115', 'B', this)">B) 888 nanoseconds</button>
+    <button class="option-btn" onclick="checkAnswer('Q115', 'C', this)">C) 902 nanoseconds</button>
+    <button class="option-btn" onclick="checkAnswer('Q115', 'D', this)">D) 968 nanoseconds</button>
 
     <p class="year"><i>Gate CSE 2010</i></p>
-    <div id="explanationq2010q135" class="explanation"></div>
+    <div id="explanationQ115" class="explanation"></div>
 
 </div>
 
@@ -2997,20 +2915,13 @@ td {
         </tr>
     </table>
 
-    <div class="options">
-        <label><input type="radio" name="q2010q136" value="A">(A) 13</label>
-
-        <label><input type="radio" name="q2010q136" value="B">(B) 15</label>
-
-        <label><input type="radio" name="q2010q136" value="C">(C) 17</label>
-
-        <label><input type="radio" name="q2010q136" value="D">(D) 19</label>
-    </div>
-
-    <button class="check-btn" onclick="checkMCQ('q2010q136','C')">Check Answer</button>
+    <button class="option-btn" onclick="checkAnswer('Q116', 'A', this)">A) 13</button>
+    <button class="option-btn" onclick="checkAnswer('Q116', 'B', this)">B) 15</button>
+    <button class="option-btn" onclick="checkAnswer('Q116', 'C', this)">C) 17</button>
+    <button class="option-btn" onclick="checkAnswer('Q116', 'D', this)">D) 19</button>
 
     <p class="year"><i>Gate CSE 2010</i></p>
-    <div id="explanationq2010q136" class="explanation"></div>
+    <div id="explanationQ116" class="explanation"></div>
 
 </div>
 
@@ -3038,52 +2949,28 @@ td {
         Assuming that all operations take their operands from registers, what is the minimum number of registers needed to execute this program without spilling?
     </p>
 
-    <div class="options">
-        <label><input type="radio" name="q2010q137" value="A">(A) 2</label>
-
-        <label><input type="radio" name="q2010q137" value="B">(B) 3</label>
-
-        <label><input type="radio" name="q2010q137" value="C">(C) 4</label>
-
-        <label><input type="radio" name="q2010q137" value="D">(D) 6</label>
-    </div>
-
-    <button class="check-btn" onclick="checkMCQ('q2010q137','B')">Check Answer</button>
+    <button class="option-btn" onclick="checkAnswer('Q117', 'A', this)">A) 2</button>
+    <button class="option-btn" onclick="checkAnswer('Q117', 'B', this)">B) 3</button>
+    <button class="option-btn" onclick="checkAnswer('Q117', 'C', this)">C) 4</button>
+    <button class="option-btn" onclick="checkAnswer('Q117', 'D', this)">D) 6</button>
 
     <p class="year"><i>Gate CSE 2010</i></p>
-    <div id="explanationq2010q137" class="explanation"></div>
+    <div id="explanationQ117" class="explanation"></div>
 
 </div>
 
-
-
-<!-- Question 118-->
+<!-- Question 118 -->
 <div class="question">
 
     <p class="ques"><b>Q118.</b> How many <b>32K × 1 RAM</b> chips are needed to provide a memory capacity of <b>256 K-bytes</b>?</p>
 
-    <div class="options">
-        <label><input type="radio" name="q2009q1" value="A">
-            (A) 8
-        </label>
-
-        <label><input type="radio" name="q2009q1" value="B">
-            (B) 32
-        </label>
-
-        <label><input type="radio" name="q2009q1" value="C">
-            (C) 64
-        </label>
-
-        <label><input type="radio" name="q2009q1" value="D">
-            (D) 128
-        </label>
-    </div>
-
-    <button class="check-btn" onclick="checkMCQ('q2009q1','C')">Check Answer</button>
+    <button class="option-btn" onclick="checkAnswer('Q118', 'A', this)">A) 8</button>
+    <button class="option-btn" onclick="checkAnswer('Q118', 'B', this)">B) 32</button>
+    <button class="option-btn" onclick="checkAnswer('Q118', 'C', this)">C) 64</button>
+    <button class="option-btn" onclick="checkAnswer('Q118', 'D', this)">D) 128</button>
 
     <p class="year"><i>Gate CSE 2009</i></p>
-    <div id="explanationq2009q1" class="explanation"></div>
+    <div id="explanationQ118" class="explanation"></div>
 
 </div>
 
@@ -3101,32 +2988,15 @@ td {
         Which one of the following memory block will <b>NOT</b> be in cache if <b>LRU</b> replacement policy is used?
     </p>
 
-    <div class="options">
-        <label><input type="radio" name="q2009q2" value="A">
-            (A) 3
-        </label>
-
-        <label><input type="radio" name="q2009q2" value="B">
-            (B) 8
-        </label>
-
-        <label><input type="radio" name="q2009q2" value="C">
-            (C) 129
-        </label>
-
-        <label><input type="radio" name="q2009q2" value="D">
-            (D) 216
-        </label>
-    </div>
-
-    <button class="check-btn" onclick="checkMCQ('q2009q2','A')">Check Answer</button>
+    <button class="option-btn" onclick="checkAnswer('Q119', 'A', this)">A) 3</button>
+    <button class="option-btn" onclick="checkAnswer('Q119', 'B', this)">B) 8</button>
+    <button class="option-btn" onclick="checkAnswer('Q119', 'C', this)">C) 129</button>
+    <button class="option-btn" onclick="checkAnswer('Q119', 'D', this)">D) 216</button>
 
     <p class="year"><i>Gate CSE 2009</i></p>
-    <div id="explanationq2009q2" class="explanation"></div>
+    <div id="explanationQ119" class="explanation"></div>
 
 </div>
-
-
 
 
     
