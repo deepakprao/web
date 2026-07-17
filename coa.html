@@ -2999,6 +2999,675 @@ td {
 </div>
 
 
+<!-- Question 120 -->
+<div class="question">
+
+    <p class="ques"><b>Q120.</b> Consider a <b>4-stage pipeline processor</b>. The number of cycles needed by the four instructions <b>I1, I2, I3, I4</b> in stages <b>S1, S2, S3</b> and <b>S4</b> is shown below.</p>
+
+    <table class="gate-table">
+        <tr>
+            <th></th>
+            <th>S1</th>
+            <th>S2</th>
+            <th>S3</th>
+            <th>S4</th>
+        </tr>
+        <tr>
+            <td><b>I1</b></td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><b>I2</b></td>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><b>I3</b></td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><b>I4</b></td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <p class="ques">
+        What is the number of cycles needed to execute the following loop?
+    </p>
+
+    <div style="text-align:center; margin:15px 0;">
+        <code>for (i = 1 to 2) { I1; I2; I3; I4; }</code>
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer('Q120', 'A', this)">A) 16</button>
+    <button class="option-btn" onclick="checkAnswer('Q120', 'B', this)">B) 23</button>
+    <button class="option-btn" onclick="checkAnswer('Q120', 'C', this)">C) 28</button>
+    <button class="option-btn" onclick="checkAnswer('Q120', 'D', this)">D) 30</button>
+
+    <p class="year"><i>Gate CSE 2009</i></p>
+    <div id="explanationQ120" class="explanation"></div>
+
+</div>
+
+
+<!-- Question 122 -->
+<div class="question">
+
+    <p class="ques"><b>Q122.</b> A hard disk has <b>63 sectors per track</b>, <b>10 platters</b> each with <b>2 recording surfaces</b> and <b>1000 cylinders</b>. The address of a sector is given as a triple <b>&lt;c, h, s&gt;</b>, where <b>c</b> is the cylinder number, <b>h</b> is the surface number and <b>s</b> is the sector number. Thus, the 0<sup>th</sup> sector is addressed as <b>&lt;0, 0, 0&gt;</b>, the 1<sup>st</sup> sector as <b>&lt;0, 0, 1&gt;</b>, and so on.</p>
+
+    <p class="ques">
+        The address <b>&lt;400, 16, 29&gt;</b> corresponds to sector number:
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q122', 'B', this)">A) 505035</button>
+    <button class="option-btn" onclick="checkAnswer('Q122', 'B', this)">B) 505036</button>
+    <button class="option-btn" onclick="checkAnswer('Q122', 'B', this)">C) 505037</button>
+    <button class="option-btn" onclick="checkAnswer('Q122', 'B', this)">D) 505038</button>
+
+    <p class="year"><i>Gate CSE 2009</i></p>
+    <div id="explanationQ122" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 123 -->
+<div class="question">
+
+    <p class="ques"><b>Q123.</b> A hard disk has <b>63 sectors per track</b>, <b>10 platters</b> each with <b>2 recording surfaces</b> and <b>1000 cylinders</b>. The address of a sector is given as a triple <b>&lt;c, h, s&gt;</b>, where <b>c</b> is the cylinder number, <b>h</b> is the surface number and <b>s</b> is the sector number.</p>
+
+    <p class="ques">
+        The address of the <b>1039<sup>th</sup></b> sector is:
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q123', 'C', this)">A) &lt;0, 15, 31&gt;</button>
+    <button class="option-btn" onclick="checkAnswer('Q123', 'C', this)">B) &lt;0, 16, 30&gt;</button>
+    <button class="option-btn" onclick="checkAnswer('Q123', 'C', this)">C) &lt;0, 16, 31&gt;</button>
+    <button class="option-btn" onclick="checkAnswer('Q123', 'C', this)">D) &lt;0, 17, 31&gt;</button>
+
+    <p class="year"><i>Gate CSE 2009</i></p>
+    <div id="explanationQ123" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 124 -->
+<div class="question">
+
+    <p class="ques"><b>Q124.</b> Consider a computer with a <b>4-way set-associative cache</b> having the following characteristics:</p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        • Total main memory = <b>1 MB</b><br>
+        • Word size = <b>1 byte</b><br>
+        • Block size = <b>128 words</b><br>
+        • Cache size = <b>8 KB</b>
+    </div>
+
+    <p class="ques">
+        The number of bits in the <b>TAG</b>, <b>SET</b> and <b>WORD</b> fields, respectively, are:
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q124', 'B', this)">A) 7, 6, 7</button>
+    <button class="option-btn" onclick="checkAnswer('Q124', 'B', this)">B) 8, 5, 7</button>
+    <button class="option-btn" onclick="checkAnswer('Q124', 'B', this)">C) 8, 6, 6</button>
+    <button class="option-btn" onclick="checkAnswer('Q124', 'B', this)">D) 9, 4, 7</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ124" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 125 -->
+<div class="question">
+
+    <p class="ques"><b>Q125.</b> Consider a computer with a <b>4-way set-associative cache</b> having the following characteristics:</p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        • Total main memory = <b>1 MB</b><br>
+        • Word size = <b>1 byte</b><br>
+        • Block size = <b>128 words</b><br>
+        • Cache size = <b>8 KB</b>
+    </div>
+
+    <p class="ques">
+        While accessing the memory location <b>00795H</b> by the CPU, the contents of the <b>TAG</b> field of the corresponding cache line is:
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q125', 'C', this)">A) 000011000</button>
+    <button class="option-btn" onclick="checkAnswer('Q125', 'C', this)">B) 110001111</button>
+    <button class="option-btn" onclick="checkAnswer('Q125', 'C', this)">C) 00011000</button>
+    <button class="option-btn" onclick="checkAnswer('Q125', 'C', this)">D) 110010101</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ125" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 126 -->
+<div class="question">
+
+    <p class="ques"><b>Q126.</b> For inclusion to hold between two cache levels <b>L1</b> and <b>L2</b> in a multilevel cache hierarchy, which of the following are necessary?</p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        1. L1 must be a write-through cache<br>
+        2. L2 must be write-through cache<br>
+        3. The associativity of L2 must be greater than that of L1<br>
+        4. The L2 cache must be at least as large as the L1 cache
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer('Q126', 'A', this)">A) 4 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q126', 'A', this)">B) 1 and 2 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q126', 'A', this)">C) 1, 2 and 4 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q126', 'A', this)">D) 1, 2, 3 and 4</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ126" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 127 -->
+<div class="question">
+
+    <p class="ques"><b>Q127.</b> In an instruction execution pipeline, the earliest that the <b>data TLB (Translation Lookaside Buffer)</b> can be accessed is</p>
+
+    <button class="option-btn" onclick="checkAnswer('Q127', 'C', this)">A) before effective address calculation has started</button>
+    <button class="option-btn" onclick="checkAnswer('Q127', 'C', this)">B) during effective address calculation</button>
+    <button class="option-btn" onclick="checkAnswer('Q127', 'C', this)">C) after effective address calculation has completed</button>
+    <button class="option-btn" onclick="checkAnswer('Q127', 'C', this)">D) after data cache lookup has completed</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ127" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 128 -->
+<div class="question">
+
+    <p class="ques"><b>Q128.</b> Consider a machine with a <b>2-way set associative</b> data cache of size <b>64 Kbytes</b> and block size <b>16 bytes</b>. The cache is managed using <b>32-bit virtual addressing</b> and the page size is <b>4 Kbytes</b>. A program begins as follows:</p>
+
+<pre style="margin-left:20px;">
+double APR[1024][1024];
+int i, j;
+
+/* Initialize array APR to 0.0 */
+for (i = 0; i &lt; 1024; i++)
+    for (j = 0; j &lt; 1024; j++)
+        APR[i][j] = 0.0;
+</pre>
+
+    <p class="ques">
+        The size of <b>double</b> is 8 bytes. Array APR starts at the beginning of virtual page <b>0xFF000</b> and is stored in row-major order. The cache is initially empty and no prefetching is done. The only data memory references are to array APR.
+    </p>
+
+    <p class="ques">
+        The total size of the <b>tags</b> in the cache directory is
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q128', 'D', this)">A) 32 kbits</button>
+    <button class="option-btn" onclick="checkAnswer('Q128', 'D', this)">B) 34 kbits</button>
+    <button class="option-btn" onclick="checkAnswer('Q128', 'D', this)">C) 64 kbits</button>
+    <button class="option-btn" onclick="checkAnswer('Q128', 'D', this)">D) 68 kbits</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ128" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 129 -->
+<div class="question">
+
+     <p class="ques"><b>Q128.</b> Consider a machine with a <b>2-way set associative</b> data cache of size <b>64 Kbytes</b> and block size <b>16 bytes</b>. The cache is managed using <b>32-bit virtual addressing</b> and the page size is <b>4 Kbytes</b>. A program begins as follows:</p>
+
+<pre style="margin-left:20px;">
+double APR[1024][1024];
+int i, j;
+
+/* Initialize array APR to 0.0 */
+for (i = 0; i &lt; 1024; i++)
+    for (j = 0; j &lt; 1024; j++)
+        APR[i][j] = 0.0;
+</pre>
+
+    <p class="ques">
+        The size of <b>double</b> is 8 bytes. Array APR starts at the beginning of virtual page <b>0xFF000</b> and is stored in row-major order. The cache is initially empty and no prefetching is done. The only data memory references are to array APR.
+    </p>
+
+    <p class="ques"><b>Q129.</b>  Which one of the following array elements has the <b>same cache index</b> as <b>APR[0][0]</b>?</p>
+
+    <button class="option-btn" onclick="checkAnswer('Q129', 'D', this)">A) APR[0][4]</button>
+    <button class="option-btn" onclick="checkAnswer('Q129', 'D', this)">B) APR[4][0]</button>
+    <button class="option-btn" onclick="checkAnswer('Q129', 'D', this)">C) APR[0][5]</button>
+    <button class="option-btn" onclick="checkAnswer('Q129', 'D', this)">D) APR[5][0]</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ129" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 130 -->
+<div class="question">
+
+     <p class="ques"><b>Q128.</b> Consider a machine with a <b>2-way set associative</b> data cache of size <b>64 Kbytes</b> and block size <b>16 bytes</b>. The cache is managed using <b>32-bit virtual addressing</b> and the page size is <b>4 Kbytes</b>. A program begins as follows:</p>
+
+<pre style="margin-left:20px;">
+double APR[1024][1024];
+int i, j;
+
+/* Initialize array APR to 0.0 */
+for (i = 0; i &lt; 1024; i++)
+    for (j = 0; j &lt; 1024; j++)
+        APR[i][j] = 0.0;
+</pre>
+
+    <p class="ques">
+        The size of <b>double</b> is 8 bytes. Array APR starts at the beginning of virtual page <b>0xFF000</b> and is stored in row-major order. The cache is initially empty and no prefetching is done. The only data memory references are to array APR.
+    </p>
+
+    <p class="ques"><b>Q130.</b> The cache <b>hit ratio</b> for this initialization loop is</p>
+
+    <button class="option-btn" onclick="checkAnswer('Q130', 'D', this)">A) 0%</button>
+    <button class="option-btn" onclick="checkAnswer('Q130', 'D', this)">B) 25%</button>
+    <button class="option-btn" onclick="checkAnswer('Q130', 'D', this)">C) 50%</button>
+    <button class="option-btn" onclick="checkAnswer('Q130', 'D', this)">D) 75%</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ130" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 131 -->
+<div class="question">
+
+    <p class="ques"><b>Q131.</b> Assume that:</p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        <b>EA = (X)+</b> is the effective address equal to the contents of location <b>X</b>, with <b>X</b> incremented by one word length after the effective address is calculated.<br><br>
+
+        <b>EA = −(X)</b> is the effective address equal to the contents of location <b>X</b>, with <b>X</b> decremented by one word length before the effective address is calculated.<br><br>
+
+        <b>EA = (X)−</b> is the effective address equal to the contents of location <b>X</b>, with <b>X</b> decremented by one word length after the effective address is calculated.
+    </div>
+
+    <p class="ques">
+        The format of the instruction is <b>(opcode, source, destination)</b>, which means:
+    </p>
+
+    <div style="text-align:center;margin:15px 0;">
+        <b>(destination ← source op destination)</b>
+    </div>
+
+    <p class="ques">
+        Using <b>X</b> as a stack pointer, which of the following instructions can pop the top two elements from the stack, perform the addition operation and push the result back to the stack?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q131', 'C', this)">
+        A) ADD (X)−, (X)
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q131', 'C', this)">
+        B) ADD (X), (X)−
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q131', 'C', this)">
+        C) ADD −(X), (X)+
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q131', 'C', this)">
+        D) ADD −(X), (X)
+    </button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ131" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 132 -->
+<div class="question">
+
+    <p class="ques"><b>Q132.</b> A non-pipelined single cycle processor operating at <b>100 MHz</b> is converted into a synchronous pipelined processor with <b>five stages</b> requiring <b>2.5 ns</b>, <b>1.5 ns</b>, <b>2 ns</b>, <b>1.5 ns</b> and <b>2.5 ns</b>, respectively. The delay of the latches is <b>0.5 ns</b>. The speedup of the pipelined processor for a large number of instructions is</p>
+
+    <button class="option-btn" onclick="checkAnswer('Q132', 'D', this)">A) 4.5</button>
+    <button class="option-btn" onclick="checkAnswer('Q132', 'D', this)">B) 4.0</button>
+    <button class="option-btn" onclick="checkAnswer('Q132', 'D', this)">C) 3.33</button>
+    <button class="option-btn" onclick="checkAnswer('Q132', 'D', this)">D) 3.0</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ132" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 133 -->
+<div class="question">
+
+    <p class="ques"><b>Q133.</b> Which of the following must be true for the <b>RFE (Return from Exception)</b> instruction on a general purpose processor?</p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        1. It must be a trap instruction.<br>
+        2. It must be a privileged instruction.<br>
+        3. An exception cannot be allowed to occur during execution of an RFE instruction.
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer('Q133', 'B', this)">A) 1 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q133', 'B', this)">B) 2 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q133', 'B', this)">C) 1 and 2 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q133', 'B', this)">D) 1, 2 and 3 only</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ133" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 134 -->
+<div class="question">
+
+    <p class="ques"><b>Q134.</b> Which of the following are <b>NOT true</b> in a pipelined processor?</p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        1. Bypassing can handle all RAW hazards.<br>
+        2. Register renaming can eliminate all register carried WAR hazards.<br>
+        3. Control hazard penalties can be eliminated by dynamic branch prediction.
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer('Q134', 'B', this)">A) 1 and 2 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q134', 'B', this)">B) 1 and 3 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q134', 'B', this)">C) 2 and 3 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q134', 'B', this)">D) 1, 2 and 3</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ134" class="explanation"></div>
+
+</div>
+
+    
+
+<!-- Question 135 -->
+<div class="question">
+
+    <p class="ques"><b>Q135.</b> Delayed branching can help in the handling of <b>control hazards</b>.</p>
+
+    <p class="ques">
+        For all delayed conditional branch instructions, irrespective of whether the condition evaluates to true or false,
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q135', 'A', this)">
+        A) the instruction following the conditional branch instruction in memory is executed
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q135', 'A', this)">
+        B) the first instruction in the fall through path is executed
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q135', 'A', this)">
+        C) the first instruction in the taken path is executed
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Q135', 'A', this)">
+        D) the branch takes longer to execute than any other instruction
+    </button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ135" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 136 -->
+<div class="question">
+
+   <p class="ques"><b>Q136.</b> Delayed branching can help in the handling of <b>control hazards</b>.</p>
+    
+    <p class="ques">The following code is to run on a pipelined processor with <b>one branch delay slot</b>.</p>
+
+    <table class="gate-table">
+        <tr>
+            <td><b>I1:</b></td>
+            <td>ADD R2 ← R7 + R8</td>
+        </tr>
+        <tr>
+            <td><b>I2:</b></td>
+            <td>SUB R4 ← R5 − R6</td>
+        </tr>
+        <tr>
+            <td><b>I3:</b></td>
+            <td>ADD R1 ← R2 + R3</td>
+        </tr>
+        <tr>
+            <td><b>I4:</b></td>
+            <td>STORE Memory[R4] ← R1</td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>BRANCH to Label if R1 == 0</b></td>
+        </tr>
+    </table>
+
+    <p class="ques">
+        Which of the instructions <b>I1, I2, I3</b> or <b>I4</b> can legitimately occupy the delay slot without any other program modification?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q136', 'B', this)">A) I1</button>
+    <button class="option-btn" onclick="checkAnswer('Q136', 'B', this)">B) I2</button>
+    <button class="option-btn" onclick="checkAnswer('Q136', 'B', this)">C) I3</button>
+    <button class="option-btn" onclick="checkAnswer('Q136', 'B', this)">D) I4</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ136" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 137 -->
+<div class="question">
+
+    <p class="ques"><b>Q137.</b> Consider a CPU where all the instructions require <b>7 clock cycles</b> to complete execution. There are <b>140 instructions</b> in the instruction set. It is found that <b>125 control signals</b> are needed to be generated by the control unit. While designing the <b>horizontal micro-programmed control unit</b>, a <b>single address field format</b> is used for branch control logic. What is the minimum size of the <b>control word</b> and <b>control address register</b>, respectively?</p>
+
+    <button class="option-btn" onclick="checkAnswer('Q137', 'D', this)">A) 125, 7</button>
+    <button class="option-btn" onclick="checkAnswer('Q137', 'D', this)">B) 125, 10</button>
+    <button class="option-btn" onclick="checkAnswer('Q137', 'D', this)">C) 135, 9</button>
+    <button class="option-btn" onclick="checkAnswer('Q137', 'D', this)">D) 135, 10</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ137" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 138 -->
+<div class="question">
+
+    <p class="ques"><b>Q138.</b> Which of the following is/are true of the <b>auto increment addressing mode</b>?</p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        1. It is useful in creating self relocating code.<br>
+        2. If it is included in an Instruction Set Architecture, then an additional ALU is required for effective address calculation.<br>
+        3. The amount of increment depends on the size of the data item accessed.
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer('Q138', 'C', this)">A) 1 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q138', 'C', this)">B) 2 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q138', 'C', this)">C) 3 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q138', 'C', this)">D) 2 and 3 only</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ138" class="explanation"></div>
+
+</div>
+
+
+
+
+<!-- Question 139 -->
+<div class="question">
+
+    <p class="ques"><b>Q139.</b> The use of <b>multiple register windows with overlap</b> causes a reduction in the number of memory accesses for</p>
+
+    <div style="margin-left:20px;line-height:1.8;">
+        1. Function locals and parameters<br>
+        2. Register saves and restores<br>
+        3. Instruction fetches
+    </div>
+
+    <button class="option-btn" onclick="checkAnswer('Q139', 'A', this)">A) 1 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q139', 'A', this)">B) 2 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q139', 'A', this)">C) 3 only</button>
+    <button class="option-btn" onclick="checkAnswer('Q139', 'A', this)">D) 1, 2 and 3</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ139" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 140 -->
+<div class="question">
+
+    <p class="ques"><b>Q140.</b> For a <b>magnetic disk with concentric circular tracks</b>, the latency is <b>not linearly proportional</b> to the seek distance due to</p>
+
+    <button class="option-btn" onclick="checkAnswer('Q140', 'B', this)">A) Non-uniform distribution of requests</button>
+
+    <button class="option-btn" onclick="checkAnswer('Q140', 'B', this)">B) Arm starting and stopping inertia</button>
+
+    <button class="option-btn" onclick="checkAnswer('Q140', 'B', this)">C) Higher capacity of tracks on the periphery of the platter</button>
+
+    <button class="option-btn" onclick="checkAnswer('Q140', 'B', this)">D) Use of unfair arm scheduling policies</button>
+
+    <p class="year"><i>Gate CSE 2008</i></p>
+    <div id="explanationQ140" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 141 -->
+<div class="question">
+
+    <p class="ques"><b>Q141.</b> Consider a <b>4-way set associative cache</b> consisting of <b>128 lines</b> with a line size of <b>64 words</b>. The CPU generates a <b>20-bit</b> address of a word in main memory. The number of bits in the <b>TAG</b>, <b>LINE</b> and <b>WORD</b> fields are respectively</p>
+
+    <button class="option-btn" onclick="checkAnswer('Q141', 'B', this)">A) 9, 6, 5</button>
+
+    <button class="option-btn" onclick="checkAnswer('Q141', 'B', this)">B) 7, 5, 6</button>
+
+    <button class="option-btn" onclick="checkAnswer('Q141', 'B', this)">C) 7, 7, 6</button>
+
+    <button class="option-btn" onclick="checkAnswer('Q141', 'B', this)">D) 9, 5, 6</button>
+
+    <p class="year"><i>Gate CSE 2007</i></p>
+    <div id="explanationQ141" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 142 -->
+<div class="question">
+
+    <p class="ques"><b>Q142.</b> <b>Common Data for Q.1.22 &amp; Q.1.23</b></p>
+
+    <p class="ques">
+        Consider a machine with a <b>byte-addressable main memory</b> of
+        <b>2<sup>16</sup> bytes</b>. Assume that a <b>direct mapped data cache</b>
+        consisting of <b>32 lines</b> of <b>64 bytes</b> each is used in the system.
+        A <b>50 × 50</b> two-dimensional array of bytes is stored in the main memory
+        starting from memory location <b>1100H</b>. Assume that the data cache is
+        initially empty. The complete array is accessed twice. Assume that the
+        contents of the data cache do not change in between the two accesses.
+    </p>
+
+    <p class="ques">
+        How many <b>data cache misses</b> will occur in total?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q142', 'D', this)">A) 48</button>
+
+    <button class="option-btn" onclick="checkAnswer('Q142', 'D', this)">B) 50</button>
+
+    <button class="option-btn" onclick="checkAnswer('Q142', 'D', this)">C) 56</button>
+
+    <button class="option-btn" onclick="checkAnswer('Q142', 'D', this)">D) 59</button>
+
+    <p class="year"><i>Gate CSE 2007</i></p>
+    <div id="explanationQ142" class="explanation"></div>
+
+</div>
+
+
+
+<!-- Question 143 -->
+<div class="question">
+
+    <p class="ques"><b>Q143.</b> <b>Common Data for Q.1.22 &amp; Q.1.23</b></p>
+
+    <p class="ques">
+        Consider a machine with a <b>byte-addressable main memory</b> of
+        <b>2<sup>16</sup> bytes</b>. Assume that a <b>direct mapped data cache</b>
+        consisting of <b>32 lines</b> of <b>64 bytes</b> each is used in the system.
+        A <b>50 × 50</b> two-dimensional array of bytes is stored in the main memory
+        starting from memory location <b>1100H</b>. Assume that the data cache is
+        initially empty. The complete array is accessed twice. Assume that the
+        contents of the data cache do not change in between the two accesses.
+    </p>
+
+    <p class="ques">
+        Which of the following <b>cache lines</b> will be replaced by new blocks while accessing the array?
+    </p>
+
+    <button class="option-btn" onclick="checkAnswer('Q143', 'B', this)">A) Line 4 to Line 11</button>
+
+    <button class="option-btn" onclick="checkAnswer('Q143', 'B', this)">B) Line 4 to Line 12</button>
+
+    <button class="option-btn" onclick="checkAnswer('Q143', 'B', this)">C) Line 0 to Line 7</button>
+
+    <button class="option-btn" onclick="checkAnswer('Q143', 'B', this)">D) Line 0 to Line 8</button>
+
+    <p class="year"><i>Gate CSE 2007</i></p>
+    <div id="explanationQ143" class="explanation"></div>
+
+</div>
+
+
+    
+
+    
+
     
     
 </body>
