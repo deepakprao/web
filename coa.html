@@ -4320,7 +4320,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 157 -->
 <div class="question">
 
-    <p class="ques"><b>Q157.</b> A computer system has a <b>Level-1 Instruction Cache (I-cache)</b>, a <b>Level-1 Data Cache (D-cache)</b> and a <b>Level-2 Cache (L2-cache)</b> with the following specifications:</p>
+    <p class="ques"><b>Q157.</b> A computer system has a Level-1 Instruction Cache (I-cache), a Level-1 Data Cache (D-cache) and a Level-2 Cache (L2-cache) with the following specifications:</p>
 
     <table class="gate-table">
         <tr>
@@ -4351,8 +4351,8 @@ for (i = 0; i &lt; 1024; i++)
 
     <p class="ques">
         The length of the physical address of a word in the main memory is
-        <b>30 bits</b>. The capacity of the <b>tag memory</b> in the
-        <b>I-cache</b>, <b>D-cache</b> and <b>L2-cache</b>, respectively, is
+        30 bits. The capacity of the tag memory in the
+        I-cache, D-cache and L2-cache, respectively, is
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q157', 'A', this)">
@@ -4381,10 +4381,10 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 158 -->
 <div class="question">
 
-    <p class="ques"><b>Q158.</b> A CPU has a cache with block size <b>64 bytes</b>. The main memory has <b>k</b> banks, each bank being <b>c bytes</b> wide. Consecutive <b>c-byte</b> chunks are mapped on consecutive banks with wrap-around. All the <b>k</b> banks can be accessed in parallel, but two accesses to the same bank must be serialized.</p>
+    <p class="ques"><b>Q158.</b> A CPU has a cache with block size 64 bytes. The main memory has k banks, each bank being c bytes wide. Consecutive c-byte chunks are mapped on consecutive banks with wrap-around. All the k banks can be accessed in parallel, but two accesses to the same bank must be serialized.</p>
 
     <p class="ques">
-        A cache block access may involve multiple iterations of parallel bank accesses depending on the amount of data obtained by accessing all the banks in parallel. Each iteration requires decoding the bank numbers to be accessed in parallel and this takes <b>k/2 ns</b>. The latency of one bank access is <b>80 ns</b>. If <b>c = 2</b> and <b>k = 24</b>, then the latency of retrieving a cache block starting at address zero from main memory is
+        A cache block access may involve multiple iterations of parallel bank accesses depending on the amount of data obtained by accessing all the banks in parallel. Each iteration requires decoding the bank numbers to be accessed in parallel and this takes k/2 ns. The latency of one bank access is 80 ns. If c = 2 and k = 24, then the latency of retrieving a cache block starting at address zero from main memory is
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q158', 'C', this)">
@@ -4413,7 +4413,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 159 -->
 <div class="question">
 
-    <p class="ques"><b>Q159.</b> Consider two cache organizations. The first one is a <b>32 KB 2-way set associative</b> cache with <b>32-byte block size</b>. The second one is of the same size but <b>direct mapped</b>. The size of an address is <b>32 bits</b> in both cases. A <b>2-to-1 multiplexer</b> has latency of <b>0.6 ns</b> while a <b>k-bit comparator</b> has a latency of <b>k/10 ns</b>. The hit latency of the set associative organization is <b>h₁</b>. The value of <b>h₁</b> is</p>
+    <p class="ques"><b>Q159.</b> Consider two cache organizations. The first one is a 32 KB 2-way set associative cache with 32-byte block size. The second one is of the same size but direct mapped. The size of an address is 32 bits in both cases. A 2-to-1 multiplexer has latency of 0.6 ns while a k-bit comparator has a latency of k/10 ns. The hit latency of the set associative organization is h₁. The value of h₁ is</p>
 
     <button class="option-btn" onclick="checkAnswer('Q159', 'A', this)">
         A) 2.4 ns
@@ -4441,8 +4441,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 160 -->
 <div class="question">
 
-    <p class="ques"><b>Q160.</b> Consider two cache organizations. The first one is a <b>32 KB 2-way set associative</b> cache with <b>32-byte block size</b>. The second one is of the same size but <b>direct mapped</b>. The size of an address is <b>32 bits</b> in both cases. A <b>2-to-1 multiplexer</b> has latency of <b>0.6 ns</b> while a <b>k-bit comparator</b> has a latency of <b>k/10 ns</b>. The hit latency of the direct mapped organization is <b>h₂</b>. The value of <b>h₂</b> is</p>
-
+    <p class="ques"><b>Q160.</b> Consider two cache organizations. The first one is a 32 KB 2-way set associative cache with 32-byte block size. The second one is of the same size but direct mapped. The size of an address is 32 bits in both cases. A 2-to-1 multiplexer has latency of 0.6 ns while a k-bit comparator has a latency of k/10 ns. The hit latency of the direct mapped organization is h₂. The value of h₂ is</p>
     <button class="option-btn" onclick="checkAnswer('Q160', 'D', this)">
         A) 2.4 ns
     </button>
@@ -4469,7 +4468,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 161 -->
 <div class="question">
 
-    <p class="ques"><b>Q161.</b> A CPU has a <b>32 KB direct mapped cache</b> with <b>128-byte block size</b>. Suppose <b>A</b> is a two-dimensional array of size <b>512 × 512</b> with elements that occupy <b>8 bytes</b> each. Consider the following code segment <b>P₁</b>:</p>
+    <p class="ques"><b>Q161.</b> A CPU has a 32 KB direct mapped cache with 128-byte block size. Suppose A is a two-dimensional array of size 512 × 512 with elements that occupy 8 bytes each. Consider the following code segment <b>P₁</b>:</p>
 
 <pre class="code-block">
 for (i = 0; i &lt; 512; i++) {
@@ -4509,7 +4508,7 @@ for (i = 0; i &lt; 512; i++) {
 <!-- Question 162 -->
 <div class="question">
 
-    <p class="ques"><b>Q162.</b> A CPU has a <b>32 KB direct mapped cache</b> with <b>128-byte block size</b>. Suppose <b>A</b> is a two-dimensional array of size <b>512 × 512</b> with elements that occupy <b>8 bytes</b> each. Consider the following two code segments:</p>
+    <p class="ques"><b>Q162.</b> A CPU has a 32 KB direct mapped cache with 128-byte block size. Suppose A is a two-dimensional array of size 512 × 512 with elements that occupy 8 bytes each. Consider the following two code segments:</p>
 
 <pre class="code-block">
 P₁:
@@ -4528,7 +4527,7 @@ for (i = 0; i &lt; 512; i++) {
 </pre>
 
     <p class="ques">
-        Let the number of cache misses experienced by <b>P₁</b> be <b>M₁</b> and that for <b>P₂</b> be <b>M₂</b>. The value of the ratio <b>M₁ / M₂</b> is
+        Let the number of cache misses experienced by P₁ be M₁ and that for P₂ be M₂. The value of the ratio M₁ / M₂ is
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q162', 'B', this)">
@@ -4557,7 +4556,7 @@ for (i = 0; i &lt; 512; i++) {
 <!-- Question 163 -->
 <div class="question">
 
-    <p class="ques"><b>Q163.</b> A CPU has <b>24-bit instructions</b>. A program starts at address <b>300</b> (in decimal). Which one of the following is a legal <b>Program Counter (PC)</b> value? (All values are in decimal)</p>
+    <p class="ques"><b>Q163.</b> A CPU has 24-bit instructions. A program starts at address 300 (in decimal). Which one of the following is a legal Program Counter (PC) value? (All values are in decimal)</p>
 
     <button class="option-btn" onclick="checkAnswer('Q163', 'C', this)">
         A) 400
@@ -4585,7 +4584,7 @@ for (i = 0; i &lt; 512; i++) {
 <!-- Question 164 -->
 <div class="question">
 
-    <p class="ques"><b>Q164.</b> Which one of the following statements about <b>relative addressing mode</b> is <b>FALSE</b>?</p>
+    <p class="ques"><b>Q164.</b> Which one of the following statements about relative addressing mode is FALSE?</p>
 
     <button class="option-btn" onclick="checkAnswer('Q164', 'D', this)">
         A) It enables reduced instruction size.
@@ -4613,7 +4612,7 @@ for (i = 0; i &lt; 512; i++) {
 <!-- Question 165 -->
 <div class="question">
 
-    <p class="ques"><b>Q165.</b> The memory locations <b>1000</b>, <b>1001</b> and <b>1020</b> have data values <b>18</b>, <b>1</b> and <b>16</b> respectively before the following program is executed.</p>
+    <p class="ques"><b>Q165.</b> The memory locations 1000, 1001 and 1020 have data values 18, 1 and 16 respectively before the following program is executed.</p>
 
     <table class="gate-table">
         <tr>
@@ -4666,7 +4665,7 @@ for (i = 0; i &lt; 512; i++) {
 <!-- Question 166 -->
 <div class="question">
 
-    <p class="ques"><b>Q166.</b> A CPU has a <b>five-stage pipeline</b> and runs at <b>1 GHz</b> frequency. Instruction fetch happens in the first stage of the pipeline. A conditional branch instruction computes the target address and evaluates the condition in the <b>third stage</b> of the pipeline. The processor stops fetching new instructions following a conditional branch until the branch outcome is known. A program executes <b>10<sup>9</sup></b> instructions of which <b>20%</b> are conditional branches. If each instruction takes <b>one cycle</b> to complete on average, then the total execution time of the program is</p>
+    <p class="ques"><b>Q166.</b> A CPU has a five-stage pipeline and runs at 1 GHz frequency. Instruction fetch happens in the first stage of the pipeline. A conditional branch instruction computes the target address and evaluates the condition in the third stage of the pipeline. The processor stops fetching new instructions following a conditional branch until the branch outcome is known. A program executes 10<sup>9</sup> instructions of which 20% are conditional branches. If each instruction takes one cycle to complete on average, then the total execution time of the program is</p>
 
     <button class="option-btn" onclick="checkAnswer('Q166', 'C', this)">
         A) 1.0 second
@@ -4694,14 +4693,14 @@ for (i = 0; i &lt; 512; i++) {
 <!-- Question 167 -->
 <div class="question">
 
-    <p class="ques"><b>Q167.</b> Consider a new instruction named <b>branch-on-bit-set (bbs)</b>. The instruction <b>"bbs reg, pos, label"</b> jumps to <b>label</b> if the bit in position <b>pos</b> of register operand <b>reg</b> is one. A register is <b>32 bits</b> wide and the bits are numbered from <b>0 to 31</b>, bit position 0 being the least significant bit. Consider the following emulation of this instruction on a processor that does not have <b>bbs</b> implemented.</p>
+    <p class="ques"><b>Q167.</b> Consider a new instruction named branch-on-bit-set (bbs). The instruction "bbs reg, pos, label" jumps to label if the bit in position pos of register operand reg is one. A register is 32 bits wide and the bits are numbered from 0 to 31, bit position 0 being the least significant bit. Consider the following emulation of this instruction on a processor that does not have bbs implemented.</p>
 
 <pre class="code-block">
 temp ← reg AND mask
 Branch to label if temp is non-zero
 </pre>
 
-    <p class="ques">The variable <b>temp</b> is a temporary register. For correct emulation, the variable <b>mask</b> must be generated by</p>
+    <p class="ques">The variable temp is a temporary register. For correct emulation, the variable mask must be generated by</p>
 
     <button class="option-btn" onclick="checkAnswer('Q167', 'A', this)">
         A) mask ← 0x1 &lt;&lt; pos
@@ -4730,8 +4729,8 @@ Branch to label if temp is non-zero
 <div class="question">
 
     <p class="ques">
-        <b>Q168.</b> The data path shown below computes the number of <b>1s</b> in the
-        <b>32-bit input word</b> corresponding to an unsigned even integer stored in the
+        <b>Q168.</b> The data path shown below computes the number of 1s in the
+        32-bit input word corresponding to an unsigned even integer stored in the
         shift register. The unsigned counter, initially zero, is incremented if the
         most significant bit of the shift register is <b>1</b>.
     </p>
@@ -4800,10 +4799,10 @@ Branch to label if temp is non-zero
 
     <p class="ques">
         The microprogram for the control is shown below with missing control words for
-        microinstructions <b>I<sub>1</sub>, I<sub>2</sub>, ..., I<sub>n</sub></b>.
-        The counter width (<b>k</b>), the number of missing microinstructions
-        (<b>n</b>), and the control word for microinstructions
-        <b>I<sub>1</sub>, I<sub>2</sub>, ..., I<sub>n</sub></b>, respectively, are
+        microinstructions I<sub>1</sub>, I<sub>2</sub>, ..., I<sub>n</sub>.
+        The counter width (k), the number of missing microinstructions
+        (n), and the control word for microinstructions
+        I<sub>1</sub>, I<sub>2</sub>, ..., I<sub>n</sub>, respectively, are
     </p>
 
     <div style="overflow-x:auto;margin:15px 0;">
@@ -4874,7 +4873,7 @@ Branch to label if temp is non-zero
 <div class="question">
 
     <p class="ques">
-        <b>Q169.</b> A pipelined processor uses a <b>4-stage instruction pipeline</b> with the following stages:
+        <b>Q169.</b> A pipelined processor uses a 4-stage instruction pipeline with the following stages:
         <b>Instruction Fetch (IF)</b>, <b>Instruction Decode (ID)</b>,
         <b>Execute (EX)</b> and <b>Write Back (WB)</b>. The arithmetic operations
         as well as the load and store operations are carried out in the
