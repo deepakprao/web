@@ -133,7 +133,7 @@ td {
 <div class="question">
     <p class="ques"><b>Q1.</b> Consider the following two statements about interrupt handling mechanisms in a CPU.<br><br>
 
-    S1: In non-vectored interrupt mechanism, it usually takes more time to start the Interrupt Service Routine (ISR) when compared to that in a vectored interrupt mechanism.<br><br>
+    S1: In non-vectored interrupt mechanism, it usually takes more time to start the Interrupt Service Routine (ISR) when compared to that in a vectored interrupt mechanism.<br>
 
     S2: In daisy-chain interrupt mechanism, the CPU polls all the input devices individually to determine the source of the interrupt.<br><br>
 
@@ -599,7 +599,7 @@ td {
     <p class="ques"><b>Q19.</b> A processor has 64 general-purpose registers and 50 distinct instruction types. An instruction is encoded in 32-bits. What is the maximum number of bits that can be used to store the immediate operand for the given instruction?</p>
 
     <div style="text-align:center; margin:15px 0;">
-        <code style="font-size:22px; font-weight:bold;">
+        <code style="font-size:20px; font-weight:bold;">
             ADD R1, #25&nbsp;&nbsp;&nbsp;&nbsp;// R1 = R1 + 25
         </code>
     </div>
@@ -700,7 +700,7 @@ td {
     <p class="ques"><b>Q22.</b> An instruction format has the following structure:
 <br><br>
    
-        <b>Instruction Format:</b>
+        Instruction Format:
         <i>Opcode destination reg, source reg-1, source reg-2</i>
     
 <br><br>
@@ -708,9 +708,9 @@ td {
     </p>
 
    <p class="ques">
-        I1: DIV R3, R1, R2<br><br>
-        I2: SUB R5, R3, R4<br><br>
-        I3: ADD R3, R5, R6<br><br>
+        I1: DIV R3, R1, R2<br>
+        I2: SUB R5, R3, R4<br>
+        I3: ADD R3, R5, R6<br>
         I4: MUL R7, R3, R8</p>
     
     <p class="ques">Which of the following statements is/are TRUE?</p>
@@ -788,8 +788,9 @@ td {
 
             <rect x="410" y="135" width="330" height="45" fill="white" stroke="black"/>
             <text x="470" y="163" font-size="16"># Immediate value/address</text>
+
         </svg>
-    
+
     <p class="ques">
         In the OPCODE, 1 bit is used to distinguish between I-type and R-type instructions and the remaining bits indicate the operation. The processor has 50 architectural registers, and all register fields in the instructions are of equal size.<br><br>
 
@@ -830,7 +831,7 @@ td {
 
 <!-- Question 27-->
 <div class="question">
-    <p class="ques"><b>Q27.</b> Consider a 5-stage pipelined processor with Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory Access (MEM), and Register Writeback (WB) stages. Which of the following statements about <i>forwarding</i> is/are CORRECT?</p>
+    <p class="ques"><b>Q27.</b> Consider a 5-stage pipelined processor with Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory Access (MEM), and Register Writeback (WB) stages. Which of the following statements about forwarding is/are CORRECT?</p>
 
     <button class="option-btn" onclick="checkAnswer(30, 'A', this)">
         A) In a pipelined execution, forwarding means the result from a source stage of an earlier instruction is passed on to the destination stage of a later instruction.
@@ -856,22 +857,22 @@ td {
 
 <!-- Question 28 -->
 <div class="question">
-    <p class="ques"><b>Q28.</b> Consider two set-associative cache memory architectures: <b>WBC</b>, which uses the write back policy, and <b>WTC</b>, which uses the write through policy. Both of them use the LRU (Least Recently Used) block replacement policy. The cache memory is connected to the main memory. Which of the following statements is/are TRUE?</p>
+    <p class="ques"><b>Q28.</b> Consider two set-associative cache memory architectures: WBC, which uses the write back policy, and WTC, which uses the write through policy. Both of them use the LRU (Least Recently Used) block replacement policy. The cache memory is connected to the main memory. Which of the following statements is/are TRUE?</p>
 
     <button class="option-btn" onclick="checkAnswer(53, 'A', this)">
-        A) A read miss in <b>WBC</b> never evicts a dirty block.
+        A) A read miss in WBC never evicts a dirty block.
     </button>
 
     <button class="option-btn" onclick="checkAnswer(53, 'B', this)">
-        B) A read miss in <b>WTC</b> never triggers a write back operation of a cache block to main memory.
+        B) A read miss in WTC never triggers a write back operation of a cache block to main memory.
     </button>
 
     <button class="option-btn" onclick="checkAnswer(53, 'C', this)">
-        C) A write hit in <b>WBC</b> can modify the value of the dirty bit of a cache block.
+        C) A write hit in WBC can modify the value of the dirty bit of a cache block.
     </button>
 
     <button class="option-btn" onclick="checkAnswer(53, 'D', this)">
-        D) A write miss in <b>WTC</b> always writes the victim cache block to main memory before loading the missed block to the cache.
+        D) A write miss in WTC always writes the victim cache block to main memory before loading the missed block to the cache.
     </button>
 
     <p class="year"><i>Gate CSE 2024 Session 1</i></p>
@@ -934,34 +935,34 @@ td {
     <p class="ques"><b>Q33.</b> Consider the given C-code and its corresponding assembly code, with a few operands U1–U4 being unknown. Some useful information as well as the semantics of each unique assembly instruction is annotated as inline comments in the code. The memory is byte-addressable.</p>
 
     <div style="text-align:center; margin:15px 0; overflow-x:auto;">
-        <svg width="860" height="400">
+        <svg width="860" height="290">
 
             <!-- Left Panel -->
-            <text x="20" y="25" font-size="18" font-weight="bold">C-code</text>
+            <text x="150" y="25" font-size="16" font-family="Courier New" >//C-code</text>
 
-            <line x1="390" y1="10" x2="390" y2="330" stroke="black"/> 
+            <line x1="390" y1="10" x2="390" y2="300" stroke="black"/>
 
-            <text x="20" y="60" font-size="16" font-family="Courier New">int a[10], b[10], i;</text>
-            <text x="20" y="85" font-size="16" font-family="Courier New">// int is 32-bit</text>
-            <text x="20" y="115" font-size="16" font-family="Courier New">for (i = 0; i &lt; 10; i++)</text>
-            <text x="60" y="145" font-size="16" font-family="Courier New">a[i] = b[i] * 8;</text>
+            <text x="150" y="120" font-size="16" font-family="Courier New">int a[10], b[10], i;</text>
+            <text x="150" y="140" font-size="16" font-family="Courier New">// int is 32-bit</text>
+            <text x="150" y="160" font-size="16" font-family="Courier New">for (i = 0; i &lt; 10; i++)</text>
+            <text x="190" y="180" font-size="16" font-family="Courier New">a[i] = b[i] * 8;</text>
 
             <!-- Right Panel -->
-            <text x="410" y="25" font-size="18" font-weight="bold">Assembly Code</text>
+            <text x="410" y="25" font-size="18" font-family="Courier New">;assembly-code (; indicates comments)</text>
 
-            <text x="410" y="50" font-size="14" font-family="Courier New">; r1-r5 are 32-bit integer registers</text>
-            <text x="410" y="70" font-size="14" font-family="Courier New">; initialize r1=0, r2=10</text>
-            <text x="410" y="90" font-size="14" font-family="Courier New">; initialize r3,r4 with base address of a,b</text>
+            <text x="410" y="50" font-size="16" font-family="Courier New">; r1-r5 are 32-bit integer registers</text>
+            <text x="410" y="70" font-size="16" font-family="Courier New">; initialize r1=0, r2=10</text>
+            <text x="410" y="90" font-size="16" font-family="Courier New">; initialize r3,r4 with base address of a,b</text>
 
-            <text x="410" y="125" font-size="15" font-family="Courier New">L01: jeq r1, r2, end</text>
-            <text x="410" y="145" font-size="15" font-family="Courier New">L02: lw  r5, 0(r4)</text>
-            <text x="410" y="165" font-size="15" font-family="Courier New">L03: shl r5, r5, U1</text>
-            <text x="410" y="185" font-size="15" font-family="Courier New">L04: sw  r5, 0(r3)</text>
-            <text x="410" y="205" font-size="15" font-family="Courier New">L05: add r3, r3, U2</text>
-            <text x="410" y="225" font-size="15" font-family="Courier New">L06: add r4, r4, U3</text>
-            <text x="410" y="245" font-size="15" font-family="Courier New">L07: add r1, r1, 1</text>
-            <text x="410" y="265" font-size="15" font-family="Courier New">L08: jmp U4</text>
-            <text x="410" y="285" font-size="15" font-family="Courier New">L09: end</text>
+            <text x="410" y="125" font-size="16" font-family="Courier New">L01: jeq r1, r2, end &ensp;&ensp;&ensp;&ensp;   ;if(r1==r2) goto end</text>
+            <text x="410" y="145" font-size="16" font-family="Courier New">L02: lw  r5, 0(r4)  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&emsp14;   ;r5 <- Memory[r4+0]</text>
+            <text x="410" y="165" font-size="16" font-family="Courier New">L03: shl r5, r5, U1 &ensp;&ensp;&ensp;&ensp;&ensp;   ;r5 <- r5 << U1</text>
+            <text x="410" y="185" font-size="16" font-family="Courier New">L04: sw  r5, 0(r3)  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&emsp14;   ;Memory[r3+0] <- r5</text>
+            <text x="410" y="205" font-size="16" font-family="Courier New">L05: add r3, r3, U2  &ensp;&ensp;&ensp;&ensp;&ensp;   ;r3 <- r3+U2</text>
+            <text x="410" y="225" font-size="16" font-family="Courier New">L06: add r4, r4, U3</text>
+            <text x="410" y="245" font-size="16" font-family="Courier New">L07: add r1, r1, 1</text>
+            <text x="410" y="265" font-size="16" font-family="Courier New">L08: jmp U4     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;   ;goto U4</text>
+            <text x="410" y="285" font-size="16" font-family="Courier New">L09: end</text>
 
         </svg>
     </div>
@@ -985,66 +986,167 @@ td {
 
     The input memory addresses (IA11–IA0), in decimal, for the starting locations (Addr=0) of each block (indicated as X1, X2, X3, X4 in the figure) are among the options given below. Which one of the following options is CORRECT?</p>
 
-    <div style="text-align:center; margin:15px 0; overflow-x:auto;">
-        <svg width="820" height="430">
+    <svg viewBox="0 0 920 450" width="100%" height="auto">
+  <defs>
+    <style>
+      .label { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 16px; fill: #000; }
+      .label-small { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 13px; fill: #000; }
+      .label-title { font-family: 'Times New Roman', Times, serif, sans-serif; font-size: 17px; fill: #000; text-anchor: middle; }
+      .line { stroke: #000; stroke-width: 1.5; fill: none; }
+      .thick-bus { stroke: #000; stroke-width: 4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .box { stroke: #000; stroke-width: 1.5; fill: #fff; }
+      .dashed-line { stroke: #999; stroke-width: 1; stroke-dasharray: 4,4; }
+    </style>
+  </defs>
 
-            <!-- Address lines -->
-            <text x="10" y="25" font-size="14">IA11</text>
-            <text x="10" y="45" font-size="14">IA10</text>
-            <text x="10" y="65" font-size="14">IA9</text>
-            <text x="10" y="85" font-size="14">IA8</text>
-            <text x="10" y="105" font-size="14">IA7</text>
-            <text x="10" y="125" font-size="14">IA6</text>
-            <text x="10" y="145" font-size="14">IA5</text>
-            <text x="10" y="165" font-size="14">IA4</text>
-            <text x="10" y="185" font-size="14">IA3</text>
-            <text x="10" y="205" font-size="14">IA2</text>
-            <text x="10" y="225" font-size="14">IA1</text>
-            <text x="10" y="245" font-size="14">IA0</text>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#fff" />
 
-            <!-- Memory blocks -->
-            <rect x="180" y="40" width="90" height="220" fill="white" stroke="black"/>
-            <text x="198" y="70">1KB</text>
-            <text x="192" y="90">Memory</text>
-            <text x="200" y="150">Addr</text>
-            <text x="188" y="240">X1</text>
-            <text x="235" y="240">CS</text>
+  <!-- Left Address Input Bracket / Block -->
+  <g transform="translate(110, 20)">
+    <!-- Vertical bracket line -->
+    <path d="M 0,4 L 0,141" class="line" />
+    
+    <!-- Horizontal tick lines and labels -->
+    <!-- IA11 (MSB) -->
+    <path d="M -15,5 L 0,5" class="line" />
+    <text x="-20" y="10" class="label" text-anchor="end">IA11</text>
+    <text x="-5" y="-5" class="label-small" text-anchor="end">MSB</text>
+    
+    <!-- IA10 -->
+    <path d="M -15,20 L 0,20" class="line" />
+    <text x="-20" y="25" class="label" text-anchor="end">IA10</text>
+    
+    <!-- IA9 -->
+    <path d="M -15,35 L 0,35" class="line" />
+    <text x="-28" y="40" class="label" text-anchor="end">IA9</text>
+    
+    <!-- IA8 -->
+    <path d="M -15,50 L 0,50" class="line" />
+    <text x="-28" y="55" class="label" text-anchor="end">IA8</text>
+    
+    <!-- IA7 -->
+    <path d="M -15,65 L 0,65" class="line" />
+    <text x="-28" y="70" class="label" text-anchor="end">IA7</text>
+    
+    <!-- IA6 -->
+    <path d="M -15,80 L 0,80" class="line" />
+    <text x="-28" y="85" class="label" text-anchor="end">IA6</text>
+    
+    <!-- IA5 -->
+    <path d="M -15,95 L 0,95" class="line" />
+    <text x="-28" y="100" class="label" text-anchor="end">IA5</text>
+    
+    <!-- IA2 -->
+    <path d="M -15,110 L 0,110" class="line" />
+    <text x="-28" y="115" class="label" text-anchor="end">IA2</text>
+    
+    <!-- IA1 -->
+    <path d="M -15,125 L 0,125" class="line" />
+    <text x="-28" y="130" class="label" text-anchor="end">IA1</text>
+    
+    <!-- IA0 (LSB) -->
+    <path d="M -15,140 L 0,140" class="line" />
+    <text x="-28" y="145" class="label" text-anchor="end">IA0</text>
+    <text x="-5" y="160" class="label-small" text-anchor="end">LSB</text>
 
-            <rect x="330" y="40" width="90" height="220" fill="white" stroke="black"/>
-            <text x="348" y="70">1KB</text>
-            <text x="342" y="90">Memory</text>
-            <text x="350" y="150">Addr</text>
-            <text x="338" y="240">X2</text>
-            <text x="385" y="240">CS</text>
+    <!-- Connection from input block to the main bus trunk -->
+    <path d="M 1,75 L 40,75" class="thick-bus" />
+  </g>
 
-            <rect x="480" y="40" width="90" height="220" fill="white" stroke="black"/>
-            <text x="498" y="70">1KB</text>
-            <text x="492" y="90">Memory</text>
-            <text x="500" y="150">Addr</text>
-            <text x="488" y="240">X3</text>
-            <text x="535" y="240">CS</text>
+  <!-- Main Address Bus Trunk -->
+  <path d="M 150,75 L 770,75" class="thick-bus" />
 
-            <rect x="630" y="40" width="90" height="220" fill="white" stroke="black"/>
-            <text x="648" y="70">1KB</text>
-            <text x="642" y="90">Memory</text>
-            <text x="650" y="150">Addr</text>
-            <text x="638" y="240">X4</text>
-            <text x="685" y="240">CS</text>
+  <!-- Bus Slash and "10-bit" label -->
+  <path d="M 170,85 L 185,65" class="thick-bus" stroke-width="2" />
+  <text x="180" y="93" class="label-small">10-bit</text>
 
-            <!-- Decoder -->
-            <rect x="90" y="290" width="100" height="90" fill="white" stroke="black"/>
-            <text x="110" y="340">Decoder</text>
+  <!-- Memory Blocks (1KB memory x 4) -->
+  <!-- Memory 1 (X1) -->
+  <g transform="translate(280, 130)">
+    <rect width="130" height="210" class="box" />
+    <line x1="0" y1="180" x2="130" y2="180" class="dashed-line" />
+    <text x="65" y="-10" class="label-title">1KB memory</text>
+    <text x="10" y="85" class="label">Addr</text>
+    <text x="10" y="205" class="label">X1</text>
+    <text x="73" y="205" class="label">CS</text>
+    <!-- Bus connection to Addr -->
+    <path d="M 0,80 L -130,80 L -130,-55" class="thick-bus" fill="none" />
+  </g>
 
-            <text x="60" y="315" font-size="14">IA4</text>
-            <text x="60" y="345" font-size="14">IA3</text>
+  <!-- Memory 2 (X2) -->
+  <g transform="translate(450, 130)">
+    <rect width="130" height="210" class="box" />
+    <line x1="0" y1="180" x2="130" y2="180" class="dashed-line" />
+    <text x="65" y="-10" class="label-title">1KB memory</text>
+    <text x="10" y="85" class="label">Addr</text>
+    <text x="10" y="205" class="label">X2</text>
+    <text x="73" y="205" class="label">CS</text>
+    <!-- Bus connection to Addr -->
+    <path d="M 0,80 L -15,80 L -15,-55" class="thick-bus" fill="none" />
+  </g>
 
-            <text x="195" y="310" font-size="14">Q0</text>
-            <text x="195" y="330" font-size="14">Q1</text>
-            <text x="195" y="350" font-size="14">Q2</text>
-            <text x="195" y="370" font-size="14">Q3</text>
+  <!-- Memory 3 (X3) -->
+  <g transform="translate(620, 130)">
+    <rect width="130" height="210" class="box" />
+    <line x1="0" y1="180" x2="130" y2="180" class="dashed-line" />
+    <text x="65" y="-10" class="label-title">1KB memory</text>
+    <text x="10" y="85" class="label">Addr</text>
+    <text x="10" y="205" class="label">X3</text>
+    <text x="73" y="205" class="label">CS</text>
+    <!-- Bus connection to Addr -->
+    <path d="M 0,80 L -15,80 L -15,-55" class="thick-bus" fill="none" />
+  </g>
 
-        </svg>
-    </div>
+  <!-- Memory 4 (X4) -->
+  <g transform="translate(790, 130)">
+    <rect width="130" height="210" class="box" />
+    <line x1="0" y1="180" x2="130" y2="180" class="dashed-line" />
+    <text x="65" y="-10" class="label-title">1KB memory</text>
+    <text x="10" y="85" class="label">Addr</text>
+    <text x="10" y="205" class="label">X4</text>
+    <text x="73" y="205" class="label">CS</text>
+    <!-- Bus connection to Addr -->
+    <path d="M 0,80 L -20,80 L -20,-55" class="thick-bus" fill="none" />
+  </g>
+
+  <!-- Decoder Block -->
+  <g transform="translate(150, 330)">
+    <rect width="85" height="85" class="box" />
+    <text x="42" y="-8" class="label-title">Decoder</text>
+    
+    <!-- Inputs -->
+    <text x="8" y="30" class="label">A1</text>
+    <text x="8" y="55" class="label">A0</text>
+    
+    <!-- Outputs -->
+    <text x="77" y="23" class="label" text-anchor="end">Q0</text>
+    <text x="77" y="43" class="label" text-anchor="end">Q1</text>
+    <text x="77" y="63" class="label" text-anchor="end">Q2</text>
+    <text x="77" y="80" class="label" text-anchor="end">Q3</text>
+  </g>
+
+  <!-- Decoder Input Lines -->
+  <path d="M 50,355 L 150,355" class="line" />
+  <text x="45" y="360" class="label" text-anchor="end">IA4</text>
+
+  <path d="M 50,380 L 150,380" class="line" />
+  <text x="45" y="385" class="label" text-anchor="end">IA3</text>
+
+  <!-- Decoder Output Interconnects to CS Pins -->
+  <!-- Q0 -> Memory 1 CS -->
+  <path d="M 235,348 L 355,348 L 355,340" class="line" />
+
+  <!-- Q1 -> Memory 2 CS -->
+  <path d="M 235,368 L 525,368 L 525,340" class="line" />
+
+  <!-- Q2 -> Memory 3 CS -->
+  <path d="M 235,388 L 695,388 L 695,340" class="line" />
+
+  <!-- Q3 -> Memory 4 CS -->
+  <path d="M 235,405 L 865,405 L 865,340" class="line" />
+</svg>
+
 
     <button class="option-btn" onclick="checkAnswer(42, 'A', this)">A) (0, 1, 2, 3)</button>
     <button class="option-btn" onclick="checkAnswer(42, 'B', this)">B) (0, 1024, 2048, 3072)</button>
@@ -1125,32 +1227,37 @@ td {
     <p class="ques"><b>Q39.</b> Consider a digital display system (DDS) shown in the figure that displays the contents of register X. A 16-bit code word is used to load a word in X, either from S or from R. S is a 1024-word memory segment and R is a 32-word register file. Based on the value of mode bit M, T selects an input word to load in X. P and Q interface with the corresponding bits in the code word to choose the addressed word. Which one of the following represents the functionality of P, Q, and T?</p>
 
     <div style="text-align:center; margin:20px 0; overflow-x:auto;">
-        <svg width="700" height="470">
+        <svg width="700" height="475">
+             <defs>
+            <marker id="arrowhead-inline" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+            </marker>
+        </defs>
 
             <!-- Code Word -->
-            <rect x="120" y="20" width="70" height="50" fill="white" stroke="black"/>
-            <rect x="190" y="20" width="260" height="50" fill="white" stroke="black"/>
-            <rect x="450" y="20" width="220" height="50" fill="white" stroke="black"/>
+            <rect x="120" y="25" width="70" height="50" fill="white" stroke="black"/>
+            <rect x="190" y="25" width="250" height="50" fill="white" stroke="black"/>
+            <rect x="440" y="25" width="250" height="50" fill="white" stroke="black"/>
 
-            <text x="305" y="10" font-size="22">Code Word</text>
-            <text x="145" y="50" font-size="20">M</text>
-            <text x="275" y="50" font-size="20">S-address</text>
-            <text x="530" y="50" font-size="20">R-address</text>
+            <text x="345" y="15" font-size="22">Code Word</text>
+            <text x="145" y="55" font-size="20">M</text>
+            <text x="275" y="55" font-size="20">S-address</text>
+            <text x="530" y="55" font-size="20">R-address</text>
 
             <!-- M line -->
-            <line x1="155" y1="70" x2="155" y2="280" stroke="black"/>
+            <line x1="155" y1="75" x2="155" y2="280" stroke="black" />
 
             <!-- P -->
             <rect x="250" y="110" width="90" height="60" fill="white" stroke="black"/>
             <text x="287" y="147" font-size="24">P</text>
 
             <!-- Q -->
-            <rect x="500" y="110" width="90" height="60" fill="white" stroke="black"/>
-            <text x="537" y="147" font-size="24">Q</text>
+            <rect x="550" y="110" width="90" height="60" fill="white" stroke="black"/>
+            <text x="587" y="147" font-size="24">Q</text>
 
             <!-- Connections -->
-            <line x1="320" y1="70" x2="320" y2="110" stroke="black"/>
-            <line x1="560" y1="70" x2="560" y2="110" stroke="black"/>
+            <line x1="295" y1="75" x2="295" y2="110" stroke="black" marker-end="url(#arrowhead-inline)"/>
+            <line x1="595" y1="75" x2="595" y2="110" stroke="black" marker-end="url(#arrowhead-inline)"/>
 
             <!-- S -->
             <rect x="360" y="190" width="80" height="100" fill="white" stroke="black"/>
@@ -1161,46 +1268,46 @@ td {
             <text x="500" y="245" font-size="24">R</text>
 
             <!-- P to S -->
-            <line x1="340" y1="140" x2="360" y2="140" stroke="black"/>
-            <line x1="360" y1="140" x2="360" y2="190" stroke="black"/>
+            <line x1="340" y1="140" x2="400" y2="140" stroke="black" />
+            <line x1="400" y1="140" x2="400" y2="190" stroke="black" marker-end="url(#arrowhead-inline)" />
 
             <!-- Q to R -->
-            <line x1="500" y1="140" x2="470" y2="140" stroke="black"/>
-            <line x1="470" y1="140" x2="470" y2="190" stroke="black"/>
+            <line x1="550" y1="140" x2="508" y2="140" stroke="black" />
+            <line x1="508" y1="140" x2="508" y2="190" stroke="black" marker-end="url(#arrowhead-inline)"/>
 
             <!-- T -->
-            <rect x="330" y="330" width="210" height="70" fill="white" stroke="black"/>
+            <rect x="345" y="330" width="210" height="70" fill="white" stroke="black"/>
             <text x="430" y="373" font-size="24">T</text>
 
             <!-- Connections -->
-            <line x1="400" y1="290" x2="400" y2="330" stroke="black"/>
-            <line x1="510" y1="290" x2="510" y2="330" stroke="black"/>
-            <line x1="155" y1="280" x2="155" y2="365" stroke="black"/>
-            <line x1="155" y1="365" x2="330" y2="365" stroke="black"/>
+            <line x1="400" y1="290" x2="400" y2="330" stroke="black" marker-end="url(#arrowhead-inline)"/>
+            <line x1="510" y1="290" x2="510" y2="330" stroke="black" marker-end="url(#arrowhead-inline)"/>
+            <line x1="155" y1="280" x2="155" y2="365" stroke="black" />
+            <line x1="155" y1="365" x2="345" y2="365" stroke="black" marker-end="url(#arrowhead-inline)"/>
 
             <!-- X -->
-            <rect x="360" y="430" width="120" height="40" fill="white" stroke="black"/>
-            <text x="412" y="456" font-size="22">X</text>
+            <rect x="380" y="430" width="120" height="40" fill="white" stroke="black"/>
+            <text x="428" y="456" font-size="22">X</text>
 
             <!-- DDS -->
-            <rect x="480" y="430" width="120" height="40" fill="white" stroke="black"/>
-            <text x="515" y="456" font-size="22">DDS</text>
+            <rect x="500" y="430" width="120" height="40" fill="white" stroke="black"/>
+            <text x="532" y="456" font-size="22">DDS</text>
 
-            <line x1="435" y1="400" x2="435" y2="430" stroke="black"/>
+            <line x1="435" y1="400" x2="435" y2="430" stroke="black" marker-end="url(#arrowhead-inline)"/>
 
         </svg>
     </div>
 
     <button class="option-btn" onclick="checkAnswer(40, 'A', this)">
-        A) P is 10:1 multiplexer;&nbsp;&nbsp;&nbsp; Q is 5:1 multiplexer;&nbsp;&nbsp;&nbsp; T is 2:1 multiplexer
+        A) P is 10:1 multiplexer;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Q is 5:1 multiplexer;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T is 2:1 multiplexer
     </button>
 
     <button class="option-btn" onclick="checkAnswer(40, 'B', this)">
-        B) P is 10:2<sup>10</sup> decoder;&nbsp;&nbsp;&nbsp; Q is 5:2<sup>5</sup> decoder;&nbsp;&nbsp;&nbsp; T is 2:1 encoder
+        B) P is 10:2<sup>10</sup> decoder;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Q is 5:2<sup>5</sup> decoder;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T is 2:1 encoder
     </button>
 
     <button class="option-btn" onclick="checkAnswer(40, 'C', this)">
-        C) P is 10:2<sup>10</sup> decoder;&nbsp;&nbsp;&nbsp; Q is 5:2<sup>5</sup> decoder;&nbsp;&nbsp;&nbsp; T is 2:1 multiplexer
+        C) P is 10:2<sup>10</sup> decoder;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Q is 5:2<sup>5</sup> decoder;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T is 2:1 multiplexer
     </button>
 
     <button class="option-btn" onclick="checkAnswer(40, 'D', this)">
@@ -1272,15 +1379,15 @@ td {
 
 <!-- Question 44 -->
 <div class="question">
-    <p class="ques"><b>Q44.</b> Assume a two-level inclusive cache hierarchy, L1 and L2, where L2 is the larger of the two. Consider the following statements.</p>
+    <p class="ques"><b>Q44.</b> Assume a two-level inclusive cache hierarchy, L1 and L2, where L2 is the larger of the two. Consider the following statements.<br><br>
 
-    <div style="margin:15px 0 20px 40px; line-height:1.8;">
-        <b>S<sub>1</sub>:</b> Read misses in a write through L1 cache do not result in writebacks of dirty lines to the L2.<br><br>
+   
+        <b>S<sub>1</sub>:</b> Read misses in a write through L1 cache do not result in writebacks of dirty lines to the L2.<br>
 
-        <b>S<sub>2</sub>:</b> Write allocate policy <i>must</i> be used in conjunction with write through caches and no-write allocate policy is used with writeback caches.
-    </div>
+        <b>S<sub>2</sub>:</b> Write allocate policy <i>must</i> be used in conjunction with write through caches and no-write allocate policy is used with writeback caches.<br><br>
+  
 
-    <p class="ques">Which of the following statements is correct?</p>
+    Which of the following statements is correct?</p>
 
     <button class="option-btn" onclick="checkAnswer(27, 'A', this)">A) S<sub>1</sub> is true and S<sub>2</sub> is false</button>
 
@@ -1313,20 +1420,20 @@ td {
 
 <!-- Question 46 -->
 <div class="question">
-    <p class="ques"><b>Q46.</b> Consider a pipelined processor with 5 stages, Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory Access (MEM), and Write Back (WB). Each stage of the pipeline, except the EX stage, takes one cycle. Assume that the ID stage merely decodes the instruction and the register read is performed in the EX stage. The EX stage takes one cycle for <b>ADD</b> instruction and two cycles for <b>MUL</b> instruction. Ignore pipeline register latencies.<br><br>
+    <p class="ques"><b>Q46.</b> Consider a pipelined processor with 5 stages, Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory Access (MEM), and Write Back (WB). Each stage of the pipeline, except the EX stage, takes one cycle. Assume that the ID stage merely decodes the instruction and the register read is performed in the EX stage. The EX stage takes one cycle for ADD instruction and two cycles for MUL instruction. Ignore pipeline register latencies.<br><br>
 
     Consider the following sequence of 8 instructions:</p>
 
-    <div style="text-align:center; margin:12px 0; font-family:'Courier New', monospace; font-size:18px;">
+    
         ADD,&nbsp; MUL,&nbsp; ADD,&nbsp; MUL,&nbsp; ADD,&nbsp; MUL,&nbsp; ADD,&nbsp; MUL
-    </div>
+   
 
     <p class="ques">
-        Assume that every <b>MUL</b> instruction is data-dependent on the <b>ADD</b> instruction just before it and every <b>ADD</b> instruction (except the first <b>ADD</b>) is data-dependent on the <b>MUL</b> instruction just before it.
+        Assume that every MUL instruction is data-dependent on the ADD instruction just before it and every ADD instruction (except the first ADD) is data-dependent on the MUL instruction just before it.
     </p>
 
     <div style="text-align:center; margin:15px 0; font-size:18px;">
-        <b>Speedup</b> =
+        Speedup =
         <span style="display:inline-block; text-align:center; vertical-align:middle;">
             <span style="display:block; border-bottom:1px solid black; padding:0 8px;">
                 Execution time without operand forwarding
@@ -1338,7 +1445,7 @@ td {
     </div>
 
     <p class="ques">
-        The <b>Speedup</b> achieved in executing the given instruction sequence on the pipelined processor (<i>rounded to 2 decimal places</i>) is __________.
+        The Speedup achieved in executing the given instruction sequence on the pipelined processor (rounded to 2 decimal places) is __________.
     </p>
 
       <p class="year"><i>Gate CSE 2021 Session 2</i></p>
@@ -1424,7 +1531,7 @@ td {
     <p class="ques">
         Assume that the content of the memory location 5000 is 10, and the content of the register R3 is 3000. The content of each of the memory locations from 3000 to 3010 is 50. The instruction sequence starts from the memory location 1000. All the numbers are in decimal format. Assume that the memory is byte addressable.<br><br>
 
-        After the execution of the program, the content of memory location <b>3010</b> is __________.
+        After the execution of the program, the content of memory location 3010 is __________.
     </p>
 
     <p class="year"><i>Gate CSE 2021 Session 1</i></p>
@@ -1435,19 +1542,19 @@ td {
 
 <!-- Question 50 -->
 <div class="question">
-    <p class="ques"><b>Q50.</b> Consider the following statements.</p>
+    <p class="ques"><b>Q50.</b> Consider the following statements.<br><br>
 
-    <div style="margin:15px 0 20px 40px; line-height:1.8;">
-        <b>I.</b> Daisy chaining is used to assign priorities in attending interrupts.<br><br>
+    
+        <b>I.</b> Daisy chaining is used to assign priorities in attending interrupts.<br>
 
-        <b>II.</b> When a device raises a vectored interrupt, the CPU does polling to identify the source of interrupt.<br><br>
+        <b>II.</b> When a device raises a vectored interrupt, the CPU does polling to identify the source of interrupt.<br>
 
-        <b>III.</b> In polling, the CPU periodically checks the status bits to know if any device needs its attention.<br><br>
+        <b>III.</b> In polling, the CPU periodically checks the status bits to know if any device needs its attention.<br>
 
-        <b>IV.</b> During DMA, both the CPU and DMA controller can be bus masters at the same time.
-    </div>
+        <b>IV.</b> During DMA, both the CPU and DMA controller can be bus masters at the same time.<br><br>
+    
 
-    <p class="ques">Which of the above statements is/are TRUE?</p>
+    Which of the above statements is/are TRUE?</p>
 
     <button class="option-btn" onclick="checkAnswer(3, 'A', this)">A) I and II only</button>
     <button class="option-btn" onclick="checkAnswer(3, 'B', this)">B) I and IV only</button>
@@ -1466,7 +1573,7 @@ td {
 
     <div style="text-align:center; margin:15px 0; overflow-x:auto;">
 
-        <svg width="820" height="320">
+        <svg width="820" height="260">
 
             <!-- BUS -->
             <line x1="40" y1="35" x2="780" y2="35" stroke="black" stroke-width="2"/>
@@ -1478,87 +1585,96 @@ td {
             <line x1="70" y1="35" x2="70" y2="70" stroke="black"/>
             <polygon points="66,66 70,74 74,66" fill="black"/>
             <rect x="45" y="75" width="50" height="35" fill="white" stroke="black"/>
-            <text x="57" y="97" font-size="16">MAR</text>
+            <text x="53" y="97" font-size="16">MAR</text>
             <line x1="70" y1="110" x2="70" y2="145" stroke="black"/>
             <polygon points="66,141 70,149 74,141" fill="black"/>
-            <text x="28" y="170" font-size="15">To Memory</text>
+            <text x="65" y="170" font-size="18">To Memory</text>
 
             <!-- MDR -->
             <line x1="145" y1="35" x2="145" y2="70" stroke="black"/>
             <polygon points="141,66 145,74 149,66" fill="black"/>
+            <polygon points="141,44 145,36 149,44" fill="black"/>
             <rect x="120" y="75" width="50" height="35" fill="white" stroke="black"/>
-            <text x="132" y="97" font-size="16">MDR</text>
+            <text x="128" y="97" font-size="16">MDR</text>
             <line x1="145" y1="110" x2="145" y2="145" stroke="black"/>
             <polygon points="141,141 145,149 149,141" fill="black"/>
-            <polygon points="141,114 145,106 149,114" fill="black"/>
+            <polygon points="141,119 145,111 149,119" fill="black"/>
 
             <!-- IR -->
             <line x1="220" y1="35" x2="220" y2="70" stroke="black"/>
             <polygon points="216,66 220,74 224,66" fill="black"/>
+            <polygon points="216,44 220,36 224,44" fill="black"/>
             <rect x="195" y="75" width="50" height="35" fill="white" stroke="black"/>
             <text x="213" y="97" font-size="16">IR</text>
 
             <!-- PC -->
             <line x1="295" y1="35" x2="295" y2="70" stroke="black"/>
             <polygon points="291,66 295,74 299,66" fill="black"/>
+            <polygon points="291,44 295,36 299,44" fill="black"/>
             <rect x="270" y="75" width="50" height="35" fill="white" stroke="black"/>
             <text x="285" y="97" font-size="16">PC</text>
 
             <!-- Register File -->
             <line x1="390" y1="35" x2="390" y2="70" stroke="black"/>
             <polygon points="386,66 390,74 394,66" fill="black"/>
+            <polygon points="386,44 390,36 394,44" fill="black"/>
             <rect x="360" y="75" width="60" height="110" fill="white" stroke="black"/>
-            <text x="378" y="95" font-size="15">R0</text>
-            <text x="378" y="115" font-size="15">R1</text>
-            <text x="387" y="140" font-size="18">⋮</text>
-            <text x="378" y="170" font-size="15">R7</text>
+            <text x="380" y="95" font-size="15">R0</text>
+            <line x1="360" y1="100" x2="420" y2="100" stroke="black"/> 
+            <text x="380" y="115" font-size="15">R1</text>
+            <line x1="360" y1="120" x2="420" y2="120" stroke="black"/> 
+            <text x="387" y="138" font-size="18">⋮</text>
+            <text x="387" y="151" font-size="18">⋮</text>
+            <line x1="360" y1="155" x2="420" y2="155" stroke="black"/> 
+            <text x="380" y="170" font-size="15">R7</text>
 
             <!-- TEMP2 -->
             <line x1="500" y1="35" x2="500" y2="185" stroke="black"/>
+            <polygon points="496,44 500,36 504,44" fill="black"/>
             <rect x="470" y="185" width="60" height="35" fill="white" stroke="black"/>
-            <text x="480" y="208" font-size="16">TEMP2</text>
+            <text x="475" y="208" font-size="16">TEMP2</text>
 
             <!-- TEMP1 -->
-            <line x1="675" y1="35" x2="675" y2="70" stroke="black"/>
-            <polygon points="671,66 675,74 679,66" fill="black"/>
-            <rect x="645" y="75" width="60" height="35" fill="white" stroke="black"/>
-            <text x="655" y="97" font-size="16">TEMP1</text>
+            <line x1="720" y1="35" x2="720" y2="70" stroke="black"/>
+            <polygon points="716,66 720,74 724,66" fill="black"/>
+            <rect x="690" y="75" width="60" height="35" fill="white" stroke="black"/>
+            <text x="695" y="97" font-size="16">TEMP1</text>
 
             <!-- ALU -->
-            <polygon points="600,145 740,145 715,230 625,230"
-                     fill="white" stroke="black" stroke-width="2"/>
-            <text x="655" y="190" font-size="20">ALU</text>
+            <polygon points="600,145 640,145 670,170 700,145 740,145 715,230 625,230"
+                     fill="white" stroke="black"/>
+            <text x="655" y="195" font-size="20">ALU</text>
 
             <!-- TEMP1 to ALU -->
-            <line x1="675" y1="110" x2="675" y2="145" stroke="black"/>
-            <polygon points="671,141 675,149 679,141" fill="black"/>
+            <line x1="720" y1="110" x2="720" y2="145" stroke="black"/>
+            <polygon points="716,136 720,144 724,136" fill="black"/>
 
             <!-- BUS to ALU -->
-            <line x1="600" y1="35" x2="600" y2="145" stroke="black"/>
-            <polygon points="596,141 600,149 604,141" fill="black"/>
+            <line x1="620" y1="35" x2="620" y2="145" stroke="black"/>
+            <polygon points="616,136 620,144 624,136" fill="black"/>
 
             <!-- ALU to TEMP2 -->
             <line x1="670" y1="230" x2="670" y2="250" stroke="black"/>
             <line x1="670" y1="250" x2="500" y2="250" stroke="black"/>
             <line x1="500" y1="250" x2="500" y2="220" stroke="black"/>
-            <polygon points="496,224 500,216 504,224" fill="black"/>
+            <polygon points="496,228 500,220 504,228" fill="black"/>
 
         </svg>
 
     </div>
 
     <p class="ques">
-        Consider an instruction: <b>R0 &larr; R1 + R2</b>. The following steps are used to execute it over the given data path.
-        Assume that PC is incremented appropriately. The subscripts <b>r</b> and <b>w</b> indicate read and write operations, respectively.
+        Consider an instruction: R0 &larr; R1 + R2. The following steps are used to execute it over the given data path.
+        Assume that PC is incremented appropriately. The subscripts r and w indicate read and write operations, respectively.
     </p>
 
-    <div style="margin:15px 0 20px 35px; line-height:1.8; font-family:'Courier New', monospace;">
+    
         1.&nbsp; R2<sub>r</sub>, TEMP1<sub>r</sub>, ALU<sub>add</sub>, TEMP2<sub>w</sub><br>
         2.&nbsp; R1<sub>r</sub>, TEMP1<sub>w</sub><br>
         3.&nbsp; PC<sub>r</sub>, MAR<sub>w</sub>, MEM<sub>r</sub><br>
         4.&nbsp; TEMP2<sub>r</sub>, R0<sub>w</sub><br>
         5.&nbsp; MDR<sub>r</sub>, IR<sub>w</sub>
-    </div>
+    
 
     <p class="ques">Which one of the following is the correct order of execution of the above steps?</p>
 
@@ -1586,12 +1702,12 @@ td {
 <div class="question">
     <p class="ques"><b>Q53.</b> A computer system with a word length of 32 bits has a 16 MB byte-addressable main memory and a 64 KB, 4-way set associative cache memory with a block size of 256 bytes. Consider the following four physical addresses represented in hexadecimal notation.</p>
 
-    <div style="margin:15px 0; text-align:center; font-family:'Courier New', monospace; font-size:17px;">
+    
         A1 = 0x42C8A4,&nbsp;
         A2 = 0x546888,&nbsp;
         A3 = 0x6A289C,&nbsp;
         A4 = 0x5E4880
-    </div>
+   
 
     <p class="ques">Which one of the following is TRUE?</p>
 
@@ -1638,7 +1754,7 @@ td {
 
 <!-- Question 56 -->
 <div class="question">
-    <p class="ques"><b>Q56.</b> A certain processor uses a fully associative cache of size 16 kB. The cache block size is 16 bytes. Assume that the main memory is byte addressable and uses a 32-bit address. How many bits are required for the <b>Tag</b> and the <b>Index</b> fields respectively in the addresses generated by the processor?</p>
+    <p class="ques"><b>Q56.</b> A certain processor uses a fully associative cache of size 16 kB. The cache block size is 16 bytes. Assume that the main memory is byte addressable and uses a 32-bit address. How many bits are required for the Tag and the Index fields respectively in the addresses generated by the processor?</p>
 
     <button class="option-btn" onclick="checkAnswer('FA1', 'A', this)">A) 24 bits and 0 bits</button>
     <button class="option-btn" onclick="checkAnswer('FA1', 'B', this)">B) 28 bits and 4 bits</button>
@@ -1663,17 +1779,14 @@ td {
 
 <!-- Question 58 -->
 <div class="question">
-    <p class="ques"><b>Q.58</b> Consider the following processor design characteristics.</p>
+    <p class="ques"><b>Q.58</b> Consider the following processor design characteristics.<br><br>
 
-    <div style="margin:15px 0 20px 40px; line-height:1.8;">
-        <b>I.</b> Register-to-register arithmetic operations only<br><br>
+        <b>I.</b> Register-to-register arithmetic operations only<br>
+        <b>II.</b> Fixed-length instruction format<br>
+        <b>III.</b> Hardwired control unit<br><br>
+  
 
-        <b>II.</b> Fixed-length instruction format<br><br>
-
-        <b>III.</b> Hardwired control unit
-    </div>
-
-    <p class="ques">Which of the characteristics above are used in the design of a RISC processor?</p>
+    Which of the characteristics above are used in the design of a RISC processor?</p>
 
     <button class="option-btn" onclick="checkAnswer('RISC1', 'A', this)">A) I and II only</button>
     <button class="option-btn" onclick="checkAnswer('RISC1', 'B', this)">B) II and III only</button>
@@ -1736,19 +1849,18 @@ td {
 
 <!-- Question 62 -->
 <div class="question">
-    <p class="ques"><b>Q62.</b> A processor has 16 integer registers (R0, R1, ..., R15) and 64 floating point registers (F0, F1, ..., F63). It uses a 2-byte instruction format. There are four categories of instructions: Type-1, Type-2, Type-3, and Type-4.</p>
+    <p class="ques"><b>Q62.</b> A processor has 16 integer registers (R0, R1, ..., R15) and 64 floating point registers (F0, F1, ..., F63). It uses a 2-byte instruction format. There are four categories of instructions: Type-1, Type-2, Type-3, and Type-4.
 
-    <div style="margin:15px 0 20px 20px; line-height:1.8;">
-        Type-1 category consists of four instructions, each with 3 integer register operands (3Rs).<br><br>
+    
+        Type-1 category consists of four instructions, each with 3 integer register operands (3Rs).
 
-        Type-2 category consists of eight instructions, each with 2 floating point register operands (2Fs).<br><br>
+        Type-2 category consists of eight instructions, each with 2 floating point register operands (2Fs).
 
-        Type-3 category consists of fourteen instructions, each with one integer register operand and one floating point register operand (1R+1F).<br><br>
+        Type-3 category consists of fourteen instructions, each with one integer register operand and one floating point register operand (1R+1F).
 
-        Type-4 category consists of <b>N</b> instructions, each with a floating point register operand (1F).
-    </div>
-
-    <p class="ques">The maximum value of <b>N</b> is ________.</p>
+        Type-4 category consists of N instructions, each with a floating point register operand (1F).<br><br>
+    
+        The maximum value of N is ________.</p>
 
     <p class="year"><i>Gate CSE 2018</i></p>
     <div id="explanationISA2018" class="explanation"></div>
@@ -1794,18 +1906,18 @@ td {
             </tr>
             <tr>
                 <td style="border:1px solid #000;padding:8px;">I-cache</td>
-                <td style="border:1px solid #000;padding:8px;">2</td>
-                <td style="border:1px solid #000;padding:8px;">0.8</td>
+                <td style="border:1px solid #000;padding:8px; text-align: center;">2</td>
+                <td style="border:1px solid #000;padding:8px; text-align: center;">0.8</td>
             </tr>
             <tr>
                 <td style="border:1px solid #000;padding:8px;">D-cache</td>
-                <td style="border:1px solid #000;padding:8px;">2</td>
-                <td style="border:1px solid #000;padding:8px;">0.9</td>
+                <td style="border:1px solid #000;padding:8px; text-align: center;">2</td>
+                <td style="border:1px solid #000;padding:8px;  text-align: center;">0.9</td>
             </tr>
             <tr>
                 <td style="border:1px solid #000;padding:8px;">L2-cache</td>
-                <td style="border:1px solid #000;padding:8px;">8</td>
-                <td style="border:1px solid #000;padding:8px;">0.9</td>
+                <td style="border:1px solid #000;padding:8px;  text-align: center;">8</td>
+                <td style="border:1px solid #000;padding:8px;  text-align: center;">0.9</td>
             </tr>
         </table>
     </div>
@@ -1846,7 +1958,7 @@ td {
 
 <!-- Question 67 -->
 <div class="question">
-    <p class="ques"><b>Q67.</b> Consider a RISC machine where each instruction is exactly 4 bytes long. Conditional and unconditional branch instructions use PC-relative addressing mode with <b>Offset</b> specified in bytes to the target location of the branch instruction. Further, the Offset is always with respect to the address of the next instruction in the program sequence. Consider the following instruction sequence.</p>
+    <p class="ques"><b>Q67.</b> Consider a RISC machine where each instruction is exactly 4 bytes long. Conditional and unconditional branch instructions use PC-relative addressing mode with Offset specified in bytes to the target location of the branch instruction. Further, the Offset is always with respect to the address of the next instruction in the program sequence. Consider the following instruction sequence.</p>
 
     <div style="display:flex;justify-content:center;margin:15px 0;">
         <table style="border-collapse:collapse;text-align:center;">
@@ -1856,24 +1968,24 @@ td {
             </tr>
             <tr>
                 <td style="border:1px solid #000;padding:8px;">i</td>
-                <td style="border:1px solid #000;padding:8px;font-family:'Courier New',monospace;">add&nbsp;&nbsp;R2, R3, R4</td>
+                <td style="border:1px solid #000;padding:8px;">add&nbsp;&nbsp;R2, R3, R4</td>
             </tr>
             <tr>
                 <td style="border:1px solid #000;padding:8px;">i+1</td>
-                <td style="border:1px solid #000;padding:8px;font-family:'Courier New',monospace;">sub&nbsp;&nbsp;R5, R6, R7</td>
+                <td style="border:1px solid #000;padding:8px;">sub&nbsp;&nbsp;R5, R6, R7</td>
             </tr>
             <tr>
                 <td style="border:1px solid #000;padding:8px;">i+2</td>
-                <td style="border:1px solid #000;padding:8px;font-family:'Courier New',monospace;">cmp&nbsp;&nbsp;R1, R9, R10</td>
+                <td style="border:1px solid #000;padding:8px;">cmp&nbsp;&nbsp;R1, R9, R10</td>
             </tr>
             <tr>
                 <td style="border:1px solid #000;padding:8px;">i+3</td>
-                <td style="border:1px solid #000;padding:8px;font-family:'Courier New',monospace;">beq&nbsp;&nbsp;R1, Offset</td>
+                <td style="border:1px solid #000;padding:8px;">beq&nbsp;&nbsp;R1, Offset</td>
             </tr>
         </table>
     </div>
 
-    <p class="ques">If the target of the branch instruction is <b>i</b>, then the decimal value of the <b>Offset</b> is __________.</p>
+    <p class="ques">If the target of the branch instruction is i, then the decimal value of the Offset is __________.</p>
 
     <p class="year"><i>Gate CSE 2017 Session 1</i></p>
     <div id="explanationPCRelative" class="explanation"></div>
@@ -1883,15 +1995,14 @@ td {
 
 <!-- Question 68 -->
 <div class="question">
-    <p class="ques"><b>Q68.</b> Instruction execution in a processor is divided into 5 stages, <i>Instruction Fetch (IF)</i>, <i>Instruction Decode (ID)</i>, <i>Operand Fetch (OF)</i>, <i>Execute (EX)</i>, and <i>Write Back (WB)</i>. These stages take <b>5, 4, 20, 10, and 3 nanoseconds (ns)</b> respectively. A pipelined implementation of the processor requires buffering between each pair of consecutive stages with a delay of <b>2 ns</b>. Two pipelined implementations of the processor are contemplated:</p>
+    <p class="ques"><b>Q68.</b> Instruction execution in a processor is divided into 5 stages, Instruction Fetch (IF), Instruction Decode (ID), Operand Fetch (OF), Execute (EX), and Write Back (WB). These stages take 5, 4, 20, 10, and 3 nanoseconds (ns) respectively. A pipelined implementation of the processor requires buffering between each pair of consecutive stages with a delay of 2 ns. Two pipelined implementations of the processor are contemplated:<br><br>
 
-    <div style="margin:15px 0 20px 25px; line-height:1.8;">
-        (i) a naive pipeline implementation (<b>NP</b>) with 5 stages<br><br>
+    
+        (i) a naive pipeline implementation (NP>) with 5 stages<br>
+        (ii) an efficient pipeline (EP) where the OF stage is divided into stages OF1 and OF2 with execution times of 12 ns and 8 ns respectively.
+    
 
-        (ii) an efficient pipeline (<b>EP</b>) where the OF stage is divided into stages <b>OF1</b> and <b>OF2</b> with execution times of <b>12 ns</b> and <b>8 ns</b> respectively.
-    </div>
-
-    <p class="ques">The speedup (<i>correct to two decimal places</i>) achieved by <b>EP</b> over <b>NP</b> in executing <b>20 independent instructions</b> with no hazards is __________.</p>
+    <p class="ques">The speedup (correct to two decimal places) achieved by EP over NP in executing 20 independent instructions with no hazards is __________.</p>
 
     <p class="year"><i>Gate CSE 2017 Session 1</i></p>
     <div id="explanationPipeline2017" class="explanation"></div>
@@ -1901,7 +2012,7 @@ td {
 
 <!-- Question 69 -->
 <div class="question">
-    <p class="ques"><b>Q69.</b> A cache memory unit with capacity of <i>N</i> words and block size of <i>B</i> words is to be designed. If it is designed as a direct mapped cache, the length of the <b>TAG</b> field is 10 bits. If the cache unit is now designed as a 16-way set-associative cache, the length of the <b>TAG</b> field is __________ bits.</p>
+    <p class="ques"><b>Q69.</b> A cache memory unit with capacity of <i>N</i> words and block size of B words is to be designed. If it is designed as a direct mapped cache, the length of the TAG field is 10 bits. If the cache unit is now designed as a 16-way set-associative cache, the length of the TAG field is __________ bits.</p>
 
     <p class="year"><i>Gate CSE 2017 Session 1</i></p>
     <div id="explanationTag2017" class="explanation"></div>
@@ -1956,11 +2067,11 @@ td {
             </g>
 
             <!-- Axis Labels -->
-            <text x="170" y="315" font-size="15">Cache Size (MB)</text>
+            <text x="170" y="315" font-size="18">Cache Size (MB)</text>
 
             <text x="18" y="170"
                   transform="rotate(-90 18,170)"
-                  font-size="15">
+                  font-size="18">
                 Miss Rate (%)
             </text>
 
@@ -1973,6 +2084,7 @@ td {
             <text x="235" y="290" font-size="12">60</text>
             <text x="265" y="290" font-size="12">70</text>
             <text x="295" y="290" font-size="12">80</text>
+            <text x="325" y="290" font-size="12">90</text>
 
             <!-- Y labels -->
             <text x="32" y="245" font-size="12">10</text>
@@ -1983,6 +2095,7 @@ td {
             <text x="32" y="95" font-size="12">60</text>
             <text x="32" y="65" font-size="12">70</text>
             <text x="32" y="35" font-size="12">80</text>
+            <text x="32" y="5" font-size="12">90</text>
 
             <!-- Curve -->
             <polyline
@@ -2021,7 +2134,7 @@ td {
 
     <p class="ques">
         The smallest cache size required to ensure an average read latency of less than
-        <b>6 ms</b> is __________ MB.
+        6 ms is __________ MB.
     </p>
 
     <p class="year"><i>Gate CSE 2016 Set 2</i></p>
@@ -2072,7 +2185,7 @@ td {
 
 <!-- Question 76 -->
 <div class="question">
-    <p class="ques"><b>Q76.</b> A processor can support a maximum memory of <b>4 GB</b>, where the memory is <b>word-addressable</b> (a word consists of two bytes). The size of the address bus of the processor is at least __________ bits.</p>
+    <p class="ques"><b>Q76.</b> A processor can support a maximum memory of 4 GB, where the memory is word-addressable (a word consists of two bytes). The size of the address bus of the processor is at least __________ bits.</p>
 
     <p class="year"><i>Gate CSE 2016 Set 1</i></p>
     <div id="explanationAddrBus2016S1" class="explanation"></div>
@@ -2082,7 +2195,7 @@ td {
 
 <!-- Question 77 -->
 <div class="question">
-    <p class="ques"><b>Q77.</b> The stage delays in a 4-stage pipeline are <b>800, 500, 400</b> and <b>300</b> picoseconds. The first stage (with delay <b>800 picoseconds</b>) is replaced with a functionally equivalent design involving two stages with respective delays <b>600</b> and <b>350</b> picoseconds. The throughput increase of the pipeline is __________ percent.</p>
+    <p class="ques"><b>Q77.</b> The stage delays in a 4-stage pipeline are 800, 500, 400 and 300 picoseconds. The first stage (with delay 800 picoseconds) is replaced with a functionally equivalent design involving two stages with respective delays 600 and 350 picoseconds. The throughput increase of the pipeline is __________ percent.</p>
 
     <p class="year"><i>Gate CSE 2016 Set 1</i></p>
     <div id="explanationPipeline2016S1" class="explanation"></div>
@@ -2092,7 +2205,7 @@ td {
 
 <!-- Question 78 -->
 <div class="question">
-    <p class="ques"><b>Q78.</b> The size of the data count register of a DMA controller is <b>16 bits</b>. The processor needs to transfer a file of <b>29.154 kilobytes</b> from disk to main memory. The main memory is <b>byte addressable</b>. The minimum number of times the DMA controller needs to get the control of the system bus from the processor to transfer the file from the disk to main memory is __________.</p>
+    <p class="ques"><b>Q78.</b> The size of the data count register of a DMA controller is 16 bits. The processor needs to transfer a file of 29.154 kilobytes from disk to main memory. The main memory is byte addressable. The minimum number of times the DMA controller needs to get the control of the system bus from the processor to transfer the file from the disk to main memory is __________.</p>
 
 
     <p class="year"><i>Gate CSE 2016 Set 1</i></p>
@@ -2103,79 +2216,89 @@ td {
 
 <!-- Question 79 -->
 <div class="question">
-    <p class="ques"><b>Q79.</b> Consider a machine with a <b>byte-addressable</b> main memory of <b>2<sup>20</sup></b> bytes, block size of <b>16 bytes</b> and a <b>direct mapped cache</b> having <b>2<sup>12</sup></b> cache lines. Let the addresses of two consecutive bytes in main memory be <b>(E201F)<sub>16</sub></b> and <b>(E2020)<sub>16</sub></b>. What are the <b>tag</b> and <b>cache line address</b> (in hexadecimal) for main memory address <b>(E201F)<sub>16</sub></b>?</p>
+    <p class="ques"><b>Q79.</b> Consider a machine with a byte-addressable main memory of 2<sup>20</sup> bytes, block size of 16 bytes and a direct mapped cache having 2<sup>12</sup> cache lines. Let the addresses of two consecutive bytes in main memory be (E201F)<sub>16</sub> and (E2020)<sub>16</sub>. What are the tag and cache line address (in hexadecimal) for main memory address (E201F)<sub>16</sub>?</p>
 
-    <button class="option-btn" onclick="checkAnswer('Q79', 'A', this)">A) E, 201</button>
-    <button class="option-btn" onclick="checkAnswer('Q79', 'B', this)">B) F, 201</button>
-    <button class="option-btn" onclick="checkAnswer('Q79', 'C', this)">C) E, 220</button>
-    <button class="option-btn" onclick="checkAnswer('Q79', 'D', this)">D) 2, 01F</button>
+    <button class="option-btn" onclick="checkAnswer('Cache2015S3Q79', 'A', this)">
+        A) E, 201
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Cache2015S3Q79', 'B', this)">
+        B) F, 201
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Cache2015S3Q79', 'C', this)">
+        C) E, 220
+    </button>
+
+    <button class="option-btn" onclick="checkAnswer('Cache2015S3Q79', 'D', this)">
+        D) 2, 01F
+    </button>
 
     <p class="year"><i>Gate CSE 2015 Set 3</i></p>
-    <div id="explanationQ79" class="explanation"></div>
+    <div id="explanationCache2015S3Q79" class="explanation"></div>
 </div>
-
 
 
 <!-- Question 80 -->
 <div class="question">
-    <p class="ques"><b>Q80.</b> Consider the following code sequence having five instructions <i>I</i><sub>1</sub> to <i>I</i><sub>5</sub>. Each of these instructions has the following format,</p>
-
-    <div style="text-align:center; margin:15px 0;">
-        <b>OP Ri, Rj, Rk</b><br>
-        where operation OP is performed on contents of registers Rj and Rk and the result is stored in register Ri.
-    </div>
-
-    <div style="display:flex; justify-content:center; margin:15px 0;">
-        <table style="border-collapse:collapse;">
-            <tr>
-                <td style="padding:6px 20px;"><b>I<sub>1</sub>:</b> ADD R1, R2, R3</td>
-                <td style="padding:6px 20px;"><b>I<sub>2</sub>:</b> MUL R7, R1, R3</td>
-            </tr>
-            <tr>
-                <td style="padding:6px 20px;"><b>I<sub>3</sub>:</b> SUB R4, R1, R5</td>
-                <td style="padding:6px 20px;"><b>I<sub>4</sub>:</b> ADD R3, R2, R4</td>
-            </tr>
-            <tr>
-                <td style="padding:6px 20px;" colspan="2"><b>I<sub>5</sub>:</b> MUL R7, R8, R9</td>
-            </tr>
-        </table>
-    </div>
-
-    <p class="ques">Consider the following three statements:</p>
-
-    <div style="margin-left:20px; line-height:1.8;">
+    <p class="ques"><b>Q80.</b> Consider the following code sequence having five instructions <i>I</i><sub>1</sub> to <i>I</i><sub>5</sub>. Each of these instructions has the following format.
+<br><br>
+    
+        OP Ri, Rj, Rk<br><br>
+        where operation OP is performed on contents of registers Rj and Rk and the result is stored in register Ri.<br><br>
+   
+     &emsp;&emsp;I<sub>1</sub>: ADD R1, R2, R3<br>
+     &emsp;&emsp;I<sub>2</sub>: MUL R7, R1, R3<br>
+     &emsp;&emsp;I<sub>3</sub>: SUB R4, R1, R5<br>
+     &emsp;&emsp;I<sub>4</sub>: ADD R3, R2, R4<br>
+     &emsp;&emsp;I<sub>5</sub>: MUL R7, R8, R9<br><br>
+    
+        Consider the following three statements.<br><br>
+    
         S1: There is an anti-dependence between instructions I<sub>2</sub> and I<sub>5</sub>.<br>
         S2: There is an anti-dependence between instructions I<sub>2</sub> and I<sub>4</sub>.<br>
-        S3: Within an instruction pipeline an anti-dependence always creates one or more stalls.
-    </div>
+        S3: Within an instruction pipeline an anti-dependence always creates one or more stalls.<br><br>
+    
 
-    <p class="ques">Which one of the above statements is/are correct?</p>
+    Which one of the above statements is/are correct?</p>
 
-    <button class="option-btn" onclick="checkAnswer('Q80', 'A', this)">A) Only S1 is true</button>
-    <button class="option-btn" onclick="checkAnswer('Q80', 'B', this)">B) Only S2 is true</button>
-    <button class="option-btn" onclick="checkAnswer('Q80', 'C', this)">C) Only S1 and S3 are true</button>
-    <button class="option-btn" onclick="checkAnswer('Q80', 'D', this)">D) Only S2 and S3 are true</button>
+    <button class="option-btn" onclick="checkAnswer('Q2015S3Q2', 'A', this)">
+    A) Only S1 is true
+</button>
 
-    <p class="year"><i>Gate CSE 2015 Set 3</i></p>
-    <div id="explanationQ80" class="explanation"></div>
-</div>
+<button class="option-btn" onclick="checkAnswer('Q2015S3Q2', 'B', this)">
+    B) Only S2 is true
+</button>
+
+<button class="option-btn" onclick="checkAnswer('Q2015S3Q2', 'C', this)">
+    C) Only S1 and S3 are true
+</button>
+
+<button class="option-btn" onclick="checkAnswer('Q2015S3Q2', 'D', this)">
+    D) Only S2 and S3 are true
+</button>
+
+<p class="year"><i>Gate CSE 2015 Set 3</i></p>
+<div id="explanationQ2015S3Q2" class="explanation"></div>
 
 
 
 <!-- Question 81 -->
 <div class="question">
-    <p class="ques"><b>Q81.</b> Consider the following reservation table for a pipeline having three stages <b>S<sub>1</sub></b>, <b>S<sub>2</sub></b> and <b>S<sub>3</sub></b>.</p>
+    <p class="ques"><b>Q81.</b> Consider the following reservation table for a pipeline having three stages S<sub>1</sub>, S<sub>2</sub> and S<sub>3</sub>.</p>
 
     <div style="text-align:center; margin:20px 0; overflow-x:auto;">
 
-        <svg width="360" height="210" xmlns="http://www.w3.org/2000/svg">
+        <svg width="360" height="210">
 
+            <!-- Labels -->
             <text x="145" y="20" font-size="16" font-weight="bold">Time</text>
 
             <text x="25" y="70">S₁</text>
             <text x="25" y="110">S₂</text>
             <text x="25" y="150">S₃</text>
 
+            <!-- Grid -->
             <g stroke="black">
                 <line x1="60" y1="40" x2="260" y2="40"/>
                 <line x1="60" y1="80" x2="260" y2="80"/>
@@ -2190,12 +2313,14 @@ td {
                 <line x1="260" y1="40" x2="260" y2="160"/>
             </g>
 
+            <!-- Time -->
             <text x="76" y="35">1</text>
             <text x="116" y="35">2</text>
             <text x="156" y="35">3</text>
             <text x="196" y="35">4</text>
             <text x="236" y="35">5</text>
 
+            <!-- X marks -->
             <text x="76" y="67" font-size="16">X</text>
             <text x="236" y="67" font-size="16">X</text>
 
@@ -2210,19 +2335,22 @@ td {
 
     <p class="ques">The minimum average latency (MAL) is __________.</p>
 
+
     <p class="year"><i>Gate CSE 2015 Set 3</i></p>
-    <div id="explanationQ81" class="explanation"></div>
+    <div id="explanation2015MAL" class="explanation"></div>
 </div>
-    
+
+
 
 <!-- Question 82-->
 <div class="question">
-    <p class="ques"><b>Q82.</b> Assume that for a certain processor, a read request takes <b>50 nanoseconds</b> on a cache miss and <b>5 nanoseconds</b> on a cache hit. Suppose while running a program, it was observed that <b>80%</b> of the processor's read requests result in a cache hit. The average read access time in nanoseconds is __________.</p>
+    <p class="ques"><b>Q82.</b> Assume that for a certain processor, a read request takes 50 nanoseconds on a cache miss and 5 nanoseconds on a cache hit. Suppose while running a program, it was observed that 80% of the processor's read requests result in a cache hit. The average read access time in nanoseconds is __________.</p>
 
 
     <p class="year"><i>Gate CSE 2015 Set 2</i></p>
     <div id="explanationAMAT2015S2" class="explanation"></div>
 </div>
+
 
 
 <!-- Question 83 -->
@@ -2273,10 +2401,10 @@ td {
 
 <!-- Question 84 -->
 <div class="question">
-    <p class="ques"><b>Q84.</b> Consider a processor with byte-addressable memory. Assume that all registers, including Program Counter (PC) and Program Status Word (PSW), are of size <b>2 bytes</b>. A stack in the main memory is implemented from memory location <b>(0100)<sub>16</sub></b> and it grows upward. The Stack Pointer (SP) points to the top element of the stack.</p>
+    <p class="ques"><b>Q84.</b> Consider a processor with byte-addressable memory. Assume that all registers, including Program Counter (PC) and Program Status Word (PSW), are of size 2 bytes. A stack in the main memory is implemented from memory location (0100)<sub>16</sub> and it grows upward. The Stack Pointer (SP) points to the top element of the stack.</p>
 
     <p class="ques">
-        The current value of <b>SP</b> is <b>(016E)<sub>16</sub></b>. The <b>CALL</b> instruction is of two words, the first word is the opcode and the second word is the starting address of the subroutine (one word = 2 bytes).
+        The current value of SP is (016E)<sub>16</sub>. The CALL instruction is of two words, the first word is the opcode and the second word is the starting address of the subroutine (one word = 2 bytes).
     </p>
 
     <p class="ques"><b>The CALL instruction is implemented as follows:</b></p>
@@ -2334,7 +2462,7 @@ td {
 
 <!-- Question 86 -->
 <div class="question">
-    <p class="ques"><b>Q86.</b> Consider a non-pipelined processor with a clock rate of <b>2.5 gigahertz</b> and average cycles per instruction of <b>4</b>. The same processor is upgraded to a pipelined processor with <b>five stages</b>; but due to the internal pipeline delay, the clock speed is reduced to <b>2 gigahertz</b>. Assume that there are no stalls in the pipeline. The speed up achieved in this pipelined processor is __________.</p>
+    <p class="ques"><b>Q86.</b> Consider a non-pipelined processor with a clock rate of 2.5 gigahertz and average cycles per instruction of 4. The same processor is upgraded to a pipelined processor with five stages; but due to the internal pipeline delay, the clock speed is reduced to 2 gigahertz. Assume that there are no stalls in the pipeline. The speed up achieved in this pipelined processor is __________.</p>
 
 
     <p class="year"><i>Gate CSE 2015 Set 1</i></p>
@@ -2345,7 +2473,7 @@ td {
 
 <!-- Question 87 -->
 <div class="question">
-    <p class="ques"><b>Q87.</b> Consider a disk pack with a <b>seek time of 4 milliseconds</b> and rotational speed of <b>10000 rotations per minute (RPM)</b>. It has <b>600 sectors per track</b> and each sector can store <b>512 bytes</b> of data. Consider a file stored in the disk. The file contains <b>2000 sectors</b>. Assume that every sector access necessitates a seek, and the average rotational latency for accessing each sector is half the time for one complete rotation. The total time (in milliseconds) needed to read the entire file is __________.</p>
+    <p class="ques"><b>Q87.</b> Consider a disk pack with a seek time of 4 milliseconds and rotational speed of 10000 rotations per minute (RPM). It has 600 sectors per track and each sector can store 512 bytes of data. Consider a file stored in the disk. The file contains 2000 sectors. Assume that every sector access necessitates a seek, and the average rotational latency for accessing each sector is half the time for one complete rotation. The total time (in milliseconds) needed to read the entire file is __________.</p>
 
     <p class="year"><i>Gate CSE 2015 Set 1</i></p>
     <div id="explanationDisk2015S1" class="explanation"></div>
@@ -2356,14 +2484,14 @@ td {
 
 <!-- Question 88 -->
 <div class="question">
-    <p class="ques"><b>Q88.</b> The memory access time is <b>1 nanosecond</b> for a read operation with a hit in cache, <b>5 nanoseconds</b> for a read operation with a miss in cache, <b>2 nanoseconds</b> for a write operation with a hit in cache and <b>10 nanoseconds</b> for a write operation with a miss in cache.</p>
+    <p class="ques"><b>Q88.</b> The memory access time is 1 nanosecond for a read operation with a hit in cache, 5 nanoseconds for a read operation with a miss in cache, 2 nanoseconds for a write operation with a hit in cache and 10 nanoseconds for a write operation with a miss in cache.</p>
 
     <p class="ques">
         Execution of a sequence of instructions involves
-        <b>100 instruction fetch operations</b>,
-        <b>60 memory operand read operations</b> and
-        <b>40 memory operand write operations</b>.
-        The cache hit-ratio is <b>0.9</b>.
+        100 instruction fetch operations,
+        60 memory operand read operations and
+        40 memory operand write operations.
+        The cache hit-ratio is 0.9.
         The average memory access time (in nanoseconds) in executing the sequence of instructions is __________.
     </p>
 
@@ -2377,15 +2505,15 @@ td {
 <div class="question">
     <p class="ques"><b>Q89.</b> Consider the following processors (ns stands for nanoseconds). Assume that the pipeline registers have zero latency.</p>
 
-    <div style="margin-left:20px; line-height:1.8;">
-        <b>P1:</b> Four-stage pipeline with stage latencies 1 ns, 2 ns, 2 ns, 1 ns.<br>
+    
+        P1: Four-stage pipeline with stage latencies 1 ns, 2 ns, 2 ns, 1 ns.<br>
 
-        <b>P2:</b> Four-stage pipeline with stage latencies 1 ns, 1.5 ns, 1.5 ns, 1.5 ns.<br>
+        P2: Four-stage pipeline with stage latencies 1 ns, 1.5 ns, 1.5 ns, 1.5 ns.<br>
 
-        <b>P3:</b> Five-stage pipeline with stage latencies 0.5 ns, 1 ns, 1 ns, 0.6 ns, 1 ns.<br>
+        P3: Five-stage pipeline with stage latencies 0.5 ns, 1 ns, 1 ns, 0.6 ns, 1 ns.<br>
 
-        <b>P4:</b> Five-stage pipeline with stage latencies 0.5 ns, 0.5 ns, 1 ns, 1 ns, 1.1 ns.
-    </div>
+        P4: Five-stage pipeline with stage latencies 0.5 ns, 0.5 ns, 1 ns, 1 ns, 1.1 ns.
+    
 
     <p class="ques">Which processor has the highest peak clock frequency?</p>
 
@@ -2401,21 +2529,21 @@ td {
 
 <!-- Question 89 -->
 <div class="question">
-    <p class="ques"><b>Q89.</b> An instruction pipeline has five stages, namely, instruction fetch (IF), instruction decode and register fetch (ID/RF), instruction execution (EX), memory access (MEM), and register writeback (WB) with stage latencies <b>1 ns, 2.2 ns, 2 ns, 1 ns, and 0.75 ns</b> respectively.</p>
+    <p class="ques"><b>Q89.</b> An instruction pipeline has five stages, namely, instruction fetch (IF), instruction decode and register fetch (ID/RF), instruction execution (EX), memory access (MEM), and register writeback (WB) with stage latencies 1 ns, 2.2 ns, 2 ns, 1 ns, and 0.75 ns respectively.</p>
 
     <p class="ques">
         To gain in terms of frequency, the designers have decided to split the ID/RF stage into three stages
-        (<b>ID</b>, <b>RF1</b>, <b>RF2</b>) each of latency <b>2.2/3 ns</b>.
-        Also, the EX stage is split into two stages (<b>EX1</b>, <b>EX2</b>) each of latency <b>1 ns</b>.
+        (ID, RF1, RF2) each of latency 2.2/3 ns.
+        Also, the EX stage is split into two stages (EX1, EX2) each of latency 1 ns.
         The new design has a total of eight pipeline stages.
     </p>
 
     <p class="ques">
-        A program has <b>20%</b> branch instructions which execute in the EX stage and produce the next instruction pointer at the end of the EX stage in the old design and at the end of the EX2 stage in the new design.
+        A program has 20% branch instructions which execute in the EX stage and produce the next instruction pointer at the end of the EX stage in the old design and at the end of the EX2 stage in the new design.
         The IF stage stalls after fetching a branch instruction until the next instruction pointer is computed.
         All instructions other than the branch instruction have an average CPI of one in both the designs.
-        The execution times of this program on the old and the new design are <b>P</b> and <b>Q</b> nanoseconds, respectively.
-        The value of <b>P/Q</b> is __________.
+        The execution times of this program on the old and the new design are P and Q nanoseconds, respectively.
+        The value of P/Q is __________.
     </p>
 
     <p class="year"><i>Gate CSE 2014 Set 3</i></p>
@@ -2425,7 +2553,7 @@ td {
 
 <!-- Question 90 -->
 <div class="question">
-    <p class="ques"><b>Q90.</b> A <b>4-way set-associative</b> cache memory unit with a capacity of <b>16 KB</b> is built using a block size of <b>8 words</b>. The word length is <b>32 bits</b>. The size of the physical address space is <b>4 GB</b>. The number of bits for the <b>TAG</b> field is __________.</p>
+    <p class="ques"><b>Q90.</b> A 4-way set-associative cache memory unit with a capacity of 16 KB is built using a block size of 8 words. The word length is 32 bits. The size of the physical address space is 4 GB. The number of bits for the TAG field is __________.</p>
 
     <p class="year"><i>Gate CSE 2014 Set 2</i></p>
     <div id="explanation2014S2Tag" class="explanation"></div>
@@ -2449,7 +2577,7 @@ td {
 
 <!-- Question 92 -->
 <div class="question">
-    <p class="ques"><b>Q92.</b> If the associativity of a processor cache is doubled while keeping the capacity and block size unchanged, which one of the following is guaranteed to <b>NOT</b> be affected?</p>
+    <p class="ques"><b>Q92.</b> If the associativity of a processor cache is doubled while keeping the capacity and block size unchanged, which one of the following is guaranteed to NOT be affected?</p>
 
     <button class="option-btn" onclick="checkAnswer('Q92', 'A', this)">A) Width of tag comparator</button>
     <button class="option-btn" onclick="checkAnswer('Q92', 'B', this)">B) Width of set index decoder</button>
@@ -2464,11 +2592,11 @@ td {
 
 <!-- Question 93 -->
 <div class="question">
-    <p class="ques"><b>Q93.</b> Consider a main memory system that consists of <b>8 memory modules</b> attached to the system bus, which is one word wide. When a write request is made, the bus is occupied for <b>100 nanoseconds (ns)</b> by the data, address, and control signals. During the same <b>100 ns</b>, and for <b>500 ns</b> thereafter, the addressed memory module executes one cycle accepting and storing the data. The (internal) operation of different memory modules may overlap in time, but only one request can be on the bus at any time.</p>
+    <p class="ques"><b>Q93.</b> Consider a main memory system that consists of 8 memory modules attached to the system bus, which is one word wide. When a write request is made, the bus is occupied for 100 nanoseconds (ns) by the data, address, and control signals. During the same 100 ns, and for 500 ns thereafter, the addressed memory module executes one cycle accepting and storing the data. The (internal) operation of different memory modules may overlap in time, but only one request can be on the bus at any time.</p>
 
     <p class="ques">
         The maximum number of stores (of one word each) that can be initiated in
-        <b>1 millisecond</b> is __________.
+        1 millisecond is __________.
     </p>
 
     <p class="year"><i>Gate CSE 2014 Set 2</i></p>
@@ -2479,7 +2607,7 @@ td {
 
 <!-- Question 94 -->
 <div class="question">
-    <p class="ques"><b>Q94.</b> An access sequence of cache block addresses of length <b>N</b> contains <b>n</b> unique block addresses. The number of unique block addresses between two consecutive accesses to the same block address is bounded above by <b>k</b>. What is the miss ratio if the access sequence is passed through a cache of associativity <b>A ≥ k</b> exercising <b>Least Recently Used (LRU)</b> replacement policy?</p>
+    <p class="ques"><b>Q94.</b> An access sequence of cache block addresses of length N contains n unique block addresses. The number of unique block addresses between two consecutive accesses to the same block address is bounded above by k. What is the miss ratio if the access sequence is passed through a cache of associativity A ≥ k exercising Least Recently Used (LRU) replacement policy?</p>
 
     <button class="option-btn" onclick="checkAnswer('Q94', 'A', this)">A) n/N</button>
     <button class="option-btn" onclick="checkAnswer('Q94', 'B', this)">B) 1/N</button>
@@ -2494,7 +2622,7 @@ td {
 
 <!-- Question 95 -->
 <div class="question">
-    <p class="ques"><b>Q95.</b> A machine has a <b>32-bit architecture</b>, with <b>1-word</b> long instructions. It has <b>64 registers</b>, each of which is <b>32 bits</b> long. It needs to support <b>45 instructions</b>, which have an immediate operand in addition to two register operands. Assuming that the immediate operand is an <b>unsigned integer</b>, the maximum value of the immediate operand is __________.</p>
+    <p class="ques"><b>Q95.</b> A machine has a 32-bit architecture, with 1-word long instructions. It has 64 registers, each of which is 32 bits long. It needs to support 45 instructions, which have an immediate operand in addition to two register operands. Assuming that the immediate operand is an unsigned integer, the maximum value of the immediate operand is __________.</p>
 
     <p class="year"><i>Gate CSE 2014 Set 1</i></p>
     <div id="explanation2014S1Imm" class="explanation"></div>
@@ -2504,7 +2632,7 @@ td {
 
 <!-- Question 96 -->
 <div class="question">
-    <p class="ques"><b>Q96.</b> Consider a <b>6-stage instruction pipeline</b>, where all stages are perfectly balanced. Assume that there is no cycle-time overhead of pipelining. When an application is executing on this 6-stage pipeline, the speedup achieved with respect to non-pipelined execution if <b>25%</b> of the instructions incur <b>2 pipeline stall cycles</b> is __________.</p>
+    <p class="ques"><b>Q96.</b> Consider a 6-stage instruction pipeline, where all stages are perfectly balanced. Assume that there is no cycle-time overhead of pipelining. When an application is executing on this 6-stage pipeline, the speedup achieved with respect to non-pipelined execution if 25% of the instructions incur 2 pipeline stall cycles is __________.</p>
 
     <p class="year"><i>Gate CSE 2014 Set 1</i></p>
     <div id="explanation2014S1Pipe" class="explanation"></div>
@@ -2514,7 +2642,7 @@ td {
 
 <!-- Question 97 -->
 <div class="question">
-    <p class="ques"><b>Q97.</b> Consider two processors <b>P<sub>1</sub></b> and <b>P<sub>2</sub></b> executing the same instruction set. Assume that under identical conditions, for the same input, a program running on <b>P<sub>2</sub></b> takes <b>25%</b> less time but incurs <b>20%</b> more CPI (clock cycles per instruction) as compared to the program running on <b>P<sub>1</sub></b>. If the clock frequency of <b>P<sub>1</sub></b> is <b>1 GHz</b>, then the clock frequency of <b>P<sub>2</sub></b> (in GHz) is __________.</p>
+    <p class="ques"><b>Q97.</b> Consider two processors P<sub>1</sub> and P<sub>2</sub> executing the same instruction set. Assume that under identical conditions, for the same input, a program running on P<sub>2</sub> takes 25% less time but incurs 20% more CPI (clock cycles per instruction) as compared to the program running on P<sub>1</sub>. If the clock frequency of P<sub>1</sub> is 1 GHz, then the clock frequency of P<sub>2</sub> (in GHz) is __________.</p>
 
     <p class="year"><i>Gate CSE 2014 Set 1</i></p>
     <div id="explanation2014S1CPU" class="explanation"></div>
@@ -2523,7 +2651,7 @@ td {
 
 <!-- Question 98 -->
 <div class="question">
-    <p class="ques"><b>Q98.</b> In a <b>k-way set associative</b> cache, the cache is divided into <b>v</b> sets, each of which consists of <b>k</b> lines. The lines of a set are placed in sequence one after another. The lines in set <b>s</b> are sequenced before the lines in set <b>(s + 1)</b>. The main memory blocks are numbered from <b>0</b> onwards. The main memory block numbered <b>j</b> must be mapped to any one of the cache lines from</p>
+    <p class="ques"><b>Q98.</b> In a k-way set associative cache, the cache is divided into v sets, each of which consists of k lines. The lines of a set are placed in sequence one after another. The lines in set s are sequenced before the lines in set (s + 1). The main memory blocks are numbered from 0 onwards. The main memory block numbered j must be mapped to any one of the cache lines from</p>
 
     <button class="option-btn" onclick="checkAnswer('Q98', 'A', this)">
         A) (j mod v) * k to (j mod v) * k + (k − 1)
@@ -2550,7 +2678,7 @@ td {
 
 <!-- Question 99 -->
 <div class="question">
-    <p class="ques"><b>Q99.</b> A RAM chip has capacity of <b>1024 words of 8 bits</b> each (<b>1K × 8</b>). The number of <b>2 × 4 decoders</b> with enable line needed to construct a <b>16K × 16</b> RAM from <b>1K × 8</b> RAM is</p>
+    <p class="ques"><b>Q99.</b> A RAM chip has capacity of 1024 words of 8 bits each (1K × 8). The number of 2 × 4 decoders with enable line needed to construct a 16K × 16 RAM from 1K × 8 RAM is</p>
 
     <button class="option-btn" onclick="checkAnswer('Q99', 'A', this)">A) 4</button>
     <button class="option-btn" onclick="checkAnswer('Q99', 'B', this)">B) 5</button>
@@ -2566,16 +2694,16 @@ td {
 
 <!-- Question 100 -->
 <div class="question">
-    <p class="ques"><b>Q100.</b> Consider the following sequence of micro-operations.</p>
-
-    <div style="margin-left:30px; line-height:1.8;">
+    <p class="ques"><b>Q100.</b> Consider the following sequence of micro-operations.
+<br><br>
+    
         MBR &larr; PC<br>
         MAR &larr; X<br>
         PC &larr; Y<br>
-        Memory &larr; MBR
-    </div>
+        Memory &larr; MBR<br><br>
+    
 
-    <p class="ques">Which one of the following is a possible operation performed by this sequence?</p>
+    Which one of the following is a possible operation performed by this sequence?</p>
 
     <button class="option-btn" onclick="checkAnswer('Q100', 'A', this)">A) Instruction fetch</button>
     <button class="option-btn" onclick="checkAnswer('Q100', 'B', this)">B) Operand fetch</button>
@@ -2590,18 +2718,14 @@ td {
 
 <!-- Question 101 -->
 <div class="question">
-    <p class="ques"><b>Q101.</b> Consider an instruction pipeline with five stages without any branch prediction:</p>
+    <p class="ques"><b>Q101.</b> Consider an instruction pipeline with five stages without any branch prediction:<br><br>
 
-    <div style="margin-left:20px; line-height:1.8;">
-        Fetch Instruction (FI), Decode Instruction (DI), Fetch Operand (FO), Execute Instruction (EI), and Write Operand (WO).
-    </div>
-
-    <p class="ques">
-        The stage delays for FI, DI, FO, EI and WO are <b>5 ns, 7 ns, 10 ns, 8 ns and 6 ns</b>, respectively. There are intermediate storage buffers after each stage and the delay of each buffer is <b>1 ns</b>.
-    </p>
-
-    <p class="ques">
-        A program consisting of <b>12 instructions</b> I<sub>1</sub>, I<sub>2</sub>, …, I<sub>12</sub> is executed in this pipeline processor. Instruction <b>I<sub>4</sub></b> is the only branch instruction and its branch target is <b>I<sub>9</sub></b>. If the branch is taken during the execution of this program, the time (in ns) needed to complete the program is
+    
+        Fetch Instruction (FI), Decode Instruction (DI), Fetch Operand (FO), Execute Instruction (EI), and Write Operand (WO).<br><br>
+  
+        The stage delays for FI, DI, FO, EI and WO are 5 ns, 7 ns, 10 ns, 8 ns and 6 ns, respectively. There are intermediate storage buffers after each stage and the delay of each buffer is 1 ns.<br><br>
+  
+        A program consisting of 12 instructions I<sub>1</sub>, I<sub>2</sub>, …, I<sub>12</sub> is executed in this pipeline processor. Instruction I<sub>4</sub> is the only branch instruction and its branch target is I<sub>9</sub>. If the branch is taken during the execution of this program, the time (in ns) needed to complete the program is
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q101', 'A', this)">A) 132</button>
@@ -2615,7 +2739,7 @@ td {
 
 <!-- Question 102 -->
 <div class="question">
-    <p class="ques"><b>Q102.</b> Consider a hard disk with <b>16 recording surfaces</b> (0–15) having <b>16384 cylinders</b> (0–16383) and each cylinder contains <b>64 sectors</b> (0–63). Data storage capacity in each sector is <b>512 bytes</b>. Data are organized cylinder-wise and the addressing format is <b>&lt;cylinder no., surface no., sector no.&gt;</b>. A file of size <b>42797 KB</b> is stored in the disk and the starting disk location of the file is <b>&lt;1200, 9, 40&gt;</b>. What is the cylinder number of the last sector of the file, if it is stored in a contiguous manner?</p>
+    <p class="ques"><b>Q102.</b> Consider a hard disk with 16 recording surfaces (0–15) having 16384 cylinders (0–16383) and each cylinder contains 64 sectors (0–63). Data storage capacity in each sector is 512 bytes. Data are organized cylinder-wise and the addressing format is &lt;cylinder no., surface no., sector no.&gt;. A file of size 42797 KB is stored in the disk and the starting disk location of the file is &lt;1200, 9, 40&gt;. What is the cylinder number of the last sector of the file, if it is stored in a contiguous manner?</p>
 
     <button class="option-btn" onclick="checkAnswer('Q102', 'A', this)">A) 1281</button>
     <button class="option-btn" onclick="checkAnswer('Q102', 'B', this)">B) 1282</button>
@@ -2631,9 +2755,9 @@ td {
 
 <!-- Question 103 -->
 <div class="question">
-    <p class="ques"><b>Q103.</b> A computer has a <b>256 Kbyte</b>, <b>4-way set associative</b>, write back data cache with block size of <b>32 Bytes</b>. The processor sends <b>32-bit</b> addresses to the cache controller. Each cache tag directory entry contains, in addition to the address tag, <b>2 valid bits</b>, <b>1 modified bit</b> and <b>2 replacement bits</b>.</p>
+    <p class="ques"><b>Q103.</b> A computer has a 256 Kbyte, 4-way set associative, write back data cache with block size of 32 Bytes. The processor sends 32-bit addresses to the cache controller. Each cache tag directory entry contains, in addition to the address tag, 2 valid bits, 1 modified bit and 2 replacement bits.</p>
 
-    <p class="ques">The number of bits in the <b>tag field</b> of an address is</p>
+    <p class="ques">The number of bits in the tag field of an address is</p>
 
     <button class="option-btn" onclick="checkAnswer('Q103', 'A', this)">A) 11</button>
     <button class="option-btn" onclick="checkAnswer('Q103', 'B', this)">B) 14</button>
@@ -2648,9 +2772,9 @@ td {
 
 <!-- Question 104 -->
 <div class="question">
-    <p class="ques"><b>Q104.</b> A computer has a <b>256 Kbyte</b>, <b>4-way set associative</b>, write back data cache with block size of <b>32 Bytes</b>. The processor sends <b>32-bit</b> addresses to the cache controller. Each cache tag directory entry contains, in addition to the address tag, <b>2 valid bits</b>, <b>1 modified bit</b> and <b>2 replacement bits</b>.</p>
+    <p class="ques"><b>Q104.</b> A computer has a 256 Kbyte, 4-way set associative, write back data cache with block size of 32 Bytes. The processor sends 32-bit addresses to the cache controller. Each cache tag directory entry contains, in addition to the address tag, 2 valid bits, 1 modified bit and 2 replacement bits.</p>
 
-    <p class="ques">The size of the <b>cache tag directory</b> is</p>
+    <p class="ques">The size of the cache tag directory is</p>
 
     <button class="option-btn" onclick="checkAnswer('Q104', 'A', this)">A) 160 Kbits</button>
     <button class="option-btn" onclick="checkAnswer('Q104', 'B', this)">B) 136 Kbits</button>
@@ -2679,7 +2803,7 @@ td {
 
 <!-- Question 106 -->
 <div class="question">
-    <p class="ques"><b>Q106.</b> The amount of <b>ROM</b> needed to implement a <b>4-bit multiplier</b> is</p>
+    <p class="ques"><b>Q106.</b> The amount of ROM needed to implement a 4-bit multiplier is</p>
 
     <button class="option-btn" onclick="checkAnswer('Q106', 'A', this)">A) 64 bits</button>
     <button class="option-btn" onclick="checkAnswer('Q106', 'B', this)">B) 128 bits</button>
@@ -2693,7 +2817,7 @@ td {
 
 <!-- Question 107 -->
 <div class="question">
-    <p class="ques"><b>Q107.</b> An <b>8 KB</b> direct-mapped write back cache is organized as multiple blocks, each of size <b>32 bytes</b>. The processor generates <b>32-bit</b> addresses. The cache controller maintains the tag information for each cache block comprising of the following:</p>
+    <p class="ques"><b>Q107.</b> An 8 KB direct-mapped write back cache is organized as multiple blocks, each of size 32 bytes. The processor generates 32-bit addresses. The cache controller maintains the tag information for each cache block comprising of the following:</p>
 
     <div style="margin-left:20px; line-height:1.8;">
         • 1 Valid bit<br>
@@ -2715,7 +2839,7 @@ td {
 
 <!-- Question 108 -->
 <div class="question">
-    <p class="ques"><b>Q108.</b> Consider a hypothetical processor with an instruction of type <b>LW R1, 20(R2)</b>, which during execution reads a 32-bit word from memory and stores it in a 32-bit register R1. The effective address of the memory location is obtained by the addition of a constant <b>20</b> and the contents of register <b>R2</b>. Which of the following best reflects the addressing mode implemented by this instruction for the operand in memory?</p>
+    <p class="ques"><b>Q108.</b> Consider a hypothetical processor with an instruction of type LW R1, 20(R2), which during execution reads a 32-bit word from memory and stores it in a 32-bit register R1. The effective address of the memory location is obtained by the addition of a constant 20 and the contents of register R2. Which of the following best reflects the addressing mode implemented by this instruction for the operand in memory?</p>
 
     <button class="option-btn" onclick="checkAnswer('Q108', 'A', this)">A) Immediate Addressing</button>
     <button class="option-btn" onclick="checkAnswer('Q108', 'B', this)">B) Register Addressing</button>
@@ -2730,7 +2854,7 @@ td {
 <!-- Question 109 -->
 <div class="question">
 
-    <p class="ques"><b>Q109.</b> Consider evaluating the following expression tree on a machine with load-store architecture in which memory can be accessed only through load and store instructions. The variables <b>a, b, c, d</b> and <b>e</b> are initially stored in memory. The binary operators used in this expression tree can be evaluated only when the operands are in registers. The instructions produce result only in a register. If no intermediate results can be stored in memory, what is the minimum number of registers needed to evaluate this expression?</p>
+    <p class="ques"><b>Q109.</b> Consider evaluating the following expression tree on a machine with load-store architecture in which memory can be accessed only through load and store instructions. The variables a, b, c, d and e are initially stored in memory. The binary operators used in this expression tree can be evaluated only when the operands are in registers. The instructions produce result only in a register. If no intermediate results can be stored in memory, what is the minimum number of registers needed to evaluate this expression?</p>
 
     <div style="text-align:center;margin:20px 0;overflow-x:auto;">
 
@@ -2790,11 +2914,11 @@ td {
     </div>
 
     <p class="ques">
-        Assume that each statement in this program is equivalent to a machine instruction which takes <b>one clock cycle</b> to execute if it is a non-load/store instruction. The load-store instructions take <b>two clock cycles</b> to execute.
+        Assume that each statement in this program is equivalent to a machine instruction which takes one clock cycle to execute if it is a non-load/store instruction. The load-store instructions take two clock cycles to execute.
     </p>
 
     <p class="ques">
-        The designer of the system also has an alternate approach of using the <b>DMA controller</b> to implement the same transfer. The DMA controller requires <b>20 clock cycles</b> for initialization and other overhead. Each DMA transfer cycle takes <b>two clock cycles</b> to transfer one byte of data from the device to memory.
+        The designer of the system also has an alternate approach of using the DMA controller to implement the same transfer. The DMA controller requires 20 clock cycles for initialization and other overhead. Each DMA transfer cycle takes two clock cycles to transfer one byte of data from the device to memory.
     </p>
 
     <p class="ques">
@@ -2817,7 +2941,7 @@ td {
 <!-- Question 112 -->
 <div class="question">
 
-    <p class="ques"><b>Q112.</b> An application loads <b>100 libraries</b> at start-up. Loading each library requires exactly <b>one disk access</b>. The seek time of the disk to a random location is given as <b>10 ms</b>. Rotational speed of the disk is <b>6000 rpm</b>. If all 100 libraries are loaded from random locations on the disk, how long does it take to load all libraries? (The time to transfer data from the disk block once the head has been positioned at the start of the block may be neglected.)</p>
+    <p class="ques"><b>Q112.</b> An application loads 100 libraries at start-up. Loading each library requires exactly one disk access. The seek time of the disk to a random location is given as 10 ms. Rotational speed of the disk is 6000 rpm. If all 100 libraries are loaded from random locations on the disk, how long does it take to load all libraries? (The time to transfer data from the disk block once the head has been positioned at the start of the block may be neglected.)</p>
 
     <button class="option-btn" onclick="checkAnswer('Q112', 'A', this)">A) 0.50 s</button>
     <button class="option-btn" onclick="checkAnswer('Q112', 'B', this)">B) 1.50 s</button>
@@ -2833,7 +2957,7 @@ td {
 <!-- Question 113 -->
 <div class="question">
 
-    <p class="ques"><b>Q113.</b> A main memory unit with a capacity of <b>4 megabytes</b> is built using <b>1M × 1-bit DRAM</b> chips. Each DRAM chip has <b>1K rows</b> of cells with <b>1K cells</b> in each row. The time taken for a single refresh operation is <b>100 nanoseconds</b>. The time required to perform one refresh operation on all the cells in the memory unit is</p>
+    <p class="ques"><b>Q113.</b> A main memory unit with a capacity of 4 megabytes is built using 1M × 1-bit DRAM chips. Each DRAM chip has 1K rows of cells with 1K cells in each row. The time taken for a single refresh operation is 100 nanoseconds. The time required to perform one refresh operation on all the cells in the memory unit is</p>
 
     <button class="option-btn" onclick="checkAnswer('Q113', 'A', this)">A) 100 nanoseconds</button>
     <button class="option-btn" onclick="checkAnswer('Q113', 'B', this)">B) 100 × 2<sup>10</sup> nanoseconds</button>
@@ -2849,10 +2973,10 @@ td {
 <!-- Question 114 -->
 <div class="question">
 
-    <p class="ques"><b>Q114.</b> A computer system has an <b>L1 cache</b>, an <b>L2 cache</b>, and a <b>main memory</b> unit connected as shown below. The block size in L1 cache is <b>4 words</b>. The block size in L2 cache is <b>16 words</b>. The memory access times are <b>2 nanoseconds</b>, <b>20 nanoseconds</b>, and <b>200 nanoseconds</b> for L1 cache, L2 cache, and main memory unit respectively.</p>
+    <p class="ques"><b>Q114.</b> A computer system has an L1 cache, an L2 cache, and a main memory unit connected as shown below. The block size in L1 cache is 4 words. The block size in L2 cache is 16 words. The memory access times are 2 nanoseconds, 20 nanoseconds, and 200 nanoseconds for L1 cache, L2 cache, and main memory unit respectively.</p>
 
     <p class="ques">
-        When there is a miss in <b>L1 cache</b> and a hit in <b>L2 cache</b>, a block is transferred from L2 cache to L1 cache. What is the time taken for this transfer?
+        When there is a miss in L1 cache and a hit in L2 cache, a block is transferred from L2 cache to L1 cache. What is the time taken for this transfer?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q114', 'A', this)">A) 2 nanoseconds</button>
@@ -2869,10 +2993,10 @@ td {
 <!-- Question 115 -->
 <div class="question">
 
-    <p class="ques"><b>Q115.</b> A computer system has an <b>L1 cache</b>, an <b>L2 cache</b>, and a <b>main memory</b> unit connected as shown below. The block size in L1 cache is <b>4 words</b>. The block size in L2 cache is <b>16 words</b>. The memory access times are <b>2 nanoseconds</b>, <b>20 nanoseconds</b>, and <b>200 nanoseconds</b> for L1 cache, L2 cache, and main memory unit respectively.</p>
+    <p class="ques"><b>Q115.</b> A computer system has an L1 cache, an L2 cache, and a main memory unit connected as shown below. The block size in L1 cache is 4 words. The block size in L2 cache is 16 words. The memory access times are 2 nanoseconds, 20 nanoseconds, and 200 nanoseconds for L1 cache, L2 cache, and main memory unit respectively.</p>
 
     <p class="ques">
-        When there is a miss in both <b>L1 cache</b> and <b>L2 cache</b>, first a block is transferred from <b>main memory</b> to <b>L2 cache</b>, and then a block is transferred from <b>L2 cache</b> to <b>L1 cache</b>. What is the total time taken for these transfers?
+        When there is a miss in both L1 cache and L2 cache, first a block is transferred from main memory to L2 cache, and then a block is transferred from L2 cache to L1 cache. What is the total time taken for these transfers?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q115', 'A', this)">A) 222 nanoseconds</button>
@@ -2890,7 +3014,7 @@ td {
 <!-- Question 116 -->
 <div class="question">
 
-    <p class="ques"><b>Q116.</b> A <b>5-stage pipelined processor</b> has Instruction Fetch (IF), Instruction Decode (ID), Operand Fetch (OF), Perform Operation (PO) and Write Operand (WO) stages. The IF, ID, OF and WO stages take <b>1 clock cycle</b> each for any instruction. The PO stage takes <b>1 clock cycle</b> for ADD and SUB instructions, <b>3 clock cycles</b> for MUL instruction, and <b>6 clock cycles</b> for DIV instruction respectively. Operand forwarding is used in the pipeline. What is the number of clock cycles needed to execute the following sequence of instructions?</p>
+    <p class="ques"><b>Q116.</b> A 5-stage pipelined processor has Instruction Fetch (IF), Instruction Decode (ID), Operand Fetch (OF), Perform Operation (PO) and Write Operand (WO) stages. The IF, ID, OF and WO stages take 1 clock cycle each for any instruction. The PO stage takes 1 clock cycle for ADD and SUB instructions, 3 clock cycles for MUL instruction, and 6 clock cycles for DIV instruction respectively. Operand forwarding is used in the pipeline. What is the number of clock cycles needed to execute the following sequence of instructions?</p>
 
     <table class="gate-table">
         <tr>
@@ -2930,9 +3054,9 @@ td {
 <!-- Question 117 -->
 <div class="question">
 
-    <p class="ques"><b>Q117.</b> The program below uses six temporary variables <b>a, b, c, d, e, f</b>.</p>
+    <p class="ques"><b>Q117.</b> The program below uses six temporary variables a, b, c, d, e, f.<br><br>
 
-    <div style="margin-left:20px;line-height:1.8;">
+    
         a = 1<br>
         b = 10<br>
         c = 20<br>
@@ -2942,10 +3066,8 @@ td {
         b = c + e<br>
         e = b + f<br>
         d = 5 + e<br>
-        return d + f
-    </div>
+        return d + f<br><br>
 
-    <p class="ques">
         Assuming that all operations take their operands from registers, what is the minimum number of registers needed to execute this program without spilling?
     </p>
 
@@ -2962,7 +3084,7 @@ td {
 <!-- Question 118 -->
 <div class="question">
 
-    <p class="ques"><b>Q118.</b> How many <b>32K × 1 RAM</b> chips are needed to provide a memory capacity of <b>256 K-bytes</b>?</p>
+    <p class="ques"><b>Q118.</b> How many 32K × 1 RAM chips are needed to provide a memory capacity of 256 K-bytes?</p>
 
     <button class="option-btn" onclick="checkAnswer('Q118', 'A', this)">A) 8</button>
     <button class="option-btn" onclick="checkAnswer('Q118', 'B', this)">B) 32</button>
@@ -2978,14 +3100,12 @@ td {
 <!-- Question 119 -->
 <div class="question">
 
-    <p class="ques"><b>Q119.</b> Consider a <b>4-way set associative cache</b> (initially empty) with total <b>16 cache blocks</b>. The main memory consists of <b>256 blocks</b> and the request for memory blocks is in the following order:</p>
+    <p class="ques"><b>Q119.</b> Consider a 4-way set associative cache (initially empty) with total 16 cache blocks. The main memory consists of 256 blocks and the request for memory blocks is in the following order:<br><br>
 
-    <div style="margin-left:20px;line-height:1.8;">
-        0, 255, 1, 4, 3, 8, 133, 159, 216, 129, 63, 8, 48, 32, 73, 92, 155
-    </div>
-
-    <p class="ques">
-        Which one of the following memory block will <b>NOT</b> be in cache if <b>LRU</b> replacement policy is used?
+    
+        0, 255, 1, 4, 3, 8, 133, 159, 216, 129, 63, 8, 48, 32, 73, 92, 155<br><br>
+   
+        Which one of the following memory block will NOT be in cache if LRU replacement policy is used?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q119', 'A', this)">A) 3</button>
@@ -3002,7 +3122,7 @@ td {
 <!-- Question 120 -->
 <div class="question">
 
-    <p class="ques"><b>Q120.</b> Consider a <b>4-stage pipeline processor</b>. The number of cycles needed by the four instructions <b>I1, I2, I3, I4</b> in stages <b>S1, S2, S3</b> and <b>S4</b> is shown below.</p>
+    <p class="ques"><b>Q120.</b> Consider a 4-stage pipeline processor. The number of cycles needed by the four instructions I1, I2, I3, I4 in stages S1, S2, S3 and S4 is shown below.</p>
 
     <table class="gate-table">
         <tr>
@@ -3064,10 +3184,10 @@ td {
 <!-- Question 122 -->
 <div class="question">
 
-    <p class="ques"><b>Q122.</b> A hard disk has <b>63 sectors per track</b>, <b>10 platters</b> each with <b>2 recording surfaces</b> and <b>1000 cylinders</b>. The address of a sector is given as a triple <b>&lt;c, h, s&gt;</b>, where <b>c</b> is the cylinder number, <b>h</b> is the surface number and <b>s</b> is the sector number. Thus, the 0<sup>th</sup> sector is addressed as <b>&lt;0, 0, 0&gt;</b>, the 1<sup>st</sup> sector as <b>&lt;0, 0, 1&gt;</b>, and so on.</p>
+    <p class="ques"><b>Q122.</b> A hard disk has 63 sectors per track, 10 platters each with 2 recording surfaces and 1000 cylinders. The address of a sector is given as a triple &lt;c, h, s&gt;, where c is the cylinder number, h is the surface number and s is the sector number. Thus, the 0<sup>th</sup> sector is addressed as &lt;0, 0, 0&gt;, the 1<sup>st</sup> sector as &lt;0, 0, 1&gt;, and so on.</p>
 
     <p class="ques">
-        The address <b>&lt;400, 16, 29&gt;</b> corresponds to sector number:
+        The address &lt;400, 16, 29&gt; corresponds to sector number:
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q122', 'B', this)">A) 505035</button>
@@ -3085,10 +3205,10 @@ td {
 <!-- Question 123 -->
 <div class="question">
 
-    <p class="ques"><b>Q123.</b> A hard disk has <b>63 sectors per track</b>, <b>10 platters</b> each with <b>2 recording surfaces</b> and <b>1000 cylinders</b>. The address of a sector is given as a triple <b>&lt;c, h, s&gt;</b>, where <b>c</b> is the cylinder number, <b>h</b> is the surface number and <b>s</b> is the sector number.</p>
+    <p class="ques"><b>Q123.</b> A hard disk has 63 sectors per track, 10 platters each with 2 recording surfaces and 1000 cylinders. The address of a sector is given as a triple &lt;c, h, s&gt;, where c is the cylinder number, h is the surface number and s is the sector number.</p>
 
     <p class="ques">
-        The address of the <b>1039<sup>th</sup></b> sector is:
+        The address of the 1039<sup>th</sup> sector is:
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q123', 'C', this)">A) &lt;0, 15, 31&gt;</button>
@@ -3106,17 +3226,17 @@ td {
 <!-- Question 124 -->
 <div class="question">
 
-    <p class="ques"><b>Q124.</b> Consider a computer with a <b>4-way set-associative cache</b> having the following characteristics:</p>
+    <p class="ques"><b>Q124.</b> Consider a computer with a 4-way set-associative cache having the following characteristics:</p>
 
     <div style="margin-left:20px;line-height:1.8;">
-        • Total main memory = <b>1 MB</b><br>
-        • Word size = <b>1 byte</b><br>
-        • Block size = <b>128 words</b><br>
-        • Cache size = <b>8 KB</b>
+        • Total main memory = 1 MB<br>
+        • Word size = 1 byte<br>
+        • Block size = 128 words<br>
+        • Cache size = 8 KB
     </div>
 
     <p class="ques">
-        The number of bits in the <b>TAG</b>, <b>SET</b> and <b>WORD</b> fields, respectively, are:
+        The number of bits in the TAG, SET and WORD fields, respectively, are:
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q124', 'B', this)">A) 7, 6, 7</button>
@@ -3134,17 +3254,17 @@ td {
 <!-- Question 125 -->
 <div class="question">
 
-    <p class="ques"><b>Q125.</b> Consider a computer with a <b>4-way set-associative cache</b> having the following characteristics:</p>
+    <p class="ques"><b>Q125.</b> Consider a computer with a 4-way set-associative cache having the following characteristics:</p>
 
     <div style="margin-left:20px;line-height:1.8;">
-        • Total main memory = <b>1 MB</b><br>
-        • Word size = <b>1 byte</b><br>
-        • Block size = <b>128 words</b><br>
-        • Cache size = <b>8 KB</b>
+        • Total main memory = 1 MB<br>
+        • Word size = 1 byte<br>
+        • Block size = 128 words<br>
+        • Cache size = 8 KB
     </div>
 
     <p class="ques">
-        While accessing the memory location <b>00795H</b> by the CPU, the contents of the <b>TAG</b> field of the corresponding cache line is:
+        While accessing the memory location 00795H by the CPU, the contents of the TAG field of the corresponding cache line is:
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q125', 'C', this)">A) 000011000</button>
@@ -3162,7 +3282,7 @@ td {
 <!-- Question 126 -->
 <div class="question">
 
-    <p class="ques"><b>Q126.</b> For inclusion to hold between two cache levels <b>L1</b> and <b>L2</b> in a multilevel cache hierarchy, which of the following are necessary?</p>
+    <p class="ques"><b>Q126.</b> For inclusion to hold between two cache levels L1 and L2 in a multilevel cache hierarchy, which of the following are necessary?</p>
 
     <div style="margin-left:20px;line-height:1.8;">
         1. L1 must be a write-through cache<br>
@@ -3186,7 +3306,7 @@ td {
 <!-- Question 127 -->
 <div class="question">
 
-    <p class="ques"><b>Q127.</b> In an instruction execution pipeline, the earliest that the <b>data TLB (Translation Lookaside Buffer)</b> can be accessed is</p>
+    <p class="ques"><b>Q127.</b> In an instruction execution pipeline, the earliest that the data TLB (Translation Lookaside Buffer) can be accessed is</p>
 
     <button class="option-btn" onclick="checkAnswer('Q127', 'C', this)">A) before effective address calculation has started</button>
     <button class="option-btn" onclick="checkAnswer('Q127', 'C', this)">B) during effective address calculation</button>
@@ -3203,7 +3323,7 @@ td {
 <!-- Question 128 -->
 <div class="question">
 
-    <p class="ques"><b>Q128.</b> Consider a machine with a <b>2-way set associative</b> data cache of size <b>64 Kbytes</b> and block size <b>16 bytes</b>. The cache is managed using <b>32-bit virtual addressing</b> and the page size is <b>4 Kbytes</b>. A program begins as follows:</p>
+    <p class="ques"><b>Q128.</b> Consider a machine with a 2-way set associative data cache of size 64 Kbytes and block size 16 bytes. The cache is managed using 32-bit virtual addressing and the page size is 4 Kbytes. A program begins as follows:</p>
 
 <pre style="margin-left:20px;">
 double APR[1024][1024];
@@ -3216,11 +3336,11 @@ for (i = 0; i &lt; 1024; i++)
 </pre>
 
     <p class="ques">
-        The size of <b>double</b> is 8 bytes. Array APR starts at the beginning of virtual page <b>0xFF000</b> and is stored in row-major order. The cache is initially empty and no prefetching is done. The only data memory references are to array APR.
+        The size of double is 8 bytes. Array APR starts at the beginning of virtual page 0xFF000 and is stored in row-major order. The cache is initially empty and no prefetching is done. The only data memory references are to array APR.
     </p>
 
     <p class="ques">
-        The total size of the <b>tags</b> in the cache directory is
+        The total size of the tags in the cache directory is
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q128', 'D', this)">A) 32 kbits</button>
@@ -3238,7 +3358,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 129 -->
 <div class="question">
 
-     <p class="ques"><b>Q128.</b> Consider a machine with a <b>2-way set associative</b> data cache of size <b>64 Kbytes</b> and block size <b>16 bytes</b>. The cache is managed using <b>32-bit virtual addressing</b> and the page size is <b>4 Kbytes</b>. A program begins as follows:</p>
+     <p class="ques"><b>Q129.</b> Consider a machine with a 2-way set associative data cache of size 64 Kbytes and block size 16 bytes. The cache is managed using 32-bit virtual addressing and the page size is 4 Kbytes. A program begins as follows:</p>
 
 <pre style="margin-left:20px;">
 double APR[1024][1024];
@@ -3251,10 +3371,10 @@ for (i = 0; i &lt; 1024; i++)
 </pre>
 
     <p class="ques">
-        The size of <b>double</b> is 8 bytes. Array APR starts at the beginning of virtual page <b>0xFF000</b> and is stored in row-major order. The cache is initially empty and no prefetching is done. The only data memory references are to array APR.
+        The size of double is 8 bytes. Array APR starts at the beginning of virtual page 0xFF000 and is stored in row-major order. The cache is initially empty and no prefetching is done. The only data memory references are to array APR.
     </p>
 
-    <p class="ques"><b>Q129.</b>  Which one of the following array elements has the <b>same cache index</b> as <b>APR[0][0]</b>?</p>
+    <p class="ques">  Which one of the following array elements has the same cache index as APR[0][0]?</p>
 
     <button class="option-btn" onclick="checkAnswer('Q129', 'D', this)">A) APR[0][4]</button>
     <button class="option-btn" onclick="checkAnswer('Q129', 'D', this)">B) APR[4][0]</button>
@@ -3272,7 +3392,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 130 -->
 <div class="question">
 
-     <p class="ques"><b>Q128.</b> Consider a machine with a <b>2-way set associative</b> data cache of size <b>64 Kbytes</b> and block size <b>16 bytes</b>. The cache is managed using <b>32-bit virtual addressing</b> and the page size is <b>4 Kbytes</b>. A program begins as follows:</p>
+     <p class="ques"><b>Q130.</b> Consider a machine with a 2-way set associative data cache of size 64 Kbytes and block size 16 bytes. The cache is managed using 32-bit virtual addressing and the page size is 4 Kbytes. A program begins as follows:</p>
 
 <pre style="margin-left:20px;">
 double APR[1024][1024];
@@ -3285,10 +3405,10 @@ for (i = 0; i &lt; 1024; i++)
 </pre>
 
     <p class="ques">
-        The size of <b>double</b> is 8 bytes. Array APR starts at the beginning of virtual page <b>0xFF000</b> and is stored in row-major order. The cache is initially empty and no prefetching is done. The only data memory references are to array APR.
+        The size of double is 8 bytes. Array APR starts at the beginning of virtual page 0xFF000 and is stored in row-major order. The cache is initially empty and no prefetching is done. The only data memory references are to array APR.
     </p>
 
-    <p class="ques"><b>Q130.</b> The cache <b>hit ratio</b> for this initialization loop is</p>
+    <p class="ques"> The cache hit ratio for this initialization loop is</p>
 
     <button class="option-btn" onclick="checkAnswer('Q130', 'D', this)">A) 0%</button>
     <button class="option-btn" onclick="checkAnswer('Q130', 'D', this)">B) 25%</button>
@@ -3305,26 +3425,20 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 131 -->
 <div class="question">
 
-    <p class="ques"><b>Q131.</b> Assume that:</p>
+    <p class="ques"><b>Q131.</b> Assume that:<br><br>
 
-    <div style="margin-left:20px;line-height:1.8;">
-        <b>EA = (X)+</b> is the effective address equal to the contents of location <b>X</b>, with <b>X</b> incremented by one word length after the effective address is calculated.<br><br>
+    
+        EA = (X)+ is the effective address equal to the contents of location X, with X incremented by one word length after the effective address is calculated.<br>
 
-        <b>EA = −(X)</b> is the effective address equal to the contents of location <b>X</b>, with <b>X</b> decremented by one word length before the effective address is calculated.<br><br>
+        EA = −(X) is the effective address equal to the contents of location X, with X decremented by one word length before the effective address is calculated.<br>
 
-        <b>EA = (X)−</b> is the effective address equal to the contents of location <b>X</b>, with <b>X</b> decremented by one word length after the effective address is calculated.
-    </div>
-
-    <p class="ques">
-        The format of the instruction is <b>(opcode, source, destination)</b>, which means:
-    </p>
-
-    <div style="text-align:center;margin:15px 0;">
-        <b>(destination ← source op destination)</b>
-    </div>
-
-    <p class="ques">
-        Using <b>X</b> as a stack pointer, which of the following instructions can pop the top two elements from the stack, perform the addition operation and push the result back to the stack?
+        EA = (X)− is the effective address equal to the contents of location X, with X decremented by one word length after the effective address is calculated.<br><br>
+    
+        The format of the instruction is (opcode, source, destination), which means:<br><br>
+    
+        (destination ← source op destination)<br><br>
+   
+        Using X as a stack pointer, which of the following instructions can pop the top two elements from the stack, perform the addition operation and push the result back to the stack?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q131', 'C', this)">
@@ -3354,7 +3468,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 132 -->
 <div class="question">
 
-    <p class="ques"><b>Q132.</b> A non-pipelined single cycle processor operating at <b>100 MHz</b> is converted into a synchronous pipelined processor with <b>five stages</b> requiring <b>2.5 ns</b>, <b>1.5 ns</b>, <b>2 ns</b>, <b>1.5 ns</b> and <b>2.5 ns</b>, respectively. The delay of the latches is <b>0.5 ns</b>. The speedup of the pipelined processor for a large number of instructions is</p>
+    <p class="ques"><b>Q132.</b> A non-pipelined single cycle processor operating at 100 MHz is converted into a synchronous pipelined processor with five stages requiring 2.5 ns, 1.5 ns, 2 ns, 1.5 ns and 2.5 ns, respectively. The delay of the latches is 0.5 ns. The speedup of the pipelined processor for a large number of instructions is</p>
 
     <button class="option-btn" onclick="checkAnswer('Q132', 'D', this)">A) 4.5</button>
     <button class="option-btn" onclick="checkAnswer('Q132', 'D', this)">B) 4.0</button>
@@ -3372,13 +3486,12 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 133 -->
 <div class="question">
 
-    <p class="ques"><b>Q133.</b> Which of the following must be true for the <b>RFE (Return from Exception)</b> instruction on a general purpose processor?</p>
+    <p class="ques"><b>Q133.</b> Which of the following must be true for the RFE (Return from Exception) instruction on a general purpose processor?<br><br>
 
-    <div style="margin-left:20px;line-height:1.8;">
         1. It must be a trap instruction.<br>
         2. It must be a privileged instruction.<br>
         3. An exception cannot be allowed to occur during execution of an RFE instruction.
-    </div>
+ </p>
 
     <button class="option-btn" onclick="checkAnswer('Q133', 'B', this)">A) 1 only</button>
     <button class="option-btn" onclick="checkAnswer('Q133', 'B', this)">B) 2 only</button>
@@ -3396,13 +3509,13 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 134 -->
 <div class="question">
 
-    <p class="ques"><b>Q134.</b> Which of the following are <b>NOT true</b> in a pipelined processor?</p>
+    <p class="ques"><b>Q134.</b> Which of the following are NOT true in a pipelined processor?<br><br>
 
-    <div style="margin-left:20px;line-height:1.8;">
+   
         1. Bypassing can handle all RAW hazards.<br>
         2. Register renaming can eliminate all register carried WAR hazards.<br>
         3. Control hazard penalties can be eliminated by dynamic branch prediction.
-    </div>
+   </p>
 
     <button class="option-btn" onclick="checkAnswer('Q134', 'B', this)">A) 1 and 2 only</button>
     <button class="option-btn" onclick="checkAnswer('Q134', 'B', this)">B) 1 and 3 only</button>
@@ -3419,9 +3532,9 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 135 -->
 <div class="question">
 
-    <p class="ques"><b>Q135.</b> Delayed branching can help in the handling of <b>control hazards</b>.</p>
+    <p class="ques"><b>Q135.</b> Delayed branching can help in the handling of control hazards.<br><br>
 
-    <p class="ques">
+   
         For all delayed conditional branch instructions, irrespective of whether the condition evaluates to true or false,
     </p>
 
@@ -3451,9 +3564,9 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 136 -->
 <div class="question">
 
-   <p class="ques"><b>Q136.</b> Delayed branching can help in the handling of <b>control hazards</b>.</p>
+   <p class="ques"><b>Q136.</b> Delayed branching can help in the handling of control hazards.</p>
     
-    <p class="ques">The following code is to run on a pipelined processor with <b>one branch delay slot</b>.</p>
+    <p class="ques">The following code is to run on a pipelined processor with one branch delay slot.</p>
 
     <table class="gate-table">
         <tr>
@@ -3473,12 +3586,12 @@ for (i = 0; i &lt; 1024; i++)
             <td>STORE Memory[R4] ← R1</td>
         </tr>
         <tr>
-            <td colspan="2"><b>BRANCH to Label if R1 == 0</b></td>
+            <td colspan="2">BRANCH to Label if R1 == 0</td>
         </tr>
     </table>
 
     <p class="ques">
-        Which of the instructions <b>I1, I2, I3</b> or <b>I4</b> can legitimately occupy the delay slot without any other program modification?
+        Which of the instructions I1, I2, I3 or I4 can legitimately occupy the delay slot without any other program modification?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q136', 'B', this)">A) I1</button>
@@ -3496,7 +3609,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 137 -->
 <div class="question">
 
-    <p class="ques"><b>Q137.</b> Consider a CPU where all the instructions require <b>7 clock cycles</b> to complete execution. There are <b>140 instructions</b> in the instruction set. It is found that <b>125 control signals</b> are needed to be generated by the control unit. While designing the <b>horizontal micro-programmed control unit</b>, a <b>single address field format</b> is used for branch control logic. What is the minimum size of the <b>control word</b> and <b>control address register</b>, respectively?</p>
+    <p class="ques"><b>Q137.</b> Consider a CPU where all the instructions require 7 clock cycles to complete execution. There are 140 instructions in the instruction set. It is found that 125 control signals are needed to be generated by the control unit. While designing the horizontal micro-programmed control unit, a single address field format is used for branch control logic. What is the minimum size of the control word and control address register, respectively?</p>
 
     <button class="option-btn" onclick="checkAnswer('Q137', 'D', this)">A) 125, 7</button>
     <button class="option-btn" onclick="checkAnswer('Q137', 'D', this)">B) 125, 10</button>
@@ -3513,13 +3626,13 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 138 -->
 <div class="question">
 
-    <p class="ques"><b>Q138.</b> Which of the following is/are true of the <b>auto increment addressing mode</b>?</p>
+    <p class="ques"><b>Q138.</b> Which of the following is/are true of the auto increment addressing mode?<br><br>
 
-    <div style="margin-left:20px;line-height:1.8;">
+    
         1. It is useful in creating self relocating code.<br>
         2. If it is included in an Instruction Set Architecture, then an additional ALU is required for effective address calculation.<br>
         3. The amount of increment depends on the size of the data item accessed.
-    </div>
+    </p>
 
     <button class="option-btn" onclick="checkAnswer('Q138', 'C', this)">A) 1 only</button>
     <button class="option-btn" onclick="checkAnswer('Q138', 'C', this)">B) 2 only</button>
@@ -3537,14 +3650,13 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 139 -->
 <div class="question">
 
-    <p class="ques"><b>Q139.</b> The use of <b>multiple register windows with overlap</b> causes a reduction in the number of memory accesses for</p>
-
-    <div style="margin-left:20px;line-height:1.8;">
+    <p class="ques"><b>Q139.</b> The use of multiple register windows with overlap causes a reduction in the number of memory accesses for<br><br>
+    
         1. Function locals and parameters<br>
         2. Register saves and restores<br>
         3. Instruction fetches
-    </div>
-
+    
+</p>
     <button class="option-btn" onclick="checkAnswer('Q139', 'A', this)">A) 1 only</button>
     <button class="option-btn" onclick="checkAnswer('Q139', 'A', this)">B) 2 only</button>
     <button class="option-btn" onclick="checkAnswer('Q139', 'A', this)">C) 3 only</button>
@@ -3560,7 +3672,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 140 -->
 <div class="question">
 
-    <p class="ques"><b>Q140.</b> For a <b>magnetic disk with concentric circular tracks</b>, the latency is <b>not linearly proportional</b> to the seek distance due to</p>
+    <p class="ques"><b>Q140.</b> For a magnetic disk with concentric circular tracks, the latency is not linearly proportional to the seek distance due to</p>
 
     <button class="option-btn" onclick="checkAnswer('Q140', 'B', this)">A) Non-uniform distribution of requests</button>
 
@@ -3580,7 +3692,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 141 -->
 <div class="question">
 
-    <p class="ques"><b>Q141.</b> Consider a <b>4-way set associative cache</b> consisting of <b>128 lines</b> with a line size of <b>64 words</b>. The CPU generates a <b>20-bit</b> address of a word in main memory. The number of bits in the <b>TAG</b>, <b>LINE</b> and <b>WORD</b> fields are respectively</p>
+    <p class="ques"><b>Q141.</b> Consider a 4-way set associative cache consisting of 128 lines with a line size of 64 words. The CPU generates a 20-bit address of a word in main memory. The number of bits in the TAG, LINE and WORD fields are respectively</p>
 
     <button class="option-btn" onclick="checkAnswer('Q141', 'B', this)">A) 9, 6, 5</button>
 
@@ -3600,20 +3712,20 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 142 -->
 <div class="question">
 
-    <p class="ques"><b>Q142.</b> <b>Common Data for Q.1.22 &amp; Q.1.23</b></p>
+    <p class="ques"><b>Q142.</b> <b>Common Data for Q142 &amp; Q143</b></p>
 
     <p class="ques">
-        Consider a machine with a <b>byte-addressable main memory</b> of
-        <b>2<sup>16</sup> bytes</b>. Assume that a <b>direct mapped data cache</b>
-        consisting of <b>32 lines</b> of <b>64 bytes</b> each is used in the system.
-        A <b>50 × 50</b> two-dimensional array of bytes is stored in the main memory
-        starting from memory location <b>1100H</b>. Assume that the data cache is
+        Consider a machine with a byte-addressable main memory of
+        2<sup>16</sup> bytes. Assume that a direct mapped data cache
+        consisting of 32 lines of 64 bytes each is used in the system.
+        A 50 × 50 two-dimensional array of bytes is stored in the main memory
+        starting from memory location 1100H. Assume that the data cache is
         initially empty. The complete array is accessed twice. Assume that the
         contents of the data cache do not change in between the two accesses.
     </p>
 
     <p class="ques">
-        How many <b>data cache misses</b> will occur in total?
+        How many data cache misses will occur in total?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q142', 'D', this)">A) 48</button>
@@ -3634,20 +3746,20 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 143 -->
 <div class="question">
 
-    <p class="ques"><b>Q143.</b> <b>Common Data for Q.1.22 &amp; Q.1.23</b></p>
+    <p class="ques"><b>Q143.</b> <b>Common Data for Q142 &amp; Q143</b></p>
 
     <p class="ques">
-        Consider a machine with a <b>byte-addressable main memory</b> of
-        <b>2<sup>16</sup> bytes</b>. Assume that a <b>direct mapped data cache</b>
-        consisting of <b>32 lines</b> of <b>64 bytes</b> each is used in the system.
-        A <b>50 × 50</b> two-dimensional array of bytes is stored in the main memory
-        starting from memory location <b>1100H</b>. Assume that the data cache is
+        Consider a machine with a byte-addressable main memory of
+        2<sup>16</sup> bytes. Assume that a direct mapped data cache
+        consisting of 32 lines of 64 bytes each is used in the system.
+        A 50 × 50 two-dimensional array of bytes is stored in the main memory
+        starting from memory location 1100H. Assume that the data cache is
         initially empty. The complete array is accessed twice. Assume that the
         contents of the data cache do not change in between the two accesses.
     </p>
 
     <p class="ques">
-        Which of the following <b>cache lines</b> will be replaced by new blocks while accessing the array?
+        Which of the following cache lines will be replaced by new blocks while accessing the array?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q143', 'B', this)">A) Line 4 to Line 11</button>
@@ -3667,7 +3779,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 144 -->
 <div class="question">
 
-    <p class="ques"><b>Q144.</b> A processor takes <b>12 clock cycles</b> to complete an instruction. The corresponding pipelined processor uses <b>6 stages</b> with execution times of <b>3, 2, 5, 4, 6 and 2</b> clock cycles respectively. What is the <b>asymptotic speedup</b>, assuming that a very large number of instructions are to be executed?</p>
+    <p class="ques"><b>Q144.</b> A processor takes 12 clock cycles to complete an instruction. The corresponding pipelined processor uses 6 stages with execution times of 3, 2, 5, 4, 6 and 2 clock cycles respectively. What is the asymptotic speedup, assuming that a very large number of instructions are to be executed?</p>
 
     <button class="option-btn" onclick="checkAnswer('Q144', 'B', this)">A) 1.83</button>
 
@@ -3687,17 +3799,17 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 145 -->
 <div class="question">
 
-    <p class="ques"><b>Q145.</b> <b>Data forwarding</b> techniques can be used to speed up the operation in the presence of data dependencies. Consider the following replacements of <b>LHS</b> with <b>RHS</b>.</p>
+    <p class="ques"><b>Q145.</b> Data forwarding techniques can be used to speed up the operation in the presence of data dependencies. Consider the following replacements of LHS with RHS.<br><br>
 
-    <div style="margin-left:20px;line-height:1.8;">
+    
         (i)&nbsp;&nbsp;R1 → Loc,&nbsp;Loc → R2 &nbsp;≡&nbsp; R1 → R2,&nbsp;R1 → Loc<br>
         (ii)&nbsp;R1 → Loc,&nbsp;Loc → R2 &nbsp;≡&nbsp; R1 → R2<br>
         (iii)&nbsp;R1 → Loc,&nbsp;R2 → Loc &nbsp;≡&nbsp; R1 → Loc<br>
-        (iv)&nbsp;R1 → Loc,&nbsp;R2 → Loc &nbsp;≡&nbsp; R1 → Loc
-    </div>
+        (iv)&nbsp;R1 → Loc,&nbsp;R2 → Loc &nbsp;≡&nbsp; R1 → Loc<br><br>
+   
 
-    <p class="ques">
-        In which of the following options, will the result of executing the <b>RHS</b> be the same as executing the <b>LHS</b> irrespective of the instructions that follow?
+    
+        In which of the following options, will the result of executing the RHS be the same as executing the LHS irrespective of the instructions that follow?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q145', 'A', this)">A) (i) and (iii)</button>
@@ -3718,7 +3830,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 146 -->
 <div class="question">
 
-    <p class="ques"><b>Q146.</b> The following table indicates the <b>latencies</b> of operations between the instruction producing the result and the instruction using the result.</p>
+    <p class="ques"><b>Q146.</b> The following table indicates the latencies of operations between the instruction producing the result and the instruction using the result.</p>
 
     <table class="gate-table">
         <tr>
@@ -3786,7 +3898,7 @@ for (i = 0; i &lt; 1024; i++)
     </table>
 
     <p class="ques">
-        What is the number of clock cycles needed to execute the above code segment assuming each instruction takes <b>one cycle</b> to execute?
+        What is the number of clock cycles needed to execute the above code segment assuming each instruction takes one cycle to execute?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q146', 'C', this)">A) 7</button>
@@ -3807,26 +3919,22 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 147 -->
 <div class="question">
 
-    <p class="ques"><b>Q147.</b> Consider a pipelined processor with the following four stages:</p>
+    <p class="ques"><b>Q147.</b> Consider a pipelined processor with the following four stages:<br><br>
 
-    <div style="margin-left:20px; line-height:1.8;">
+    
         IF : Instruction Fetch<br>
         ID : Instruction Decode and Operand Fetch<br>
         EX : Execute<br>
-        WB : Write Back
-    </div>
-
-    <p class="ques">
-        The <b>IF</b>, <b>ID</b> and <b>WB</b> stages take one clock cycle each.
-        The <b>EX</b> stage depends on the instruction:
-    </p>
-
-    <div style="margin-left:20px; line-height:1.8;">
+        WB : Write Back<br><br>
+    
+        The IF, ID and WB stages take one clock cycle each.
+        The EX stage depends on the instruction:<br><br>
+    
         ADD and SUB : 1 clock cycle<br>
-        MUL : 3 clock cycles
-    </div>
+        MUL : 3 clock cycles<br><br>
+   
 
-    <p class="ques">
+    
         Operand forwarding is used in the pipelined processor.
         What is the number of clock cycles taken to complete the following instruction sequence?
     </p>
@@ -3869,10 +3977,10 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 148 -->
 <div class="question">
 
-    <p class="ques"><b>Q148.</b> <b>Common Data for Q.2.38 to Q.2.40</b></p>
+    <p class="ques"><b>Q148.</b> <b>Common Data for Q148 to Q150 </b></p>
 
     <p class="ques">
-        Consider the following program segment. Here <b>R1</b>, <b>R2</b> and <b>R3</b> are the general purpose registers.
+        Consider the following program segment. Here R1, R2 and R3 are the general purpose registers.
     </p>
 
     <table class="gate-table">
@@ -3929,11 +4037,11 @@ for (i = 0; i &lt; 1024; i++)
     </table>
 
     <p class="ques">
-        Assume the content of memory location <b>3000</b> is <b>10</b> and the content of register <b>R3</b> is <b>2000</b>. The content of each memory location from <b>2000</b> to <b>2010</b> is <b>100</b>. The program is loaded from memory location <b>1000</b>. All numbers are in decimal.
+        Assume the content of memory location 3000 is 10 and the content of register R3 is 2000. The content of each memory location from 2000 to 2010 is 100. The program is loaded from memory location 1000. All numbers are in decimal.
     </p>
 
     <p class="ques">
-        Assume that the memory is <b>word addressable</b>. The number of memory references for accessing the <b>data</b> in executing the program completely is
+        Assume that the memory is word addressable. The number of memory references for accessing the data in executing the program completely is
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q148', 'D', this)">A) 10</button>
@@ -3954,14 +4062,14 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 149 -->
 <div class="question">
 
-    <p class="ques"><b>Q149.</b> <b>Common Data for Q.2.38 to Q.2.40</b></p>
+    <p class="ques"><b>Q149.</b> <b>Common Data for Q148 to Q150 </b></p>
 
     <p class="ques">
         Consider the program segment given in Question 148.
     </p>
 
     <p class="ques">
-        Assume that the memory is <b>word addressable</b>. After the execution of this program, the content of memory location <b>2010</b> is
+        Assume that the memory is word addressable. After the execution of this program, the content of memory location 2010 is
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q149', 'A', this)">A) 100</button>
@@ -3982,14 +4090,14 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 150 -->
 <div class="question">
 
-    <p class="ques"><b>Q150.</b> <b>Common Data for Q.2.38 to Q.2.40</b></p>
+    <p class="ques"><b>Q150.</b> <b>Common Data for Q148 to Q150 </b></p>
 
     <p class="ques">
         Consider the program segment given in Question 148.
     </p>
 
     <p class="ques">
-        Assume that the memory is <b>byte addressable</b> and the <b>word size is 32 bits</b>. If an interrupt occurs during the execution of the instruction <b>INC R3</b>, what return address will be pushed onto the stack?
+        Assume that the memory is byte addressable and the word size is 32 bits. If an interrupt occurs during the execution of the instruction INC R3, what return address will be pushed onto the stack?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q150', 'B', this)">A) 1005</button>
@@ -4011,21 +4119,21 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 151 -->
 <div class="question">
 
-    <p class="ques"><b>Q151.</b> The floating point unit of a processor using design <b>D</b> takes <b>2t</b> cycles compared to <b>t</b> cycles taken by the fixed point unit. There are two more design suggestions <b>D1</b> and <b>D2</b>.</p>
+    <p class="ques"><b>Q151.</b> The floating point unit of a processor using design D takes 2t cycles compared to t cycles taken by the fixed point unit. There are two more design suggestions D1 and D2.<br><br>
 
-    <div style="margin-left:20px;line-height:1.8;">
-        <b>D1</b> uses <b>30%</b> more cycles for the fixed point unit but
-        <b>30%</b> less cycles for the floating point unit as compared to design <b>D</b>.<br><br>
+    
+        D1 uses 30% more cycles for the fixed point unit but
+        30% less cycles for the floating point unit as compared to design D.<br>
 
-        <b>D2</b> uses <b>40%</b> less cycles for the fixed point unit but
-        <b>10%</b> more cycles for the floating point unit as compared to design <b>D</b>.
-    </div>
+        D2 uses 40% less cycles for the fixed point unit but
+        10% more cycles for the floating point unit as compared to design D.<br><br>
+    
 
-    <p class="ques">
-        For a given program which has <b>80%</b> fixed point operations and
-        <b>20%</b> floating point operations, which of the following ordering
+    
+        For a given program which has 80% fixed point operations and
+        20% floating point operations, which of the following ordering
         reflects the relative performances of the three designs?
-        (<b>D<sub>i</sub> &gt; D<sub>j</sub></b> denotes that D<sub>i</sub> is faster than D<sub>j</sub>)
+        (D<sub>i</sub> &gt; D<sub>j</sub> denotes that D<sub>i</sub> is faster than D<sub>j</sub>)
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q151', 'B', this)">
@@ -4054,7 +4162,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 152 -->
 <div class="question">
 
-    <p class="ques"><b>Q152.</b> Which of the following systems is the <b>most likely</b> candidate example of a <b>Pipe and Filter architecture</b>?</p>
+    <p class="ques"><b>Q152.</b> Which of the following systems is the most likely candidate example of a Pipe and Filter architecture?</p>
 
     <button class="option-btn" onclick="checkAnswer('Q152', 'D', this)">
         A) Expert system
@@ -4082,7 +4190,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 153 -->
 <div class="question">
 
-    <p class="ques"><b>Q153.</b> Consider a disk pack with <b>16 surfaces</b>, <b>128 tracks per surface</b> and <b>256 sectors per track</b>. <b>512 bytes</b> of data are stored in a bit serial manner in a sector. The capacity of the disk pack and the number of bits required to specify a particular sector in the disk are respectively.</p>
+    <p class="ques"><b>Q153.</b> Consider a disk pack with 16 surfaces, 128 tracks per surface and 256 sectors per track. 512 bytes of data are stored in a bit serial manner in a sector. The capacity of the disk pack and the number of bits required to specify a particular sector in the disk are respectively.</p>
 
     <button class="option-btn" onclick="checkAnswer('Q153', 'A', this)">
         A) 256 Mbyte, 19 bits
@@ -4110,13 +4218,13 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 154 -->
 <div class="question">
 
-    <p class="ques"><b>Q154.</b> Consider a <b>Direct Mapped Cache</b> with <b>8 cache blocks</b> (numbered 0–7). If the memory block requests are in the following order:</p>
+    <p class="ques"><b>Q154.</b> Consider a Direct Mapped Cache with 8 cache blocks (numbered 0–7). If the memory block requests are in the following order:<br><br>
 
-    <div style="margin-left:20px;line-height:1.8;">
-        3, 5, 2, 8, 0, 63, 9, 16, 20, 17, 25, 18, 30, 24, 2, 63, 5, 82, 17, 24
-    </div>
+    
+        3, 5, 2, 8, 0, 63, 9, 16, 20, 17, 25, 18, 30, 24, 2, 63, 5, 82, 17, 24<br><br>
+    
 
-    <p class="ques">
+    
         Which of the following memory blocks will <b>not</b> be in the cache at the end of the sequence?
     </p>
 
@@ -4146,18 +4254,18 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 155 -->
 <div class="question">
 
-    <p class="ques"><b>Q155.</b> A hard disk system has the following parameters:</p>
+    <p class="ques"><b>Q155.</b> A hard disk system has the following parameters:<br><br>
 
-    <div style="margin-left:20px;line-height:1.8;">
-        Number of tracks = <b>500</b><br>
-        Number of sectors/track = <b>100</b><br>
-        Number of bytes/sector = <b>500</b><br>
-        Time taken by the head to move from one track to adjacent track = <b>1 ms</b><br>
-        Rotation speed = <b>600 rpm</b>
-    </div>
+    
+        Number of tracks = 500<br>
+        Number of sectors/track = 100<br>
+        Number of bytes/sector = 500<br>
+        Time taken by the head to move from one track to adjacent track = 1 ms<br>
+        Rotation speed = 600 rpm<br><br>
+    
 
-    <p class="ques">
-        What is the <b>average time</b> taken for transferring <b>250 bytes</b> from the disk?
+    
+        What is the average time taken for transferring 250 bytes from the disk?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q155', 'B', this)">
@@ -4186,7 +4294,7 @@ for (i = 0; i &lt; 1024; i++)
 <!-- Question 156 -->
 <div class="question">
 
-    <p class="ques"><b>Q156.</b> A cache line is <b>64 bytes</b>. The main memory has latency <b>32 ns</b> and bandwidth <b>1 GB/s</b>. The time required to fetch the entire cache line from the main memory is</p>
+    <p class="ques"><b>Q156.</b> A cache line is 64 bytes. The main memory has latency 32 ns and bandwidth 1 GB/s. The time required to fetch the entire cache line from the main memory is</p>
 
     <button class="option-btn" onclick="checkAnswer('Q156', 'C', this)">
         A) 32 ns
@@ -6172,7 +6280,7 @@ Branch to label if temp is non-zero
 <div class="question">
 
     <p class="ques">
-        <b>Q197.</b> Consider a pipeline processor with <b>4 stages (S1 to S4)</b>. We want to execute the following loop:
+        <b>Q197.</b> Consider a pipeline processor with 4 stages (S1 to S4). We want to execute the following loop:
     </p>
 
     <div style="margin-left:20px;line-height:1.8;">
@@ -6180,12 +6288,12 @@ Branch to label if temp is non-zero
     </div>
 
     <p class="ques">
-        The time taken (in <b>ns</b>) by instructions <b>I1</b> to <b>I4</b> for stages <b>S1</b> to <b>S4</b> are:
+        The time taken (in ns) by instructions I1 to I4 for stages S1 to S4 are:
     </p>
 
     <div style="text-align:center;margin:15px 0;overflow-x:auto;">
 
-        <svg width="360" height="220" xmlns="http://www.w3.org/2000/svg">
+        <svg width="360" height="220">
 
             <!-- Outer Border -->
             <rect x="40" y="20" width="280" height="170" fill="white" stroke="black"/>
@@ -6241,7 +6349,7 @@ Branch to label if temp is non-zero
     </div>
 
     <p class="ques">
-        The output of <b>I1</b> for <b>i = 2</b> will be available after
+        The output of I1 for i = 2 will be available after
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q197','C',this)">
@@ -6272,12 +6380,12 @@ Branch to label if temp is non-zero
 
     <p class="ques">
         <b>Q198.</b> In an enhancement of a design of a CPU, the speed of a
-        <b>floating point unit</b> has been increased by <b>20%</b> and the speed of a
-        <b>fixed point unit</b> has been increased by <b>10%</b>.
+        floating point unit has been increased by 20% and the speed of a
+        fixed point unit has been increased by 10%.
         What is the overall speedup achieved if the ratio of the number of
         floating point operations to the number of fixed point operations is
-        <b>2 : 3</b> and the floating point operation used to take
-        <b>twice</b> the time taken by the fixed point operation in the original design?
+        2 : 3 and the floating point operation used to take
+        twice the time taken by the fixed point operation in the original design?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q198','B',this)">
@@ -6309,12 +6417,12 @@ Branch to label if temp is non-zero
     <p class="ques">
         <b>Common Data for Q.216 to Q.218</b><br>
         Consider the following program segment for a hypothetical CPU having three user registers
-        <b>R1, R2</b> and <b>R3</b>.
+        R1, R2 and R3.
     </p>
 
     <div style="text-align:center;margin:20px 0;overflow-x:auto;">
 
-        <svg width="760" height="220" xmlns="http://www.w3.org/2000/svg">
+        <svg width="760" height="220">
 
             <!-- Outer Border -->
             <rect x="10" y="10" width="740" height="190" fill="white" stroke="black"/>
@@ -6373,14 +6481,14 @@ Branch to label if temp is non-zero
 <div class="question">
 
     <p class="ques">
-        <b>Q216.</b> Consider that the memory is <b>byte addressable</b> with size
-        <b>32 bits</b>, and the program has been loaded starting from memory location
-        <b>1000 (decimal)</b>.
+        <b>Q216.</b> Consider that the memory is byte addressable with size
+        32 bits, and the program has been loaded starting from memory location
+        1000 (decimal).
     </p>
 
     <p class="ques">
         If an interrupt occurs while the CPU has been halted after executing the
-        <b>HALT</b> instruction, the return address (in decimal) saved in the stack will be
+        HALT instruction, the return address (in decimal) saved in the stack will be
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q216','D',this)">
@@ -6411,13 +6519,11 @@ Branch to label if temp is non-zero
 <div class="question">
 
     <p class="ques">
-        <b>Q217.</b> Consider that the memory is <b>word addressable</b> with size
-        <b>32 bits</b> and the program has been loaded starting from memory location
-        <b>1000 (decimal)</b>.
-    </p>
-
-    <p class="ques">
-        If an interrupt occurs during the <b>ADD</b> instruction, what will be the
+        <b>Q217.</b> Consider that the memory is word addressable with size
+        32 bits and the program has been loaded starting from memory location
+        1000 (decimal).<br><br>
+    
+        If an interrupt occurs during the ADD instruction, what will be the
         return address pushed on to the stack?
     </p>
 
@@ -6448,17 +6554,17 @@ Branch to label if temp is non-zero
 <div class="question">
 
     <p class="ques">
-        <b>Q218.</b> Let the clock cycles required for various operations be as follows:
-    </p>
+        <b>Q218.</b> Let the clock cycles required for various operations be as follows:<br><br>
+    
 
-    <div style="margin-left:20px;line-height:1.8;">
-        Register to/from memory transfer : <b>3 clock cycles</b><br>
-        ADD with both operands in register : <b>1 clock cycle</b><br>
-        Instruction fetch and decode : <b>2 clock cycles per word</b>
-    </div>
+    
+        Register to/from memory transfer : 3 clock cycles<br>
+        ADD with both operands in register : 1 clock cycle<br>
+        Instruction fetch and decode : 2 clock cycles per word<br><br>
+    
 
-    <p class="ques">
-        The total number of <b>clock cycles</b> required to execute the program is
+    
+        The total number of clock cycles required to execute the program is
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q218','A',this)">
@@ -6488,11 +6594,11 @@ Branch to label if temp is non-zero
 <div class="question">
 
     <p class="ques">
-        <b>Q219.</b> A <b>4-stage pipeline</b> has the stage delays as
-        <b>150 ns, 120 ns, 160 ns</b> and <b>140 ns</b>, respectively.
-        Registers used between the stages have a delay of <b>5 ns</b> each.
+        <b>Q219.</b> A 4-stage pipeline has the stage delays as
+        150 ns, 120 ns, 160 ns and 140 ns, respectively.
+        Registers used between the stages have a delay of 5 ns each.
         Assuming a constant clock rate, the total time taken to process
-        <b>1000 data items</b> on this pipeline will be
+        1000 data items on this pipeline will be
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q219','C',this)">
@@ -6523,8 +6629,8 @@ Branch to label if temp is non-zero
 <div class="question">
 
     <p class="ques">
-        <b>Q220.</b> What is the minimum size of <b>ROM</b> required to store the
-        complete truth table of an <b>8-bit × 8-bit multiplier</b>?
+        <b>Q220.</b> What is the minimum size of ROM required to store the
+        complete truth table of an 8-bit × 8-bit multiplier?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q220','B',this)">
@@ -6554,8 +6660,8 @@ Branch to label if temp is non-zero
 <div class="question">
 
     <p class="ques">
-        <b>Q221.</b> A CPU has only three instructions <b>I1, I2</b> and <b>I3</b>,
-        which use the following signals in time steps <b>T1–T5</b>.
+        <b>Q221.</b> A CPU has only three instructions I1, I2 and I3,
+        which use the following signals in time steps T1–T5.
     </p>
 
     <div style="margin-left:20px;line-height:1.8;">
@@ -6585,7 +6691,7 @@ Branch to label if temp is non-zero
 
     <p class="ques">
         Which of the following logic functions will generate the hardwired
-        control for the signal <b>Ain</b>?
+        control for the signal Ain?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q221','B',this)">
@@ -6617,10 +6723,10 @@ Branch to label if temp is non-zero
 
     <p class="ques">
         <b>Q222.</b> The microinstructions stored in the control memory of a processor have a width of
-        <b>26 bits</b>. Each microinstruction is divided into three fields:
-        a <b>micro-operation field of 13 bits</b>, a <b>next address field (X)</b>,
-        and a <b>MUX select field (Y)</b>. There are
-        <b>8 status bits</b> in the inputs of the MUX.
+        26 bits. Each microinstruction is divided into three fields:
+        a micro-operation field of 13 bits, a next address field (X),
+        and a MUX select field (Y). There are
+        8 status bits in the inputs of the MUX.
     </p>
 
     <div style="text-align:center;margin:20px 0;overflow-x:auto;">
@@ -6695,8 +6801,8 @@ Branch to label if temp is non-zero
     </div>
 
     <p class="ques">
-        How many bits are there in the <b>X</b> and <b>Y</b> fields, and what is the size of the
-        <b>control memory</b> in number of words?
+        How many bits are there in the X and Y fields, and what is the size of the
+        control memory in number of words?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q222','A',this)">
@@ -6727,10 +6833,10 @@ Branch to label if temp is non-zero
 
     <p class="ques">
         <b>Q223.</b> A hard disk with a transfer rate of
-        <b>10 Mbytes/second</b> is constantly transferring data to memory using
-        <b>DMA</b>. The processor runs at <b>600 MHz</b>, and takes
-        <b>300</b> and <b>900</b> clock cycles to initiate and complete DMA transfer,
-        respectively. If the size of the transfer is <b>20 Kbytes</b>, what is the
+        10 Mbytes/second is constantly transferring data to memory using
+        DMA. The processor runs at 600 MHz, and takes
+        300 and 900 clock cycles to initiate and complete DMA transfer,
+        respectively. If the size of the transfer is 20 Kbytes, what is the
         percentage of processor time consumed for the transfer operation?
     </p>
 
@@ -6762,11 +6868,11 @@ Branch to label if temp is non-zero
 
     <p class="ques">
         <b>Q224.</b> The storage area of a disk has innermost diameter of
-        <b>10 cm</b> and outermost diameter of <b>20 cm</b>. The maximum storage
-        density of the disk is <b>1400 bits/cm</b>. The disk rotates at a speed of
-        <b>4200 RPM</b>. The main memory of a computer has
-        <b>64-bit</b> word length and <b>1 μs</b> cycle time.
-        If <b>cycle stealing</b> is used for data transfer from the disk,
+        10 cm and outermost diameter of 20 cm. The maximum storage
+        density of the disk is 1400 bits/cm. The disk rotates at a speed of
+        4200 RPM. The main memory of a computer has
+        64-bit word length and 1 μs cycle time.
+        If cycle stealing is used for data transfer from the disk,
         the percentage of memory cycles stolen for transferring one word is
     </p>
 
@@ -6797,22 +6903,20 @@ Branch to label if temp is non-zero
 <div class="question">
 
     <p class="ques">
-        <b>Q225.</b> For a <b>pipelined CPU</b> with a <b>single ALU</b>, consider the
-        following situations:
-    </p>
+        <b>Q225.</b> For a pipelined CPU with a single ALU, consider the
+        following situations:<br><br>
+    
 
-    <div style="margin-left:20px;line-height:1.8;">
+    
         1. The (j + 1)<sup>st</sup> instruction uses the result of the
-        j<sup>th</sup> instruction as an operand.<br><br>
+        j<sup>th</sup> instruction as an operand.<br>
 
-        2. The execution of a conditional jump instruction.<br><br>
+        2. The execution of a conditional jump instruction.<br>
 
         3. The j<sup>th</sup> and (j + 1)<sup>st</sup> instructions require the
-        ALU at the same time.
-    </div>
-
-    <p class="ques">
-        Which of the above can cause a <b>hazard</b>?
+        ALU at the same time.<br><br>
+  
+        Which of the above can cause a hazard?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q225','D',this)">
@@ -6844,7 +6948,7 @@ Branch to label if temp is non-zero
 
     <p class="ques">
         <b>Q226.</b> Consider the following assembly language program for a hypothetical
-        processor. <b>A</b>, <b>B</b> and <b>C</b> are 8-bit registers. The meanings of
+        processor. A, B and C are 8-bit registers. The meanings of
         various instructions are shown as comments.
     </p>
 
@@ -6870,8 +6974,8 @@ X:
     </div>
 
     <p class="ques">
-        If the initial value of register <b>A</b> is <b>A<sub>0</sub></b>, the value of
-        register <b>B</b> after the program execution will be
+        If the initial value of register A is A<sub>0</sub>, the value of
+        register B after the program execution will be
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q226','B',this)">
@@ -6890,9 +6994,7 @@ X:
         D) 8
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q226')">
-        Show Explanation
-    </button>
+  
 
     <p class="year"><i>Gate CSE 2003</i></p>
 
@@ -6913,8 +7015,8 @@ X:
 
     <p class="ques">
         Which of the following instructions when inserted at location
-        <b>X</b> will ensure that the value of register
-        <b>A</b> after program execution is the same as its initial value?
+        X will ensure that the value of register
+        A after program execution is the same as its initial value?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q227','A',this)">
@@ -6933,9 +7035,7 @@ X:
         D) ADD A,#1
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q227')">
-        Show Explanation
-    </button>
+   
 
     <p class="year"><i>Gate CSE 2003</i></p>
 
@@ -6951,8 +7051,8 @@ X:
 
     <p class="ques">
         <b>Q228.</b> Consider an array multiplier for multiplying two
-        <b>n-bit</b> numbers. If each gate in the circuit has a
-        <b>unit delay</b>, the total delay of the multiplier is
+        n-bit numbers. If each gate in the circuit has a
+        unit delay, the total delay of the multiplier is
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q228','C',this)">
@@ -6969,11 +7069,7 @@ X:
 
     <button class="option-btn" onclick="checkAnswer('Q228','C',this)">
         D) Θ(n²)
-    </button>
-
-    <button class="check-btn" onclick="showExplanation('Q228')">
-        Show Explanation
-    </button>
+    </button>  
 
     <p class="year"><i>Gate CSE 2003</i></p>
 
@@ -6989,7 +7085,7 @@ X:
 <div class="question">
 
     <p class="ques">
-        <b>Q229.</b> Which of the following is <b>not</b> a form of memory?
+        <b>Q229.</b> Which of the following is not a form of memory?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q229','',this)">
@@ -7008,9 +7104,7 @@ X:
         D) Translation look aside buffer
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q229')">
-        Show Explanation
-    </button>
+   
 
     <p class="year"><i>Gate CSE 2002</i></p>
 
@@ -7026,7 +7120,7 @@ X:
 
     <p class="ques">
         <b>Q230.</b> In serial data transmission, every byte of data is padded
-        with a <b>'0'</b> in the beginning and one or two <b>'1'</b>s at the end
+        with a '0' in the beginning and one or two '1's at the end
         of the byte because
     </p>
 
@@ -7046,18 +7140,12 @@ X:
         D) None of the above
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q230')">
-        Show Explanation
-    </button>
-
     <p class="year"><i>Gate CSE 2002</i></p>
 
     <div id="explanationQ230" class="explanation">
     </div>
 
 </div>
-
-
 
 
 <!-- Question 231 -->
@@ -7081,10 +7169,6 @@ X:
 
     <button class="option-btn" onclick="checkAnswer('Q231','',this)">
         D) None of the above
-    </button>
-
-    <button class="check-btn" onclick="showExplanation('Q231')">
-        Show Explanation
     </button>
 
     <p class="year"><i>Gate CSE 2002</i></p>
@@ -7119,9 +7203,7 @@ X:
         D) All of the above
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q232')">
-        Show Explanation
-    </button>
+   
 
     <p class="year"><i>Gate CSE 2002</i></p>
 
@@ -7137,8 +7219,8 @@ X:
 <div class="question">
 
     <p class="ques">
-        <b>Q233.</b> A device employing <b>INTR</b> line for device interrupt
-        puts the <b>CALL</b> instruction on the data bus while
+        <b>Q233.</b> A device employing INTR line for device interrupt
+        puts the CALL instruction on the data bus while
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q233','',this)">
@@ -7157,9 +7239,7 @@ X:
         D) None of these
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q233')">
-        Show Explanation
-    </button>
+
 
     <p class="year"><i>Gate CSE 2002</i></p>
 
@@ -7193,9 +7273,7 @@ X:
         D) the location of the operand is implicit
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q234')">
-        Show Explanation
-    </button>
+   
 
     <p class="year"><i>Gate CSE 2002</i></p>
 
@@ -7229,9 +7307,7 @@ X:
         D) All of the above
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q235')">
-        Show Explanation
-    </button>
+    
 
     <p class="year"><i>Gate CSE 2002</i></p>
 
@@ -7266,9 +7342,7 @@ X:
         D) Disk
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q236')">
-        Show Explanation
-    </button>
+ 
 
     <p class="year"><i>Gate CSE 2001</i></p>
 
@@ -7302,9 +7376,7 @@ X:
         D) None of the above
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q237')">
-        Show Explanation
-    </button>
+    
 
     <p class="year"><i>Gate CSE 2001</i></p>
 
@@ -7338,9 +7410,7 @@ X:
         D) Virtual memory reduces the context switching overhead
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q238')">
-        Show Explanation
-    </button>
+    
 
     <p class="year"><i>Gate CSE 2001</i></p>
 
@@ -7375,9 +7445,7 @@ X:
         D) return from subroutine
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q239')">
-        Show Explanation
-    </button>
+    
 
     <p class="year"><i>Gate CSE 2001</i></p>
 
@@ -7431,10 +7499,6 @@ X:
         D) (X, I) (Y, III) (Z, II)
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q240')">
-        Show Explanation
-    </button>
-
     <p class="year"><i>Gate CSE 2001</i></p>
 
     <div id="explanationQ240" class="explanation">
@@ -7449,13 +7513,13 @@ X:
 
     <p class="ques">
         <b>Q241.</b> Consider the following data path of a simple non-pipelined CPU.
-        The registers <b>A</b>, <b>B</b>, <b>A<sub>1</sub></b>, <b>A<sub>2</sub></b>,
-        <b>MDR</b>, the bus and the ALU are 8-bit wide.
-        <b>SP</b> and <b>MAR</b> are 16-bit registers.
-        The MUX is of size <b>8 × (2:1)</b> and the DEMUX is of size
-        <b>8 × (1:2)</b>. Each memory operation takes
-        <b>2 CPU clock cycles</b> and uses <b>MAR</b> (Memory Address Register)
-        and <b>MDR</b> (Memory Data Register). <b>SP</b> can be decremented locally.
+        The registers A, B, A<sub>1</sub>, A<sub>2</sub>,
+        MDR, the bus and the ALU are 8-bit wide.
+        SP and MAR are 16-bit registers.
+        The MUX is of size 8 × (2:1) and the DEMUX is of size
+        8 × (1:2). Each memory operation takes
+        2 CPU clock cycles and uses MAR (Memory Address Register)
+        and MDR (Memory Data Register). SP can be decremented locally.
     </p>
 
     <div style="text-align:center;margin:20px 0;overflow-x:auto;">
@@ -7552,8 +7616,8 @@ X:
     </div>
 
     <p class="ques">
-        The CPU instruction <b>"push r"</b>, where
-        <b>r = A</b> or <b>B</b>, has the specification
+        The CPU instruction "push r", where
+        r = A or B, has the specification
     </p>
 
     <div style="margin-left:30px;line-height:1.8;">
@@ -7563,7 +7627,7 @@ X:
 
     <p class="ques">
         How many CPU clock cycles are needed to execute the
-        <b>"push r"</b> instruction?
+        "push r" instruction?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q241','',this)">
@@ -7582,9 +7646,7 @@ X:
         D) 5
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q241')">
-        Show Explanation
-    </button>
+    
 
     <p class="year"><i>Gate CSE 2001</i></p>
 
@@ -7600,8 +7662,8 @@ X:
 
     <p class="ques">
         <b>Q242.</b> A graphics card has on board memory of
-        <b>1 MB</b>. Which of the following modes can the card
-        <b>not</b> support?
+        1 MB. Which of the following modes can the card
+        not support?
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q242','',this)">
@@ -7620,10 +7682,6 @@ X:
         D) 800 × 800 resolution with 256 colours on a 14 inch monitor
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q242')">
-        Show Explanation
-    </button>
-
     <p class="year"><i>Gate CSE 2000</i></p>
 
     <div id="explanationQ242" class="explanation">
@@ -7638,8 +7696,8 @@ X:
 <div class="question">
 
     <p class="ques">
-        <b>Q243.</b> Comparing the time <b>T1</b> taken for a single
-        instruction on a pipelined CPU with time <b>T2</b> taken on a
+        <b>Q243.</b> Comparing the time T1 taken for a single
+        instruction on a pipelined CPU with time T2 taken on a
         non-pipelined but identical CPU, we can say that
     </p>
 
@@ -7659,9 +7717,6 @@ X:
         D) T1 plus T2 is the time taken for one instruction fetch cycle
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q243')">
-        Show Explanation
-    </button>
 
     <p class="year"><i>Gate CSE 2000</i></p>
 
@@ -7714,10 +7769,6 @@ X:
         D) X – 3 &nbsp;&nbsp; Y – 1 &nbsp;&nbsp; Z – 2
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q244')">
-        Show Explanation
-    </button>
-
     <p class="year"><i>Gate CSE 2000</i></p>
 
     <div id="explanationQ244" class="explanation">
@@ -7733,9 +7784,9 @@ X:
 
     <p class="ques">
         <b>Q245.</b> The main memory of a computer has
-        <b>2cm</b> blocks while the cache has <b>2c</b> blocks.
-        If the cache uses the <b>set associative mapping</b> scheme
-        with <b>2 blocks per set</b>, then block <b>k</b> of the main
+        2cm blocks while the cache has 2c blocks.
+        If the cache uses the set associative mapping scheme
+        with 2 blocks per set, then block k of the main
         memory maps to the set
     </p>
 
@@ -7753,10 +7804,6 @@ X:
 
     <button class="option-btn" onclick="checkAnswer('Q245','',this)">
         D) (k mod 2cm) of the cache
-    </button>
-
-    <button class="check-btn" onclick="showExplanation('Q245')">
-        Show Explanation
     </button>
 
     <p class="year"><i>Gate CSE 1999</i></p>
@@ -7792,9 +7839,7 @@ X:
         D) Programs larger than the physical memory size can be run.
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q246')">
-        Show Explanation
-    </button>
+  
 
     <p class="year"><i>Gate CSE 1999</i></p>
 
@@ -7828,9 +7873,7 @@ X:
         D) None of these
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q247')">
-        Show Explanation
-    </button>
+  
 
     <p class="year"><i>Gate CSE 1999</i></p>
 
@@ -7846,7 +7889,7 @@ X:
 
     <p class="ques">
         <b>Q248.</b> Arrange the following configuration for CPU in
-        <b>decreasing order of operating speeds</b>:
+       decreasing order of operating speeds:
         Hard wired control, vertical micro-programming,
         horizontal micro-programming.
     </p>
@@ -7867,10 +7910,6 @@ X:
         D) Vertical micro-programming, horizontal micro-programming, hard wired control.
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q248')">
-        Show Explanation
-    </button>
-
     <p class="year"><i>Gate CSE 1999</i></p>
 
     <div id="explanationQ248" class="explanation">
@@ -7884,8 +7923,8 @@ X:
 <div class="question">
 
     <p class="ques">
-        <b>Q249.</b> The main difference(s) between a <b>CISC</b> and a
-        <b>RISC</b> processor is/are that a RISC processor typically
+        <b>Q249.</b> The main difference(s) between a CISC and a
+        RISC processor is/are that a RISC processor typically
     </p>
 
     <button class="option-btn" onclick="checkAnswer('Q249','',this)">
@@ -7904,9 +7943,7 @@ X:
         D) is easier to implement using hard-wired control logic
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q249')">
-        Show Explanation
-    </button>
+   
 
     <p class="year"><i>Gate CSE 1999</i></p>
 
@@ -7942,9 +7979,7 @@ X:
         D) writing identification information on all tracks and sectors
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q250')">
-        Show Explanation
-    </button>
+    
 
     <p class="year"><i>1998 </i></p>
 
@@ -7978,9 +8013,7 @@ X:
         D) may change state of interrupted process to 'blocked' and schedule another process
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q251')">
-        Show Explanation
-    </button>
+    
 
     <p class="year"><i>1997 </i></p>
 
@@ -8021,9 +8054,7 @@ X:
         D) A – 2, B – 3, C – 4, D – 1
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q252')">
-        Show Explanation
-    </button>
+    
 
     <p class="year"><i>1997 </i></p>
 
@@ -8057,9 +8088,7 @@ X:
         D) None of the above
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q253')">
-        Show Explanation
-    </button>
+    
 
     <p class="year"><i>1997 </i></p>
 
@@ -8094,9 +8123,6 @@ X:
         D) It requires a separate interrupt pin on the processor for each device
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q254')">
-        Show Explanation
-    </button>
 
     <p class="year"><i>1996 </i></p>
 
@@ -8130,9 +8156,7 @@ X:
         D) 12
     </button>
 
-    <button class="check-btn" onclick="showExplanation('Q255')">
-        Show Explanation
-    </button>
+   
 
     <p class="year"><i>1996 </i></p>
 
@@ -8169,7 +8193,7 @@ X:
         Disk rotation speed = 2400 rpm<br>
         Track storage capacity = 62,500 bits
         <br><br>
-        The average latency of this device is <b>P</b> msec and the data transfer rate is <b>Q</b> bits/sec. Write the value of <b>P</b> and <b>Q</b>. Write the value of P and Q
+        The average latency of this device is P msec and the data transfer rate is Q bits/sec. Write the value of P and Q. Write the value of P and Q
     </p>
 
 
@@ -8226,7 +8250,7 @@ X:
         Disk rotation speed = 2400 rpm<br>
         Track storage capacity = 62,500 bits
         <br><br>
-        The average latency of this device is <b>P</b> msec and the data transfer rate is <b>Q</b> bits/sec. Write the value of <b>P</b> and <b>Q</b>. Write the value of P and Q
+        The average latency of this device is P msec and the data transfer rate is Q bits/sec. Write the value of P and Q. Write the value of P and Q
     </p>
 
 
@@ -8247,7 +8271,7 @@ X:
         <br><br>
         (i) How many bits are required for addressing the main memory?
         <br>
-        (ii) How many bits are needed to represent the <b>TAG</b>, <b>SET</b> and <b>WORD</b> fields?
+        (ii) How many bits are needed to represent the TAG, SET and WORD fields?
     </p>
 
 
@@ -8265,7 +8289,7 @@ X:
 <div class="question">
 
     <p class="ques">
-        <b>Q260.</b> In a two-level virtual memory, the memory access time for main memory, <b>t<sub>A</sub></b> = 10<sup>−8</sup> sec, and the memory access time for the secondary memory, <b>t<sub>S</sub></b> = 10<sup>−3</sup> sec. What must be the hit ratio, <b>H</b>, such that the access efficiency is within 80 percent of its maximum value.
+        <b>Q260.</b> In a two-level virtual memory, the memory access time for main memory, t<sub>A</sub> = 10<sup>−8</sup> sec, and the memory access time for the secondary memory, t<sub>S</sub> = 10<sup>−3</sup> sec. What must be the hit ratio, H, such that the access efficiency is within 80 percent of its maximum value.
     </p>
 
     <p class="year"><i>1990</i></p>
@@ -8299,7 +8323,7 @@ X:
 <div class="question">
 
     <p class="ques">
-        <b>Q262.</b> The flags are affected when conditional <b>CALL</b> or <b>JUMP</b> instructions are executed.
+        <b>Q262.</b> The flags are affected when conditional CALL or JUMP instructions are executed.
     </p>
 
     <p class="year"><i>1990</i></p>
@@ -8329,16 +8353,4 @@ X:
 
 
 
-
-
-
-
-
-
-    
-    
-    
-
-    
-    
 </body>
