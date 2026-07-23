@@ -2373,24 +2373,20 @@ td {
 
     <p class="ques">
         This sequence of instructions is to be executed in a pipelined instruction processor with the
-        following four stages:
-    </p>
-
-    <div style="margin-left:20px;line-height:1.8;">
+        following four stages:<br><br>
+   
         (1) Instruction Fetch and Decode (IF)<br>
         (2) Operand Fetch (OF)<br>
         (3) Perform Operation (PO)<br>
-        (4) Write Back (WB)
-    </div>
+        (4) Write Back (WB)<br><br>
 
-    <p class="ques">
+
+   
         The IF, OF and WB stages take one clock cycle each for any instruction.
         The PO stage takes one clock cycle for ADD or SUB instruction,
         three clock cycles for MUL instruction and five clock cycles for DIV instruction.
-        The pipelined processor uses operand forwarding from the PO stage to the OF stage.
-    </p>
-
-    <p class="ques">
+        The pipelined processor uses operand forwarding from the PO stage to the OF stage.<br><br>
+    
         The number of clock cycles taken for the execution of the above instruction sequence is __________.
     </p>
 
@@ -2405,17 +2401,16 @@ td {
 
     <p class="ques">
         The current value of SP is (016E)<sub>16</sub>. The CALL instruction is of two words, the first word is the opcode and the second word is the starting address of the subroutine (one word = 2 bytes).
-    </p>
+<br><br>
+        The CALL instruction is implemented as follows:<br><br>
 
-    <p class="ques">The CALL instruction is implemented as follows:</p>
+   
+        <li>Store the current value of PC in the stack.</li><br>
+        <li>Store the value of PSW register in the stack.</li><br>
+        <li>Load the starting address of the subroutine in PC.</li><br>
+   
 
-    <ul style="margin-left:25px; line-height:1.8;">
-        <li>Store the current value of PC in the stack.</li>
-        <li>Store the value of PSW register in the stack.</li>
-        <li>Load the starting address of the subroutine in PC.</li>
-    </ul>
-
-    <p class="ques">
+   
         The content of PC just before the fetch of a CALL instruction is
         (5FA0)<sub>16</sub>. After execution of the CALL instruction, the value of the stack pointer is
     </p>
