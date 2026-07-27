@@ -128,4 +128,398 @@ td {
 <body>
     <p class="main_heading">Computer Networks Previous Year Questions</p>
 
+<!-- Question 1 -->
+<div class="question">
+  <p class="ques">
+    <b>Q1.</b> Consider a file of size 4 million bytes being transferred between two hosts
+    connected via a path consisting of three consecutive links of bandwidth
+    2 Mbps, 500 kbps, and 1 Mbps, respectively. All processing delays and
+    propagation delays are negligible. Assume that there is no other background
+    traffic over the path and no other additional overhead to transfer the file.
+    <br><br>
+    Which one of the following is the total time (in seconds) to transfer the file?
+    <br><br>
+    <i>Note: 1M = 10<sup>6</sup>, 1k = 10<sup>3</sup>.</i>
+  </p>
 
+  <button class="option-btn" onclick="checkAnswer(0, 'A', this)">A) 731</button>
+  <button class="option-btn" onclick="checkAnswer(0, 'B', this)">B) 64</button>
+  <button class="option-btn" onclick="checkAnswer(0, 'C', this)">C) 8</button>
+  <button class="option-btn" onclick="checkAnswer(0, 'D', this)">D) 16</button>
+
+  <p class="year"><i>GATE CSE 2026 Session 2</i></p>
+  <div id="explanation0" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 2 -->
+<div class="question">
+  <p class="ques">
+    Q2. Which one of the following protocols may need to broadcast some of its messages?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(1, 'A', this)">A) SMTP</button>
+  <button class="option-btn" onclick="checkAnswer(1, 'B', this)">B) FTP</button>
+  <button class="option-btn" onclick="checkAnswer(1, 'C', this)">C) DHCP</button>
+  <button class="option-btn" onclick="checkAnswer(1, 'D', this)">D) HTTP</button>
+
+  <p class="year"><i>GATE CSE 2026 Session 2</i></p>
+  <div id="explanation1" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 3 -->
+<div class="question">
+  <p class="ques">
+    Q3. If an IP network uses a subnet mask of 255.255.240.0, the maximum number of IP
+    addresses that can be assigned to network interfaces is ____________. (answer in integer)
+  </p>
+
+  <p class="year"><i>GATE CSE 2026 Session 2</i></p>
+  <div id="explanation2" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 4 -->
+<div class="question">
+  <p class="ques">
+    Q4. Consider the transmission of data bits 110001011 over a link that uses Cyclic
+    Redundancy Check (CRC) code for error detection. If the generator bit pattern is
+    given to be 1001, which one of the following options shows the remainder bit
+    pattern appended to the data bits before transmission?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(3, 'A', this)">A) 011</button>
+  <button class="option-btn" onclick="checkAnswer(3, 'B', this)">B) 101</button>
+  <button class="option-btn" onclick="checkAnswer(3, 'C', this)">C) 000</button>
+  <button class="option-btn" onclick="checkAnswer(3, 'D', this)">D) 100</button>
+
+  <p class="year"><i>GATE CSE 2026 Session 2</i></p>
+  <div id="explanation3" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 5 -->
+<div class="question">
+  <p class="ques">
+    Q5. Consider a new TCP connection between a sender and a receiver. The receiver
+    advertised window is constant at 48 KB, the maximum segment size (MSS) is
+    2 KB, and the slow start threshold for TCP congestion control is 16 KB. Assume
+    that there are no timeouts or duplicate acknowledgements. The number of rounds
+    of transmission required for the congestion control algorithm of the TCP connection
+    to reach the congestion avoidance phase is ____________. (answer in integer)
+    <br><br>
+    Note: 1K = 2<sup>10</sup>
+  </p>
+
+  <p class="year"><i>GATE CSE 2026 Session 2</i></p>
+  <div id="explanation4" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 6 -->
+<div class="question">
+  <p class="ques">
+    Q6. It is necessary to design a link-layer protocol between two hosts that are directly
+    connected over a lossless link of length 3000 kilometers. Assume that the link
+    bandwidth is 10<sup>8</sup> bits per second and that the propagation delay in the link is 5
+    nanoseconds per meter. Every transmitted data byte is assigned a unique sequence
+    number.
+    <br><br>
+    Let N be the minimum number of bits needed for the sequence number field in the
+    protocol header such that
+    <br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;i.&nbsp;&nbsp;&nbsp;&nbsp;the sequence numbers do not wrap around before 60 seconds, and
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;ii.&nbsp;&nbsp;&nbsp;the maximum utilization of the link is achieved.
+    <br><br>
+    The value of N is ________. (answer in integer)
+  </p>
+
+  <p class="year"><i>GATE CSE 2026 Session 2</i></p>
+  <div id="explanation5" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 7 -->
+<div class="question">
+  <p class="ques">
+    Q7. With respect to a TCP connection between a client and a server, which one of the
+    following statements is true?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(6, 'A', this)">A) The client and server use a two-way handshake mechanism before the start of data transmission</button>
+  <button class="option-btn" onclick="checkAnswer(6, 'B', this)">B) The server cannot initiate closing of the connection before the client initiates closing of the connection</button>
+  <button class="option-btn" onclick="checkAnswer(6, 'C', this)">C) The TCP connection is half-duplex</button>
+  <button class="option-btn" onclick="checkAnswer(6, 'D', this)">D) The client and server can initiate closing of the connection at the same time</button>
+
+  <p class="year"><i>GATE CSE 2026 Session 1</i></p>
+  <div id="explanation6" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 8 -->
+<div class="question">
+  <p class="ques">
+    Q8. Which of the following statements is/are true with respect to the interaction of a
+    web browser with a web server using HTTP 1.1?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(7, 'A', this)">A) HTTP 1.1 facilitates downloading multiple objects of the same webpage over the same TCP connection, if the objects are stored in the same server</button>
+  <button class="option-btn" onclick="checkAnswer(7, 'B', this)">B) HTTP 1.1 facilitates downloading multiple objects of the same webpage over the same TCP connection, even if they are stored in different servers</button>
+  <button class="option-btn" onclick="checkAnswer(7, 'C', this)">C) HTTP 1.1 facilitates sending a request for downloading one object without waiting for a previously requested object to be downloaded completely</button>
+  <button class="option-btn" onclick="checkAnswer(7, 'D', this)">D) HTTP 1.1 facilitates downloading multiple webpages on the same server to be downloaded over a single TCP connection</button>
+
+  <p class="year"><i>GATE CSE 2026 Session 1</i></p>
+  <div id="explanation7" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 9 -->
+<div class="question">
+  <p class="ques">
+    Q9. A TCP sender successfully establishes a connection with a TCP receiver and starts
+    the transmission of segments. The TCP congestion control mechanism’s slow-start
+    threshold is set to 10000 segments. Assume that the round-trip time is fixed at
+    1 millisecond. Assume that the sender always has data to send, the segments are
+    numbered from 1, and no segment is lost. Let t denote the time (in milliseconds) at
+    which the transmission of segment number 2000 starts.
+    <br><br>
+    Which one of the following options is correct?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(8, 'A', this)">A) 9 ≤ t < 10</button>
+  <button class="option-btn" onclick="checkAnswer(8, 'B', this)">B) 10 ≤ t < 11</button>
+  <button class="option-btn" onclick="checkAnswer(8, 'C', this)">C) 11 ≤ t < 12</button>
+  <button class="option-btn" onclick="checkAnswer(8, 'D', this)">D) 12 ≤ t < 13</button>
+
+  <p class="year"><i>GATE CSE 2026 Session 1</i></p>
+  <div id="explanation8" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 10 -->
+<div class="question">
+  <p class="ques">
+    Q10. Consider the implementation of sliding window protocol over a lossless link, with a
+    window size of W frames, where each frame is of size 1000 bits (including header).
+    The bandwidth of the link is 100 kbps (1k = 10<sup>3</sup>) and the one-way propagation delay
+    is 100 milliseconds. Assume that processing times at the sender and receiver are zero
+    and the transmission time of acknowledgements is also zero. Which one of the
+    following options gives the minimum size of W (in number of frames) required to
+    achieve 100% link utilization?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(9, 'A', this)">A) 10</button>
+  <button class="option-btn" onclick="checkAnswer(9, 'B', this)">B) 21</button>
+  <button class="option-btn" onclick="checkAnswer(9, 'C', this)">C) 20</button>
+  <button class="option-btn" onclick="checkAnswer(9, 'D', this)">D) 11</button>
+
+  <p class="year"><i>GATE CSE 2026 Session 1</i></p>
+  <div id="explanation9" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 11 -->
+<div class="question">
+  <p class="ques">
+    Q11. An ISP having an address block 202.16.0.0/15 assigns a block of 6000 IP addresses
+    to a client, using the classless internet domain routing (CIDR) super-netting
+    approach. Which of the following address blocks can be assigned by the ISP?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(10, 'A', this)">A) 202.16.0.0/19</button>
+  <button class="option-btn" onclick="checkAnswer(10, 'B', this)">B) 202.17.64.0/19</button>
+  <button class="option-btn" onclick="checkAnswer(10, 'C', this)">C) 202.16.32.0/19</button>
+  <button class="option-btn" onclick="checkAnswer(10, 'D', this)">D) 202.17.24.0/19</button>
+
+  <p class="year"><i>GATE CSE 2026 Session 1</i></p>
+  <div id="explanation10" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 12 -->
+<div class="question">
+  <p class="ques">
+    Q12. Consider the following statements:
+    <br><br>
+    (i) Address Resolution Protocol (ARP) provides a mapping from an IP address to the corresponding hardware (link-layer) address.
+    <br>
+    (ii) A single TCP segment from a sender S to a receiver R cannot carry both data from S to R and acknowledgement for a segment from R to S.
+    <br><br>
+    Which ONE of the following is CORRECT?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(11, 'A', this)">A) Both (i) and (ii) are TRUE</button>
+  <button class="option-btn" onclick="checkAnswer(11, 'B', this)">B) (i) is TRUE and (ii) is FALSE</button>
+  <button class="option-btn" onclick="checkAnswer(11, 'C', this)">C) (i) is FALSE and (ii) is TRUE</button>
+  <button class="option-btn" onclick="checkAnswer(11, 'D', this)">D) Both (i) and (ii) are FALSE</button>
+
+  <p class="year"><i>GATE CSE 2025 Session 2</i></p>
+  <div id="explanation11" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 13 -->
+<div class="question">
+  <p class="ques">
+    Q13. Consider the routing protocols given in List I and the names given in List II:
+    <br><br>
+
+    <table style="border-collapse: collapse; margin: 0 auto;">
+      <tr>
+        <th style="border:1px solid #000; padding:8px 18px;">List I</th>
+        <th style="border:1px solid #000; padding:8px 18px;">List II</th>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 18px;">
+          (i) Distance vector routing
+          <br><br>
+          (ii) Link state routing
+        </td>
+        <td style="border:1px solid #000; padding:8px 18px;">
+          (a) Bellman-Ford
+          <br><br>
+          (b) Dijkstra
+        </td>
+      </tr>
+    </table>
+
+    <br>
+    For matching of items in List I with those in List II, which ONE of the following
+    options is CORRECT?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(12, 'A', this)">A) (i) – (a) and (ii) – (b)</button>
+  <button class="option-btn" onclick="checkAnswer(12, 'B', this)">B) (i) – (a) and (ii) – (a)</button>
+  <button class="option-btn" onclick="checkAnswer(12, 'C', this)">C) (i) – (b) and (ii) – (a)</button>
+  <button class="option-btn" onclick="checkAnswer(12, 'D', this)">D) (i) – (b) and (ii) – (b)</button>
+
+  <p class="year"><i>GATE CSE 2025 Session 2</i></p>
+  <div id="explanation12" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 14 -->
+<div class="question">
+  <p class="ques">
+    Q14. A machine receives an IPv4 datagram. The protocol field of the IPv4 header has the
+    protocol number of a protocol X.
+    <br><br>
+    Which ONE of the following is NOT a possible candidate for X?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(13, 'A', this)">A) Internet Control Message Protocol (ICMP)</button>
+  <button class="option-btn" onclick="checkAnswer(13, 'B', this)">B) Internet Group Management Protocol (IGMP)</button>
+  <button class="option-btn" onclick="checkAnswer(13, 'C', this)">C) Open Shortest Path First (OSPF)</button>
+  <button class="option-btn" onclick="checkAnswer(13, 'D', this)">D) Routing Information Protocol (RIP)</button>
+
+  <p class="year"><i>GATE CSE 2025 Session 2</i></p>
+  <div id="explanation13" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 15 -->
+<div class="question">
+  <p class="ques">
+    Q15. Consider a network that uses Ethernet and IPv4. Assume that IPv4 headers do not
+    use any options field. Each Ethernet frame can carry a maximum of 1500 bytes in
+    its data field. A UDP segment is transmitted. The payload (data) in the UDP
+    segment is 7488 bytes.
+    <br><br>
+    Which ONE of the following choices has the CORRECT total number of fragments
+    transmitted and the size of the last fragment including IPv4 header?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(14, 'A', this)">A) 5 fragments, 1488 bytes</button>
+  <button class="option-btn" onclick="checkAnswer(14, 'B', this)">B) 6 fragments, 88 bytes</button>
+  <button class="option-btn" onclick="checkAnswer(14, 'C', this)">C) 6 fragments, 108 bytes</button>
+  <button class="option-btn" onclick="checkAnswer(14, 'D', this)">D) 6 fragments, 116 bytes</button>
+
+  <p class="year"><i>GATE CSE 2025 Session 2</i></p>
+  <div id="explanation14" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 16 -->
+<div class="question">
+  <p class="ques">
+    Q16. Suppose we are transmitting frames between two nodes using Stop-and-Wait
+    protocol. The frame size is 3000 bits. The transmission rate of the channel is 2000
+    bps (bits/second) and the propagation delay between the two nodes is 100
+    milliseconds. Assume that the processing times at the source and destination are
+    negligible. Also, assume that the size of the acknowledgement packet is negligible.
+    Which ONE of the following most accurately gives the channel utilization for the
+    above scenario in percentage?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(15, 'A', this)">A) 88.23</button>
+  <button class="option-btn" onclick="checkAnswer(15, 'B', this)">B) 93.75</button>
+  <button class="option-btn" onclick="checkAnswer(15, 'C', this)">C) 85.44</button>
+  <button class="option-btn" onclick="checkAnswer(15, 'D', this)">D) 66.67</button>
+
+  <p class="year"><i>GATE CSE 2025 Session 2</i></p>
+  <div id="explanation15" class="explanation"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+
+
+
+
+    
+    
