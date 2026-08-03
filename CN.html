@@ -622,36 +622,222 @@ td {
 </div>
 
 
+    
+
+<!-- Question 21 -->
+<div class="question">
+  <p class="ques">
+    <b>Q21.</b> Suppose a message of size 15000 bytes is transmitted from a source to a destination
+    using IPv4 protocol via two routers as shown in the figure. Each router has a defined
+    maximum transmission unit (MTU) as shown in the figure, including IP header.
+    The number of fragments that will be delivered to the destination is ________ .
+    (Answer in integer)
+  </p>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:760px; height:auto; display:block; margin:20px auto;">
+      
+      <defs>
+        <marker id="arrow21" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L10,3 L0,6 Z" fill="#000"/>
+        </marker>
+      </defs>
+
+      <!-- Source -->
+      <rect x="20" y="20" width="110" height="90" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="75" y="72" text-anchor="middle"
+            font-family="Times New Roman" font-size="18">Source</text>
+
+      <!-- Destination -->
+      <rect x="630" y="20" width="110" height="90" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="685" y="72" text-anchor="middle"
+            font-family="Times New Roman" font-size="18">Destination</text>
+
+      <!-- Router 1 -->
+      <rect x="180" y="180" width="190" height="90" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="275" y="215" text-anchor="middle"
+            font-family="Times New Roman" font-size="18">Router-1</text>
+      <text x="275" y="245" text-anchor="middle"
+            font-family="Times New Roman" font-size="18">(MTU=5000 bytes)</text>
+
+      <!-- Router 2 -->
+      <rect x="410" y="180" width="190" height="90" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="505" y="215" text-anchor="middle"
+            font-family="Times New Roman" font-size="18">Router-2</text>
+      <text x="505" y="245" text-anchor="middle"
+            font-family="Times New Roman" font-size="18">(MTU=3000 bytes)</text>
+
+      <!-- Connections -->
+      <line x1="75" y1="110" x2="75" y2="225" stroke="#000" stroke-width="2"/>
+      <line x1="75" y1="225" x2="180" y2="225" stroke="#000" stroke-width="2"
+            marker-end="url(#arrow21)"/>
+
+      <line x1="370" y1="225" x2="410" y2="225" stroke="#000" stroke-width="2"
+            marker-end="url(#arrow21)"/>
+
+      <line x1="600" y1="225" x2="685" y2="225" stroke="#000" stroke-width="2"/>
+      <line x1="685" y1="225" x2="685" y2="110" stroke="#000" stroke-width="2"
+            marker-end="url(#arrow21)"/>
+
+    </svg>
+  </div>
+
+  <p class="year">GATE CSE 2025 Session 1</p>
+  <div id="explanation20" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 22 -->
+<div class="question">
+  <p class="ques">
+    <b>Q22.</b> Node X has a TCP connection open to node Y. The packets from X to Y go through
+    an intermediate IP router R. Ethernet switch S is the first switch on the network path
+    between X and R. Consider a packet sent from X to Y over this connection.
+    <br><br>
+    Which of the following statements is/are TRUE about the destination IP and MAC
+    addresses on this packet at the time it leaves X?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(21, 'A', this)">
+    A) The destination IP address is the IP address of R
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(21, 'B', this)">
+    B) The destination IP address is the IP address of Y
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(21, 'C', this)">
+    C) The destination MAC address is the MAC address of S
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(21, 'D', this)">
+    D) The destination MAC address is the MAC address of Y
+  </button>
+
+  <p class="year">GATE CSE 2024 Session 2</p>
+  <div id="explanation21" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 23 -->
+<div class="question">
+  <p class="ques">
+    <b>Q23.</b> Which of the following statements about IPv4 fragmentation is/are TRUE?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(22, 'A', this)">
+    A) The fragmentation of an IP datagram is performed <i>only</i> at the source of the datagram
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(22, 'B', this)">
+    B) The fragmentation of an IP datagram is performed at any IP router which finds that the size of the datagram to be transmitted exceeds the MTU
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(22, 'C', this)">
+    C) The reassembly of fragments is performed <i>only</i> at the destination of the datagram
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(22, 'D', this)">
+    D) The reassembly of fragments is performed at all intermediate routers along the path from the source to the destination
+  </button>
+
+  <p class="year">GATE CSE 2024 Session 2</p>
+  <div id="explanation22" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 24 -->
+<div class="question">
+  <p class="ques">
+    <b>Q24.</b> Which of the following fields of an IP header is/are <i>always</i> modified by any router
+    before it forwards the IP packet?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(23, 'A', this)">
+    A) Source IP Address
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(23, 'B', this)">
+    B) Protocol
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(23, 'C', this)">
+    C) Time to Live (TTL)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(23, 'D', this)">
+    D) Header Checksum
+  </button>
+
+  <p class="year">GATE CSE 2024 Session 2</p>
+  <div id="explanation23" class="explanation"></div>
+</div>
 
 
 
 
+<!-- Question 25 -->
+<div class="question">
+  <p class="ques">
+    <b>Q25.</b> Which one of the following CIDR prefixes exactly represents the range of
+    IP addresses 10.12.2.0 to 10.12.3.255?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(24, 'A', this)">
+    A) 10.12.2.0/23
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(24, 'B', this)">
+    B) 10.12.2.0/24
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(24, 'C', this)">
+    C) 10.12.0.0/22
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(24, 'D', this)">
+    D) 10.12.2.0/22
+  </button>
+
+  <p class="year">GATE CSE 2024 Session 2</p>
+  <div id="explanation24" class="explanation"></div>
+</div>
 
 
 
 
+<!-- Question 26 -->
+<div class="question">
+  <p class="ques">
+    <b>Q26.</b> Consider a TCP connection operating at a point of time with the congestion window
+    of size 12 MSS (Maximum Segment Size), when a timeout occurs due to packet
+    loss. Assuming that all the segments transmitted in the next two RTTs (Round Trip
+    Time) are acknowledged correctly, the congestion window size (<i>in MSS</i>) during the
+    third RTT will be ________ .
+  </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <p class="year">GATE CSE 2024 Session 2</p>
+  <div id="explanation25" class="explanation"></div>
+</div>
 
 
     
 
+<!-- Question 27 -->
+<div class="question">
+  <p class="ques">
+    <b>Q27.</b> Consider an Ethernet segment with a transmission speed of 10<sup>8</sup> bits/sec and a
+    maximum segment length of 500 meters. If the speed of propagation of the signal
+    in the medium is 2×10<sup>8</sup> meters/sec, then the minimum frame size (<i>in bits</i>) required
+    for collision detection is ________ .
+  </p>
 
-
+  <p class="year">GATE CSE 2024 Session 2</p>
+  <div id="explanation26" class="explanation"></div>
+</div>
 
 
 
