@@ -841,13 +841,237 @@ td {
 
 
 
+<!-- Question 28 -->
+<div class="question">
+  <p class="ques">
+    <b>Q28.</b> A user starts browsing a webpage hosted at a remote server. The browser opens a
+    single TCP connection to fetch the entire webpage from the server. The webpage
+    consists of a top-level index page with multiple embedded image objects. Assume
+    that all caches (e.g., DNS cache, browser cache) are all initially empty. The
+    following packets leave the user’s computer in some order.
+  </p>
+
+  <div style="margin:15px 0 20px 35px; font-family:'Times New Roman', serif; font-size:18px;">
+    <div>(i)&emsp;&emsp;HTTP GET request for the index page</div>
+    <div>(ii)&emsp;&emsp;DNS request to resolve the web server’s name to its IP address</div>
+    <div>(iii)&emsp;&emsp;HTTP GET request for an image object</div>
+    <div>(iv)&emsp;&emsp;TCP SYN to open a connection to the web server</div>
+  </div>
+
+  <p class="ques">
+    Which one of the following is the CORRECT chronological order (earliest in time
+    to latest) of the packets leaving the computer ?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(27, 'A', this)">
+    A) (iv), (ii), (iii), (i)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(27, 'B', this)">
+    B) (ii), (iv), (iii), (i)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(27, 'C', this)">
+    C) (ii), (iv), (i), (iii)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(27, 'D', this)">
+    D) (iv), (ii), (i), (iii)
+  </button>
+
+  <p class="year">GATE CSE 2024 Session 1</p>
+  <div id="explanation27" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 29 -->
+<div class="question">
+  <p class="ques">
+    <b>Q29.</b> TCP client P successfully establishes a connection to TCP server Q. Let <i>N</i><sub>P</sub> denote
+    the sequence number in the SYN sent from P to Q. Let <i>N</i><sub>Q</sub> denote the
+    acknowledgement number in the SYN ACK from Q to P. Which of the following
+    statements is/are CORRECT?
+  </p>
 
+  <button class="option-btn" onclick="checkAnswer(28, 'A', this)">
+    A) The sequence number <i>N</i><sub>P</sub> is chosen randomly by P
+  </button>
 
+  <button class="option-btn" onclick="checkAnswer(28, 'B', this)">
+    B) The sequence number <i>N</i><sub>P</sub> is always 0 for a new connection
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(28, 'C', this)">
+    C) The acknowledgement number <i>N</i><sub>Q</sub> is equal to <i>N</i><sub>P</sub>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(28, 'D', this)">
+    D) The acknowledgement number <i>N</i><sub>Q</sub> is equal to <i>N</i><sub>P</sub> + 1
+  </button>
+
+  <p class="year">GATE CSE 2024 Session 1</p>
+  <div id="explanation28" class="explanation"></div>
+</div>
     
     
+
+<!-- Question 30 -->
+<div class="question">
+  <p class="ques">
+    <b>Q30.</b> Which of the following fields is/are modified in the IP header of a packet going out
+    of a network address translation (NAT) device from an internal network to an
+    external network?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(29, 'A', this)">
+    A) Source IP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(29, 'B', this)">
+    B) Destination IP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(29, 'C', this)">
+    C) Header Checksum
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(29, 'D', this)">
+    D) Total Length
+  </button>
+
+  <p class="year">GATE CSE 2024 Session 1</p>
+  <div id="explanation29" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 31 -->
+<div class="question">
+  <p class="ques">
+    <b>Q31.</b> Consider a network path P—Q—R between nodes P and R via router Q. Node P
+    sends a file of size 10<sup>6</sup> bytes to R via this path by splitting the file into chunks of
+    10<sup>3</sup> bytes each. Node P sends these chunks one after the other without any wait time
+    between the successive chunk transmissions. Assume that the size of extra headers
+    added to these chunks is negligible, and that the chunk size is less than the MTU.
+    <br><br>
+    Each of the links P—Q and Q—R has a bandwidth of 10<sup>6</sup> bits/sec, and negligible
+    propagation latency. Router Q immediately transmits every packet it receives from
+    P to R, with negligible processing and queueing delays. Router Q can
+    simultaneously receive on link P—Q and transmit on link Q—R.
+    <br><br>
+    Assume P starts transmitting the chunks at time <i>t</i> = 0.
+    <br>
+    Which one of the following options gives the time (<i>in seconds, rounded off to 3 decimal places</i>) at which R receives all the chunks of the file?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(30, 'A', this)">
+    A) 8.000
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(30, 'B', this)">
+    B) 8.008
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(30, 'C', this)">
+    C) 15.992
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(30, 'D', this)">
+    D) 16.000
+  </button>
+
+  <p class="year">GATE CSE 2024 Session 1</p>
+  <div id="explanation30" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 32 -->
+<div class="question">
+  <p class="ques">
+    <b>Q32.</b> Consider the entries shown below in the forwarding table of an IP router. Each entry
+    consists of an IP prefix and the corresponding next hop router for packets whose
+    destination IP address matches the prefix. The notation “/N” in a prefix indicates a
+    subnet mask with the most significant N bits set to 1.
+  </p>
+
+  <div style="display:flex; justify-content:center; margin:20px 0;">
+    <table style="border-collapse:collapse; font-family:'Times New Roman', serif; font-size:18px;">
+      <tr>
+        <th style="border:1px solid #000; padding:8px 14px;">Prefix</th>
+        <th style="border:1px solid #000; padding:8px 14px;">Next hop router</th>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 14px;">10.1.1.0/24</td>
+        <td style="border:1px solid #000; padding:8px 14px; text-align:center;">R1</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 14px;">10.1.1.128/25</td>
+        <td style="border:1px solid #000; padding:8px 14px; text-align:center;">R2</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 14px;">10.1.1.64/26</td>
+        <td style="border:1px solid #000; padding:8px 14px; text-align:center;">R3</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 14px;">10.1.1.192/26</td>
+        <td style="border:1px solid #000; padding:8px 14px; text-align:center;">R4</td>
+      </tr>
+    </table>
+  </div>
+
+  <p class="ques">
+    This router forwards 20 packets each to 5 hosts. The IP addresses of the hosts are
+    10.1.1.16, 10.1.1.72, 10.1.1.132, 10.1.1.191, and 10.1.1.205 . The number of
+    packets forwarded via the next hop router R2 is ________
+  </p>
+
+  <p class="year">GATE CSE 2024 Session 1</p>
+  <div id="explanation31" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 33 -->
+<div class="question">
+  <p class="ques">
+    <b>Q33.</b> Consider sending an IP datagram of size 1420 bytes (including 20 bytes of IP
+    header) from a sender to a receiver over a path of two links with a router between
+    them. The first link (sender to router) has an MTU (Maximum Transmission Unit)
+    size of 542 bytes, while the second link (router to receiver) has an MTU size of 360
+    bytes. The number of fragments that would be delivered at the receiver is ________
+  </p>
+
+  <p class="year">GATE CSE 2024 Session 1</p>
+  <div id="explanation32" class="explanation"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 
