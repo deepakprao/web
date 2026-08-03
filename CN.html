@@ -1051,19 +1051,160 @@ td {
 
 
 
+<!-- Question 34 -->
+<div class="question">
+  <p class="ques">
+    <b>Q34.</b> Suppose two hosts are connected by a point-to-point link and they are configured
+    to use Stop-and-Wait protocol for reliable data transfer. Identify in which one of
+    the following scenarios, the utilization of the link is the lowest.
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(33, 'A', this)">
+    A) Longer link length and lower transmission rate
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(33, 'B', this)">
+    B) Longer link length and higher transmission rate
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(33, 'C', this)">
+    C) Shorter link length and lower transmission rate
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(33, 'D', this)">
+    D) Shorter link length and higher transmission rate
+  </button>
+
+  <p class="year">GATE CSE 2023</p>
+  <div id="explanation33" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 35 -->
+<div class="question">
+  <p class="ques">
+    <b>Q35.</b> Suppose you are asked to design a new reliable byte-stream transport protocol
+    like TCP. This protocol, named myTCP, runs over a 100 Mbps network with Round
+    Trip Time of 150 milliseconds and the maximum segment lifetime of 2 minutes.
+    <br><br>
+    Which of the following is/are valid lengths of the <b>Sequence Number</b> field in the
+    myTCP header?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(34, 'A', this)">
+    A) 30 bits
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(34, 'B', this)">
+    B) 32 bits
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(34, 'C', this)">
+    C) 34 bits
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(34, 'D', this)">
+    D) 36 bits
+  </button>
+
+  <p class="year">GATE CSE 2023</p>
+  <div id="explanation34" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 36 -->
+<div class="question">
+  <p class="ques">
+    <b>Q36.</b> Suppose in a web browser, you click on the <code>www.gate-2023.in</code> URL. The browser
+    cache is empty. The IP address for this URL is not cached in your local host, so
+    a DNS lookup is triggered (by the local DNS server deployed on your local host)
+    over the 3-tier DNS hierarchy in an iterative mode. No resource records are cached
+    anywhere across all DNS servers.
+    <br><br>
+    Let RTT denote the round trip time between your local host and DNS servers
+    in the DNS hierarchy. The round trip time between the local host and the web
+    server hosting <code>www.gate-2023.in</code> is also equal to RTT. The HTML file associated
+    with this URL is small enough to have negligible transmission time and negligible
+    rendering time by your browser, which references 10 equally small objects on
+    the same web server.
+    <br><br>
+    Which of the following statements is/are CORRECT about the minimum elapsed
+    time between clicking on the URL and your browser fully rendering it?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(35, 'A', this)">
+    A) 7 RTTs, in case of non-persistent HTTP with 5 parallel TCP connections.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(35, 'B', this)">
+    B) 5 RTTs, in case of persistent HTTP with pipelining.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(35, 'C', this)">
+    C) 9 RTTs, in case of non-persistent HTTP with 5 parallel TCP connections.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(35, 'D', this)">
+    D) 6 RTTs, in case of persistent HTTP with pipelining.
+  </button>
+
+  <p class="year">GATE CSE 2023</p>
+  <div id="explanation35" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 37 -->
+<div class="question">
+  <p class="ques">
+    <b>Q37.</b> The forwarding table of a router is shown below.
+  </p>
 
+  <div style="display:flex; justify-content:center; margin:20px 0;">
+    <table style="border-collapse:collapse; font-family:'Times New Roman', serif; font-size:18px;">
+      <tr>
+        <th style="border:1px solid #000; padding:8px 14px;">Subnet Number</th>
+        <th style="border:1px solid #000; padding:8px 14px;">Subnet Mask</th>
+        <th style="border:1px solid #000; padding:8px 14px;">Interface ID</th>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 14px;">200.150.0.0</td>
+        <td style="border:1px solid #000; padding:8px 14px;">255.255.0.0</td>
+        <td style="border:1px solid #000; padding:8px 14px; text-align:center;">1</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 14px;">200.150.64.0</td>
+        <td style="border:1px solid #000; padding:8px 14px;">255.255.224.0</td>
+        <td style="border:1px solid #000; padding:8px 14px; text-align:center;">2</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 14px;">200.150.68.0</td>
+        <td style="border:1px solid #000; padding:8px 14px;">255.255.255.0</td>
+        <td style="border:1px solid #000; padding:8px 14px; text-align:center;">3</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 14px;">200.150.68.64</td>
+        <td style="border:1px solid #000; padding:8px 14px;">255.255.255.224</td>
+        <td style="border:1px solid #000; padding:8px 14px; text-align:center;">4</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 14px;">Default</td>
+        <td style="border:1px solid #000; padding:8px 14px;"></td>
+        <td style="border:1px solid #000; padding:8px 14px; text-align:center;">0</td>
+      </tr>
+    </table>
+  </div>
 
+  <p class="ques">
+    A packet addressed to a destination address 200.150.68.118 arrives at the router.
+    It will be forwarded to the interface with ID ____________.
+  </p>
 
-
+  <p class="year">GATE CSE 2023</p>
+  <div id="explanation36" class="explanation"></div>
+</div>
 
 
 
