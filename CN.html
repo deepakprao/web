@@ -1208,7 +1208,219 @@ td {
 
 
 
+<!-- Question 38 -->
+<div class="question">
+  <p class="ques">
+    <b>Q38.</b> Consider the resolution of the domain name <code>www.gate.org.in</code> by a DNS
+    resolver. Assume that no resource records are cached anywhere across the DNS
+    servers and that iterative query mechanism is used in the resolution. The number
+    of DNS query-response pairs involved in completely resolving the domain name
+    is ______________.
+  </p>
 
+  <p class="year">GATE CSE 2022</p>
+  <div id="explanation37" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 39 -->
+<div class="question">
+  <p class="ques">
+    <b>Q39.</b> Consider routing table of an organization’s router shown below:
+  </p>
+
+  <div style="display:flex; justify-content:center; margin:20px 0;">
+    <table style="border-collapse:collapse; font-family:'Times New Roman', serif; font-size:18px;">
+      <tr>
+        <th style="border:1px solid #000; padding:8px 12px;">Subnet Number</th>
+        <th style="border:1px solid #000; padding:8px 12px;">Subnet Mask</th>
+        <th style="border:1px solid #000; padding:8px 12px;">Next Hop</th>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 12px;">12.20.164.0</td>
+        <td style="border:1px solid #000; padding:8px 12px;">255.255.252.0</td>
+        <td style="border:1px solid #000; padding:8px 12px;">R1</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 12px;">12.20.170.0</td>
+        <td style="border:1px solid #000; padding:8px 12px;">255.255.254.0</td>
+        <td style="border:1px solid #000; padding:8px 12px;">R2</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 12px;">12.20.168.0</td>
+        <td style="border:1px solid #000; padding:8px 12px;">255.255.254.0</td>
+        <td style="border:1px solid #000; padding:8px 12px;">Interface 0</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 12px;">12.20.166.0</td>
+        <td style="border:1px solid #000; padding:8px 12px;">255.255.254.0</td>
+        <td style="border:1px solid #000; padding:8px 12px;">Interface 1</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:8px 12px;">default</td>
+        <td style="border:1px solid #000; padding:8px 12px;"></td>
+        <td style="border:1px solid #000; padding:8px 12px;">R3</td>
+      </tr>
+    </table>
+  </div>
+
+  <p class="ques">
+    Which of the following prefixes in CIDR notation can be collectively used to
+    correctly aggregate all of the subnets in the routing table?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(38, 'A', this)">
+    A) 12.20.164.0/20
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(38, 'B', this)">
+    B) 12.20.164.0/22
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(38, 'C', this)">
+    C) 12.20.164.0/21
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(38, 'D', this)">
+    D) 12.20.168.0/22
+  </button>
+
+  <p class="year">GATE CSE 2022</p>
+  <div id="explanation38" class="explanation"></div>
+</div>
+
+
+
+
+
+<!-- Question 40 -->
+<div class="question">
+  <p class="ques">
+    <b>Q40.</b> Consider a network with three routers P, Q, R shown in the figure below. All the
+    links have cost of unity.
+  </p>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 520 120" xmlns="http://www.w3.org/2000/svg"
+         style="width:100%; max-width:520px; height:auto; display:block; margin:20px auto;">
+
+      <!-- P -->
+      <rect x="50" y="25" width="60" height="60" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="80" y="62" text-anchor="middle"
+            font-family="Times New Roman" font-size="20">P</text>
+
+      <!-- Q -->
+      <rect x="190" y="25" width="60" height="60" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="220" y="62" text-anchor="middle"
+            font-family="Times New Roman" font-size="20">Q</text>
+
+      <!-- R -->
+      <rect x="330" y="25" width="60" height="60" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="360" y="62" text-anchor="middle"
+            font-family="Times New Roman" font-size="20">R</text>
+
+      <!-- Links -->
+      <line x1="110" y1="55" x2="190" y2="55" stroke="#000" stroke-width="2"/>
+      <line x1="250" y1="55" x2="330" y2="55" stroke="#000" stroke-width="2"/>
+
+    </svg>
+  </div>
+
+  <p class="ques">
+    The routers exchange distance vector routing information and have converged on
+    the routing tables, after which the link Q–R fails. Assume that P and Q send out
+    routing updates at random times, each at the same average rate. The probability of
+    a routing loop formation (<i>rounded off to one decimal place</i>) between P and Q,
+    leading to count-to-infinity problem, is __________.
+  </p>
+
+  <p class="year">GATE CSE 2022</p>
+  <div id="explanation39" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 41 -->
+<div class="question">
+  <p class="ques">
+    <b>Q41.</b> Consider a 100 Mbps link between an earth station (sender) and a satellite (receiver)
+    at an altitude of 2100 km. The signal propagates at a speed of 3x10<sup>8</sup> m/s. The time
+    taken (in milliseconds, <i>rounded off to two decimal places</i>) for the receiver to
+    completely receive a packet of 1000 bytes transmitted by the sender is __________.
+  </p>
+
+  <p class="year">GATE CSE 2022</p>
+  <div id="explanation40" class="explanation"></div>
+</div>
+
+<!-- Question 42 -->
+<div class="question">
+  <p class="ques">
+    <b>Q42.</b> Consider the data transfer using TCP over a 1 Gbps link. Assuming that the
+    maximum segment lifetime (MSL) is set to 60 seconds, the minimum number of
+    bits required for the sequence number field of the TCP header, to prevent the
+    sequence number space from wrapping around during the MSL is __________.
+  </p>
+
+  <p class="year">GATE CSE 2022</p>
+  <div id="explanation41" class="explanation"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
