@@ -4331,6 +4331,1552 @@ td {
 
 
     
+<!-- Question 126 -->
+<div class="question">
+  <p class="ques">
+    <b>Q126.</b> One of the header fields in an IP datagram is the
+    Time-to-Live (TTL) field. Which of the following
+    statements best explains the need for this field?
+  </p>
 
+  <button class="option-btn" onclick="checkAnswer(125, 'A', this)">
+    (a) It can be used to prioritize packets
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(125, 'B', this)">
+    (b) It can be used to reduce delays
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(125, 'C', this)">
+    (c) It can be used to optimize throughput
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(125, 'D', this)">
+    (d) It can be used to prevent packet looping
+  </button>
+
+  <p class="year">GATE CSE 2010</p>
+  <div id="explanation125" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 127 -->
+<div class="question">
+  <p class="ques">
+    <b>Q127.</b> Suppose computers A and B have IP addresses
+    10.105.1.113 and 10.105.1.91 respectively and
+    they both use the same netmask N. Which of
+    the values of N given below should not be used if
+    A and B should belong to the same network?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(126, 'A', this)">
+    (a) 255.255.255.0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(126, 'B', this)">
+    (b) 255.255.255.128
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(126, 'C', this)">
+    (c) 255.255.255.192
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(126, 'D', this)">
+    (d) 255.255.255.224
+  </button>
+
+  <p class="year">GATE CSE 2010</p>
+  <div id="explanation126" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 128 -->
+<div class="question">
+  <p class="ques">
+    <b>Q128.</b> Which one of the following is not a client-server
+    application?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(127, 'A', this)">
+    (a) Internet chat
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(127, 'B', this)">
+    (b) Web browsing
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(127, 'C', this)">
+    (c) E-mail
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(127, 'D', this)">
+    (d) Ping
+  </button>
+
+  <p class="year">GATE CSE 2010</p>
+  <div id="explanation127" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 129 -->
+<div class="question">
+  <p class="ques">
+    <b>Q129.</b> Consider a network with 6 routers R1 to R6 connected
+    with links having weights as shown in the following
+    diagram.
+  </p>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 500 260" xmlns="http://www.w3.org/2000/svg"
+         style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
+
+      <!-- Links -->
+      <line x1="90" y1="120" x2="190" y2="50" stroke="#000" stroke-width="2"/>
+      <line x1="90" y1="120" x2="190" y2="190" stroke="#000" stroke-width="2"/>
+      <line x1="190" y1="50" x2="190" y2="190" stroke="#000" stroke-width="2"/>
+      <line x1="190" y1="50" x2="320" y2="50" stroke="#000" stroke-width="2"/>
+      <line x1="190" y1="190" x2="320" y2="190" stroke="#000" stroke-width="2"/>
+      <line x1="320" y1="50" x2="320" y2="190" stroke="#000" stroke-width="2"/>
+      <line x1="320" y1="50" x2="430" y2="120" stroke="#000" stroke-width="2"/>
+      <line x1="320" y1="190" x2="430" y2="120" stroke="#000" stroke-width="2"/>
+
+      <!-- Weights -->
+      <text x="132" y="78" font-family="Times New Roman" font-size="18">6</text>
+      <text x="132" y="170" font-family="Times New Roman" font-size="18">3</text>
+      <text x="200" y="125" font-family="Times New Roman" font-size="18">2</text>
+      <text x="248" y="40" font-family="Times New Roman" font-size="18">7</text>
+      <text x="248" y="205" font-family="Times New Roman" font-size="18">9</text>
+      <text x="330" y="125" font-family="Times New Roman" font-size="18">1</text>
+      <text x="375" y="78" font-family="Times New Roman" font-size="18">8</text>
+      <text x="375" y="170" font-family="Times New Roman" font-size="18">3</text>
+
+      <!-- Nodes -->
+      <circle cx="90" cy="120" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="190" cy="50" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="190" cy="190" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="320" cy="50" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="320" cy="190" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="430" cy="120" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+
+      <!-- Labels -->
+      <text x="78" y="126" font-family="Times New Roman" font-size="18">R1</text>
+      <text x="178" y="56" font-family="Times New Roman" font-size="18">R2</text>
+      <text x="178" y="196" font-family="Times New Roman" font-size="18">R3</text>
+      <text x="308" y="56" font-family="Times New Roman" font-size="18">R4</text>
+      <text x="308" y="196" font-family="Times New Roman" font-size="18">R5</text>
+      <text x="418" y="126" font-family="Times New Roman" font-size="18">R6</text>
+    </svg>
+  </div>
+
+  <p class="ques">
+    All the routers use the distance vector based
+    routing algorithm to update their routing tables.
+    Each router starts with its routing table
+    initialized to contain an entry for each neighbour
+    with the weight of the respective connecting link.
+    After all the routing tables stabilize, how many
+    links in the network will never be used for
+    carrying any data?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(128, 'A', this)">
+    (a) 4
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(128, 'B', this)">
+    (b) 3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(128, 'C', this)">
+    (c) 2
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(128, 'D', this)">
+    (d) 1
+  </button>
+
+  <p class="year">GATE CSE 2010</p>
+  <div id="explanation128" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 130 -->
+<div class="question">
+  <p class="ques">
+    <b>Q130.</b> Consider a network with 6 routers R1 to R6 connected
+    with links having weights as shown in the following
+    diagram.
+  </p>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 500 260" xmlns="http://www.w3.org/2000/svg"
+         style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
+
+      <!-- Links -->
+      <line x1="90" y1="120" x2="190" y2="50" stroke="#000" stroke-width="2"/>
+      <line x1="90" y1="120" x2="190" y2="190" stroke="#000" stroke-width="2"/>
+      <line x1="190" y1="50" x2="190" y2="190" stroke="#000" stroke-width="2"/>
+      <line x1="190" y1="50" x2="320" y2="50" stroke="#000" stroke-width="2"/>
+      <line x1="190" y1="190" x2="320" y2="190" stroke="#000" stroke-width="2"/>
+      <line x1="320" y1="50" x2="320" y2="190" stroke="#000" stroke-width="2"/>
+      <line x1="320" y1="50" x2="430" y2="120" stroke="#000" stroke-width="2"/>
+      <line x1="320" y1="190" x2="430" y2="120" stroke="#000" stroke-width="2"/>
+
+      <!-- Edge Weights -->
+      <text x="132" y="78" font-family="Times New Roman" font-size="18">6</text>
+      <text x="132" y="170" font-family="Times New Roman" font-size="18">3</text>
+      <text x="200" y="125" font-family="Times New Roman" font-size="18">2</text>
+      <text x="248" y="40" font-family="Times New Roman" font-size="18">7</text>
+      <text x="248" y="205" font-family="Times New Roman" font-size="18">9</text>
+      <text x="330" y="125" font-family="Times New Roman" font-size="18">1</text>
+      <text x="375" y="78" font-family="Times New Roman" font-size="18">8</text>
+      <text x="375" y="170" font-family="Times New Roman" font-size="18">3</text>
+
+      <!-- Nodes -->
+      <circle cx="90" cy="120" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="190" cy="50" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="190" cy="190" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="320" cy="50" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="320" cy="190" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="430" cy="120" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+
+      <!-- Labels -->
+      <text x="78" y="126" font-family="Times New Roman" font-size="18">R1</text>
+      <text x="178" y="56" font-family="Times New Roman" font-size="18">R2</text>
+      <text x="178" y="196" font-family="Times New Roman" font-size="18">R3</text>
+      <text x="308" y="56" font-family="Times New Roman" font-size="18">R4</text>
+      <text x="308" y="196" font-family="Times New Roman" font-size="18">R5</text>
+      <text x="418" y="126" font-family="Times New Roman" font-size="18">R6</text>
+    </svg>
+  </div>
+
+  <p class="ques">
+    Suppose the weights of all unused links in the
+    previous question are changed to 2 and the
+    distance vector algorithm is used again until all
+    routing tables stabilize. How many links will now
+    remain unused?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(129, 'A', this)">
+    (a) 0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(129, 'B', this)">
+    (b) 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(129, 'C', this)">
+    (c) 2
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(129, 'D', this)">
+    (d) 3
+  </button>
+
+  <p class="year">GATE CSE 2010</p>
+  <div id="explanation129" class="explanation"></div>
+</div>
+
+
+
+    <!-- Question 131 -->
+<div class="question">
+  <p class="ques">
+    <b>Q131.</b> Let G(x) be the generator polynomial used for
+    CRC checking. What is the condition that should
+    be satisfied by G(x) to detect odd number of bits
+    in error?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(132, 'A', this)">
+    (a) G(x) contains more than two terms
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(132, 'B', this)">
+    (b) G(x) does not divide 1 + x<sup>k</sup>, for any <i>k</i> not
+    exceeding the frame length
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(132, 'C', this)">
+    (c) 1 + x is a factor of G(x)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(132, 'D', this)">
+    (d) G(x) has an odd number of terms
+  </button>
+
+  <p class="year">GATE CSE 2009</p>
+  <div id="explanation130" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 132 -->
+<div class="question">
+  <p class="ques">
+    <b>Q132.</b> Frames of 1000 bits are sent over a 10<sup>6</sup> bps
+    duplex link between two hosts. The propagation
+    time is 25 ms. Frames are to be transmitted into
+    this link to maximally pack them in transit
+    (within the link).
+    <br><br>
+    What is the minimum number of bits (<i>l</i>) that
+    will be required to represent the sequence
+    numbers distinctly? Assume that no time gap
+    needs to be given between transmission of two
+    frames.
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(130, 'A', this)">
+    (a) <i>l</i> = 2
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(130, 'B', this)">
+    (b) <i>l</i> = 3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(130, 'C', this)">
+    (c) <i>l</i> = 4
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(130, 'D', this)">
+    (d) <i>l</i> = 5
+  </button>
+
+  <p class="year">GATE CSE 2009</p>
+  <div id="explanation131" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 133 -->
+<div class="question">
+  <p class="ques">
+    <b>Q133.</b> Frames of 1000 bits are sent over a 10<sup>6</sup> bps
+    duplex link between two hosts. The propagation
+    time is 25 ms. Frames are to be transmitted into
+    this link to maximally pack them in transit
+    (within the link).
+    <br><br>
+    Suppose that the sliding window protocol is used
+    with the sender window size of 2<sup><i>l</i></sup>, where <i>l</i> is the
+    number of bits identified in the earlier part and
+    acknowledgments are always piggy backed. After
+    sending 2<sup><i>l</i></sup> frames, what is the minimum time
+    the sender will have to wait before starting
+    transmission of the next frame? (Identify the
+    closest choice ignoring the frame processing
+    time).
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(131, 'A', this)">
+    (a) 16 ms
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(131, 'B', this)">
+    (b) 18 ms
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(131, 'C', this)">
+    (c) 20 ms
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(131, 'D', this)">
+    (d) 22 ms
+  </button>
+
+  <p class="year">GATE CSE 2009</p>
+  <div id="explanation132" class="explanation"></div>
+</div>
+
+
+<!-- Question 134 -->
+<div class="question">
+  <p class="ques">
+    <b>Q134.</b> While opening a TCP connection, the initial
+    sequence number is to be derived using a time-
+    of-day (ToD) clock that keeps running even when
+    the host is down. The low order 32 bits of the
+    counter of the ToD clock is to be used for the
+    initial sequence numbers. The clock counter
+    increments once per millisecond. The maximum
+    packet lifetime is given to be 64s.
+    <br><br>
+    Which one of the choices given below is closest to
+    the minimum permissible rate at which sequence
+    numbers used for packets of a connection can
+    increase?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(133, 'A', this)">
+    (a) 0.015/s
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(133, 'B', this)">
+    (b) 0.064/s
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(133, 'C', this)">
+    (c) 0.135/s
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(133, 'D', this)">
+    (d) 0.327/s
+  </button>
+
+  <p class="year">GATE CSE 2009</p>
+  <div id="explanation133" class="explanation"></div>
+</div>
+
+    
+
+<!-- Question 135 -->
+<div class="question">
+  <p class="ques">
+    <b>Q135.</b> How many bytes of data can be sent in 15 seconds
+    over a serial link with baud rate of 9600 in
+    asynchronous mode with odd parity and two stop
+    bits in the frame?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(134, 'A', this)">
+    (a) 10,000 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(134, 'B', this)">
+    (b) 12,000 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(134, 'C', this)">
+    (c) 15,000 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(134, 'D', this)">
+    (d) 27,000 bytes
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation134" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 136 -->
+<div class="question">
+  <p class="ques">
+    <b>Q136.</b> A 1 Mbps satellite link connects two ground
+    stations. The altitude of the satellite is 36,504
+    km and speed of the signal is 3 × 10<sup>8</sup> m/s. What
+    should be the packet size for a channel utilization
+    of 25% for a satellite link using go-back-127
+    sliding window protocol? Assume that the
+    acknowledgment packets are negligible in size and
+    that there are no errors during communication.
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(135, 'A', this)">
+    (a) 120 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(135, 'B', this)">
+    (b) 60 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(135, 'C', this)">
+    (c) 240 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(135, 'D', this)">
+    (d) 90 bytes
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation135" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 137 -->
+<div class="question">
+  <p class="ques">
+    <b>Q137.</b> Data transmitted on a link uses the following
+    2D parity scheme for error detection:
+    <br><br>
+    Each sequence of 28 bits is arranged in a 4 × 7
+    matrix (rows r<sub>0</sub> through r<sub>3</sub>, and columns d<sub>7</sub>
+    through d<sub>1</sub>) and is padded with a column d<sub>0</sub> and
+    row r<sub>4</sub> of parity bits computed using the Even
+    parity scheme. Each bit of column d<sub>0</sub>
+    (respectively, row r<sub>4</sub>) gives the parity of the
+    corresponding row (respectively, column). These
+    40 bits are transmitted over the data link.
+  </p>
+
+  <div class="table-container">
+    <table>
+      <tr>
+        <th></th>
+        <th>d<sub>7</sub></th>
+        <th>d<sub>6</sub></th>
+        <th>d<sub>5</sub></th>
+        <th>d<sub>4</sub></th>
+        <th>d<sub>3</sub></th>
+        <th>d<sub>2</sub></th>
+        <th>d<sub>1</sub></th>
+        <th>d<sub>0</sub></th>
+      </tr>
+      <tr>
+        <th>r<sub>0</sub></th>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th>r<sub>1</sub></th>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>r<sub>2</sub></th>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>r<sub>3</sub></th>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>r<sub>4</sub></th>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+    </table>
+  </div>
+
+  <p class="ques">
+    The table shows data received by a receiver and
+    has n corrupted bits. What is the minimum
+    possible value of n?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(136, 'A', this)">
+    (a) 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(136, 'B', this)">
+    (b) 2
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(136, 'C', this)">
+    (c) 3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(136, 'D', this)">
+    (d) 4
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation136" class="explanation"></div>
+</div>
+
+    
+
+
+<!-- Question 138 -->
+<div class="question">
+  <p class="ques">
+    <b>Q138.</b> The minimum frame size required for a CSMA/CD
+    based computer network running at 1 Gbps
+    on a 200m cable with a link speed of 2 × 10<sup>8</sup> m/s
+    is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(137, 'A', this)">
+    (a) 125 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(137, 'B', this)">
+    (b) 250 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(137, 'C', this)">
+    (c) 500 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(137, 'D', this)">
+    (d) None of these
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation137" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 139 -->
+<div class="question">
+  <p class="ques">
+    <b>Q139.</b> What is the maximum size of data that the
+    application layer can pass on to the TCP layer
+    below?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(138, 'A', this)">
+    (a) Any size
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(138, 'B', this)">
+    (b) 2<sup>16</sup> bytes − size of TCP header
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(138, 'C', this)">
+    (c) 2<sup>16</sup> bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(138, 'D', this)">
+    (d) 1500 bytes
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation138" class="explanation"></div>
+</div>
+
+
+
+    
+<!-- Question 140 -->
+<div class="question">
+  <p class="ques">
+    <b>Q140.</b> Which of the following system calls results in
+    the sending of SYN packets?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(139, 'A', this)">
+    (a) socket
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(139, 'B', this)">
+    (b) bind
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(139, 'C', this)">
+    (c) listen
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(139, 'D', this)">
+    (d) connect
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation139" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 141 -->
+<div class="question">
+  <p class="ques">
+    <b>Q141.</b> Which of the following statements are TRUE?
+    <br>
+    <b>S1:</b> TCP handles both congestion and flow control
+    <br>
+    <b>S2:</b> UDP handles congestion but not flow control
+    <br>
+    <b>S3:</b> Fast retransmit deals with congestion but
+    not flow control
+    <br>
+    <b>S4:</b> Slow start mechanism deals with both
+    congestion and flow control
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(140, 'A', this)">
+    (a) S1, S2 and S3 only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(140, 'B', this)">
+    (b) S1 and S3 only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(140, 'C', this)">
+    (c) S3 and S4 only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(140, 'D', this)">
+    (d) S1, S3 and S4 only
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation140" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 142 -->
+<div class="question">
+  <p class="ques">
+    <b>Q142.</b> The three way handshake for TCP connection
+    establishment is shown below.
+  </p>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg"
+         style="width:100%;max-width:360px;height:auto;display:block;margin:20px auto;">
+
+      <!-- Time axis -->
+      <line x1="90" y1="20" x2="90" y2="235" stroke="#000" stroke-width="2" stroke-dasharray="4,4"/>
+      <line x1="270" y1="20" x2="270" y2="235" stroke="#000" stroke-width="2" stroke-dasharray="4,4"/>
+
+      <!-- Labels -->
+      <text x="48" y="18" font-family="Times New Roman" font-size="18">Client</text>
+      <text x="235" y="18" font-family="Times New Roman" font-size="18">Server</text>
+
+      <!-- Time -->
+      <text x="16" y="140" font-family="Times New Roman" font-size="18">Time</text>
+      <line x1="55" y1="150" x2="55" y2="220" stroke="#000" stroke-width="2"/>
+      <polygon points="55,225 51,217 59,217" fill="#000"/>
+
+      <!-- SYN -->
+      <line x1="95" y1="45" x2="265" y2="75" stroke="#000" stroke-width="2"/>
+      <polygon points="265,75 257,71 259,79" fill="#000"/>
+      <text x="160" y="45" font-family="Times New Roman" font-size="18">SYN</text>
+
+      <!-- SYN+ACK -->
+      <line x1="265" y1="110" x2="95" y2="140" stroke="#000" stroke-width="2"/>
+      <polygon points="95,140 103,136 101,144" fill="#000"/>
+      <text x="145" y="105" font-family="Times New Roman" font-size="18">SYN+ACK</text>
+
+      <!-- ACK -->
+      <line x1="95" y1="175" x2="265" y2="205" stroke="#000" stroke-width="2"/>
+      <polygon points="265,205 257,201 259,209" fill="#000"/>
+      <text x="165" y="175" font-family="Times New Roman" font-size="18">ACK</text>
+    </svg>
+  </div>
+
+  <p class="ques">
+    Which of the following statements are TRUE?
+    <br>
+    <b>S1:</b> Loss of SYN+ACK from the server will not
+    establish a connection
+    <br>
+    <b>S2:</b> Loss of ACK from the client cannot establish
+    the connection
+    <br>
+    <b>S3:</b> The server moves LISTEN → SYN_RCVD
+    → SYN_SENT → ESTABLISHED in the
+    state machine on no packet loss
+    <br>
+    <b>S4:</b> The server moves LISTEN → SYN_RCVD
+    → ESTABLISHED in the state machine on
+    no packet loss.
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(141, 'A', this)">
+    (a) S2 and S3 only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(141, 'B', this)">
+    (b) S1 and S4 only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(141, 'C', this)">
+    (c) S1 and S3 only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(141, 'D', this)">
+    (d) S2 and S4 only
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation141" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 143 -->
+<div class="question">
+  <p class="ques">
+    <b>Q143.</b> Host X has IP address 192.168.1.97 and is connected
+    through two routers R1 and R2 to another host Y with
+    IP address 192.168.1.80. Router R1 has IP addresses
+    192.168.1.135 and 192.168.1.110. R2 has IP addresses
+    192.168.1.67 and 192.168.1.155. The netmask used in
+    the network is 255.255.255.224.
+    <br><br>
+    Given the information above, how many distinct
+    subnets are guaranteed to already exist in the
+    network?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(142, 'A', this)">
+    (a) 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(142, 'B', this)">
+    (b) 2
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(142, 'C', this)">
+    (c) 3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(142, 'D', this)">
+    (d) 6
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation142" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 144 -->
+<div class="question">
+  <p class="ques">
+    <b>Q144.</b> Host X has IP address 192.168.1.97 and is connected
+    through two routers R1 and R2 to another host Y with
+    IP address 192.168.1.80. Router R1 has IP addresses
+    192.168.1.135 and 192.168.1.110. R2 has IP addresses
+    192.168.1.67 and 192.168.1.155. The netmask used in
+    the network is 255.255.255.224.
+    <br><br>
+    Which IP address should X configure its gateway
+    as?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(143, 'A', this)">
+    (a) 192.168.1.67
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(143, 'B', this)">
+    (b) 192.168.1.110
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(143, 'C', this)">
+    (c) 192.168.1.135
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(143, 'D', this)">
+    (d) 192.168.1.155
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation143" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 145 -->
+<div class="question">
+  <p class="ques">
+    <b>Q145.</b> In the slow start phase of the TCP congestion
+    control algorithm, the size of the congestion
+    window
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(144, 'A', this)">
+    (a) Does not increase
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(144, 'B', this)">
+    (b) Increases linearly
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(144, 'C', this)">
+    (c) Increases quadratically
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(144, 'D', this)">
+    (d) Increases exponentially
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation144" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 146 -->
+<div class="question">
+  <p class="ques">
+    <b>Q146.</b> If a class B network on the Internet has a subnet
+    mask of 255.255.248.0, what is the maximum
+    number of hosts per subnet?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(145, 'A', this)">
+    (a) 1022
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(145, 'B', this)">
+    (b) 1023
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(145, 'C', this)">
+    (c) 2046
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(145, 'D', this)">
+    (d) 2047
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation145" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 147 -->
+<div class="question">
+  <p class="ques">
+    <b>Q147.</b> A client process P needs to make a TCP
+    connection to a server process S. Consider the
+    following situation: the server process S executes
+    a socket(), a bind() and a listen() system call
+    in that order, following which it is preempted.
+    Subsequently, the client process P executes a
+    socket() system call followed by connect()
+    system call to connect to the server process S.
+    The server process has not executed any accept()
+    system call. Which one of the following events
+    could take place?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(146, 'A', this)">
+    (a) connect() system call returns successfully
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(146, 'B', this)">
+    (b) connect() system call blocks
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(146, 'C', this)">
+    (c) connect() system call returns an error
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(146, 'D', this)">
+    (d) connect() system call results in a core dump
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation146" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 148 -->
+<div class="question">
+  <p class="ques">
+    <b>Q148.</b> Two popular routing algorithms are Distance
+    Vector (DV) and Link State (LS) routing. Which
+    of the following are true?
+    <br>
+    <b>S1:</b> Count to infinity is a problem only with DV
+    and not LS routing
+    <br>
+    <b>S2:</b> In LS, the shortest path algorithm is run
+    only at one node
+    <br>
+    <b>S3:</b> In DV, the shortest path algorithm is run
+    only at one node
+    <br>
+    <b>S4:</b> DV requires lesser number of network
+    messages than LS
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(147, 'A', this)">
+    (a) S1, S2 and S4 only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(147, 'B', this)">
+    (b) S2 and S3 only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(147, 'C', this)">
+    (c) S1, S2 and S3 only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(147, 'D', this)">
+    (d) S1 and S4 only
+  </button>
+
+  <p class="year">GATE CSE 2008</p>
+  <div id="explanation147" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 149 -->
+<div class="question">
+  <p class="ques">
+    <b>Q149.</b> The message 11001001 is to be transmitted using
+    the CRC polynomial x<sup>3</sup> + 1 to protect it from
+    errors. The message that should be transmitted
+    is:
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(148, 'A', this)">
+    (a) 11001001000
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(148, 'B', this)">
+    (b) 11001001011
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(148, 'C', this)">
+    (c) 11001010
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(148, 'D', this)">
+    (d) 110010010011
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation148" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 150 -->
+<div class="question">
+  <p class="ques">
+    <b>Q150.</b> An error correcting code has the following code
+    words: 00000000, 00001111, 01010101, 10101010,
+    11110000. What is the maximum number of bit
+    errors that can be corrected?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(149, 'A', this)">
+    (a) 0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(149, 'B', this)">
+    (b) 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(149, 'C', this)">
+    (c) 2
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(149, 'D', this)">
+    (d) 3
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation149" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 151 -->
+<div class="question">
+  <p class="ques">
+    <b>Q151.</b> In the waveform (a) given below, a bit stream is
+    encoded by Manchester encoding scheme. The
+    same bit stream is encoded in a different coding
+    scheme in wave form (b). The bit stream and the
+    coding scheme are
+  </p>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 420 240" xmlns="http://www.w3.org/2000/svg"
+         style="width:100%;max-width:420px;height:auto;display:block;margin:20px auto;">
+
+      <!-- Vertical bit boundaries -->
+      <g stroke="#777" stroke-width="1" stroke-dasharray="4,4">
+        <line x1="20" y1="20" x2="20" y2="210"/>
+        <line x1="50" y1="20" x2="50" y2="210"/>
+        <line x1="80" y1="20" x2="80" y2="210"/>
+        <line x1="110" y1="20" x2="110" y2="210"/>
+        <line x1="140" y1="20" x2="140" y2="210"/>
+        <line x1="170" y1="20" x2="170" y2="210"/>
+        <line x1="200" y1="20" x2="200" y2="210"/>
+        <line x1="230" y1="20" x2="230" y2="210"/>
+        <line x1="260" y1="20" x2="260" y2="210"/>
+        <line x1="290" y1="20" x2="290" y2="210"/>
+        <line x1="320" y1="20" x2="320" y2="210"/>
+        <line x1="350" y1="20" x2="350" y2="210"/>
+      </g>
+
+      <!-- Waveform (a) -->
+      <polyline fill="none" stroke="#000" stroke-width="2"
+        points="20,45 35,45 35,80 50,80 50,45 65,45 65,80 80,80 80,45
+                95,45 95,80 110,80 110,45 125,45 125,80 140,80 140,45
+                170,45 170,80 200,80 200,45 230,45 230,80 245,80 245,45
+                260,45 260,80 275,80 275,45 290,45 290,80 305,80 305,45
+                320,45 335,45 335,80 350,80"/>
+
+      <!-- Waveform (b) -->
+      <polyline fill="none" stroke="#000" stroke-width="2"
+        points="20,125 35,125 35,160 50,160 50,125 65,125 65,160 80,160
+                80,125 95,125 95,160 110,160 110,125 125,125 125,160
+                170,160 170,125 200,125 200,160 230,160 230,125 260,125
+                260,160 305,160 305,125 350,125"/>
+
+      <text x="365" y="68" font-family="Times New Roman" font-size="18">(a)</text>
+      <text x="365" y="150" font-family="Times New Roman" font-size="18">(b)</text>
+    </svg>
+  </div>
+
+  <button class="option-btn" onclick="checkAnswer(150, 'A', this)">
+    (a) 1000010111 and Differential Manchester respectively
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(150, 'B', this)">
+    (b) 0111101000 and Differential Manchester respectively
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(150, 'C', this)">
+    (c) 1000010111 and Integral Manchester respectively
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(150, 'D', this)">
+    (d) 0111101000 and Integral Manchester respectively
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation150" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 152 -->
+<div class="question">
+  <p class="ques">
+    <b>Q152.</b> Let us consider a statistical time division
+    multiplexing of packets. The number of sources
+    is 10. In a time unit, a source transmits a packet
+    of 1000 bits. The number of sources sending data
+    for the first 20 time units is 6, 9, 3, 7, 2, 2, 2, 3,
+    4, 6, 1, 10, 7, 5, 8, 3, 6, 2, 9, 5 respectively. The
+    output capacity of multiplexer is 5000 bits per
+    time unit. Then the average number of
+    backlogged of packets per time unit during the
+    given period is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(151, 'A', this)">
+    (a) 5
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(151, 'B', this)">
+    (b) 4.45
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(151, 'C', this)">
+    (c) 3.45
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(151, 'D', this)">
+    (d) 0
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation151" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 153 -->
+<div class="question">
+  <p class="ques">
+    <b>Q153.</b> You are given the following four bytes :
+    <br><br>
+    10100011 00110111 11101001 10101011
+    <br><br>
+    Which of the following are substrings of the base
+    64 encoding of the above four bytes?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(152, 'A', this)">
+    (a) zdp
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(152, 'B', this)">
+    (b) fpq
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(152, 'C', this)">
+    (c) qwA
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(152, 'D', this)">
+    (d) oze
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation152" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 154 -->
+<div class="question">
+  <p class="ques">
+    <b>Q154.</b> In Ethernet when Manchester encoding is used,
+    the bit rate is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(153, 'A', this)">
+    (a) Half the baud rate
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(153, 'B', this)">
+    (b) Twice the baud rate
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(153, 'C', this)">
+    (c) Same as the baud rate
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(153, 'D', this)">
+    (d) None of these
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation153" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 155 -->
+<div class="question">
+  <p class="ques">
+    <b>Q155.</b> A broadcast channel has 10 nodes and total
+    capacity of 10 Mbps. It uses polling for medium
+    access. Once a node finishes transmission, there
+    is a polling delay of 80 µs to poll the next node.
+    Whenever a node is polled, it is allowed to
+    transmit a maximum of 1000 bytes. The
+    maximum throughput of the broadcast channel
+    is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(154, 'A', this)">
+    (a) 1 Mbps
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(154, 'B', this)">
+    (b) 100/11 Mbps
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(154, 'C', this)">
+    (c) 10 Mbps
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(154, 'D', this)">
+    (d) 100 Mbps
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation154" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 156 -->
+<div class="question">
+  <p class="ques">
+    <b>Q156.</b> There are n stations in a slotted LAN. Each
+    station attempts to transmit with a probability
+    p in each time slot. What is the probability that
+    ONLY one station transmits in a given time slot?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(155, 'A', this)">
+    (a) np(1 − p)<sup>n−1</sup>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(155, 'B', this)">
+    (b) (1 − p)<sup>n−1</sup>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(155, 'C', this)">
+    (c) p(1 − p)<sup>n−1</sup>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(155, 'D', this)">
+    (d) 1 − (1 − p)<sup>n−1</sup>
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation155" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 157 -->
+<div class="question">
+  <p class="ques">
+    <b>Q157.</b> The distance between two stations M and N is L
+    kilometres. All frames are K bits long. The
+    propagation delay per kilometre is t seconds. Let
+    R bits/second be the channel capacity. Assuming
+    that processing delay is negligible, the minimum
+    number of bits for the sequence number field in a
+    frame for maximum utilization, when the sliding
+    window protocol is used, is:
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(156, 'A', this)">
+    (a) ⌈log<sub>2</sub>((2LtR + 2K)/K)⌉
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(156, 'B', this)">
+    (b) ⌈log<sub>2</sub>(2LtR/K)⌉
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(156, 'C', this)">
+    (c) ⌈log<sub>2</sub>((2LtR + K)/K)⌉
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(156, 'D', this)">
+    (d) ⌈log<sub>2</sub>((2LtR + K)/2K)⌉
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation156" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 158 -->
+<div class="question">
+  <p class="ques">
+    <b>Q158.</b> Consider the following statements about the
+    timeout value used in TCP.
+    <br><br>
+    (i)&nbsp;&nbsp;The timeout value is set to the RTT (Round
+    Trip Time) measured during TCP connection
+    establishment for the entire duration of the
+    connection.
+    <br><br>
+    (ii)&nbsp;&nbsp;Appropriate RTT estimation algorithm is
+    used to set the timeout value of a TCP
+    connection.
+    <br><br>
+    (iii)&nbsp;&nbsp;Timeout value is set to twice the propagation
+    delay from the sender to the receiver.
+    <br><br>
+    Which of the following choices hold?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(157, 'A', this)">
+    (a) (i) is false, but (ii) and (iii) are true
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(157, 'B', this)">
+    (b) (i) and (iii) are false, but (ii) is true
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(157, 'C', this)">
+    (c) (i) and (ii) are false, but (iii) is true
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(157, 'D', this)">
+    (d) (i), (ii) and (iii) are false
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation157" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 159 -->
+<div class="question">
+  <p class="ques">
+    <b>Q159.</b> Consider a TCP connection in a state where there
+    are no outstanding ACKs. The sender sends two
+    segments back to back. The sequence numbers
+    of the first and second segments are 230 and 290
+    respectively. The first segment was lost, but the
+    second segment was received correctly by the
+    receiver.
+    <br><br>
+    Let X be the amount of data carried in the first
+    segment (in bytes), and Y be the ACK number
+    sent by the receiver. The values of X and Y (in
+    that order) are
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(158, 'A', this)">
+    (a) 60 and 290
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(158, 'B', this)">
+    (b) 230 and 291
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(158, 'C', this)">
+    (c) 60 and 231
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(158, 'D', this)">
+    (d) 60 and 230
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation158" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 160 -->
+<div class="question">
+  <p class="ques">
+    <b>Q160.</b> The address of a class B host is to be split into
+    subnets with a 6-bit subnet number. What is the
+    maximum number of subnets and the maximum
+    number of hosts in each subnet?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(159, 'A', this)">
+    (a) 62 subnets and 262142 hosts
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(159, 'B', this)">
+    (b) 64 subnets and 262142 hosts
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(159, 'C', this)">
+    (c) 62 subnets and 1022 hosts
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(159, 'D', this)">
+    (d) 64 subnets and 1024 hosts
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation159" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 161 -->
+<div class="question">
+  <p class="ques">
+    <b>Q161.</b> Which one of the following uses UDP as the
+    transport protocol?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(160, 'A', this)">
+    (a) HTTP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(160, 'B', this)">
+    (b) Telnet
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(160, 'C', this)">
+    (c) DNS
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(160, 'D', this)">
+    (d) SMTP
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation160" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 162 -->
+<div class="question">
+  <p class="ques">
+    <b>Q162.</b> A firewall is to be configured to allow hosts in a
+    private network to freely open TCP connections
+    and send packets on open connections. However,
+    it will only allow external hosts to send packets
+    on existing open TCP connections or connections
+    that are being opened (by internal hosts) but
+    not allow them to open TCP connections to hosts
+    in the private network. To achieve this the
+    minimum capability of the firewall should be
+    that of
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(161, 'A', this)">
+    (a) A combinational circuit
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(161, 'B', this)">
+    (b) A finite automaton
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(161, 'C', this)">
+    (c) A pushdown automaton with one stack
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(161, 'D', this)">
+    (d) A pushdown automaton with two stacks
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation161" class="explanation"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
     
     
