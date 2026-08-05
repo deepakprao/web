@@ -1371,40 +1371,390 @@ td {
 
 
 
+<!-- Question 43 -->
+<div class="question">
+  <p class="ques">
+    <b>Q43.</b> Consider the three-way handshake mechanism followed during TCP connection establishment between hosts P and Q. Let X and Y be two random 32-bit starting sequence numbers chosen by P and Q respectively. Suppose P sends a TCP connection request message to Q with a TCP segment having SYN bit = 1, SEQ number = X, and ACK bit = 0. Suppose Q accepts the connection request. Which one of the following choices represents the information present in the TCP segment header that is sent by Q to P?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(42, 'A', this)">
+    A) SYN bit = 1, SEQ number = X+1, ACK bit = 0, ACK number = Y, FIN bit = 0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(42, 'B', this)">
+    B) SYN bit = 0, SEQ number = X+1, ACK bit = 0, ACK number = Y, FIN bit = 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(42, 'C', this)">
+    C) SYN bit = 1, SEQ number = Y, ACK bit = 1, ACK number = X+1, FIN bit = 0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(42, 'D', this)">
+    D) SYN bit = 1, SEQ number = Y, ACK bit = 1, ACK number = X, FIN bit = 0
+  </button>
+
+  <p class="year">GATE CSE 2021 Session 2</p>
+  <div id="explanation42" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 44 -->
+<div class="question">
+  <p class="ques">
+    <b>Q44.</b> Consider the cyclic redundancy check (CRC) based error detecting scheme having
+    the generator polynomial X<sup>3</sup>+X+1. Suppose the message
+    <i>m</i><sub>4</sub><i>m</i><sub>3</sub><i>m</i><sub>2</sub><i>m</i><sub>1</sub><i>m</i><sub>0</sub> = 11000
+    is to be transmitted. Check bits
+    <i>c</i><sub>2</sub><i>c</i><sub>1</sub><i>c</i><sub>0</sub>
+    are appended at the end of the message by the transmitter using the above CRC scheme.
+    The transmitted bit string is denoted by
+    <i>m</i><sub>4</sub><i>m</i><sub>3</sub><i>m</i><sub>2</sub><i>m</i><sub>1</sub><i>m</i><sub>0</sub><i>c</i><sub>2</sub><i>c</i><sub>1</sub><i>c</i><sub>0</sub>.
+    The value of the checkbit sequence
+    <i>c</i><sub>2</sub><i>c</i><sub>1</sub><i>c</i><sub>0</sub> is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(43, 'A', this)">
+    A) 101
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(43, 'B', this)">
+    B) 110
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(43, 'C', this)">
+    C) 100
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(43, 'D', this)">
+    D) 111
+  </button>
+
+  <p class="year">GATE CSE 2021 Session 2</p>
+  <div id="explanation43" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 45 -->
+<div class="question">
+  <p class="ques">
+    <b>Q45.</b> Consider a computer network using the distance vector routing algorithm in its
+    network layer. The partial topology of the network is as shown below.
+  </p>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg"
+         style="width:100%; max-width:420px; height:auto; display:block; margin:20px auto;">
+
+      <!-- Links -->
+      <line x1="210" y1="35" x2="120" y2="100" stroke="#000" stroke-width="2"/>
+      <line x1="210" y1="35" x2="210" y2="100" stroke="#000" stroke-width="2"/>
+      <line x1="210" y1="35" x2="300" y2="100" stroke="#000" stroke-width="2"/>
+
+      <line x1="120" y1="100" x2="95" y2="145" stroke="#000" stroke-width="2"/>
+      <line x1="120" y1="100" x2="145" y2="145" stroke="#000" stroke-width="2"/>
+
+      <line x1="210" y1="100" x2="185" y2="145" stroke="#000" stroke-width="2"/>
+      <line x1="210" y1="100" x2="235" y2="145" stroke="#000" stroke-width="2"/>
+
+      <line x1="300" y1="100" x2="275" y2="145" stroke="#000" stroke-width="2"/>
+      <line x1="300" y1="100" x2="325" y2="145" stroke="#000" stroke-width="2"/>
+
+      <line x1="185" y1="145" x2="175" y2="190" stroke="#000" stroke-width="2"/>
+      <line x1="275" y1="145" x2="285" y2="190" stroke="#000" stroke-width="2"/>
+
+      <!-- Nodes -->
+      <circle cx="210" cy="35" r="8" fill="#000"/>
+      <circle cx="120" cy="100" r="8" fill="#000"/>
+      <circle cx="210" cy="100" r="8" fill="#000"/>
+      <circle cx="300" cy="100" r="8" fill="#000"/>
+      <circle cx="175" cy="190" r="8" fill="#000"/>
+      <circle cx="285" cy="190" r="8" fill="#000"/>
+
+      <!-- Labels -->
+      <text x="203" y="20" font-family="Times New Roman" font-size="18">R</text>
+      <text x="108" y="92" font-family="Times New Roman" font-size="18">X</text>
+      <text x="198" y="92" font-family="Times New Roman" font-size="18">Y</text>
+      <text x="308" y="92" font-family="Times New Roman" font-size="18">Z</text>
+
+      <text x="98" y="145" font-family="Times New Roman" font-size="18">...</text>
+      <text x="188" y="145" font-family="Times New Roman" font-size="18">...</text>
+      <text x="278" y="145" font-family="Times New Roman" font-size="18">...</text>
+
+      <text x="165" y="212" font-family="Times New Roman" font-size="18">Q</text>
+      <text x="280" y="212" font-family="Times New Roman" font-size="18">P</text>
+    </svg>
+  </div>
+
+  <p class="ques">
+    The objective is to find the shortest-cost path from the router R to routers P and Q.
+    Assume that R does not initially know the shortest routes to P and Q. Assume that
+    R has three neighbouring routers denoted as X, Y, and Z. During one iteration,
+    R measures its distance to its neighbours X, Y, and Z as 3, 2, and 5, respectively.
+    Router R gets routing vectors from its neighbours that indicate that the distance
+    to router P from routers X, Y, and Z are 7, 6, and 5, respectively. The routing
+    vector also indicates that the distance to router Q from routers X, Y, and Z are
+    4, 6, and 8, respectively. Which of the following statement(s) is/are correct with
+    respect to the new routing table of R, after updation during this iteration?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(44, 'A', this)">
+    A) The distance from R to P will be stored as 10.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(44, 'B', this)">
+    B) The distance from R to Q will be stored as 7.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(44, 'C', this)">
+    C) The next hop router for a packet from R to P is Y.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(44, 'D', this)">
+    D) The next hop router for a packet from R to Q is Z.
+  </button>
+
+  <p class="year">GATE CSE 2021 Session 2</p>
+  <div id="explanation44" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 46 -->
+<div class="question">
+  <p class="ques">
+    <b>Q46.</b> Consider a network using the pure ALOHA medium access control protocol, where
+    each frame is of length 1,000 bits. The channel transmission rate is 1 Mbps (= 10<sup>6</sup>
+    bits per second). The aggregate number of transmissions across all the nodes (including new frame transmissions and retransmitted frames due to collisions) is
+    modelled as a Poisson process with a rate of 1,000 frames per second. Throughput
+    is defined as the average number of frames successfully transmitted per second. The
+    throughput of the network (rounded to the nearest integer) is __________.
+  </p>
+
+  <p class="year">GATE CSE 2021 Session 2</p>
+  <div id="explanation45" class="explanation"></div>
+</div>
 
 
 
 
 
+<!-- Question 47 -->
+<div class="question">
+  <p class="ques">
+    <b>Q47.</b> Consider the following two statements.
+    <br><br>
+    <i>S</i><sub>1</sub> :&emsp;Destination MAC address of an ARP reply is a broadcast address.
+    <br>
+    <i>S</i><sub>2</sub> :&emsp;Destination MAC address of an ARP request is a broadcast address.
+    <br><br>
+    Which one of the following choices is correct?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(46, 'A', this)">
+    A) Both <i>S</i><sub>1</sub> and <i>S</i><sub>2</sub> are true.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(46, 'B', this)">
+    B) <i>S</i><sub>1</sub> is true and <i>S</i><sub>2</sub> is false.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(46, 'C', this)">
+    C) <i>S</i><sub>1</sub> is false and <i>S</i><sub>2</sub> is true.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(46, 'D', this)">
+    D) Both <i>S</i><sub>1</sub> and <i>S</i><sub>2</sub> are false.
+  </button>
+
+  <p class="year">GATE CSE 2021 Session 1</p>
+  <div id="explanation46" class="explanation"></div>
+</div>
 
 
 
 
+<!-- Question 48 -->
+<div class="question">
+  <p class="ques">
+    <b>Q48.</b> Assume that a 12-bit Hamming codeword consisting of 8-bit data and 4 check bits
+    is
+    <i>d</i><sub>8</sub><i>d</i><sub>7</sub><i>d</i><sub>6</sub><i>d</i><sub>5</sub><i>c</i><sub>8</sub><i>d</i><sub>4</sub><i>d</i><sub>3</sub><i>d</i><sub>2</sub><i>c</i><sub>4</sub><i>d</i><sub>1</sub><i>c</i><sub>2</sub><i>c</i><sub>1</sub>,
+    where the data bits and the check bits are given in the following tables:
+  </p>
+
+  <div style="display:flex; justify-content:center; align-items:flex-start; gap:40px; flex-wrap:wrap; margin:20px 0;">
+
+    <table style="border-collapse:collapse; font-family:'Times New Roman', serif; font-size:18px;">
+      <tr>
+        <th colspan="8" style="border:1px solid #000; padding:6px 12px;">Data bits</th>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>d</i><sub>8</sub></td>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>d</i><sub>7</sub></td>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>d</i><sub>6</sub></td>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>d</i><sub>5</sub></td>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>d</i><sub>4</sub></td>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>d</i><sub>3</sub></td>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>d</i><sub>2</sub></td>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>d</i><sub>1</sub></td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;">1</td>
+        <td style="border:1px solid #000; padding:6px 12px;">1</td>
+        <td style="border:1px solid #000; padding:6px 12px;">0</td>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>x</i></td>
+        <td style="border:1px solid #000; padding:6px 12px;">0</td>
+        <td style="border:1px solid #000; padding:6px 12px;">1</td>
+        <td style="border:1px solid #000; padding:6px 12px;">0</td>
+        <td style="border:1px solid #000; padding:6px 12px;">1</td>
+      </tr>
+    </table>
+
+    <table style="border-collapse:collapse; font-family:'Times New Roman', serif; font-size:18px;">
+      <tr>
+        <th colspan="4" style="border:1px solid #000; padding:6px 12px;">Check bits</th>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>c</i><sub>8</sub></td>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>c</i><sub>4</sub></td>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>c</i><sub>2</sub></td>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>c</i><sub>1</sub></td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;"><i>y</i></td>
+        <td style="border:1px solid #000; padding:6px 12px;">0</td>
+        <td style="border:1px solid #000; padding:6px 12px;">1</td>
+        <td style="border:1px solid #000; padding:6px 12px;">0</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <p class="ques">
+    Which one of the following choices gives the correct values of <i>x</i> and <i>y</i>?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(47, 'A', this)">
+    A) <i>x</i> is 0 and <i>y</i> is 0.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(47, 'B', this)">
+    B) <i>x</i> is 0 and <i>y</i> is 1.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(47, 'C', this)">
+    C) <i>x</i> is 1 and <i>y</i> is 0.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(47, 'D', this)">
+    D) <i>x</i> is 1 and <i>y</i> is 1.
+  </button>
+
+  <p class="year">GATE CSE 2021 Session 1</p>
+  <div id="explanation47" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 49 -->
+<div class="question">
+  <p class="ques">
+    <b>Q49.</b> A TCP server application is programmed to listen on port number <i>P</i> on host <i>S</i>. A
+    TCP client is connected to the TCP server over the network.
+    <br>
+    Consider that while the TCP connection was active, the server machine <i>S</i> crashed
+    and rebooted. Assume that the client does not use the TCP keepalive timer.
+    <br>
+    Which of the following behaviors is/are possible?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(48, 'A', this)">
+    A) If the client was waiting to receive a packet, it may wait indefinitely.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(48, 'B', this)">
+    B) The TCP server application on <i>S</i> can listen on <i>P</i> after reboot.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(48, 'C', this)">
+    C) If the client sends a packet after the server reboot, it will receive a RST segment.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(48, 'D', this)">
+    D) If the client sends a packet after the server reboot, it will receive a FIN segment.
+  </button>
+
+  <p class="year">GATE CSE 2021 Session 1</p>
+  <div id="explanation48" class="explanation"></div>
+</div>
+
+<!-- Question 50 -->
+<div class="question">
+  <p class="ques">
+    <b>Q50.</b> Consider two hosts <i>P</i> and <i>Q</i> connected through a router <i>R</i>. The maximum transfer
+    unit (MTU) value of the link between <i>P</i> and <i>R</i> is 1500 bytes, and between <i>R</i> and
+    <i>Q</i> is 820 bytes.
+    <br>
+    A TCP segment of size 1400 bytes was transferred from <i>P</i> to <i>Q</i> through <i>R</i>, with IP
+    identification value as 0x1234. Assume that the IP header size is 20 bytes. Further,
+    the packet is allowed to be fragmented, i.e., Don’t Fragment (DF) flag in the IP
+    header is <i>not</i> set by <i>P</i>.
+    <br>
+    Which of the following statements is/are correct?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(49, 'A', this)">
+    A) Two fragments are created at <i>R</i> and the IP datagram size carrying the second fragment is 620 bytes.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(49, 'B', this)">
+    B) If the second fragment is lost, <i>R</i> will resend the fragment with the IP identification value 0x1234.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(49, 'C', this)">
+    C) If the second fragment is lost, <i>P</i> is required to resend the whole TCP segment.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(49, 'D', this)">
+    D) TCP destination port can be determined by analysing <i>only</i> the second fragment.
+  </button>
+
+  <p class="year">GATE CSE 2021 Session 1</p>
+  <div id="explanation49" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 51 -->
+<div class="question">
+  <p class="ques">
+    <b>Q51.</b> Consider the sliding window flow-control protocol operating between a sender and
+    a receiver over a full-duplex error-free link. Assume the following:
+    <br>
+    ● The time taken for processing the data frame by the receiver is negligible.
+    <br>
+    ● The time taken for processing the acknowledgement frame by the sender is negligible.
+    <br>
+    ● The sender has infinite number of frames available for transmission.
+    <br>
+    ● The size of the data frame is 2,000 bits and the size of the acknowledgement frame is 10 bits.
+    <br>
+    ● The link data rate in each direction is 1 Mbps (= 10<sup>6</sup> bits per second).
+    <br>
+    ● One way propagation delay of the link is 100 milliseconds.
+    <br>
+    The minimum value of the sender’s window size in terms of the number of frames,
+    (rounded to the nearest integer) needed to achieve a link utilization of 50% is
+    __________.
+  </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <p class="year">GATE CSE 2021 Session 1</p>
+  <div id="explanation50" class="explanation"></div>
+</div>
 
 
 
