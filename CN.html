@@ -2817,22 +2817,1516 @@ td {
 
 
 
+<!-- Question 89 -->
+<div class="question">
+  <p class="ques">
+    <b>Q89.</b> A link has a transmission speed of 10<sup>6</sup> bits/sec.
+    <br>
+    It uses data packets of size 1000 bytes each.
+    <br>
+    Assume that the acknowledgment has negligible
+    transmission delay, and that its propagation
+    delay is the same as the data propagation delay.
+    <br>
+    Also assume that the processing delays at nodes
+    are negligible. The efficiency of the stop-and-wait
+    protocol in this setup is exactly 25%. The value
+    of the one-way propagation delay (in milliseconds)
+    is __________.
+  </p>
+
+  <p class="year">GATE CSE 2015 Session 2</p>
+  <div id="explanation88" class="explanation"></div>
+</div>
 
 
 
 
 
+<!-- Question 90 -->
+<div class="question">
+  <p class="ques">
+    <b>Q90.</b> Identify the correct order in which a server
+    process must invoke the function calls <b>accept</b>,
+    <b>bind</b>, <b>listen</b>, and <b>recv</b> according to UNIX socket
+    API.
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(89, 'A', this)">
+    (a) listen, accept, bind, recv
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(89, 'B', this)">
+    (b) bind, listen, accept, recv
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(89, 'C', this)">
+    (c) bind, accept, listen, recv
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(89, 'D', this)">
+    (d) accept, listen, bind, recv
+  </button>
+
+  <p class="year">GATE CSE 2015 Session 2</p>
+  <div id="explanation89" class="explanation"></div>
+</div>
+
+
+
+    
+<!-- Question 91 -->
+<div class="question">
+  <p class="ques">
+    <b>Q91.</b> Assume that the bandwidth for a TCP connection
+    is 1048560 bits/sec. Let α be the value of RTT in
+    milliseconds (rounded off to the nearest integer)
+    after which the TCP window scale option is
+    needed. Let β be the maximum possible window
+    size with window scale option. Then the values of
+    α and β are
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(90, 'A', this)">
+    (a) 63 milliseconds 65535 × 2<sup>14</sup>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(90, 'B', this)">
+    (b) 63 milliseconds 65535 × 2<sup>16</sup>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(90, 'C', this)">
+    (c) 500 milliseconds 65535 × 2<sup>14</sup>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(90, 'D', this)">
+    (d) 500 milliseconds 65535 × 2<sup>16</sup>
+  </button>
+
+  <p class="year">GATE CSE 2015 Session 2</p>
+  <div id="explanation90" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 92 -->
+<div class="question">
+  <p class="ques">
+    <b>Q92.</b> Consider the following routing table at an IP
+    router:
+  </p>
+
+  <div style="display:flex; justify-content:center; margin:20px 0;">
+    <table style="border-collapse:collapse; font-family:'Times New Roman', serif; font-size:18px;">
+      <tr>
+        <th style="border:1px solid #000; padding:6px 12px;">Network No.</th>
+        <th style="border:1px solid #000; padding:6px 12px;">Net Mask</th>
+        <th style="border:1px solid #000; padding:6px 12px;">Next Hop</th>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;">128.96.170.0</td>
+        <td style="border:1px solid #000; padding:6px 12px;">255.255.254.0</td>
+        <td style="border:1px solid #000; padding:6px 12px;">Interface 0</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;">128.96.168.0</td>
+        <td style="border:1px solid #000; padding:6px 12px;">255.255.254.0</td>
+        <td style="border:1px solid #000; padding:6px 12px;">Interface 1</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;">128.96.166.0</td>
+        <td style="border:1px solid #000; padding:6px 12px;">255.255.254.0</td>
+        <td style="border:1px solid #000; padding:6px 12px;">R2</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;">128.96.164.0</td>
+        <td style="border:1px solid #000; padding:6px 12px;">255.255.252.0</td>
+        <td style="border:1px solid #000; padding:6px 12px;">R3</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;">0.0.0.0</td>
+        <td style="border:1px solid #000; padding:6px 12px;">Default</td>
+        <td style="border:1px solid #000; padding:6px 12px;">R4</td>
+      </tr>
+    </table>
+  </div>
+
+  <p class="ques">
+    For each IP address in Group-Iidentify the correct
+    choice of the next hop from Group-II using the
+    entries from the routing table above.
+  </p>
+
+  <div style="display:flex; justify-content:center; gap:80px; flex-wrap:wrap; margin:20px 0; font-family:'Times New Roman', serif; font-size:18px;">
+    <div>
+      <b>List-I</b><br><br>
+      A.&nbsp;&nbsp;128.96.171.92<br>
+      B.&nbsp;&nbsp;128.96.167.151<br>
+      C.&nbsp;&nbsp;128.96.163.121<br>
+      D.&nbsp;&nbsp;128.96.165.121
+    </div>
+
+    <div>
+      <b>List-II</b><br><br>
+      1.&nbsp;&nbsp;Interface 0<br>
+      2.&nbsp;&nbsp;Interface 1<br>
+      3.&nbsp;&nbsp;R2<br>
+      4.&nbsp;&nbsp;R3<br>
+      5.&nbsp;&nbsp;R4
+    </div>
+  </div>
+
+  <p class="ques"><b>Codes:</b></p>
+
+  <button class="option-btn" onclick="checkAnswer(91, 'A', this)">
+    (a)&emsp;A&nbsp;&nbsp;B&nbsp;&nbsp;C&nbsp;&nbsp;D<br>
+    &emsp;&emsp;1&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;4
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(91, 'B', this)">
+    (b)&emsp;A&nbsp;&nbsp;B&nbsp;&nbsp;C&nbsp;&nbsp;D<br>
+    &emsp;&emsp;1&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;5
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(91, 'C', this)">
+    (c)&emsp;A&nbsp;&nbsp;B&nbsp;&nbsp;C&nbsp;&nbsp;D<br>
+    &emsp;&emsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;5
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(91, 'D', this)">
+    (d)&emsp;A&nbsp;&nbsp;B&nbsp;&nbsp;C&nbsp;&nbsp;D<br>
+    &emsp;&emsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;4
+  </button>
+
+  <p class="year">GATE CSE 2015 Session 2</p>
+  <div id="explanation91" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 93 -->
+<div class="question">
+  <p class="ques">
+    <b>Q93.</b> Host A sends a UDP datagram containing 8880
+    bytes of user data to host B over an Ethernet
+    LAN. Ethernet frames may carry data up to 1500
+    bytes (i.e. MTU =1500 bytes). Size of UDP header
+    is 8 bytes and size of IP header is 20 bytes. There
+    is no option field in IP header. How may total
+    number of IP fragments will be transmitted and
+    what will be the contents of offset field in the last
+    fragment?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(92, 'A', this)">
+    (a) 6 and 925
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(92, 'B', this)">
+    (b) 6 and 7400
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(92, 'C', this)">
+    (c) 7 and 1110
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(92, 'D', this)">
+    (d) 7 and 8880
+  </button>
+
+  <p class="year">GATE CSE 2015 Session 2</p>
+  <div id="explanation92" class="explanation"></div>
+</div>
 
 
 
 
+<!-- Question 94 -->
+<div class="question">
+  <p class="ques">
+    <b>Q94.</b> Suppose that the stop-and-wait protocol is used
+    on a link with a bit rate of 64 kilobits per second
+    and 20 milliseconds propagation delay. Assume
+    that the transmission time for the
+    acknowledgment and the processing time at nodes
+    are negligible. Then the minimum frame size in
+    bytes to achieve a link utilization of at least 50%
+    is __________.
+  </p>
+
+  <p class="year">GATE CSE 2015 Session 1</p>
+  <div id="explanation93" class="explanation"></div>
+</div>
 
 
 
 
+<!-- Question 95 -->
+<div class="question">
+  <p class="ques">
+    <b>Q95.</b> Consider a LAN with four nodes <i>S</i><sub>1</sub>, <i>S</i><sub>2</sub>, <i>S</i><sub>3</sub> and
+    <i>S</i><sub>4</sub>. Time is divided into fixed-size slots, and a
+    node can begin its transmission only at the
+    beginning of a slot. A collision is said to have
+    occurred if more than one node transmit in the
+    same slot. The probabilities of generation of a
+    frame in a time slot by <i>S</i><sub>1</sub>, <i>S</i><sub>2</sub>, <i>S</i><sub>3</sub> and
+    <i>S</i><sub>4</sub> are 0.1, 0.2, 0.3 and 0.4, respectively. The probability of
+    sending a frame in the first slot without any
+    collision by any of these four stations is ______.
+  </p>
+
+  <p class="year">GATE CSE 2015 Session 1</p>
+  <div id="explanation94" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 96 -->
+<div class="question">
+  <p class="ques">
+    <b>Q96.</b> Suppose two hosts use a TCP connection to
+    transfer a large file. Which of the following
+    statements is/are FALSE with respect to the TCP
+    connection?
+    <br><br>
+    1.&emsp;If the sequence number of a segment is m,
+    then the sequence number of the subsequent
+    segment is always m+1.
+    <br><br>
+    2.&emsp;If the estimated round trip time at any given
+    point of time is <i>t</i> sec, the value of the
+    retransmission timeout is always set to
+    greater than or equal to <i>t</i> sec.
+    <br><br>
+    3.&emsp;The size of the advertised window never
+    changes during the course of the TCP
+    connection.
+    <br><br>
+    4.&emsp;The number of unacknowledged bytes at the
+    sender is always less than or equal to the
+    advertised window.
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(95, 'A', this)">
+    (a) 3 only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(95, 'B', this)">
+    (b) 1 and 3 only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(95, 'C', this)">
+    (c) 1 and 4 only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(95, 'D', this)">
+    (d) 2 and 4 only
+  </button>
+
+  <p class="year">GATE CSE 2015 Session 1</p>
+  <div id="explanation95" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 97 -->
+<div class="question">
+  <p class="ques">
+    <b>Q97.</b> Which one of the following fields of an IP header
+    is NOT modified by a typical IP router?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(96, 'A', this)">
+    (a) Checksum
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(96, 'B', this)">
+    (b) Source address
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(96, 'C', this)">
+    (c) Time to Live (TTL)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(96, 'D', this)">
+    (d) Length
+  </button>
+
+  <p class="year">GATE CSE 2015 Session 1</p>
+  <div id="explanation96" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 98 -->
+<div class="question">
+  <p class="ques">
+    <b>Q98.</b> In one of the pairs of protocols given below, both
+    the protocols can use multiple TCP connections
+    between the same client and the server. Which
+    one is that?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(97, 'A', this)">
+    (a) HTTP, FTP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(97, 'B', this)">
+    (b) HTTP, TELNET
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(97, 'C', this)">
+    (c) FTP, SMTP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(97, 'D', this)">
+    (d) HTTP, SMTP
+  </button>
+
+  <p class="year">GATE CSE 2015 Session 1</p>
+  <div id="explanation97" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 99 -->
+<div class="question">
+  <p class="ques">
+    <b>Q99.</b> In the following pairs of OSI protocol layer/sub-
+    layer and its functionality, the INCORRECT
+    pair is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(98, 'A', this)">
+    (a) Network layer and Routing
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(98, 'B', this)">
+    (b) Data Link Layer and Bit synchronization
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(98, 'C', this)">
+    (c) Transport layer and End-to-end process communication
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(98, 'D', this)">
+    (d) Medium Access Control sub-layer and Channel sharing
+  </button>
+
+  <p class="year">GATE CSE 2014 Session 3</p>
+  <div id="explanation98" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 100 -->
+<div class="question">
+  <p class="ques">
+    <b>Q100.</b> A bit-stuffing based framing protocol uses an 8-
+    bit delimiter pattern of 01111110. If the output
+    bit-string after stuffing is 011111010101, then the
+    input bit-string is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(99, 'A', this)">
+    (a) 0111110100
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(99, 'B', this)">
+    (b) 0111110101
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(99, 'C', this)">
+    (c) 0111111101
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(99, 'D', this)">
+    (d) 0111111111
+  </button>
+
+  <p class="year">GATE CSE 2014 Session 3</p>
+  <div id="explanation99" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 101 -->
+<div class="question">
+  <p class="ques">
+    <b>Q101.</b> Host A (on TCP/IP v4 network A) sends an IP
+    datagram D to host B (also on TCP/IP v4 network
+    B). Assume that no error occurred during the
+    transmission of D. When D reaches B, which of
+    the following IP header field(s) may be different
+    from that of the original datagram D?
+    <br><br>
+    (i)&emsp;TTL&emsp;&emsp;(ii)&emsp;Checksum
+    <br>
+    (iii)&emsp;Fragment Offset
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(100, 'A', this)">
+    (a) (i) only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(100, 'B', this)">
+    (b) (i) and (ii) only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(100, 'C', this)">
+    (c) (ii) and (iii) only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(100, 'D', this)">
+    (d) (i), (ii) and (iii)
+  </button>
+
+  <p class="year">GATE CSE 2014 Session 3</p>
+  <div id="explanation100" class="explanation"></div>
+</div>
+
+
+    
+
+<!-- Question 102 -->
+<div class="question">
+  <p class="ques">
+    <b>Q102.</b> An IP router implementing Classless Inter-
+    domain Routing (CIDR) receives a packet with
+    address 131.23.151.76. The router’s routing table
+    has the following entries:
+  </p>
+
+  <div style="display:flex; justify-content:center; margin:20px 0;">
+    <table style="border-collapse:collapse; font-family:'Times New Roman', serif; font-size:18px;">
+      <tr>
+        <th style="border:1px solid #000; padding:6px 12px;">Prefix</th>
+        <th style="border:1px solid #000; padding:6px 12px;">Output Interface identifier</th>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;">131.16.0.0 /12</td>
+        <td style="border:1px solid #000; padding:6px 12px;">3</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;">131.28.0.0 /14</td>
+        <td style="border:1px solid #000; padding:6px 12px;">5</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;">131.19.0.0 /16</td>
+        <td style="border:1px solid #000; padding:6px 12px;">2</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #000; padding:6px 12px;">131.22.0.0 /15</td>
+        <td style="border:1px solid #000; padding:6px 12px;">1</td>
+      </tr>
+    </table>
+  </div>
+
+  <p class="ques">
+    The identifier of the output interface on which
+    this packet will be forwarded is ________.
+  </p>
+
+  <p class="year">GATE CSE 2014 Session 3</p>
+  <div id="explanation101" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 103 -->
+<div class="question">
+  <p class="ques">
+    <b>Q103.</b> Every host in an IPv4 network has a 1-second
+    resolution real-time clock with battery backup.
+    Each host needs to generate up to 1000 unique
+    identifiers per second. Assume each host has
+    a globally unique IPv4 address. Design a 50-bit
+    globally unique ID for this purpose. After what
+    period (in seconds) will the identifiers generated
+    by a host wrap around?
+  </p>
+
+  <p class="year">GATE CSE 2014 Session 3</p>
+  <div id="explanation102" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 104 -->
+<div class="question">
+  <p class="ques">
+    <b>Q104.</b> An IP router with a Maximum Transmission
+    Unit (MTU) of 1500 bytes has received an IP
+    packet of size 4404 bytes with an IP header of
+    length 20 bytes. The values of the relevant fields
+    in the header of the third IP fragment generated
+    by the router for this packet are
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(103, 'A', this)">
+    (a) MF bit: 0, Datagram Length: 1444; Offset: 370
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(103, 'B', this)">
+    (b) MF bit: 1, Datagram Length: 1424; Offset: 185
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(103, 'C', this)">
+    (c) MF bit: 1, Datagram Length: 1500; Offset: 370
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(103, 'D', this)">
+    (d) MF bit: 0, Datagram Length: 1424; Offset: 2960
+  </button>
+
+  <p class="year">GATE CSE 2014 Session 3</p>
+  <div id="explanation103" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 105 -->
+<div class="question">
+  <p class="ques">
+    <b>Q105.</b> Which one of the following socket API functions
+    converts an unconnected active TCP socket into
+    a passive socket?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(104, 'A', this)">
+    (a) connect
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(104, 'B', this)">
+    (b) bind
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(104, 'C', this)">
+    (c) listen
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(104, 'D', this)">
+    (d) accept
+  </button>
+
+  <p class="year">GATE CSE 2014 Session 2</p>
+  <div id="explanation104" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 106 -->
+<div class="question">
+  <p class="ques">
+    <b>Q106.</b> In the diagram shown below, L1 is an Ethernet
+    LAN and L2 is a Token-Ring LAN. An IP packet
+    originates from sender S and traverses to R, as
+    shown. The links within each ISP and across
+    the two ISPs, are all point-to-point optical links.
+    The initial value of the TTL field is 32. The
+    maximum possible value of the TTL field when
+    R receives the datagram is ______.
+  </p>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg"
+         style="width:100%;max-width:760px;height:auto;display:block;margin:20px auto;">
+
+      <!-- L1 -->
+      <ellipse cx="95" cy="125" rx="90" ry="45"
+               fill="none" stroke="#000" stroke-width="2"
+               stroke-dasharray="6,4"/>
+
+      <!-- ISP1 -->
+      <ellipse cx="300" cy="90" rx="60" ry="45"
+               fill="none" stroke="#000" stroke-width="2"
+               stroke-dasharray="6,4"/>
+
+      <!-- ISP2 -->
+      <ellipse cx="490" cy="90" rx="60" ry="45"
+               fill="none" stroke="#000" stroke-width="2"
+               stroke-dasharray="6,4"/>
+
+      <!-- L2 -->
+      <ellipse cx="655" cy="105" rx="70" ry="50"
+               fill="none" stroke="#000" stroke-width="2"
+               stroke-dasharray="6,4"/>
+
+      <!-- Ethernet LAN -->
+      <polygon points="25,120 35,105 45,120" fill="none" stroke="#000" stroke-width="2"/>
+      <polygon points="70,95 80,80 90,95" fill="none" stroke="#000" stroke-width="2"/>
+      <polygon points="120,120 130,105 140,120" fill="none" stroke="#000" stroke-width="2"/>
+
+      <!-- Token Ring -->
+      <circle cx="620" cy="75" r="6" fill="none" stroke="#000" stroke-width="2"/>
+      <circle cx="675" cy="75" r="6" fill="none" stroke="#000" stroke-width="2"/>
+      <circle cx="705" cy="110" r="6" fill="none" stroke="#000" stroke-width="2"/>
+      <circle cx="675" cy="145" r="6" fill="none" stroke="#000" stroke-width="2"/>
+      <circle cx="620" cy="145" r="6" fill="none" stroke="#000" stroke-width="2"/>
+
+      <!-- Devices -->
+      <rect x="150" y="100" width="18" height="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <rect x="245" y="100" width="18" height="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <rect x="390" y="100" width="18" height="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <rect x="535" y="100" width="18" height="18" fill="#fff" stroke="#000" stroke-width="2"/>
+
+      <!-- Links -->
+      <line x1="168" y1="109" x2="245" y2="109" stroke="#000" stroke-width="2"/>
+      <line x1="263" y1="109" x2="390" y2="109" stroke="#000" stroke-width="2"/>
+      <line x1="408" y1="109" x2="535" y2="109" stroke="#000" stroke-width="2"/>
+      <line x1="553" y1="109" x2="585" y2="109" stroke="#000" stroke-width="2"/>
+      <line x1="725" y1="109" x2="745" y2="109" stroke="#000" stroke-width="2"/>
+
+      <!-- Arrow heads -->
+      <polygon points="245,109 238,105 238,113" fill="#000"/>
+      <polygon points="390,109 383,105 383,113" fill="#000"/>
+      <polygon points="535,109 528,105 528,113" fill="#000"/>
+      <polygon points="585,109 578,105 578,113" fill="#000"/>
+      <polygon points="745,109 738,105 738,113" fill="#000"/>
+
+      <!-- Labels -->
+      <text x="10" y="135" font-family="Times New Roman" font-size="18">S</text>
+      <text x="55" y="168" font-family="Times New Roman" font-size="18">LAN L1</text>
+      <text x="280" y="30" font-family="Times New Roman" font-size="18">ISP1</text>
+      <text x="470" y="30" font-family="Times New Roman" font-size="18">ISP2</text>
+      <text x="622" y="170" font-family="Times New Roman" font-size="18">LAN L2</text>
+      <text x="748" y="115" font-family="Times New Roman" font-size="18">R</text>
+    </svg>
+  </div>
+
+  <p class="year">GATE CSE 2014 Session 2</p>
+  <div id="explanation105" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 107 -->
+<div class="question">
+  <p class="ques">
+    <b>Q107.</b> Consider the store and forward packet switched
+    network given below. Assume that the bandwidth
+    of each link is 10<sup>6</sup> bytes/sec. A user on host A
+    sends a file of size 10<sup>3</sup> bytes to host B through
+    routers R1 and R2 in three different ways. In
+    the first case a single packet containing the
+    complete file is transmitted from A to B. In the
+    second case, the file is split into 10 equal parts,
+    and these packets are transmitted from A to B.
+    In the third case, the file is split into 20 equal
+    parts and these packets are sent from A to B.
+    Each packet contains 100 bytes of header
+    information along with the user data. Consider
+    only transmission time and ignore processing,
+    queuing and propagation delays. Also assume that
+    there are no errors during transmission. Let T1,
+    T2 and T3 be the times taken to transmit the
+    file in the first, second and third case respectively.
+    Which one of the following is CORRECT?
+  </p>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 520 120" xmlns="http://www.w3.org/2000/svg"
+         style="width:100%;max-width:520px;height:auto;display:block;margin:20px auto;">
+
+      <!-- A -->
+      <rect x="20" y="35" width="40" height="40" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="35" y="60" font-family="Times New Roman" font-size="20">A</text>
+
+      <!-- R1 -->
+      <ellipse cx="170" cy="55" rx="20" ry="35" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="160" y="60" font-family="Times New Roman" font-size="20">R1</text>
+
+      <!-- R2 -->
+      <ellipse cx="300" cy="55" rx="20" ry="35" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="290" y="60" font-family="Times New Roman" font-size="20">R2</text>
+
+      <!-- B -->
+      <rect x="430" y="35" width="40" height="40" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="445" y="60" font-family="Times New Roman" font-size="20">B</text>
+
+      <!-- Links -->
+      <line x1="60" y1="55" x2="150" y2="55" stroke="#000" stroke-width="2"/>
+      <line x1="190" y1="55" x2="280" y2="55" stroke="#000" stroke-width="2"/>
+      <line x1="320" y1="55" x2="430" y2="55" stroke="#000" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <button class="option-btn" onclick="checkAnswer(106, 'A', this)">
+    (a)&emsp;T1 &lt; T2 &lt; T3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(106, 'B', this)">
+    (b)&emsp;T1 &gt; T2 &gt; T3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(106, 'C', this)">
+    (c)&emsp;T2 = T3, T3 &lt; T1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(106, 'D', this)">
+    (d)&emsp;T1 = T3, T3 &gt; T2
+  </button>
+
+  <p class="year">GATE CSE 2014 Session 2</p>
+  <div id="explanation106" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 108 -->
+<div class="question">
+  <p class="ques">
+    <b>Q108.</b> Which one of the following is TRUE about the
+    interior gateway routing protocols - Routing
+    Information Protocol (RIP) and Open Shortest
+    Path First (OSPF)
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(107, 'A', this)">
+    (a) RIP uses distance vector routing and OSPF uses link state routing
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(107, 'B', this)">
+    (b) OSPF uses distance vector routing and RIP uses link state routing
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(107, 'C', this)">
+    (c) Both RIP and OSPF use link state routing
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(107, 'D', this)">
+    (d) Both RIP and OSPF use distance vector routing
+  </button>
+
+  <p class="year">GATE CSE 2014 Session 2</p>
+  <div id="explanation107" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 109 -->
+<div class="question">
+  <p class="ques">
+    <b>Q109.</b> An IP machine <i>Q</i> has a path to another IP
+    machine <i>H</i> via three IP routers <i>R1</i>, <i>R2</i>, and <i>R3</i>.
+    <br><br>
+    <div style="text-align:center; font-family:'Times New Roman', serif; font-size:22px;">
+      <i>Q</i> &mdash; <i>R1</i> &mdash; <i>R2</i> &mdash; <i>R3</i> &mdash; <i>H</i>
+    </div>
+    <br>
+    <i>H</i> acts as an HTTP server, and <i>Q</i> connects to <i>H</i>
+    via HTTP and downloads a file. Session layer
+    encryption is used, with DES as the shared key
+    encryption protocol. Consider the following four
+    pieces of information:
+    <br><br>
+    [I1] The URL of the file downloaded by <i>Q</i>
+    <br>
+    [I2] The TCP port numbers at <i>Q</i> and <i>H</i>
+    <br>
+    [I3] The IP addresses of <i>Q</i> and <i>H</i>
+    <br>
+    [I4] The link layer addresses of <i>Q</i> and <i>H</i>
+    <br><br>
+    Which of I1, I2, I3, and I4 can an intruder learn
+    through sniffing at <i>R2</i> alone?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(108, 'A', this)">
+    (a) Only I1 and I2
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(108, 'B', this)">
+    (b) Only I1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(108, 'C', this)">
+    (c) Only I2 and I3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(108, 'D', this)">
+    (d) Only I3 and I4
+  </button>
+
+  <p class="year">GATE CSE 2014 Session 2</p>
+  <div id="explanation108" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 110 -->
+<div class="question">
+  <p class="ques">
+    <b>Q110.</b> Let the size of congestion window of a TCP
+    connection be 32 KB when a timeout occurs. The
+    round trip time of the connection is 100 msec
+    and the maximum segment size used is 2 KB.
+    The time taken (in msec) by the TCP connection
+    to get back to 32 KB congestion window is
+    ______.
+  </p>
+
+  <p class="year">GATE CSE 2014 Session 1</p>
+  <div id="explanation109" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 111 -->
+<div class="question">
+  <p class="ques">
+    <b>Q111.</b> Consider a selective repeat sliding window
+    protocol that uses a frame size of 1 KB to send
+    data on a 1.5 Mbps link with a one-way latency
+    of 50 msec. To achieve a link utilization of 60%,
+    the minimum number of bits required to represent
+    the sequence number field is ______.
+  </p>
+
+  <p class="year">GATE CSE 2014 Session 1</p>
+  <div id="explanation110" class="explanation"></div>
+</div>    
+
+
+
+
+<!-- Question 112 -->
+<div class="question">
+  <p class="ques">
+    <b>Q112.</b> Consider the following three statements about
+    link state and distance vector routing protocols,
+    for a large network with 500 network nodes and
+    4000 links.
+    <br><br>
+    <b>S1:</b> The computational overhead in link state
+    protocols is higher than in distance vector
+    protocols.
+    <br><br>
+    <b>S2:</b> A distance vector protocol (with split horizon)
+    avoids persistent routing loops, but not a link
+    state protocol.
+    <br><br>
+    <b>S3:</b> After a topology change, a link state protocol
+    will converge faster than a distance vector
+    protocol.
+    <br><br>
+    Which one of the following is correct about S1,
+    S2, and S3?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(111, 'A', this)">
+    (a) S1, S2, and S3 are all true.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(111, 'B', this)">
+    (b) S1, S2, and S3 are all false.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(111, 'C', this)">
+    (c) S1 and S2 are true, but S3 is false.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(111, 'D', this)">
+    (d) S1 and S3 are true, but S2 is false.
+  </button>
+
+  <p class="year">GATE CSE 2014 Session 1</p>
+  <div id="explanation111" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 113 -->
+<div class="question">
+  <p class="ques">
+    <b>Q113.</b> Determine the maximum length of the cable (in
+    km) for transmitting data at a rate of 500 Mbps
+    in an Ethernet LAN with frames of size 10,000
+    bits. Assume the signal speed in the cable to be
+    2,00,000 km/s.
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(112, 'A', this)">
+    (a) 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(112, 'B', this)">
+    (b) 2
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(112, 'C', this)">
+    (c) 2.5
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(112, 'D', this)">
+    (d) 5
+  </button>
+
+  <p class="year">GATE CSE 2013</p>
+  <div id="explanation112" class="explanation"></div>
+</div>
+
+    
+
+
+<!-- Question 114 -->
+<div class="question">
+  <p class="ques">
+    <b>Q114.</b> In an IPv4 datagram, the M bit is 0, the value of
+    HLEN is 10, the value of total length is 400 and
+    the fragment offset value if 300. The position of
+    the datagram, the sequence numbers of the first
+    and the last bytes of the payload, respectively
+    are
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(113, 'A', this)">
+    (a) Last fragment, 2400 and 2789
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(113, 'B', this)">
+    (b) First fragment, 2400 and 2759
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(113, 'C', this)">
+    (c) Last fragment, 2400 and 2759
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(113, 'D', this)">
+    (d) Middle fragment, 300 and 689
+  </button>
+
+  <p class="year">GATE CSE 2013</p>
+  <div id="explanation113" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 115 -->
+<div class="question">
+  <p class="ques">
+    <b>Q115.</b> The transport layer protocols used for real time
+    multimedia, file transfer, DNS and email
+    respectively are
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(114, 'A', this)">
+    (a) TCP, UDP, UDP and TCP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(114, 'B', this)">
+    (b) UDP, TCP, TCP and UDP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(114, 'C', this)">
+    (c) UDP, TCP, UDP and TCP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(114, 'D', this)">
+    (d) TCP, UDP, TCP and UDP
+  </button>
+
+  <p class="year">GATE CSE 2013</p>
+  <div id="explanation114" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 116 -->
+<div class="question">
+  <p class="ques">
+    <b>Q116.</b> Assume that source S and destination D are
+    connected through two intermediate routers
+    labels R. Determine how many times each packet
+    has to visit the network layer and the data link
+    layer during a transmission from S to D.
+  </p>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 420 100" xmlns="http://www.w3.org/2000/svg"
+         style="width:100%;max-width:420px;height:auto;display:block;margin:20px auto;">
+
+      <!-- S -->
+      <rect x="20" y="30" width="40" height="40" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="34" y="55" font-family="Times New Roman" font-size="20">S</text>
+
+      <!-- R1 -->
+      <circle cx="130" cy="50" r="20" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="122" y="56" font-family="Times New Roman" font-size="18">R</text>
+
+      <!-- R2 -->
+      <circle cx="240" cy="50" r="20" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="232" y="56" font-family="Times New Roman" font-size="18">R</text>
+
+      <!-- D -->
+      <rect x="330" y="30" width="40" height="40" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="344" y="55" font-family="Times New Roman" font-size="20">D</text>
+
+      <!-- Links -->
+      <line x1="60" y1="50" x2="110" y2="50" stroke="#000" stroke-width="2"/>
+      <line x1="150" y1="50" x2="220" y2="50" stroke="#000" stroke-width="2"/>
+      <line x1="260" y1="50" x2="330" y2="50" stroke="#000" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <button class="option-btn" onclick="checkAnswer(115, 'A', this)">
+    (a) Network layer - 4 times and Data link layer - 4 times
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(115, 'B', this)">
+    (b) Network layer - 4 times and Data link layer - 3 times
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(115, 'C', this)">
+    (c) Network layer - 4 times and Data link layer - 6 times
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(115, 'D', this)">
+    (d) Network layer - 2 times and Data link layer - 6 times
+  </button>
+
+  <p class="year">GATE CSE 2013</p>
+  <div id="explanation115" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 117 -->
+<div class="question">
+  <p class="ques">
+    <b>Q117.</b> Consider a source computer (S) transmitting a
+    file of size 10<sup>6</sup> bits to a destination computer (D)
+    over a network of two routers (R<sub>1</sub> and R<sub>2</sub>) and
+    three links (L<sub>1</sub>, L<sub>2</sub> and L<sub>3</sub>). L<sub>1</sub> connects S to R<sub>1</sub>;
+    L<sub>2</sub> connects R<sub>1</sub> to R<sub>2</sub>; and L<sub>3</sub> connects R<sub>2</sub> to D.
+    Let each link be of length 100 km. Assume signals
+    travel over each link at a speed of 10<sup>8</sup> meters per
+    second. Assume that the link bandwidth on
+    each link is 1 Mbps. Let the file be broken down
+    into 1000 packets each of size 1000 bits. Find the
+    total sum of transmission and propagation delays
+    in transmitting the file from S to D?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(116, 'A', this)">
+    (a) 1005 ms
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(116, 'B', this)">
+    (b) 1010 ms
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(116, 'C', this)">
+    (c) 3000 ms
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(116, 'D', this)">
+    (d) 3003 ms
+  </button>
+
+  <p class="year">GATE CSE 2012</p>
+  <div id="explanation116" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 118 -->
+<div class="question">
+  <p class="ques">
+    <b>Q118.</b> In the IPv4 addressing format, the number of
+    networks allowed under Class C addresses is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(117, 'A', this)">
+    (a) 2<sup>14</sup>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(117, 'B', this)">
+    (b) 2<sup>7</sup>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(117, 'C', this)">
+    (c) 2<sup>21</sup>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(117, 'D', this)">
+    (d) 2<sup>24</sup>
+  </button>
+
+  <p class="year">GATE CSE 2012</p>
+  <div id="explanation117" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 119 -->
+<div class="question">
+  <p class="ques">
+    <b>Q119.</b> An Internet Service Provider (ISP) has the
+    following chunk of CIDR-based IP addresses
+    available with it: 245.248.128.0/20. The ISP wants
+    to give half of this chunk of addresses to
+    Organization A, and a quarter of Organization B,
+    while retaining the remaining with itself. Which
+    of the following is a valid allocation of addresses to
+    A and B?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(118, 'A', this)">
+    (a) 245.248.136.0/21 and 245.248.128.0/22
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(118, 'B', this)">
+    (b) 245.248.128.0/21 and 245.248.128.0/22
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(118, 'C', this)">
+    (c) 245.248.132.0/22 and 245.248.132.0/21
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(118, 'D', this)">
+    (d) 245.248.136.0/24 and 245.248.132.0/21
+  </button>
+
+  <p class="year">GATE CSE 2012</p>
+  <div id="explanation118" class="explanation"></div>
+</div>
+
+
+
+    
+<!-- Question 120 -->
+<div class="question">
+  <p class="ques">
+    <b>Q120.</b> Consider an instance of TCP's Additive Increase
+    Multiplicative Decrease (AIMD) algorithm where
+    the window size at the start of the slow start
+    phase is 2 MSS and the threshold at the start of
+    the first transmission is 8 MSS. Assume that a
+    time-out occurs during the fifth transmission.
+    Find the congestion window size at the end of
+    the tenth transmission.
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(119, 'A', this)">
+    (a) 8 MSS
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(119, 'B', this)">
+    (b) 14 MSS
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(119, 'C', this)">
+    (c) 7 MSS
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(119, 'D', this)">
+    (d) 12 MSS
+  </button>
+
+  <p class="year">GATE CSE 2012</p>
+  <div id="explanation119" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 121 -->
+<div class="question">
+  <p class="ques">
+    <b>Q121.</b> The Protocol Data Unit (PDU) for the application
+    layer in the Internet stack is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(120, 'A', this)">
+    (a) Segment
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(120, 'B', this)">
+    (b) Datagram
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(120, 'C', this)">
+    (c) Message
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(120, 'D', this)">
+    (d) Frame
+  </button>
+
+  <p class="year">GATE CSE 2012</p>
+  <div id="explanation120" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 122 -->
+<div class="question">
+  <p class="ques">
+    <b>Q122.</b> A layer-4 firewall (a device that can look at all
+    protocol headers up to the transport layer)
+    CANNOT
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(121, 'A', this)">
+    (a) block entire HTTP traffic during 9:00 pm and 5:00 am
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(121, 'B', this)">
+    (b) block all ICMP traffic
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(121, 'C', this)">
+    (c) stop incoming traffic from a specific IP address
+    but allow outgoing traffic to the same IP
+    address
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(121, 'D', this)">
+    (d) block TCP traffic from a specific user on a
+    multi-user system during 9:00 pm and 5:00 am
+  </button>
+
+  <p class="year">GATE CSE 2011</p>
+  <div id="explanation121" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 123 -->
+<div class="question">
+  <p class="ques">
+    <b>Q123.</b> Consider different activities related to email
+    <br>
+    <b>m1:</b> Send an email from a mail client to a mail
+    server
+    <br>
+    <b>m2:</b> Download an email from mailbox server to
+    a mail client
+    <br>
+    <b>m3:</b> Checking email in a web browser
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(122, 'A', this)">
+    (a) m1:HTTP&nbsp;&nbsp; m2:SMTP&nbsp;&nbsp; m3:POP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(122, 'B', this)">
+    (b) m1:SMTP&nbsp;&nbsp; m2:FTP&nbsp;&nbsp; m3:HTTP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(122, 'C', this)">
+    (c) m1:SMTP&nbsp;&nbsp; m2:POP&nbsp;&nbsp; m3:HTTP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(122, 'D', this)">
+    (d) m1:POP&nbsp;&nbsp; m2:SMTP&nbsp;&nbsp; m3:IMAP
+  </button>
+
+  <p class="year">GATE CSE 2011</p>
+  <div id="explanation122" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 124 -->
+<div class="question">
+  <p class="ques">
+    <b>Q124.</b> Consider a network with five nodes, N1 to N5, as shown
+    below.
+  </p>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg"
+         style="width:100%;max-width:420px;height:auto;display:block;margin:20px auto;">
+
+      <!-- Links -->
+      <line x1="70" y1="40" x2="210" y2="40" stroke="#000" stroke-width="2"/>
+      <line x1="210" y1="40" x2="350" y2="40" stroke="#000" stroke-width="2"/>
+      <line x1="210" y1="40" x2="210" y2="180" stroke="#000" stroke-width="2"/>
+      <line x1="70" y1="40" x2="70" y2="180" stroke="#000" stroke-width="2"/>
+      <line x1="70" y1="180" x2="210" y2="180" stroke="#000" stroke-width="2"/>
+
+      <!-- Edge Weights -->
+      <text x="135" y="30" font-family="Times New Roman" font-size="18">3</text>
+      <text x="280" y="30" font-family="Times New Roman" font-size="18">1</text>
+      <text x="220" y="115" font-family="Times New Roman" font-size="18">6</text>
+      <text x="52" y="115" font-family="Times New Roman" font-size="18">4</text>
+      <text x="135" y="197" font-family="Times New Roman" font-size="18">2</text>
+
+      <!-- Nodes -->
+      <circle cx="70" cy="40" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="210" cy="40" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="350" cy="40" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="210" cy="180" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="70" cy="180" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+
+      <text x="58" y="46" font-family="Times New Roman" font-size="18">N5</text>
+      <text x="198" y="46" font-family="Times New Roman" font-size="18">N2</text>
+      <text x="338" y="46" font-family="Times New Roman" font-size="18">N1</text>
+      <text x="198" y="186" font-family="Times New Roman" font-size="18">N3</text>
+      <text x="58" y="186" font-family="Times New Roman" font-size="18">N4</text>
+    </svg>
+  </div>
+
+  <p class="ques">
+    The network uses a Distance Vector Routing protocol.
+    Once the routes have stabilized, the distance vectors at
+    different nodes are as following.
+    <br><br>
+    N1: (0, 1, 7, 8, 4)
+    <br>
+    N2: (1, 0, 6, 7, 3)
+    <br>
+    N3: (7, 6, 0, 2, 6)
+    <br>
+    N4: (8, 7, 2, 0, 4)
+    <br>
+    B5: (4, 3, 6, 4, 0)
+    <br><br>
+    Each distance vector is the distance of the best known
+    path at that instance to nodes, N1 to N5, where the
+    distance to itself is 0. Also, all links are symmetrical and
+    the cost is identical in both directions. In each round,
+    all nodes exchange their distance vectors with their
+    respective neighbors. Then all nodes update their
+    distance vectors. In between two rounds, any change
+    in cost of a link will cause the two incident nodes to
+    change only that entry in their distance vectors.
+    <br><br>
+    The cost of link N2-N3 reduces to 2(in both
+    directions). After the next round of updates, what
+    will be the new distance vector at node, N3?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(123, 'A', this)">
+    (a) (3, 2, 0, 2, 5)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(123, 'B', this)">
+    (b) (3, 2, 0, 2, 6)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(123, 'C', this)">
+    (c) (7, 2, 0, 2, 5)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(123, 'D', this)">
+    (d) (7, 2, 0, 2, 6)
+  </button>
+
+  <p class="year">GATE CSE 2011</p>
+  <div id="explanation123" class="explanation"></div>
+</div>
+
+
+    
+
+<!-- Question 125 -->
+<div class="question">
+  <p class="ques">
+    <b>Q125.</b> Consider a network with five nodes, N1 to N5, as shown
+    below.
+  </p>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg"
+         style="width:100%;max-width:420px;height:auto;display:block;margin:20px auto;">
+
+      <!-- Links -->
+      <line x1="70" y1="40" x2="210" y2="40" stroke="#000" stroke-width="2"/>
+      <line x1="210" y1="40" x2="350" y2="40" stroke="#000" stroke-width="2"/>
+      <line x1="210" y1="40" x2="210" y2="180" stroke="#000" stroke-width="2"/>
+      <line x1="70" y1="40" x2="70" y2="180" stroke="#000" stroke-width="2"/>
+      <line x1="70" y1="180" x2="210" y2="180" stroke="#000" stroke-width="2"/>
+
+      <!-- Edge Weights -->
+      <text x="135" y="30" font-family="Times New Roman" font-size="18">3</text>
+      <text x="280" y="30" font-family="Times New Roman" font-size="18">1</text>
+      <text x="220" y="115" font-family="Times New Roman" font-size="18">6</text>
+      <text x="52" y="115" font-family="Times New Roman" font-size="18">4</text>
+      <text x="135" y="197" font-family="Times New Roman" font-size="18">2</text>
+
+      <!-- Nodes -->
+      <circle cx="70" cy="40" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="210" cy="40" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="350" cy="40" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="210" cy="180" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="70" cy="180" r="18" fill="#fff" stroke="#000" stroke-width="2"/>
+
+      <text x="58" y="46" font-family="Times New Roman" font-size="18">N5</text>
+      <text x="198" y="46" font-family="Times New Roman" font-size="18">N2</text>
+      <text x="338" y="46" font-family="Times New Roman" font-size="18">N1</text>
+      <text x="198" y="186" font-family="Times New Roman" font-size="18">N3</text>
+      <text x="58" y="186" font-family="Times New Roman" font-size="18">N4</text>
+    </svg>
+  </div>
+
+  <p class="ques">
+    The network uses a Distance Vector Routing protocol.
+    Once the routes have stabilized, the distance vectors at
+    different nodes are as following.
+    <br><br>
+    N1: (0, 1, 7, 8, 4)
+    <br>
+    N2: (1, 0, 6, 7, 3)
+    <br>
+    N3: (7, 6, 0, 2, 6)
+    <br>
+    N4: (8, 7, 2, 0, 4)
+    <br>
+    B5: (4, 3, 6, 4, 0)
+    <br><br>
+    Each distance vector is the distance of the best known
+    path at that instance to nodes, N1 to N5, where the
+    distance to itself is 0. Also, all links are symmetrical and
+    the cost is identical in both directions. In each round,
+    all nodes exchange their distance vectors with their
+    respective neighbors. Then all nodes update their
+    distance vectors. In between two rounds, any change
+    in cost of a link will cause the two incident nodes to
+    change only that entry in their distance vectors.
+    <br><br>
+    After the update in the previous question, the
+    link N1-N2 goes down. N2 will reflect this change
+    immediately in its distance vector as cost ∞. After
+    the NEXT ROUND of update, what will be the
+    cost to N1 in the distance vector of N3?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(124, 'A', this)">
+    (a) 3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(124, 'B', this)">
+    (b) 9
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(124, 'C', this)">
+    (c) 10
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(124, 'D', this)">
+    (d) ∞
+  </button>
+
+  <p class="year">GATE CSE 2011</p>
+  <div id="explanation124" class="explanation"></div>
+</div>
 
 
 
