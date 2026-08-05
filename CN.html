@@ -2157,11 +2157,662 @@ td {
 
 
 
+<!-- Question 65 -->
+<div class="question">
+  <p class="ques">
+    <b>Q65.</b> Consider the following statements about the routing protocols, Routing Information Protocol (RIP)
+    and Open Shortest Path First (OSPF) in an IPv4 network.
+    <br><br>
+    I: RIP uses distance vector routing
+    <br>
+    II: RIP packets are sent using UDP
+    <br>
+    III: OSPF packets are sent using TCP
+    <br>
+    IV: OSPF operation is based on link-state routing
+    <br><br>
+    Which of the statements above are CORRECT?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(64, 'A', this)">
+    A) I and IV only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(64, 'B', this)">
+    B) I, II and III only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(64, 'C', this)">
+    C) I, II and IV only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(64, 'D', this)">
+    D) II, III and IV only
+  </button>
+
+  <p class="year">GATE CSE 2017  Session 2</p>
+  <div id="explanation64" class="explanation"></div>
+</div>
 
 
 
 
+<!-- Question 66 -->
+<div class="question">
+  <p class="ques">
+    <b>Q66.</b> Consider socket API on a Linux machine that supports connected UDP sockets. A connected UDP
+    socket is a UDP socket on which <b>connect</b> function has already been called. Which of the
+    following statements is/are CORRECT?
+    <br><br>
+    I.&emsp;A connected UDP socket can be used to communicate with multiple peers
+    <br>&emsp;&emsp;&emsp;simultaneously.
+    <br><br>
+    II.&emsp;A process can successfully call <b>connect</b> function again for an already connected UDP
+    <br>&emsp;&emsp;&emsp;socket.
+  </p>
 
+  <button class="option-btn" onclick="checkAnswer(65, 'A', this)">
+    A) I only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(65, 'B', this)">
+    B) II only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(65, 'C', this)">
+    C) Both I and II
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(65, 'D', this)">
+    D) Neither I nor II
+  </button>
+
+  <p class="year">GATE CSE 2017 Session 2</p>
+  <div id="explanation65" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 67 -->
+<div class="question">
+  <p class="ques">
+    <b>Q67.</b> The maximum number of IPv4 router addresses that can be listed in the record route (RR) option
+    field of an IPv4 header is ________.
+  </p>
+
+  <p class="year">GATE CSE 2017 Session 2</p>
+  <div id="explanation66" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 68 -->
+<div class="question">
+  <p class="ques">
+    <b>Q68.</b> Consider a binary code that consists of only four valid codewords as given below:
+    <br><br>
+    <div style="text-align:center;">00000, 01011, 10101, 11110</div>
+    <br>
+    Let the minimum Hamming distance of the code be <i>p</i> and the maximum number of erroneous bits that can be corrected by the code be <i>q</i>. Then the values of <i>p</i> and <i>q</i> are
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(67, 'A', this)">
+    A) <i>p</i>=3 and <i>q</i>=1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(67, 'B', this)">
+    B) <i>p</i>=3 and <i>q</i>=2
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(67, 'C', this)">
+    C) <i>p</i>=4 and <i>q</i>=1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(67, 'D', this)">
+    D) <i>p</i>=4 and <i>q</i>=2
+  </button>
+
+  <p class="year">GATE CSE 2017 Session 2</p>
+  <div id="explanation67" class="explanation"></div>
+</div>
+
+
+
+    
+<!-- Question 69 -->
+<div class="question">
+  <p class="ques">
+    <b>Q69.</b> Consider two hosts <i>X</i> and <i>Y</i> connected by a single direct link of rate 10<sup>6</sup> bits/sec.
+    The distance between the two hosts is 10,000 km and the propagation speed along the link is 2 × 10<sup>8</sup> m/sec.
+    Host <i>X</i> sends a file of 50,000 bytes as one large message to host <i>Y</i> continuously. Let the transmission and propagation delays be <i>p</i> milliseconds and <i>q</i> milliseconds, respectively.
+    Then the values of <i>p</i> and <i>q</i> are
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(68, 'A', this)">
+    A) <i>p</i>=50 and <i>q</i>=100
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(68, 'B', this)">
+    B) <i>p</i>=50 and <i>q</i>=400
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(68, 'C', this)">
+    C) <i>p</i>=100 and <i>q</i>=50
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(68, 'D', this)">
+    D) <i>p</i>=400 and <i>q</i>=50
+  </button>
+
+  <p class="year">GATE CSE 2017 Session 2</p>
+  <div id="explanation68" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 70 -->
+<div class="question">
+  <p class="ques">
+    <b>Q70.</b> Consider a TCP client and a TCP server running on two different machines. After completing data
+    transfer, the TCP client calls <code>close</code> to terminate the connection and a FIN segment is sent to the
+    TCP server. Server-side TCP responds by sending an ACK, which is received by the client-side TCP.
+    As per the TCP connection state diagram (RFC 793), in which state does the client-side TCP
+    connection wait for the FIN from the server-side TCP?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(69, 'A', this)">
+    A) LAST-ACK
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(69, 'B', this)">
+    B) TIME-WAIT
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(69, 'C', this)">
+    C) FIN-WAIT-1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(69, 'D', this)">
+    D) FIN-WAIT-2
+  </button>
+
+  <p class="year">GATE CSE 2017 Session 1</p>
+  <div id="explanation69" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 71 -->
+<div class="question">
+  <p class="ques">
+    <b>Q71.</b> A computer network uses polynomials over <i>GF</i>(2) for error checking with 8 bits as information bits
+    and uses <i>x</i><sup>3</sup> + <i>x</i> + 1 as the generator polynomial to generate the check bits. In this network, the
+    message 01011011 is transmitted as
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(70, 'A', this)">
+    A) 01011011010
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(70, 'B', this)">
+    B) 01011011011
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(70, 'C', this)">
+    C) 01011011101
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(70, 'D', this)">
+    D) 01011011100
+  </button>
+
+  <p class="year">GATE CSE 2017 Session 1</p>
+  <div id="explanation70" class="explanation"></div>
+</div>
+
+
+    
+
+<!-- Question 72 -->
+<div class="question">
+  <p class="ques">
+    <b>Q72.</b> The values of parameters for the Stop-and-Wait ARQ protocol are as given below:
+    <br><br>
+    &emsp;&emsp;Bit rate of the transmission channel = 1 Mbps.
+    <br>
+    &emsp;&emsp;Propagation delay from sender to receiver = 0.75 ms.
+    <br>
+    &emsp;&emsp;Time to process a frame = 0.25 ms.
+    <br>
+    &emsp;&emsp;Number of bytes in the information frame = 1980.
+    <br>
+    &emsp;&emsp;Number of bytes in the acknowledge frame = 20.
+    <br>
+    &emsp;&emsp;Number of overhead bytes in the information frame = 20.
+    <br><br>
+    Assume that there are no transmission errors. Then, the transmission efficiency (expressed in
+    percentage) of the Stop-and-Wait ARQ protocol for the above parameters is __________
+    (correct to 2 decimal places).
+  </p>
+
+  <p class="year">GATE CSE 2017 Session 1</p>
+  <div id="explanation71" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 73 -->
+<div class="question">
+  <p class="ques">
+    <b>Q73.</b> In an Ethernet local area network, which one of the following statements is TRUE?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(72, 'A', this)">
+    A) A station stops to sense the channel once it starts transmitting a frame.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(72, 'B', this)">
+    B) The purpose of the jamming signal is to pad the frames that are smaller than the minimum frame size.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(72, 'C', this)">
+    C) A station continues to transmit the packet even after the collision is detected.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(72, 'D', this)">
+    D) The exponential backoff mechanism reduces the probability of collision on retransmissions.
+  </button>
+
+  <p class="year">GATE CSE 2016 Session 2</p>
+  <div id="explanation72" class="explanation"></div>
+</div>
+
+
+
+    
+<!-- Question 74 -->
+<div class="question">
+  <p class="ques">
+    <b>Q74.</b> A network has a data transmission bandwidth of
+    20 × 10<sup>6</sup> bits per second. It uses CSMA/CD in
+    the MAC layer. The maximum signal
+    propagation time from one node to another node
+    is 40 microseconds. The minimum size of a frame
+    in the network is ________ bytes.
+  </p>
+
+  <p class="year">GATE CSE 2016 Session 2</p>
+  <div id="explanation73" class="explanation"></div>
+</div>
+
+
+
+    
+<!-- Question 75 -->
+<div class="question">
+  <p class="ques">
+    <b>Q75.</b> Consider a 128 × 10<sup>3</sup> bits/second satellite
+    communication link with one way propagation
+    delay of 150 milliseconds. Selective
+    retransmission (repeat) protocol is used on this
+    link to send data with a frame size of 1 kilobyte.
+    Neglect the transmission time of
+    acknowledgement. The minimum number of bits
+    required for the sequence number field to achieve
+    100% utilization is ________.
+  </p>
+
+  <p class="year">GATE CSE 2016 Session 2</p>
+  <div id="explanation74" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 76 -->
+<div class="question">
+  <p class="ques">
+    <b>Q76.</b> Identify the correct sequence in which the
+    following packets are transmitted on the network
+    by a host when a browser requests a webpage
+    from a remote server, assuming that the host
+    has just been restarted.
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(75, 'A', this)">
+    A) HTTP GET request, DNS query, TCP SYN
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(75, 'B', this)">
+    B) DNS query, HTTP GET request, TCP SYN
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(75, 'C', this)">
+    C) DNS query, TCP SYN, HTTP GET request
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(75, 'D', this)">
+    D) TCP SYN, DNS query, HTTP GET request
+  </button>
+
+  <p class="year">GATE CSE 2016 Session 2</p>
+  <div id="explanation75" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 77 -->
+<div class="question">
+  <p class="ques">
+    <b>Q77.</b> The value of the expression
+    i3<sup>99</sup>(mod 17), in the
+    range 0 to 16, is ________.
+  </p>
+
+  <p class="year">GATE CSE Session 2</p>
+  <div id="explanation76" class="explanation"></div>
+</div>
+
+
+
+    
+<!-- Question 78 -->
+<div class="question">
+  <p class="ques">
+    <b>Q78.</b> For the IEEE 802.11 MAC protocol for wireless
+    communication, which of the following statements
+    is/are TRUE?
+    <br><br>
+    I.&emsp;At least three non-overlapping channels are
+    available for transmission.
+    <br><br>
+    II.&emsp;The RTS-CTS mechanism is used for collision
+    detection.
+    <br><br>
+    III.&emsp;Unicast frames are ACKed
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(77, 'A', this)">
+    A) All I, II, and III
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(77, 'B', this)">
+    B) I and III only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(77, 'C', this)">
+    C) II and III only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(77, 'D', this)">
+    D) II only
+  </button>
+
+  <p class="year">GATE CSE 2016 Session 2</p>
+  <div id="explanation77" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 79 -->
+<div class="question">
+  <p class="ques">
+    <b>Q79.</b> Which one of the following protocols is NOT used
+    to resolve one form of address to another one?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(78, 'A', this)">
+    A) DNS
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(78, 'B', this)">
+    B) ARP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(78, 'C', this)">
+    C) DHCP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(78, 'D', this)">
+    D) RARP
+  </button>
+
+  <p class="year">GATE CSE 2016 Session 1</p>
+  <div id="explanation78" class="explanation"></div>
+</div>
+
+
+
+    
+<!-- Question 80 -->
+<div class="question">
+  <p class="ques">
+    <b>Q80.</b> Which of the following is/are example(s) of
+    stateful application layer protocols?
+    <br><br>
+    (i)&emsp;HTTP
+    <br>
+    (ii)&emsp;FTP
+    <br>
+    (iii)&emsp;TCP
+    <br>
+    (iv)&emsp;POP3
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(79, 'A', this)">
+    A) (i) and (ii) only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(79, 'B', this)">
+    B) (ii) and (iii) only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(79, 'C', this)">
+    C) (ii) and (iv) only
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(79, 'D', this)">
+    D) (iv) only
+  </button>
+
+  <p class="year">GATE CSE 2016 Session 1</p>
+  <div id="explanation79" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 81 -->
+<div class="question">
+  <p class="ques">
+    <b>Q81.</b> A sender uses the Stop-and-Wait ARQ protocol
+    for reliable transmission of frames. Frames are
+    of size 1000 bytes and the transmission rate at
+    the sender is 80 Kbps (1 Kbps = 1000 bits/second).
+    Size of an acknowledgment is 100 bytes and the
+    transmission rate at the receiver is 8 Kbps. The
+    one-way propagation delay is 100 milliseconds.
+    Assuming no frame is lost, the sender throughput
+    is ______ bytes/second.
+  </p>
+
+  <p class="year">GATE CSE 2016 Session 1</p>
+  <div id="explanation80" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 82 -->
+<div class="question">
+  <p class="ques">
+    <b>Q82.</b> An IP datagram of size 1000 bytes arrives at a
+    router. The router has to forward this packet on
+    a link whose MTU (maximum transmission unit)
+    is 100 bytes. Assume that the size of the IP header
+    is 20 bytes. The number of fragments that the
+    IP datagram will be divided into for transmission
+    is ______.
+  </p>
+
+  <p class="year">GATE CSE 2016 Session 1</p>
+  <div id="explanation81" class="explanation"></div>
+</div>
+
+
+
+    
+<!-- Question 83 -->
+<div class="question">
+  <p class="ques">
+    <b>Q83.</b> For a host machine that uses the token bucket
+    algorithm for congestion control, the token
+    bucket has a capacity of 1 megabyte and the
+    maximum output rate is 20 megabytes per
+    second. Tokens arrive at a rate to sustain output
+    at a rate of 10 megabytes per second. The token
+    bucket is currently full and the machine needs
+    to send 12 megabytes of data.
+    <br><br>
+    The minimum time required to transmit the data
+    is ______ seconds.
+  </p>
+
+  <p class="year">GATE CSE 2016 Session 1</p>
+  <div id="explanation82" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 84 -->
+<div class="question">
+  <p class="ques">
+    <b>Q84.</b> Consider a network connecting two systems
+    located 8000 kilometers apart. The bandwidth
+    of the network is 500 × 10<sup>6</sup> bits per second. The
+    propagation speed of the media is 4 × 10<sup>6</sup> meters
+    per second. It is needed to design a Go-Back-N
+    sliding window protocol for this network. The
+    average packet size is 10<sup>7</sup> bits. The network is
+    to be used to its full capacity.
+    <br><br>
+    Assume that processing delays at nodes are
+    negligible. Then, the minimum size in bits of
+    the sequence number field has to be ______.
+  </p>
+
+  <p class="year">GATE CSE 2015 Session 3</p>
+  <div id="explanation83" class="explanation"></div>
+</div>
+
+
+
+    
+<!-- Question 85 -->
+<div class="question">
+  <p class="ques">
+    <b>Q85.</b> Two hosts are connected via a packet switch
+    with 10<sup>7</sup> bits per second links. Each link has a
+    propagation delay of 20 microseconds. The switch
+    begins forwarding a packet 35 microseconds after
+    it receives the same. If 10000 bits of data are
+    to be transmitted between the two hosts using
+    a packet size of 5000 bits, the time elapsed
+    between the transmission of the first bit of data
+    and the reception of the last bit of the data in
+    microseconds is ______.
+  </p>
+
+  <p class="year">GATE CSE 2015 Session 3</p>
+  <div id="explanation84" class="explanation"></div>
+</div>
+
+
+    
+    
+<!-- Question 86 -->
+<div class="question">
+  <p class="ques">
+    <b>Q86.</b> Consider a CSMA/CD network that transmits
+    data at a rate of 100 Mbps (10<sup>8</sup> bits per second)
+    over a 1 km (kilometer) cable with no repeaters.
+    If the minimum frame size required for this
+    network is 1250 bytes, what is the signal
+    speed (km/sec) in the cable?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(85, 'A', this)">
+    A) 8000
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(85, 'B', this)">
+    B) 10000
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(85, 'C', this)">
+    C) 16000
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(85, 'D', this)">
+    D) 20000
+  </button>
+
+  <p class="year">GATE CSE 2015 Session 3</p>
+  <div id="explanation85" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 87 -->
+<div class="question">
+  <p class="ques">
+    <b>Q87.</b> Consider the following statements.
+    <br><br>
+    I.&emsp;TCP connections are full duplex.
+    <br>
+    II.&emsp;TCP has no option for selective acknowledgement.
+    <br>
+    III.&emsp;TCP connections are message streams.
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(86, 'A', this)">
+    A) Only I is correct
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(86, 'B', this)">
+    B) Only I and II are correct
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(86, 'C', this)">
+    C) Only II and III are correct
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(86, 'D', this)">
+    D) All of I, II and III are correct
+  </button>
+
+  <p class="year">GATE CSE 2015 Session 3</p>
+  <div id="explanation86" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 88 -->
+<div class="question">
+  <p class="ques">
+    <b>Q88.</b> In the network 200.10.11.144/27, the fourth octet
+    (in decimal) of the last IP address of the network
+    which can be assigned to a host is ________.
+  </p>
+
+  <p class="year">GATE CSE 2015 Session 3</p>
+  <div id="explanation87" class="explanation"></div>
+</div>
 
 
 
@@ -2186,11 +2837,6 @@ td {
 
 
     
-
-    
-
-
-
 
     
     
