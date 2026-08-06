@@ -5860,6 +5860,1956 @@ td {
 
 
 
+<!-- Question 163 -->
+<div class="question">
+  <p class="ques">
+    <b>Q163.</b> For the network given in the figure below, the
+    routing tables of the four nodes A, E, D and G
+    are shown. Suppose that F has estimated its delay
+    to its neighbors, A, E, D and G as 8, 10, 12 and 6
+    msecs respectively and updates its routing table
+    using distance vector routing technique.
+  </p>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="980" viewBox="0 0 700 980">
+<style>
+text{
+    font-family:"Times New Roman",serif;
+    font-size:22px;
+}
+.small{font-size:20px;}
+.tbltext{font-size:24px;}
+.line{stroke:#000;stroke-width:2;fill:none;}
+</style>
+
+<!-- Network Diagram -->
+
+<!-- Outer rectangle -->
+<rect x="120" y="120" width="340" height="200" fill="none" stroke="black" stroke-width="2"/>
+
+<!-- Middle horizontal line -->
+<line x1="120" y1="220" x2="460" y2="220" class="line"/>
+
+<!-- Diagonals -->
+<line x1="120" y1="120" x2="200" y2="320" class="line"/>
+<line x1="200" y1="320" x2="460" y2="220" class="line"/>
+
+<!-- Labels -->
+<text x="100" y="115">A</text>
+<text x="466" y="115">B</text>
+
+<text x="95" y="225">C</text>
+<text x="468" y="225">D</text>
+
+<text x="95" y="325">E</text>
+<text x="468" y="325">G</text>
+
+<text x="190" y="300">F</text>
+
+<!-- Routing Table -->
+
+<rect x="110" y="370" width="360" height="410"
+fill="none" stroke="black" stroke-width="2"/>
+
+<!-- Header -->
+<line x1="110" y1="420" x2="470" y2="420"
+stroke="black" stroke-width="2"/>
+
+<text x="205" y="403" font-weight="bold">Routing Table of A</text>
+
+<!-- Vertical divider -->
+<line x1="250" y1="420" x2="250" y2="780"
+stroke="black" stroke-width="2"/>
+
+<!-- Horizontal lines -->
+<line x1="110" y1="470" x2="470" y2="470" class="line"/>
+<line x1="110" y1="520" x2="470" y2="520" class="line"/>
+<line x1="110" y1="570" x2="470" y2="570" class="line"/>
+<line x1="110" y1="620" x2="470" y2="620" class="line"/>
+<line x1="110" y1="670" x2="470" y2="670" class="line"/>
+<line x1="110" y1="720" x2="470" y2="720" class="line"/>
+
+<!-- Entries -->
+<text x="170" y="455">A</text>
+<text x="360" y="455">0</text>
+
+<text x="170" y="505">B</text>
+<text x="350" y="505">40</text>
+
+<text x="170" y="555">C</text>
+<text x="350" y="555">14</text>
+
+<text x="170" y="605">D</text>
+<text x="350" y="605">17</text>
+
+<text x="170" y="655">E</text>
+<text x="350" y="655">21</text>
+
+<text x="170" y="705">F</text>
+<text x="350" y="705">9</text>
+
+<text x="170" y="755">G</text>
+<text x="350" y="755">24</text>
+
+</svg>
+
+<div class="table-container">
+
+  <!-- Routing Table of E -->
+  <table border="1" cellspacing="0" cellpadding="8" style="border-collapse:collapse; margin:20px auto; width:220px; text-align:center; font-family:'Times New Roman', serif;">
+    <tr>
+      <th colspan="2">Routing Table of E</th>
+    </tr>
+    <tr><td>A</td><td>24</td></tr>
+    <tr><td>B</td><td>27</td></tr>
+    <tr><td>C</td><td>7</td></tr>
+    <tr><td>D</td><td>20</td></tr>
+    <tr><td>E</td><td>0</td></tr>
+    <tr><td>F</td><td>11</td></tr>
+    <tr><td>G</td><td>22</td></tr>
+  </table>
+
+  <!-- Routing Table of D -->
+  <table border="1" cellspacing="0" cellpadding="8" style="border-collapse:collapse; margin:30px auto; width:220px; text-align:center; font-family:'Times New Roman', serif;">
+    <tr>
+      <th colspan="2">Routing Table of D</th>
+    </tr>
+    <tr><td>A</td><td>20</td></tr>
+    <tr><td>B</td><td>8</td></tr>
+    <tr><td>C</td><td>30</td></tr>
+    <tr><td>D</td><td>0</td></tr>
+    <tr><td>E</td><td>14</td></tr>
+    <tr><td>F</td><td>7</td></tr>
+    <tr><td>G</td><td>22</td></tr>
+  </table>
+
+  <!-- Routing Table of G -->
+  <table border="1" cellspacing="0" cellpadding="8" style="border-collapse:collapse; margin:30px auto; width:220px; text-align:center; font-family:'Times New Roman', serif;">
+    <tr>
+      <th colspan="2">Routing Table of G</th>
+    </tr>
+    <tr><td>A</td><td>21</td></tr>
+    <tr><td>B</td><td>24</td></tr>
+    <tr><td>C</td><td>22</td></tr>
+    <tr><td>D</td><td>19</td></tr>
+    <tr><td>E</td><td>22</td></tr>
+    <tr><td>F</td><td>10</td></tr>
+    <tr><td>G</td><td>0</td></tr>
+  </table>
+
+</div>
+
+<button class="option-btn" onclick="checkAnswer(162, 'A', this)">
+  <div style="display:flex;align-items:center;gap:12px;">
+    <span>(a)</span>
+    <table border="1" cellspacing="0" cellpadding="3" style="border-collapse:collapse;text-align:center;font-family:'Times New Roman',serif;">
+      <tr><td>A</td><td>8</td></tr>
+      <tr><td>B</td><td>20</td></tr>
+      <tr><td>C</td><td>17</td></tr>
+      <tr><td>D</td><td>12</td></tr>
+      <tr><td>E</td><td>10</td></tr>
+      <tr><td>F</td><td>0</td></tr>
+      <tr><td>G</td><td>6</td></tr>
+    </table>
+  </div>
+</button>
+
+<button class="option-btn" onclick="checkAnswer(162, 'B', this)">
+  <div style="display:flex;align-items:center;gap:12px;">
+    <span>(b)</span>
+    <table border="1" cellspacing="0" cellpadding="3" style="border-collapse:collapse;text-align:center;font-family:'Times New Roman',serif;">
+      <tr><td>A</td><td>21</td></tr>
+      <tr><td>B</td><td>8</td></tr>
+      <tr><td>C</td><td>7</td></tr>
+      <tr><td>D</td><td>19</td></tr>
+      <tr><td>E</td><td>14</td></tr>
+      <tr><td>F</td><td>0</td></tr>
+      <tr><td>G</td><td>22</td></tr>
+    </table>
+  </div>
+</button>
+
+<button class="option-btn" onclick="checkAnswer(162, 'C', this)">
+  <div style="display:flex;align-items:center;gap:12px;">
+    <span>(c)</span>
+    <table border="1" cellspacing="0" cellpadding="3" style="border-collapse:collapse;text-align:center;font-family:'Times New Roman',serif;">
+      <tr><td>A</td><td>8</td></tr>
+      <tr><td>B</td><td>20</td></tr>
+      <tr><td>C</td><td>17</td></tr>
+      <tr><td>D</td><td>12</td></tr>
+      <tr><td>E</td><td>10</td></tr>
+      <tr><td>F</td><td>16</td></tr>
+      <tr><td>G</td><td>6</td></tr>
+    </table>
+  </div>
+</button>
+
+<button class="option-btn" onclick="checkAnswer(162, 'D', this)">
+  <div style="display:flex;align-items:center;gap:12px;">
+    <span>(d)</span>
+    <table border="1" cellspacing="0" cellpadding="3" style="border-collapse:collapse;text-align:center;font-family:'Times New Roman',serif;">
+      <tr><td>A</td><td>8</td></tr>
+      <tr><td>B</td><td>8</td></tr>
+      <tr><td>C</td><td>7</td></tr>
+      <tr><td>D</td><td>12</td></tr>
+      <tr><td>E</td><td>10</td></tr>
+      <tr><td>F</td><td>0</td></tr>
+      <tr><td>G</td><td>6</td></tr>
+    </table>
+  </div>
+</button>
+
+<p class="year">GATE CSE 2007</p>
+<div id="explanation162" class="explanation"></div>
+
+
+
+<!-- Question 164 -->
+<div class="question">
+  <p class="ques">
+    <b>Q164.</b> A group of 15 routers are interconnected in a
+    centralized complete binary tree with a router at
+    each tree node. Router <i>i</i> communicates with
+    router <i>j</i> by sending a message to the root of the
+    tree. The root then sends the message back down
+    to router <i>j</i>. The mean number of hops per
+    message, assuming all possible router pairs are
+    equally likely is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(163, 'A', this)">
+    (a) 3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(163, 'B', this)">
+    (b) 4.26
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(163, 'C', this)">
+    (c) 4.53
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(163, 'D', this)">
+    (d) 5.26
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation163" class="explanation"></div>
+</div>
+    
+
+
+
+<!-- Question 165 -->
+<div class="question">
+  <p class="ques">
+    <b>Q165.</b> Consider the following clauses:
+    <br><br>
+    (i)&nbsp;&nbsp;&nbsp;&nbsp;Not inherently suitable for client
+    authentication.
+    <br>
+    (ii)&nbsp;&nbsp;&nbsp;Not a state sensitive protocol.
+    <br>
+    (iii)&nbsp;&nbsp;Must be operated with more than one server.
+    <br>
+    (iv)&nbsp;&nbsp;Suitable for structured message organization.
+    <br>
+    (v)&nbsp;&nbsp;&nbsp;May need two ports on the serve side for
+    proper operation.
+    <br><br>
+
+    The option that has the maximum number of
+    correct matches is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(164, 'A', this)">
+    (a) IMAP-(i), FTP-(ii), HTTP-(iii), DNS-(iv), POP3-(v)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(164, 'B', this)">
+    (b) FTP-(i), POP3-(ii), SMTP-(iii), HTTP-(iv), IMAP-(v)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(164, 'C', this)">
+    (c) POP3-(i), SMTP-(ii), DNS-(iii), IMAP-(iv), HTTP-(v)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(164, 'D', this)">
+    (d) SMTP-(i), HTTP-(ii), IMAP-(iii), DNS-(iv), FTP-(v)
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation164" class="explanation"></div>
+</div>
+
+<!-- Question 166 -->
+<div class="question">
+  <p class="ques">
+    <b>Q166.</b> Match the following:
+  </p>
+
+  <table>
+    <tr>
+      <td><b>P.</b> SMTP</td>
+      <td>1.&nbsp;Application layer</td>
+    </tr>
+    <tr>
+      <td><b>Q.</b> BGP</td>
+      <td>2.&nbsp;Transport layer</td>
+    </tr>
+    <tr>
+      <td><b>R.</b> TCP</td>
+      <td>3.&nbsp;Data link layer</td>
+    </tr>
+    <tr>
+      <td><b>S.</b> PPP</td>
+      <td>4.&nbsp;Network layer</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5.&nbsp;Physical layer</td>
+    </tr>
+  </table>
+
+  <p><b>Codes:</b></p>
+
+  <button class="option-btn" onclick="checkAnswer(165, 'A', this)">
+    (a) P-2, Q-1, R-3, S-5
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(165, 'B', this)">
+    (b) P-1, Q-4, R-2, S-3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(165, 'C', this)">
+    (c) P-1, Q-4, R-2, S-5
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(165, 'D', this)">
+    (d) P-2, Q-4, R-1, S-3
+  </button>
+
+  <p class="year">GATE CSE 2007</p>
+  <div id="explanation165" class="explanation"></div>
+</div>
+
+
+<!-- Question 167 -->
+<div class="question">
+  <p class="ques">
+    <b>Q167.</b> In the 4B/5B encoding scheme, every 4 bits of
+    data are encoded in a 5-bit codeword. It is required
+    that the codewords have at most 1 leading and
+    at most 1 trailing zero. How many such codewords
+    are possible?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(166, 'A', this)">
+    (a) 14
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(166, 'B', this)">
+    (b) 16
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(166, 'C', this)">
+    (c) 18
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(166, 'D', this)">
+    (d) 20
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation166" class="explanation"></div>
+</div>
+
+
+
+    
+<!-- Question 168 -->
+<div class="question">
+  <p class="ques">
+    <b>Q168.</b> On a wireless link, the probability of packet error
+    is 0.2. A stop-and-wait protocol is used to transfer
+    data across the link. The channel condition is
+    assumed to be independent from transmission to
+    transmission. What is the average number of
+    transmission attempts required to transfer 100
+    packets?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(167, 'A', this)">
+    (a) 100
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(167, 'B', this)">
+    (b) 125
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(167, 'C', this)">
+    (c) 150
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(167, 'D', this)">
+    (d) 200
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation167" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 169 -->
+<div class="question">
+  <p class="ques">
+    <b>Q169.</b> Station A uses 32 byte packets to transmit
+    messages to Station B using a sliding window
+    protocol. The round trip delay between A and B
+    is 80 milliseconds and the bottleneck bandwidth
+    on the path between A and B is 128 kbps. What
+    is the optimal window size that A should use?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(168, 'A', this)">
+    (a) 20
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(168, 'B', this)">
+    (b) 40
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(168, 'C', this)">
+    (c) 160
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(168, 'D', this)">
+    (d) 320
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation168" class="explanation"></div>
+</div>
+
+
+
+    
+<!-- Question 170 -->
+<div class="question">
+  <p class="ques">
+    <b>Q170.</b> Station A needs to send a message consisting of
+    9 packets to Station B using a sliding window
+    (window size 3) and go-back-n error control
+    strategy. All packets are ready and immediately
+    available for transmission. If every 5<sup>th</sup> packet
+    that A transmits gets lost (but no acks from B
+    ever get lost), then what is the number of packets
+    that A will transmit for sending the message to
+    B?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(169, 'A', this)">
+    (a) 12
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(169, 'B', this)">
+    (b) 14
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(169, 'C', this)">
+    (c) 16
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(169, 'D', this)">
+    (d) 18
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation169" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 171 -->
+<div class="question">
+  <p class="ques">
+    <b>Q171.</b> A router has two full-duplex Ethernet interfaces
+    each operating at 100 Mb/s. Ethernet frames are
+    at least 84 bytes long (including the Preamble
+    and the Inter-Packet-Gap). The maximum packet
+    processing time at the router for wirespeed
+    forwarding to be possible is (in micro-seconds)
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(170, 'A', this)">
+    (a) 0.01
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(170, 'B', this)">
+    (b) 3.36
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(170, 'C', this)">
+    (c) 6.72
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(170, 'D', this)">
+    (d) 8
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation170" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 172 -->
+<div class="question">
+  <p class="ques">
+    <b>Q172.</b> Which of the following statements is TRUE?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(171, 'A', this)">
+    (a) Both Ethernet frame and IP packet include
+    checksum fields
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(171, 'B', this)">
+    (b) Ethernet frame includes a checksum field
+    and IP packet includes a CRC field
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(171, 'C', this)">
+    (c) Ethernet frame includes a CRC field and IP
+    packet includes a checksum field
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(171, 'D', this)">
+    (d) Both Ethernet frame and IP packet include
+    CRC fields
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation171" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 173 -->
+<div class="question">
+  <p class="ques">
+    <b>Q173.</b> For which one of the following reasons does
+    Internet Protocol (IP) use the time-to-live (TTL)
+    field in the IP datagram header?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(172, 'A', this)">
+    (a) Ensure packets reach destination within that
+    time
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(172, 'B', this)">
+    (b) Discard packets that reach later than that
+    time
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(172, 'C', this)">
+    (c) Prevent packets from looping indefinitely
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(172, 'D', this)">
+    (d) Limit the time for which a packet gets queued
+    in intermediate routers
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation172" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 174 -->
+<div class="question">
+  <p class="ques">
+    <b>Q174.</b> A router uses the following routing table:
+  </p>
+
+  <table>
+    <tr>
+      <th>Destination</th>
+      <th>Mask</th>
+      <th>Interface</th>
+    </tr>
+    <tr>
+      <td>144.16.0.0</td>
+      <td>255.255.0.0</td>
+      <td>eth0</td>
+    </tr>
+    <tr>
+      <td>144.16.64.0</td>
+      <td>255.255.224.0</td>
+      <td>eth1</td>
+    </tr>
+    <tr>
+      <td>144.16.68.0</td>
+      <td>255.255.255.0</td>
+      <td>eth2</td>
+    </tr>
+    <tr>
+      <td>144.16.68.64</td>
+      <td>255.255.255.224</td>
+      <td>eth3</td>
+    </tr>
+  </table>
+
+  <p class="ques">
+    A packet bearing a destination address
+    144.16.68.117 arrives at the router. On which
+    interface will it be forwarded?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(173, 'A', this)">
+    (a) eth0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(173, 'B', this)">
+    (b) eth1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(173, 'C', this)">
+    (c) eth2
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(173, 'D', this)">
+    (c) eth3
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation173" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 175 -->
+<div class="question">
+  <p class="ques">
+    <b>Q175.</b> Suppose that it takes 1 unit of time to transmit
+    a packet (of fixed size) on a communication link.
+    The link layer uses a window flow control protocol
+    with a window size of N packets. Each packet
+    causes an ack or a nak to be generated by the
+    receiver, and ack/nak transmission times are
+    negligible. Further, the round trip time on the
+    link is equal to N units. Consider time <i>i</i> &gt; N. If
+    only acks have been received till time <i>i</i> (no
+    naks), then the goodput evaluated at the
+    transmitter at time <i>i</i> in packets per unit time is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(174, 'A', this)">
+    (a) 1 − N/i
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(174, 'B', this)">
+    (b) i/(N + i)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(174, 'C', this)">
+    (c) 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(174, 'D', this)">
+    (d) 1 − e<sup>(i/N)</sup>
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation174" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 176 -->
+<div class="question">
+  <p class="ques">
+    <b>Q176.</b> A link of capacity 100 Mbps is carrying traffic
+    from a number of sources. Each source generates
+    an on-off traffic stream; when the source is on,
+    the rate of traffic is 10 Mbps, and when the source
+    is off, the rate of traffic is zero. The duty cycle,
+    which is the ratio of on-time to off-time, is 1 : 2.
+    When there is no buffer at the link, the minimum
+    number of sources that can be multiplexed on
+    the link so that link capacity is not wasted and
+    no data loss occurs is S<sub>1</sub>. Assuming that all
+    sources are synchronized and that the link is
+    provided with a large buffer, the maximum
+    number of sources that can be multiplexed so
+    that no data loss occurs is S<sub>2</sub>. The values of
+    S<sub>1</sub> and S<sub>2</sub>, respectively, are
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(175, 'A', this)">
+    (a) 10 and 30
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(175, 'B', this)">
+    (b) 12 and 25
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(175, 'C', this)">
+    (c) 5 and 33
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(175, 'D', this)">
+    (d) 15 and 22
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation175" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 177 -->
+<div class="question">
+  <p class="ques">
+    <b>Q177.</b> A program on machine X attempts to open a UDP
+    connection to port 5376 on a machine Y, and a
+    TCP connection to port 8632 on machine Z.
+    However, there are no applications listening at
+    the corresponding ports on Y and Z. An ICMP
+    Port Unreachable error will be generated by
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(176, 'A', this)">
+    (a) Y but not Z
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(176, 'B', this)">
+    (b) Z but not Y
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(176, 'C', this)">
+    (c) Neither Y nor Z
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(176, 'D', this)">
+    (d) Both Y and Z
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation176" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 178 -->
+<div class="question">
+  <p class="ques">
+    <b>Q178.</b> A subnetted Class B network has the following
+    broadcast address : 144.16.95.255. Its subnet
+    mask
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(177, 'A', this)">
+    (a) is necessarily 255.255.224.0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(177, 'B', this)">
+    (b) is necessarily 255.255.240.0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(177, 'C', this)">
+    (c) is necessarily 255.255.248.0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(177, 'D', this)">
+    (d) could be any one of 255.255.224.0,
+    255.255.240.0, 255.255.248.0
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation177" class="explanation"></div>
+</div>
+
+<!-- Question 179 -->
+<div class="question">
+  <p class="ques">
+    <b>Q179.</b> Two computers C1 and C2 are configured as
+    follows. C1 has IP address 203.197.2.53 and
+    netmask 255.255.128.0. C2 has IP address
+    203.197.75.201 and netmask 255.255.192.0.
+    Which of the following statements is true?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(178, 'A', this)">
+    (a) C1 and C2 both assume they are on the same
+    network
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(178, 'B', this)">
+    (b) C2 assumes C1 is on same network, but C1
+    assumes C2 is on a different network
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(178, 'C', this)">
+    (c) C1 assumes C2 is on same network, but C2
+    assumes C1 is on a different network
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(178, 'D', this)">
+    (d) C1 and C2 both assume they are on different
+    networks
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation178" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 180 -->
+<div class="question">
+  <p class="ques">
+    <b>Q180.</b> HELO and PORT, respectively, are commands
+    from the protocols
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(179, 'A', this)">
+    (a) FTP and HTTP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(179, 'B', this)">
+    (b) TELNET and POP3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(179, 'C', this)">
+    (c) HTTP and TELNET
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(179, 'D', this)">
+    (d) SMTP and FTP
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation179" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 181 -->
+<div class="question">
+  <p class="ques">
+    <b>Q181.</b> Consider the diagram shown below where a number of
+    LANs are connected by (transparent) bridges. In order
+    to avoid packets looping through circuits in the graph,
+    the bridges organize themselves in a spanning tree.
+    First, the root bridge is identified as the bridge with
+    the least serial number. Next, the root sends out (one
+    or more) data units to enable the setting up of the
+    spanning tree of shortest paths from the root bridge to
+    each bridge.
+  </p>
+
+  <div class="svg-container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 500" width="100%" height="100%" style="background-color: #fff; font-family: monospace, sans-serif; font-size: 13px;">
+  <style>
+    rect { fill: #fff; stroke: #000; stroke-width: 1.5; }
+    line, path { stroke: #000; stroke-width: 1.5; fill: none; }
+    text { fill: #000; text-anchor: middle; dominant-baseline: central; font-weight: bold; }
+    .num { font-size: 11px; font-weight: normal; }
+  </style>
+
+  <!-- Buses (Horizontal Lines) -->
+  <!-- Top Buses -->
+  <line x1="40" y1="120" x2="220" y2="120" />
+  <line x1="280" y1="120" x2="460" y2="120" />
+
+  <!-- Middle Buses -->
+  <line x1="40" y1="280" x2="220" y2="280" />
+  <line x1="280" y1="280" x2="460" y2="280" />
+
+  <!-- Bottom Buses -->
+  <line x1="50" y1="440" x2="210" y2="440" />
+  <line x1="290" y1="440" x2="450" y2="440" />
+
+  <!-- Top Block: B1 -->
+  <rect x="230" y="20" width="40" height="30" />
+  <text x="250" y="35">B1</text>
+  <!-- B1 Connections -->
+  <path d="M 240 50 L 240 85 L 180 85 L 180 120" />
+  <path d="M 260 50 L 260 85 L 300 85 L 300 120" />
+  <text x="232" y="65" class="num">1</text>
+  <text x="268" y="65" class="num">2</text>
+
+  <!-- Top Host Blocks -->
+  <rect x="50" y="65" width="35" height="30" /><text x="67.5" y="80">H1</text>
+  <line x1="67.5" y1="95" x2="67.5" y2="120" />
+
+  <rect x="125" y="65" width="35" height="30" /><text x="142.5" y="80">H2</text>
+  <line x1="142.5" y1="95" x2="142.5" y2="120" />
+
+  <rect x="330" y="65" width="35" height="30" /><text x="347.5" y="80">H3</text>
+  <line x1="347.5" y1="95" x2="347.5" y2="120" />
+
+  <rect x="405" y="65" width="35" height="30" /><text x="422.5" y="80">H4</text>
+  <line x1="422.5" y1="95" x2="422.5" y2="120" />
+
+  <!-- Switch Blocks B5 & B3 -->
+  <rect x="70" y="170" width="40" height="35" /><text x="90" y="187.5">B5</text>
+  <rect x="390" y="170" width="40" height="35" /><text x="410" y="187.5">B3</text>
+
+  <!-- Connections for B5 & B3 -->
+  <!-- B5 top/side lines -->
+  <path d="M 80 120 L 80 170" />
+  <text x="73" y="160" class="num">2</text>
+
+  <path d="M 110 180 L 280 120" />
+  <text x="117" y="173" class="num">3</text>
+
+  <!-- B3 top/side lines -->
+  <path d="M 420 120 L 420 170" />
+  <text x="427" y="160" class="num">3</text>
+
+  <path d="M 390 180 L 200 120" />
+  <text x="383" y="173" class="num">4</text>
+
+  <!-- B5 bottom lines -->
+  <path d="M 80 205 L 80 280" />
+  <text x="73" y="215" class="num">1</text>
+
+  <path d="M 100 205 L 100 250 L 290 250 L 290 280" />
+  <text x="108" y="215" class="num">4</text>
+
+  <!-- B3 bottom lines -->
+  <path d="M 400 205 L 400 280" />
+  <text x="407" y="215" class="num">2</text>
+
+  <path d="M 390 205 L 390 230 L 170 230 L 170 280" />
+  <text x="382" y="215" class="num">1</text>
+
+  <!-- Middle Host Blocks -->
+  <rect x="60" y="305" width="35" height="30" /><text x="77.5" y="320">H5</text>
+  <line x1="77.5" y1="280" x2="77.5" y2="305" />
+
+  <rect x="130" y="305" width="35" height="30" /><text x="147.5" y="320">H6</text>
+  <line x1="147.5" y1="280" x2="147.5" y2="305" />
+
+  <rect x="335" y="305" width="35" height="30" /><text x="352.5" y="320">H7</text>
+  <line x1="352.5" y1="280" x2="352.5" y2="305" />
+
+  <rect x="405" y="305" width="35" height="30" /><text x="422.5" y="320">H8</text>
+  <line x1="422.5" y1="280" x2="422.5" y2="305" />
+
+  <!-- Switch Blocks B4 & B2 -->
+  <rect x="140" y="370" width="40" height="35" /><text x="160" y="387.5">B4</text>
+  <rect x="300" y="370" width="40" height="35" /><text x="320" y="387.5">B2</text>
+
+  <!-- B4 Connections -->
+  <path d="M 50 280 L 50 387.5 L 140 387.5" />
+  <text x="132" y="387.5" class="num">1</text>
+
+  <path d="M 160 370 L 200 330 L 300 280" />
+  <text x="153" y="362" class="num">2</text>
+
+  <line x1="160" y1="405" x2="160" y2="440" />
+  <text x="168" y="415" class="num">3</text>
+
+  <!-- B2 Connections -->
+  <path d="M 320 370 L 320 280" />
+  <text x="328" y="362" class="num">1</text>
+
+  <path d="M 305 370 L 200 280" />
+  <text x="296" y="362" class="num">2</text>
+
+  <line x1="320" y1="405" x2="320" y2="440" />
+  <text x="328" y="415" class="num">3</text>
+
+  <!-- Bottom Host Blocks -->
+  <rect x="75" y="460" width="40" height="30" /><text x="95" y="475">H11</text>
+  <line x1="95" y1="440" x2="95" y2="460" />
+
+  <rect x="145" y="460" width="40" height="30" /><text x="165" y="475">H12</text>
+  <line x1="165" y1="440" x2="165" y2="460" />
+
+  <rect x="300" y="460" width="40" height="30" /><text x="320" y="475">H11</text>
+  <line x1="320" y1="440" x2="320" y2="460" />
+
+  <rect x="370" y="460" width="40" height="30" /><text x="390" y="475">H12</text>
+  <line x1="390" y1="440" x2="390" y2="460" />
+</svg>
+
+  </div>
+
+  <p class="ques">
+    Each bridge identifies a port (the root port) through
+    which it will forward frames to the root bridge. Port
+    conflicts are always resolved in favour of the port with
+    the lower index value. When there is a possibility of
+    multiple bridges forwarding to the same LAN (but not
+    through the root port), ties are broken as follows :
+    bridges closest to the root get preference and between
+    such bridges, the one with the lowest serial number is
+    preferred.
+  </p>
+
+  <p class="ques">
+    For the given connection of LANs by bridges,
+    which one of the following choices represents the
+    depth first traversal of the spanning tree of
+    bridges?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(180, 'A', this)">
+    (a) B1, B5, B3, B4, B2
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(180, 'B', this)">
+    (b) B1, B3, B5, B2, B4
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(180, 'C', this)">
+    (c) B1, B5, B2, B3, B4
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(180, 'D', this)">
+    (d) B1, B3, B4, B5, B2
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation180" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 182 -->
+<div class="question">
+  <p class="ques">
+    <b>Q182.</b> Consider the diagram shown below where a number of
+    LANs are connected by (transparent) bridges. In order
+    to avoid packets looping through circuits in the graph,
+    the bridges organize themselves in a spanning tree.
+    First, the root bridge is identified as the bridge with
+    the least serial number. Next, the root sends out (one
+    or more) data units to enable the setting up of the
+    spanning tree of shortest paths from the root bridge to
+    each bridge.
+  </p>
+
+  <div class="svg-container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 500" width="100%" height="100%" style="background-color: #fff; font-family: monospace, sans-serif; font-size: 13px;">
+  <style>
+    rect { fill: #fff; stroke: #000; stroke-width: 1.5; }
+    line, path { stroke: #000; stroke-width: 1.5; fill: none; }
+    text { fill: #000; text-anchor: middle; dominant-baseline: central; font-weight: bold; }
+    .num { font-size: 11px; font-weight: normal; }
+  </style>
+
+  <!-- Buses (Horizontal Lines) -->
+  <!-- Top Buses -->
+  <line x1="40" y1="120" x2="220" y2="120" />
+  <line x1="280" y1="120" x2="460" y2="120" />
+
+  <!-- Middle Buses -->
+  <line x1="40" y1="280" x2="220" y2="280" />
+  <line x1="280" y1="280" x2="460" y2="280" />
+
+  <!-- Bottom Buses -->
+  <line x1="50" y1="440" x2="210" y2="440" />
+  <line x1="290" y1="440" x2="450" y2="440" />
+
+  <!-- Top Block: B1 -->
+  <rect x="230" y="20" width="40" height="30" />
+  <text x="250" y="35">B1</text>
+  <!-- B1 Connections -->
+  <path d="M 240 50 L 240 85 L 180 85 L 180 120" />
+  <path d="M 260 50 L 260 85 L 300 85 L 300 120" />
+  <text x="232" y="65" class="num">1</text>
+  <text x="268" y="65" class="num">2</text>
+
+  <!-- Top Host Blocks -->
+  <rect x="50" y="65" width="35" height="30" /><text x="67.5" y="80">H1</text>
+  <line x1="67.5" y1="95" x2="67.5" y2="120" />
+
+  <rect x="125" y="65" width="35" height="30" /><text x="142.5" y="80">H2</text>
+  <line x1="142.5" y1="95" x2="142.5" y2="120" />
+
+  <rect x="330" y="65" width="35" height="30" /><text x="347.5" y="80">H3</text>
+  <line x1="347.5" y1="95" x2="347.5" y2="120" />
+
+  <rect x="405" y="65" width="35" height="30" /><text x="422.5" y="80">H4</text>
+  <line x1="422.5" y1="95" x2="422.5" y2="120" />
+
+  <!-- Switch Blocks B5 & B3 -->
+  <rect x="70" y="170" width="40" height="35" /><text x="90" y="187.5">B5</text>
+  <rect x="390" y="170" width="40" height="35" /><text x="410" y="187.5">B3</text>
+
+  <!-- Connections for B5 & B3 -->
+  <!-- B5 top/side lines -->
+  <path d="M 80 120 L 80 170" />
+  <text x="73" y="160" class="num">2</text>
+
+  <path d="M 110 180 L 280 120" />
+  <text x="117" y="173" class="num">3</text>
+
+  <!-- B3 top/side lines -->
+  <path d="M 420 120 L 420 170" />
+  <text x="427" y="160" class="num">3</text>
+
+  <path d="M 390 180 L 200 120" />
+  <text x="383" y="173" class="num">4</text>
+
+  <!-- B5 bottom lines -->
+  <path d="M 80 205 L 80 280" />
+  <text x="73" y="215" class="num">1</text>
+
+  <path d="M 100 205 L 100 250 L 290 250 L 290 280" />
+  <text x="108" y="215" class="num">4</text>
+
+  <!-- B3 bottom lines -->
+  <path d="M 400 205 L 400 280" />
+  <text x="407" y="215" class="num">2</text>
+
+  <path d="M 390 205 L 390 230 L 170 230 L 170 280" />
+  <text x="382" y="215" class="num">1</text>
+
+  <!-- Middle Host Blocks -->
+  <rect x="60" y="305" width="35" height="30" /><text x="77.5" y="320">H5</text>
+  <line x1="77.5" y1="280" x2="77.5" y2="305" />
+
+  <rect x="130" y="305" width="35" height="30" /><text x="147.5" y="320">H6</text>
+  <line x1="147.5" y1="280" x2="147.5" y2="305" />
+
+  <rect x="335" y="305" width="35" height="30" /><text x="352.5" y="320">H7</text>
+  <line x1="352.5" y1="280" x2="352.5" y2="305" />
+
+  <rect x="405" y="305" width="35" height="30" /><text x="422.5" y="320">H8</text>
+  <line x1="422.5" y1="280" x2="422.5" y2="305" />
+
+  <!-- Switch Blocks B4 & B2 -->
+  <rect x="140" y="370" width="40" height="35" /><text x="160" y="387.5">B4</text>
+  <rect x="300" y="370" width="40" height="35" /><text x="320" y="387.5">B2</text>
+
+  <!-- B4 Connections -->
+  <path d="M 50 280 L 50 387.5 L 140 387.5" />
+  <text x="132" y="387.5" class="num">1</text>
+
+  <path d="M 160 370 L 200 330 L 300 280" />
+  <text x="153" y="362" class="num">2</text>
+
+  <line x1="160" y1="405" x2="160" y2="440" />
+  <text x="168" y="415" class="num">3</text>
+
+  <!-- B2 Connections -->
+  <path d="M 320 370 L 320 280" />
+  <text x="328" y="362" class="num">1</text>
+
+  <path d="M 305 370 L 200 280" />
+  <text x="296" y="362" class="num">2</text>
+
+  <line x1="320" y1="405" x2="320" y2="440" />
+  <text x="328" y="415" class="num">3</text>
+
+  <!-- Bottom Host Blocks -->
+  <rect x="75" y="460" width="40" height="30" /><text x="95" y="475">H11</text>
+  <line x1="95" y1="440" x2="95" y2="460" />
+
+  <rect x="145" y="460" width="40" height="30" /><text x="165" y="475">H12</text>
+  <line x1="165" y1="440" x2="165" y2="460" />
+
+  <rect x="300" y="460" width="40" height="30" /><text x="320" y="475">H11</text>
+  <line x1="320" y1="440" x2="320" y2="460" />
+
+  <rect x="370" y="460" width="40" height="30" /><text x="390" y="475">H12</text>
+  <line x1="390" y1="440" x2="390" y2="460" />
+</svg>
+
+  </div>
+      
+      
+  <p class="ques"> Consider the correct spanning tree for the
+    previous question. Let host H1 send out a
+    broadcast ping packet. Which of the following
+    options represents the correct forwarding table
+    on B3?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(181, 'A', this)">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <span>(a)</span>
+      <table>
+        <tr>
+          <th>Hosts</th>
+          <th>Port</th>
+        </tr>
+        <tr>
+          <td>H1, H2, H3, H4</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>H5, H6, H9, H10</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>H7, H8, H11, H12</td>
+          <td>2</td>
+        </tr>
+      </table>
+    </div>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(181, 'B', this)">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <span>(b)</span>
+      <table>
+        <tr>
+          <th>Hosts</th>
+          <th>Port</th>
+        </tr>
+        <tr>
+          <td>H1, H2</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>H3, H4</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>H5, H6</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>H7, H8, H9, H10</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>H11, H12</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(181, 'C', this)">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <span>(c)</span>
+      <table>
+        <tr>
+          <th>Hosts</th>
+          <th>Port</th>
+        </tr>
+        <tr>
+          <td>H3, H4</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>H5, H6, H9, H10</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>H1, H2</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>H7, H8, H11, H12</td>
+          <td>2</td>
+        </tr>
+      </table>
+    </div>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(181, 'D', this)">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <span>(d)</span>
+      <table>
+        <tr>
+          <th>Hosts</th>
+          <th>Port</th>
+        </tr>
+        <tr>
+          <td>H1, H2, H3, H4</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>H5, H7, H9, H10</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>H7, H8, H11, H12</td>
+          <td>4</td>
+        </tr>
+      </table>
+    </div>
+  </button>
+
+  <p class="year">GATE CSE 2006</p>
+  <div id="explanation181" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 183 -->
+<div class="question">
+  <p class="ques">
+    <b>Q183.</b> The maximum window size for data transmission
+    using the selective reject protocol with n-bit frame
+    sequence numbers is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(182, 'A', this)">
+    (a) 2<sup>n</sup>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(182, 'B', this)">
+    (b) 2<sup>n − 1</sup>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(182, 'C', this)">
+    (c) 2<sup>n</sup> − 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(182, 'D', this)">
+    (d) 2<sup>n − 2</sup>
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation182" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 184 -->
+<div class="question">
+  <p class="ques">
+    <b>Q184.</b> Consider the following message M = 1010001101.
+    The cyclic redundancy check (CRC) for this
+    message using the divisor polynomial
+    x<sup>5</sup> + x<sup>4</sup> + x<sup>2</sup> + 1 is :
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(183, 'A', this)">
+    (a) 01110
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(183, 'B', this)">
+    (b) 01011
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(183, 'C', this)">
+    (c) 10101
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(183, 'D', this)">
+    (d) 10110
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation183" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 185 -->
+<div class="question">
+  <p class="ques">
+    <b>Q185.</b> A channel has a bit rate of 4 kbps and one-way
+    propagation delay of 20 ms. The channel uses
+    stop and wait protocol. The transmission time of
+    the acknowledgement frame is negligible. To get
+    a channel efficiency of at least 50%, the minimum
+    frame size should be
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(184, 'A', this)">
+    (a) 80 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(184, 'B', this)">
+    (b) 80 bits
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(184, 'C', this)">
+    (c) 160 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(184, 'D', this)">
+    (d) 160 bits
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation184" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 186 -->
+<div class="question">
+  <p class="ques">
+    <b>Q186.</b> In a network of LANs connected by bridges,
+    packets are sent from one LAN to another
+    through intermediate bridges. Since more than
+    one path may exist between two LANs, packets
+    may have to be routed through multiple bridges.
+    Why is the spanning tree algorithm used for
+    bridge-routing?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(185, 'A', this)">
+    (a) For shortest path routing between LANs
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(185, 'B', this)">
+    (b) For avoiding loops in the routing paths
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(185, 'C', this)">
+    (c) For fault tolerance
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(185, 'D', this)">
+    (d) For minimizing collisions
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation185" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 187 -->
+<div class="question">
+  <p class="ques">
+    <b>Q187.</b> Which of the following statements is TRUE about
+    CSMA/CD
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(186, 'A', this)">
+    (a) IEEE 802.11 wireless LAN runs CSMA/CD
+    protocol
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(186, 'B', this)">
+    (b) Ethernet is not based on CSMA/CD protocol
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(186, 'C', this)">
+    (c) CSMA/CD is not suitable for a high
+    propagation delay network like satellite
+    network
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(186, 'D', this)">
+    (d) There is no contention in a CSMA/CD
+    network
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation186" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 188 -->
+<div class="question">
+  <p class="ques">
+    <b>Q188.</b> Which of the following statements is FALSE
+    regarding a bridge
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(187, 'A', this)">
+    (a) Bridge is a layer 2 device
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(187, 'B', this)">
+    (b) Bridge reduces collision domain
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(187, 'C', this)">
+    (c) Bridge is used to connect two or more LAN
+    segments
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(187, 'D', this)">
+    (d) Bridge reduces broadcast domain
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation187" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 189 -->
+<div class="question">
+  <p class="ques">
+    <b>Q189.</b> A network with CSMA/CD protocol in the MAC
+    layer is running at 1 Gbps over a 1 km cable
+    with no repeaters. The signal speed in the cable
+    is 2 x 10<sup>8</sup> m/sec. The minimum frame size for
+    this network should be
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(188, 'A', this)">
+    (a) 10000 bits
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(188, 'B', this)">
+    (b) 5000 bits
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(188, 'C', this)">
+    (c) 10000 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(188, 'D', this)">
+    (d) 5000 bytes
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation188" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 190 -->
+<div class="question">
+  <p class="ques">
+    <b>Q190.</b> In a TDM medium access control bus LAN, each
+    station is assigned one time slot per cycle for
+    transmission. Assume that the length of each
+    time slot is the time to transmit 100 bits plus
+    the end-to-end propagation delay. Assume a
+    propagation speed of 2 × 10<sup>8</sup> m/sec. The length
+    of the LAN is 1 km with a bandwidth of 10
+    Mbps. The maximum number of stations that
+    can be allowed in the LAN so that the
+    throughput of each station can be 2/3 Mbps is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(189, 'A', this)">
+    (a) 3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(189, 'B', this)">
+    (b) 5
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(189, 'C', this)">
+    (c) 10
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(189, 'D', this)">
+    (d) 20
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation189" class="explanation"></div>
+</div>
+
+
+    
+
+<!-- Question 191 -->
+<div class="question">
+  <p class="ques">
+    <b>Q191.</b> Packets of the same session may be routed
+    through different paths in
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(190, 'A', this)">
+    (a) TCP, but not UDP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(190, 'B', this)">
+    (b) TCP and UDP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(190, 'C', this)">
+    (c) UDP, but not TCP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(190, 'D', this)">
+    (d) Neither TCP, nor UDP
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation190" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 192 -->
+<div class="question">
+  <p class="ques">
+    <b>Q192.</b> The address resolution protocol (ARP) is used for
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(191, 'A', this)">
+    (a) Finding the IP address from the DNS
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(191, 'B', this)">
+    (b) Finding the IP address of the default gateway
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(191, 'C', this)">
+    (c) Finding the IP address that corresponds to a
+    MAC address
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(191, 'D', this)">
+    (d) Finding the MAC address that corresponds
+    to an IP address
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation191" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 193 -->
+<div class="question">
+  <p class="ques">
+    <b>Q193.</b> An organization has a class B network and
+    wishes to form subnets for 64 departments. The
+    subnet mask would be
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(192, 'A', this)">
+    (a) 255.255.0.0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(192, 'B', this)">
+    (b) 255.255.64.0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(192, 'C', this)">
+    (c) 255.255.128.0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(192, 'D', this)">
+    (d) 255.255.252.0
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation192" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 194 -->
+<div class="question">
+  <p class="ques">
+    <b>Q194.</b> In a packet switching network, packets are
+    routed from source to destination along a single
+    path having two intermediate nodes. If the
+    message size is 24 bytes and each packet contains
+    a header of 3 bytes, then the optimum packet
+    size is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(193, 'A', this)">
+    (a) 4
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(193, 'B', this)">
+    (b) 6
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(193, 'C', this)">
+    (c) 7
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(193, 'D', this)">
+    (d) 9
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation193" class="explanation"></div>
+</div>
+
+<!-- Question 195 -->
+<div class="question">
+  <p class="ques">
+    <b>Q195.</b> Suppose the round trip propagation delay for a
+    10 Mbps Ethernet having 48-bit jamming signal
+    is 46.4 &micro;s. The minimum frame size is:
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(194, 'A', this)">
+    (a) 94
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(194, 'B', this)">
+    (b) 416
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(194, 'C', this)">
+    (c) 464
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(194, 'D', this)">
+    (d) 512
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation194" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 196 -->
+<div class="question">
+  <p class="ques">
+    <b>Q196.</b> On a TCP connection, current congestion window
+    size is Congestion Window = 4 KB. The window
+    size advertised by the receiver is Advertise
+    Window = 6 KB. The last byte sent by the sender
+    is LastByteSent = 10240 and the last byte
+    acknowledged by the receiver is LastByteAcked
+    = 8192. The current window size at the sender is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(195, 'A', this)">
+    (a) 2048 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(195, 'B', this)">
+    (b) 4096 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(195, 'C', this)">
+    (c) 6144 bytes
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(195, 'D', this)">
+    (d) 8192 bytes
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation195" class="explanation"></div>
+</div>
+
+<!-- Question 197 -->
+<div class="question">
+  <p class="ques">
+    <b>Q197.</b> In a communication network, a packet of length
+    L bits takes link L1 with a probability of p<sub>1</sub> or
+    link L2 with a probability of p<sub>2</sub>. Link L1 and L2
+    have bit error probability of b<sub>1</sub> and b<sub>2</sub>, respectively.
+    The probability that the packet will be received
+    without error via either L1 or L2 is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(196, 'A', this)">
+    (a) (1 − b<sub>1</sub>)<sup>L</sup> p<sub>1</sub> + (1 − b<sub>2</sub>)<sup>L</sup> p<sub>2</sub>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(196, 'B', this)">
+    (b) (1 − (b<sub>1</sub> + b<sub>2</sub>))<sup>L</sup>p<sub>1</sub>p<sub>2</sub>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(196, 'C', this)">
+    (c) (1 − b<sub>1</sub>)<sup>L</sup> (1 − b<sub>2</sub>)<sup>L</sup> p<sub>1</sub>p<sub>2</sub>
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(196, 'D', this)">
+    (d) 1 − (b<sub>1</sub><sup>L</sup> p<sub>1</sub> + b<sub>2</sub><sup>L</sup> p<sub>2</sub>)
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation196" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 198 -->
+<div class="question">
+  <p class="ques">
+    <b>Q198.</b> A company has a class C network address of
+    204.204.204.0. It wishes to have three subnets,
+    one with 100 hosts and two with 50 hosts each.
+    Which one of the following options represents a
+    feasible set of subnet address/subnet mask pairs?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(197, 'A', this)">
+    (a)
+    <br>204.204.204.128/255.255.255.192
+    <br>204.204.204.0/255.255.255.128
+    <br>204.204.204.64/255.255.255.128
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(197, 'B', this)">
+    (b)
+    <br>204.204.204.0/255.255.255.192
+    <br>204.204.204.192/255.255.255.128
+    <br>204.204.204.64/255.255.255.128
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(197, 'C', this)">
+    (c)
+    <br>204.204.204.128/255.255.255.128
+    <br>204.204.204.192/255.255.255.192
+    <br>204.204.204.224/255.255.255.192
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(197, 'D', this)">
+    (d)
+    <br>204.204.204.128/255.255.255.128
+    <br>204.204.204.64/255.255.255.192
+    <br>204.204.204.0/255.255.255.192
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation197" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 199 -->
+<div class="question">
+  <p class="ques">
+    <b>Q199.</b> Consider the three commands : PROMPT, HELO
+    and RCPT. Which of the following options indicate
+    a correct association of these commands with
+    protocols where these are used?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(198, 'A', this)">
+    (a) HTTP, SMTP, FTP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(198, 'B', this)">
+    (b) FTP, HTTP, SMTP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(198, 'C', this)">
+    (c) HTTP, FTP, SMTP
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(198, 'D', this)">
+    (d) SMTP, HTTP, FTP
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation198" class="explanation"></div>
+</div>
+
+<!-- Question 200 -->
+<div class="question">
+  <p class="ques">
+    <b>Q200.</b> Traceroute reports a possible route that is taken
+    by packets moving from some host A to some
+    other host B. Which of the following options
+    represents the technique used by traceroute to
+    identify these hosts?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(199, 'A', this)">
+    (a) By progressively querying routers about the
+    next router on the path to B using ICMP
+    packets, starting with the first router
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(199, 'B', this)">
+    (b) By requiring each router to append the
+    address to the ICMP packet as it is forwarded
+    to B. The list of all routers en-route to B is
+    returned by B in an ICMP reply packet
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(199, 'C', this)">
+    (c) By ensuring that an ICMP reply packet is
+    returned to A by each router en-route to B,
+    in the ascending order of their hop distance
+    from A
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(199, 'D', this)">
+    (d) By locally computing the shortest path from
+    A to B
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation199" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 201 -->
+<div class="question">
+  <p class="ques">
+    <b>Q201.</b> Count to infinity is a problem associated with
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(200, 'A', this)">
+    (a) link state routing protocol.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(200, 'B', this)">
+    (b) distance vector routing protocol.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(200, 'C', this)">
+    (c) DNS while resolving host name.
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(200, 'D', this)">
+    (d) TCP for congestion control.
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation200" class="explanation"></div>
+</div>
+
+<!-- Question 202 -->
+<div class="question">
+  <p class="ques">
+    <b>Q202.</b> Assume that “host1.mydomain.dom” has an IP
+    address of 145.128.16.8. Which of the following
+    options would be most appropriate as a
+    subsequence of steps in performing the reverse
+    lookup of 145.128.16.8? In the following options
+    “NS” is an abbreviation of “nameserver”.
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(201, 'A', this)">
+    (a) Query a NS for the root domain and then
+    NS for the “dom” domains
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(201, 'B', this)">
+    (b) Directly query a NS for “dom” and then a NS
+    for “mydomain.dom” domains
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(201, 'C', this)">
+    (c) Query a NS for in-addr.arpa and then a NS
+    for 128.145.in-addr.arpa domains
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(201, 'D', this)">
+    (d) Directly query a NS for 145.in-addr.arpa
+    and then a NS for 128.145.in-addr.arpa
+    domains
+  </button>
+
+  <p class="year">GATE CSE 2005</p>
+  <div id="explanation201" class="explanation"></div>
+</div>
+
+
+
 
 
 
@@ -5872,11 +7822,7 @@ td {
     
 
 
-
-
-
-
-
+    
     
     
     
