@@ -6894,6 +6894,8 @@ stroke="black" stroke-width="2"/>
     or more) data units to enable the setting up of the
     spanning tree of shortest paths from the root bridge to
     each bridge.
+<br><br>
+      Each bridge identifies a port (the root port) through which it will forward frames to the root bridge. Port conflicts are always resolved in favour of the port with the lower index value. When there is a possibility of multiple bridges forwarding to the same LAN (but not through the root port), ties are broken as follows : bridges closest to the root get preference and between such bridges, the one with the lowest serial number is preferred.
   </p>
 
   <div class="svg-container">
