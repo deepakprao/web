@@ -4658,11 +4658,17 @@ td {
     this link to maximally pack them in transit
     (within the link).
     <br><br>
+    Let I be the minimum number of bits (<i>I</i>) that
+    will be required to represent the sequence
+    numbers distinctly assuming that no time gap
+    needs to be given between transmission of two
+    frames
+    <br><br>
     Suppose that the sliding window protocol is used
-    with the sender window size of 2<sup><i>l</i></sup>, where <i>l</i> is the
+    with the sender window size of 2<sup><i>I</i></sup>, where <i>I</i> is the
     number of bits identified in the earlier part and
     acknowledgments are always piggy backed. After
-    sending 2<sup><i>l</i></sup> frames, what is the minimum time
+    sending 2<sup><i>I</i></sup> frames, what is the minimum time
     the sender will have to wait before starting
     transmission of the next frame? (Identify the
     closest choice ignoring the frame processing
