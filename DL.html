@@ -846,15 +846,179 @@ td {
 
 
 
+<!-- Question 26 -->
+<div class="question">
+  <p class="ques">
+    <b>Q26.</b> Consider the circuit shown below where the gates may have propagation delays. Assume that all signal transitions occur instantaneously and that wires have no delays. Which of the following statements about the circuit is/are CORRECT?
+  </p>
+
+  <svg width="700" height="260" viewBox="0 0 700 260"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- X input -->
+    <text x="25" y="70" font-size="22">X</text>
+    <line x1="55" y1="65" x2="510" y2="65"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Branch -->
+    <line x1="100" y1="65" x2="100" y2="145"
+          stroke="black" stroke-width="2"/>
+
+    <!-- NOT gate -->
+    <path d="M180 115 L180 175 L270 145 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="195" y="152" font-size="18">NOT</text>
+
+    <!-- NOT output bubble -->
+    <circle cx="280" cy="145" r="9"
+            fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Wire from branch to NOT -->
+    <line x1="100" y1="145" x2="180" y2="145"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Wire from NOT to AND -->
+    <line x1="289" y1="145" x2="430" y2="145"
+          stroke="black" stroke-width="2"/>
+    <line x1="430" y1="145" x2="430" y2="115"
+          stroke="black" stroke-width="2"/>
+    <line x1="430" y1="115" x2="510" y2="115"
+          stroke="black" stroke-width="2"/>
+
+    <!-- AND gate -->
+    <path d="M510 40 L560 40
+             A45 45 0 0 1 560 140
+             L510 140 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="525" y="100" font-size="20">AND</text>
+
+    <!-- Y output -->
+    <line x1="605" y1="90" x2="660" y2="90"
+          stroke="black" stroke-width="2"/>
+    <text x="665" y="96" font-size="22">Y</text>
+  </svg>
+
+  <button class="option-btn" onclick="checkAnswer(26, 'A', this)">A) With no propagation delays, the output Y is always logic Zero</button>
+  <button class="option-btn" onclick="checkAnswer(26, 'B', this)">B) With no propagation delays, the output Y is always logic One</button>
+  <button class="option-btn" onclick="checkAnswer(26, 'C', this)">C) With propagation delays, the output Y can have a transient logic One after X transitions from logic Zero to logic One</button>
+  <button class="option-btn" onclick="checkAnswer(26, 'D', this)">D) With propagation delays, the output Y can have a transient logic Zero after X transitions from logic One to logic Zero</button>
+
+  <p class="year"><i>GATE CSE 2024 Session 1</i></p>
+  <div id="explanation26" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 27 -->
+<div class="question">
+  <p class="ques">
+    <b>Q27.</b> Consider a Boolean expression given by F(X, Y, Z) = ∑(3,5,6,7).
+  </p>
+
+  <p class="ques">
+    Which of the following statements is/are CORRECT?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(27, 'A', this)">A) F(X, Y, Z) = ∏(0,1,2,4)</button>
+  <button class="option-btn" onclick="checkAnswer(27, 'B', this)">B) F(X, Y, Z) = XY + YZ + XZ</button>
+  <button class="option-btn" onclick="checkAnswer(27, 'C', this)">C) F(X, Y, Z) is independent of input Y</button>
+  <button class="option-btn" onclick="checkAnswer(27, 'D', this)">D) F(X, Y, Z) is independent of input X</button>
+
+  <p class="year"><i>GATE CSE 2024 Session 1</i></p>
+  <div id="explanation27" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 28 -->
+<div class="question">
+  <p class="ques">
+    <b>Q28.</b> Consider a digital logic circuit consisting of three 2-to-1 multiplexers M1, M2, and M3 as shown below. X1 and X2 are inputs of M1. X3 and X4 are inputs of M2. A, B, and C are select lines of M1, M2, and M3, respectively.
+  </p>
 
+  <svg width="700" height="520" viewBox="0 0 700 520"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
 
+    <!-- M1 -->
+    <rect x="230" y="40" width="100" height="150"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="270" y="125" font-size="18">M1</text>
 
+    <text x="175" y="85" font-size="18">X1</text>
+    <text x="175" y="145" font-size="18">X2</text>
+    <line x1="200" y1="80" x2="230" y2="80" stroke="black" stroke-width="2"/>
+    <line x1="200" y1="140" x2="230" y2="140" stroke="black" stroke-width="2"/>
+    <text x="250" y="82" font-size="16">0</text>
+    <text x="250" y="142" font-size="16">1</text>
+
+    <text x="275" y="175" font-size="16">S1</text>
+    <line x1="280" y1="215" x2="280" y2="190" stroke="black" stroke-width="2"/>
+    <polygon points="280,190 275,200 285,200" fill="black"/>
+    <text x="270" y="235" font-size="18">A</text>
+
+    <text x="340" y="100" font-size="18">Q1</text>
+    <line x1="330" y1="100" x2="410" y2="100" stroke="black" stroke-width="2"/>
+
+    <!-- M2 -->
+    <rect x="230" y="300" width="100" height="150"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="270" y="385" font-size="18">M2</text>
+
+    <text x="175" y="345" font-size="18">X3</text>
+    <text x="175" y="405" font-size="18">X4</text>
+    <line x1="200" y1="340" x2="230" y2="340" stroke="black" stroke-width="2"/>
+    <line x1="200" y1="400" x2="230" y2="400" stroke="black" stroke-width="2"/>
+    <text x="250" y="342" font-size="16">0</text>
+    <text x="250" y="402" font-size="16">1</text>
+
+    <text x="275" y="435" font-size="16">S2</text>
+    <line x1="280" y1="475" x2="280" y2="450" stroke="black" stroke-width="2"/>
+    <polygon points="280,450 275,460 285,460" fill="black"/>
+    <text x="270" y="495" font-size="18">B</text>
+
+    <text x="340" y="360" font-size="18">Q2</text>
+    <line x1="330" y1="360" x2="410" y2="360" stroke="black" stroke-width="2"/>
+
+    <!-- M3 -->
+    <rect x="450" y="180" width="100" height="180"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="490" y="285" font-size="18">M3</text>
+
+    <text x="465" y="220" font-size="16">0</text>
+    <text x="465" y="335" font-size="16">1</text>
+
+    <!-- Q1 to M3 input 0 -->
+    <path d="M410 100 L410 220 L450 220"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Q2 to M3 input 1 -->
+    <path d="M410 360 L425 360 L425 335 L450 335"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- S3 / C -->
+    <text x="490" y="350" font-size="16">S3</text>
+    <line x1="500" y1="395" x2="500" y2="360"
+          stroke="black" stroke-width="2"/>
+    <polygon points="500,360 495,370 505,370" fill="black"/>
+    <text x="495" y="415" font-size="18">C</text>
+
+    <!-- Y -->
+    <line x1="550" y1="270" x2="610" y2="270"
+          stroke="black" stroke-width="2"/>
+    <polygon points="610,270 600,265 600,275" fill="black"/>
+    <text x="620" y="277" font-size="18">Y</text>
+  </svg>
+
+  <p class="ques">
+    For an instance of inputs <b>X1=1, X2=1, X3=0, and X4=0</b>, the number of combinations of A, B, C that give the output Y=1 is __________
+  </p>
+
+  <p class="year"><i>GATE CSE 2024 Session 1</i></p>
+  <div id="explanation28" class="explanation"></div>
+</div>
 
     
     
