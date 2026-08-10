@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assessment on 2025 session 1</title>
+    <style> .main_heading{
+      text-align: center;   /* centers text horizontally */
+      margin-top: 50px;     /* pushes it down a bit */
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+       body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 20px;
+    }
 
+    /* Title */
+    #title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Subtitle */
+    #subtitle {
+      text-align: center;
+      font-size: 20px;
+      color: gray;
+      margin-bottom: 30px;
+    }
+
+    /* Question box */
+    .question {
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      font-size: large;
+    }
+
+    /* Buttons */
+    .option-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border:2 px solid gray;
+      border-radius: 20px;
+      background-color: white;
+      color: black;
+      font-size: large;
+     /* cursor: pointer;*/
+      font-family: 'Times New Roman', Times, serif;
+      text-align: left;
+    }
+
+    .option-btn:hover {
+      background-color: rgb(239, 236, 236);
+    }
+    .year{
+      text-align: right;
+    }
+    .ques{
+      font-size: large;
+      text-align: justify;
+    }
+    .sub{
+      border-radius: 20px;
+      background-color: blue;
+    }
+
+    table {
+  border-collapse: collapse;
+  margin: 20px;
+  font-family: "Times New Roman", serif;
+  text-align: center;
+}
+
+th, td {
+  border: 2px solid black;
+  padding: 8px 12px;
+  font-size: large;
+}
+
+/* Header styling */
+th {
+  font-size: large;
+  font-weight: normal;
+}
+
+/* First column (initially column) */
+.first-col {
+  width: 120px;
+}
+
+/* Optional: adjust spacing */
+td {
+  min-width: 40px;
+}
+    
+    .row12 {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .column12 {
+      width: 45%;
+    }
+
+    .title12 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .code12 {
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: large;
+    }
+    </style>
+   
+    <link rel="icon" type="image/x-icon" href="11zon_cropped.png">
+</head>
+<body>
+    <p class="main_heading">Digital Logic Previous Year Questions</p>
+
+<div class="question">
+  <p class="ques">
+    <b>Q1.</b> Which one of the following options is <b>not</b> a property of Boolean Algebra?
+  </p>
+
+  <p class="ques">
+    <i>Note:</i> + is OR operation, . is AND operation, and ' is NOT operation
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(1, 'A', this)">A) a + b = b + a</button>
+  <button class="option-btn" onclick="checkAnswer(1, 'B', this)">B) a . a' = 1</button>
+  <button class="option-btn" onclick="checkAnswer(1, 'C', this)">C) a + a' = 1</button>
+  <button class="option-btn" onclick="checkAnswer(1, 'D', this)">D) a . b = b . a</button>
+
+  <p class="year"><i>GATE CSE 2026 Session 2</i></p>
+  <div id="explanation1" class="explanation"></div>
+</div>
+
+
+  
+  <div class="question">
+  <p class="ques">
+    <b>Q2.</b> In a system, numbers are represented using 4-bit two’s complement form. Consider four numbers N1 = 1011, N2 = 1101, N3 = 1010 and N4 = 1001 in the system. Which of the following operations will result in arithmetic overflow?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(2, 'A', this)">A) N1 + N2</button>
+  <button class="option-btn" onclick="checkAnswer(2, 'B', this)">B) N2 + N3</button>
+  <button class="option-btn" onclick="checkAnswer(2, 'C', this)">C) N3 − N4</button>
+  <button class="option-btn" onclick="checkAnswer(2, 'D', this)">D) N1 + N4</button>
+
+  <p class="year"><i>GATE CSE 2026 Session 2</i></p>
+  <div id="explanation2" class="explanation"></div>
+</div>
+
+
+
+
+  
+</body>
