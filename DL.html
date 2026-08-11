@@ -2020,6 +2020,443 @@ td {
 
 
 
+<!-- Question 53 -->
+<div class="question">
+  <p class="ques">
+    <b>Q53.</b> Consider the sequential circuit shown in the figure, where both flip-flops used are positive edge-triggered D flip-flops.
+  </p>
+
+  <svg width="700" height="240" viewBox="0 0 700 240"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Input -->
+    <text x="35" y="70" font-size="20">in</text>
+    <line x1="65" y1="65" x2="125" y2="65"
+          stroke="black" stroke-width="2"/>
+    <polygon points="125,65 115,60 115,70" fill="black"/>
+
+    <!-- First D flip-flop -->
+    <rect x="125" y="30" width="70" height="100"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="135" y="60" font-size="18">D</text>
+    <text x="170" y="60" font-size="18">Q</text>
+
+    <!-- Positive edge clock symbol -->
+    <path d="M125 90 L135 95 L125 100"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Q1 to D2 -->
+    <line x1="195" y1="65" x2="250" y2="65"
+          stroke="black" stroke-width="2"/>
+    <polygon points="250,65 240,60 240,70" fill="black"/>
+
+    <!-- Second D flip-flop -->
+    <rect x="250" y="30" width="70" height="100"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="260" y="60" font-size="18">D</text>
+    <text x="295" y="60" font-size="18">Q</text>
+
+    <!-- Positive edge clock symbol -->
+    <path d="M250 90 L260 95 L250 100"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Output -->
+    <line x1="320" y1="65" x2="375" y2="65"
+          stroke="black" stroke-width="2"/>
+    <polygon points="375,65 365,60 365,70" fill="black"/>
+    <text x="385" y="71" font-size="20">out</text>
+
+    <!-- Clock line -->
+    <text x="25" y="175" font-size="20">clock</text>
+    <line x1="75" y1="170" x2="280" y2="170"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Clock connections -->
+    <line x1="160" y1="130" x2="160" y2="170"
+          stroke="black" stroke-width="2"/>
+    <line x1="285" y1="130" x2="285" y2="170"
+          stroke="black" stroke-width="2"/>
+  </svg>
+
+  <p class="ques">
+    The number of states in the state transition diagram of this circuit that have a transition back to the same state on some value of “in” is _____.
+  </p>
+
+  <p class="year"><i>GATE CSE 2018</i></p>
+  <div id="explanation53" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 54 -->
+<div class="question">
+  <p class="ques">
+    <b>Q54.</b> Consider the unsigned 8-bit fixed point binary number representation below, b<sub>7</sub> b<sub>6</sub> b<sub>5</sub> b<sub>4</sub> b<sub>3</sub> . b<sub>2</sub> b<sub>1</sub> b<sub>0</sub> where the position of the binary point is between b<sub>3</sub> and b<sub>2</sub>. Assume b<sub>7</sub> is the most significant bit. Some of the decimal numbers listed below cannot be represented exactly in the above representation:
+    (i) 31.500 &nbsp;&nbsp;&nbsp; (ii) 0.875 &nbsp;&nbsp;&nbsp; (iii) 12.100 &nbsp;&nbsp;&nbsp; (iv) 3.001
+    Which one of the following statements is true?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(54, 'A', this)">A) None of (i), (ii), (iii), (iv) can be exactly represented</button>
+  <button class="option-btn" onclick="checkAnswer(54, 'B', this)">B) Only (ii) cannot be exactly represented</button>
+  <button class="option-btn" onclick="checkAnswer(54, 'C', this)">C) Only (iii) and (iv) cannot be exactly represented</button>
+  <button class="option-btn" onclick="checkAnswer(54, 'D', this)">D) Only (i) and (ii) cannot be exactly represented</button>
+
+  <p class="year"><i>GATE CSE 2018</i></p>
+  <div id="explanation54" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 55 -->
+<div class="question">
+  <p class="ques">
+    <b>Q55.</b> Consider the minterm list form of a Boolean function F given below.
+  </p>
+
+  <p class="ques">
+    F(P, Q, R, S) = ∑ m(0, 2, 5, 7, 9, 11) + d(3, 8, 10, 12, 14)
+  </p>
+
+  <p class="ques">
+    Here, m denotes a minterm and d denotes a don’t care term. The number of essential prime implicants of the function F is ______.
+  </p>
+
+  <p class="year"><i>GATE CSE 2018</i></p>
+  <div id="explanation55" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 56 -->
+<div class="question">
+  <p class="ques">
+    <b>Q56.</b> The representation of the value of a 16-bit unsigned integer X in hexadecimal number system is BCA9. The representation of the value of X in octal number system is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(56, 'A', this)">A) 571244</button>
+  <button class="option-btn" onclick="checkAnswer(56, 'B', this)">B) 736251</button>
+  <button class="option-btn" onclick="checkAnswer(56, 'C', this)">C) 571247</button>
+  <button class="option-btn" onclick="checkAnswer(56, 'D', this)">D) 136251</button>
+
+  <p class="year"><i>GATE CSE 2017 Session 2</i></p>
+  <div id="explanation56" class="explanation"></div>
+</div>    
+
+
+
+<!-- Question 57 -->
+<div class="question">
+  <p class="ques">
+    <b>Q57.</b> Given the following binary number in 32-bit (single precision) IEEE-754 format:
+  </p>
+
+  <p class="ques" style="text-align:center;">
+    00111111001101101000000000000000
+  </p>
+
+  <p class="ques">
+    The decimal value closest to this floating-point number is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(57, 'A', this)">A) 1.45 × 10<sup>1</sup></button>
+  <button class="option-btn" onclick="checkAnswer(57, 'B', this)">B) 1.45 × 10<sup>−1</sup></button>
+  <button class="option-btn" onclick="checkAnswer(57, 'C', this)">C) 2.27 × 10<sup>−1</sup></button>
+  <button class="option-btn" onclick="checkAnswer(57, 'D', this)">D) 2.27 × 10<sup>1</sup></button>
+
+  <p class="year"><i>GATE CSE 2017 Session 2</i></p>
+  <div id="explanation57" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 58 -->
+<div class="question">
+  <p class="ques">
+    <b>Q58.</b> If w, x, y, z are Boolean variables, then which one of the following is INCORRECT?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(58, 'A', this)">A) wx + w(x + y) + x(x + y) = x + wy</button>
+  <button class="option-btn" onclick="checkAnswer(58, 'B', this)">B) w̄x(y + z̄) + w̄x = w̄ + x + yz̄</button>
+  <button class="option-btn" onclick="checkAnswer(58, 'C', this)">C) (wx̄(y + xz̄) + w̄x̄)y = x̄y</button>
+  <button class="option-btn" onclick="checkAnswer(58, 'D', this)">D) (w + y)(wxy + wyz) = wxy + wyz</button>
+
+  <p class="year"><i>GATE CSE 2017 Session 2</i></p>
+  <div id="explanation58" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 59 -->
+<div class="question">
+  <p class="ques">
+    <b>Q59.</b> Given f(w, x, y, z) = ∑<sub>m</sub>(0, 1, 2, 3, 7, 8, 10) + ∑<sub>d</sub>(5, 6, 11, 15), where d represents the don’t-care condition in Karnaugh maps. Which of the following is a minimum product-of-sums (POS) form of f(w, x, y, z)?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(59, 'A', this)">A) f = (w̄ + z̄)(x̄ + z)</button>
+  <button class="option-btn" onclick="checkAnswer(59, 'B', this)">B) f = (w̄ + z)(x + z)</button>
+  <button class="option-btn" onclick="checkAnswer(59, 'C', this)">C) f = (w + z)(x̄ + z)</button>
+  <button class="option-btn" onclick="checkAnswer(59, 'D', this)">D) f = (w + z̄)(x̄ + z)</button>
+
+  <p class="year"><i>GATE CSE 2017 Session 2</i></p>
+  <div id="explanation59" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 60 -->
+<div class="question">
+  <p class="ques">
+    <b>Q60.</b> The next state table of a 2-bit saturating up-counter is given below.
+  </p>
+
+  <table>
+    <tr>
+      <th>Q<sub>1</sub></th>
+      <th>Q<sub>0</sub></th>
+      <th>Q<sub>1</sub><sup>+</sup></th>
+      <th>Q<sub>0</sub><sup>+</sup></th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </table>
+
+  <p class="ques">
+    The counter is built as a synchronous sequential circuit using T flip-flops. The expressions for T<sub>1</sub> and T<sub>0</sub> are
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(60, 'A', this)">A) T<sub>1</sub> = Q<sub>1</sub>Q<sub>0</sub>, &nbsp;&nbsp;&nbsp; T<sub>0</sub> = Q̄<sub>1</sub>Q̄<sub>0</sub></button>
+  <button class="option-btn" onclick="checkAnswer(60, 'B', this)">B) T<sub>1</sub> = Q̄<sub>1</sub>Q<sub>0</sub>, &nbsp;&nbsp;&nbsp; T<sub>0</sub> = Q̄<sub>1</sub> + Q̄<sub>0</sub></button>
+  <button class="option-btn" onclick="checkAnswer(60, 'C', this)">C) T<sub>1</sub> = Q<sub>1</sub> + Q<sub>0</sub>, &nbsp;&nbsp;&nbsp; T<sub>0</sub> = Q̄<sub>1</sub> + Q̄<sub>0</sub></button>
+  <button class="option-btn" onclick="checkAnswer(60, 'D', this)">D) T<sub>1</sub> = Q̄<sub>1</sub>Q<sub>0</sub>, &nbsp;&nbsp;&nbsp; T<sub>0</sub> = Q<sub>1</sub> + Q<sub>0</sub></button>
+
+  <p class="year"><i>GATE CSE 2017 Session 2</i></p>
+  <div id="explanation60" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 61 -->
+<div class="question">
+  <p class="ques">
+    <b>Q61.</b> When two 8-bit numbers A<sub>7</sub>...A<sub>0</sub> and B<sub>7</sub>...B<sub>0</sub> in 2’s complement representation (with A<sub>0</sub> and B<sub>0</sub> as the least significant bits) are added using a ripple-carry adder, the sum bits obtained are S<sub>7</sub>...S<sub>0</sub> and the carry bits are C<sub>7</sub>...C<sub>0</sub>. An overflow is said to have occurred if
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(61, 'A', this)">A) the carry bit C<sub>7</sub> is 1</button>
+
+  <button class="option-btn" onclick="checkAnswer(61, 'B', this)">B) all the carry bits (C<sub>7</sub>,...,C<sub>0</sub>) are 1</button>
+
+  <button class="option-btn" onclick="checkAnswer(61, 'C', this)">C) (A<sub>7</sub>B<sub>7</sub>S̄<sub>7</sub> + Ā<sub>7</sub>B̄<sub>7</sub>S<sub>7</sub>) is 1</button>
+
+  <button class="option-btn" onclick="checkAnswer(61, 'D', this)">D) (A<sub>0</sub>B<sub>0</sub>S̄<sub>0</sub> + Ā<sub>0</sub>B̄<sub>0</sub>S<sub>0</sub>) is 1</button>
+
+  <p class="year"><i>GATE CSE 2017 Session 1</i></p>
+  <div id="explanation61" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 62 -->
+<div class="question">
+  <p class="ques">
+    <b>Q62.</b> Consider the Karnaugh map given below, where X represents “don’t care” and blank represents 0.
+  </p>
+
+  <svg width="700" height="390" viewBox="0 0 700 390"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Labels -->
+    <text x="310" y="35" font-size="20" font-style="italic">ba</text>
+    <text x="250" y="90" font-size="20" font-style="italic">dc</text>
+
+    <!-- Column labels -->
+    <text x="335" y="90" font-size="20">00</text>
+    <text x="405" y="90" font-size="20">01</text>
+    <text x="475" y="90" font-size="20">11</text>
+    <text x="545" y="90" font-size="20">10</text>
+
+    <!-- Row labels -->
+    <text x="275" y="135" font-size="20">00</text>
+    <text x="275" y="185" font-size="20">01</text>
+    <text x="275" y="235" font-size="20">11</text>
+    <text x="275" y="285" font-size="20">10</text>
+
+    <!-- K-map grid -->
+    <rect x="325" y="105" width="280" height="200"
+          fill="white" stroke="black" stroke-width="1.5"/>
+
+    <line x1="395" y1="105" x2="395" y2="305"
+          stroke="black" stroke-width="1.5"/>
+    <line x1="465" y1="105" x2="465" y2="305"
+          stroke="black" stroke-width="1.5"/>
+    <line x1="535" y1="105" x2="535" y2="305"
+          stroke="black" stroke-width="1.5"/>
+
+    <line x1="325" y1="155" x2="605" y2="155"
+          stroke="black" stroke-width="1.5"/>
+    <line x1="325" y1="205" x2="605" y2="205"
+          stroke="black" stroke-width="1.5"/>
+    <line x1="325" y1="255" x2="605" y2="255"
+          stroke="black" stroke-width="1.5"/>
+
+    <!-- X values -->
+    <text x="360" y="140" font-size="20">X</text>
+    <text x="430" y="140" font-size="20">X</text>
+    <text x="570" y="190" font-size="20">X</text>
+    <text x="430" y="290" font-size="20">X</text>
+    <text x="500" y="290" font-size="20">X</text>
+
+    <!-- 1 values -->
+    <text x="350" y="190" font-size="20">1</text>
+    <text x="350" y="240" font-size="20">1</text>
+    <text x="570" y="240" font-size="20">1</text>
+  </svg>
+
+  <p class="ques">
+    Assume for all inputs (a, b, c, d) the respective complements (ā, b̄, c̄, d̄) are also available. The above logic is implemented using 2-input NOR gates only. The minimum number of gates required is __________.
+  </p>
+
+  <p class="year"><i>GATE CSE 2017 Session 1</i></p>
+  <div id="explanation62" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 63 -->
+<div class="question">
+  <p class="ques">
+    <b>Q63.</b> Consider a combination of T and D flip-flops connected as shown below. The output of the D flip-flop is connected to the input of the T flip-flop and the output of the T flip-flop is connected to the input of the D flip-flop.
+  </p>
+
+  <svg width="750" height="430" viewBox="0 0 750 430"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Top feedback wire -->
+    <path d="M670 70 L670 25 L185 25 L185 95 L235 95"
+          fill="none" stroke="black" stroke-width="4"/>
+
+    <!-- T Flip-Flop -->
+    <rect x="235" y="95" width="150" height="200"
+          fill="white" stroke="black" stroke-width="3"/>
+
+    <text x="310" y="155"
+          text-anchor="middle"
+          font-size="28">T</text>
+    <text x="310" y="190"
+          text-anchor="middle"
+          font-size="28">Flip-</text>
+    <text x="310" y="225"
+          text-anchor="middle"
+          font-size="28">Flop</text>
+
+    <!-- T flip-flop clock input -->
+    <path d="M235 175 L250 185 L235 195"
+          fill="none" stroke="black" stroke-width="3"/>
+
+    <!-- Q1 output -->
+    <line x1="385" y1="145" x2="535" y2="145"
+          stroke="black" stroke-width="4"/>
+    <text x="450" y="180"
+          text-anchor="middle"
+          font-size="25">Q₁</text>
+
+    <!-- D Flip-Flop -->
+    <rect x="535" y="95" width="150" height="200"
+          fill="white" stroke="black" stroke-width="3"/>
+
+    <text x="610" y="155"
+          text-anchor="middle"
+          font-size="28">D</text>
+    <text x="610" y="190"
+          text-anchor="middle"
+          font-size="28">Flip-</text>
+    <text x="610" y="225"
+          text-anchor="middle"
+          font-size="28">Flop</text>
+
+    <!-- D flip-flop clock input -->
+    <path d="M535 175 L550 185 L535 195"
+          fill="none" stroke="black" stroke-width="3"/>
+
+    <!-- Q0 output -->
+    <line x1="685" y1="145" x2="735" y2="145"
+          stroke="black" stroke-width="4"/>
+    <text x="710" y="180"
+          text-anchor="middle"
+          font-size="25">Q₀</text>
+
+    <!-- Clock line -->
+    <text x="70" y="335" font-size="25">Clock</text>
+    <line x1="135" y1="325" x2="550" y2="325"
+          stroke="black" stroke-width="4"/>
+
+    <!-- Clock connections -->
+    <line x1="250" y1="295" x2="250" y2="325"
+          stroke="black" stroke-width="4"/>
+    <line x1="550" y1="295" x2="550" y2="325"
+          stroke="black" stroke-width="4"/>
+
+    <!-- D flip-flop output feedback to T input -->
+    <path d="M735 145 L735 25"
+          fill="none" stroke="black" stroke-width="4"/>
+    <path d="M735 25 L185 25"
+          fill="none" stroke="black" stroke-width="4"/>
+
+    <!-- T output to D input -->
+    <path d="M385 145 L450 145 L450 75 L535 75 L535 175"
+          fill="none" stroke="black" stroke-width="4"/>
+
+  </svg>
+
+  <p class="ques">
+    Initially, both Q<sub>0</sub> and Q<sub>1</sub> are set to 1 (before the 1<sup>st</sup> clock cycle). The outputs
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(63, 'A', this)">A) Q<sub>1</sub>Q<sub>0</sub> after the 3<sup>rd</sup> cycle are 11 and after the 4<sup>th</sup> cycle are 00 respectively</button>
+
+  <button class="option-btn" onclick="checkAnswer(63, 'B', this)">B) Q<sub>1</sub>Q<sub>0</sub> after the 3<sup>rd</sup> cycle are 11 and after the 4<sup>th</sup> cycle are 01 respectively</button>
+
+  <button class="option-btn" onclick="checkAnswer(63, 'C', this)">C) Q<sub>1</sub>Q<sub>0</sub> after the 3<sup>rd</sup> cycle are 00 and after the 4<sup>th</sup> cycle are 11 respectively</button>
+
+  <button class="option-btn" onclick="checkAnswer(63, 'D', this)">D) Q<sub>1</sub>Q<sub>0</sub> after the 3<sup>rd</sup> cycle are 01 and after the 4<sup>th</sup> cycle are 01 respectively</button>
+
+  <p class="year"><i>GATE CSE 2017 Session 1</i></p>
+  <div id="explanation63" class="explanation"></div>
+</div>
+
+
+
+
+
+
 
 
 
@@ -2034,11 +2471,6 @@ td {
 
 
     
-
-
-
-
-
 
 
     
