@@ -2720,71 +2720,1389 @@ td {
 
 
 
+<!-- Question 77 -->
+<div class="question">
+  <p class="ques">
+    <b>Q77.</b> The minimum number of JK flip-flops required to construct a synchronous counter with the count sequence (0, 0, 1, 1, 2, 2, 3, 3, 0, 0,...) is_____.
+  </p>
 
+  <p class="year"><i>2015 Session 2</i></p>
+  <div id="explanation77" class="explanation"></div>
+</div>
 
 
 
 
+<!-- Question 78 -->
+<div class="question">
+  <p class="ques">
+    <b>Q78.</b> Consider the operations
+  </p>
 
+  <p class="ques">
+    f(X,Y,Z) = X′YZ + XY′ + Y′Z′ and
+  </p>
 
+  <p class="ques">
+    g(X,Y,Z) = X′YZ + X′Y′Z′ + XY
+  </p>
 
+  <p class="ques">
+    Which one of the following is correct?
+  </p>
 
+  <button class="option-btn" onclick="checkAnswer(78, 'A', this)">A) Both {f} and {g} are functionally complete</button>
+  <button class="option-btn" onclick="checkAnswer(78, 'B', this)">B) Only {f} is functionally complete</button>
+  <button class="option-btn" onclick="checkAnswer(78, 'C', this)">C) Only {g} is functionally complete</button>
+  <button class="option-btn" onclick="checkAnswer(78, 'D', this)">D) Neither {f} nor {g} is functionally complete</button>
 
+  <p class="year"><i>2015 Session 1</i></p>
+  <div id="explanation78" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 79 -->
+<div class="question">
+  <p class="ques">
+    <b>Q79.</b> Consider a 4 bit Johnson counter with an initial value of 0000. The counting sequence of this counter is
+  </p>
 
+  <button class="option-btn" onclick="checkAnswer(79, 'A', this)">A) 0, 1, 3, 7, 15, 14, 12, 8, 0</button>
+  <button class="option-btn" onclick="checkAnswer(79, 'B', this)">B) 0, 1, 3, 5, 7, 9, 11, 13, 15, 0</button>
+  <button class="option-btn" onclick="checkAnswer(79, 'C', this)">C) 0, 2, 4, 6, 8, 10, 12, 14, 0</button>
+  <button class="option-btn" onclick="checkAnswer(79, 'D', this)">D) 0, 8, 12, 14, 15, 7, 3, 1, 0</button>
 
+  <p class="year"><i>2015 Session 1</i></p>
+  <div id="explanation79" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 80 -->
+<div class="question">
+  <p class="ques">
+    <b>Q80.</b> A positive edge-triggered D flip-flop is connected to a positive edge-triggered JK flip-flop as follows. The Q output of the D flip-flop is connected to both the J and K inputs of the JK flip-flop, while the Q output of the JK flip-flop is connected to the input of the D flip-flop. Initially, the output of the D flip-flop is set to logic one and the output of the JK flip-flop is cleared.
+  </p>
 
+  <p class="ques">
+    Which one of the following is the bit sequence (including the initial state) generated at the Q output of the JK flip-flop when the flip-flops are connected to a free-running common clock? Assume that J = K = 1 is the toggle mode and J = K = 0 is the state-holding mode of the JK flip-flop. Both the flip-flops have non-zero propagation delays.
+  </p>
 
+  <button class="option-btn" onclick="checkAnswer(80, 'A', this)">A) 0110110...</button>
+  <button class="option-btn" onclick="checkAnswer(80, 'B', this)">B) 0100100...</button>
+  <button class="option-btn" onclick="checkAnswer(80, 'C', this)">C) 011101110...</button>
+  <button class="option-btn" onclick="checkAnswer(80, 'D', this)">D) 011001100...</button>
 
+  <p class="year"><i>2015 Session 1</i></p>
+  <div id="explanation80" class="explanation"></div>
+</div>
 
 
 
 
+<!-- Question 81 -->
+<div class="question">
+  <p class="ques">
+    <b>Q81.</b> Consider the following minterm expression for
+    <i>F</i>:
+  </p>
 
+  <p class="ques" style="text-align:center;">
+    <i>F</i>(P,Q,R,S) = ∑ 0, 2, 5, 7, 8, 10, 13, 15
+  </p>
 
+  <p class="ques">
+    The minterms 2, 7, 8 and 13 are ‘do not care’ terms. The minimal sum-of-products form for <i>F</i> is
+  </p>
 
+  <button class="option-btn" onclick="checkAnswer(81, 'A', this)">
+    (a) Q̄S̄ + Q̄S
+  </button>
 
+  <button class="option-btn" onclick="checkAnswer(81, 'B', this)">
+    (b) Q̄S̄ + QS
+  </button>
 
+  <button class="option-btn" onclick="checkAnswer(81, 'C', this)">
+    (c) Q̄R̄S̄ + Q̄RS̄ + QR̄S + QRS
+  </button>
 
+  <button class="option-btn" onclick="checkAnswer(81, 'D', this)">
+    (d) P̄Q̄S̄ + P̄QS + PQS + PQ̄S̄
+  </button>
+
+  <p class="year"><i>2014 Session 3</i></p>
+  <div id="explanation81" class="explanation"></div>
+</div>
+
+
+<!-- Question 82 -->
+<div class="question">
+  <p class="ques">
+    <b>Q82.</b> Let ⊕ denote the Exclusive OR (XOR) operation.<br>
+    Let ‘1’ and ‘0’ denote the binary constants.<br>
+    Consider the following Boolean expression for <i>F</i> over two variables <i>P</i> and <i>Q</i>:
+  </p>
+
+  <p class="ques" style="text-align:center;">
+    <i>F</i>(P, Q) = ((1 ⊕ P) ⊕ (P ⊕ Q)) ⊕ ((P ⊕ Q) ⊕ (Q ⊕ 0))
+  </p>
+
+  <p class="ques">
+    The equivalent expression for <i>F</i> is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(82, 'A', this)">
+    (a) P + Q
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(82, 'B', this)">
+    (b) P̄ + Q̄
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(82, 'C', this)">
+    (c) P ⊕ Q
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(82, 'D', this)">
+    (d) P̄ ⊕ Q̄
+  </button>
+
+  <p class="year"><i>2014 Session 3</i></p>
+  <div id="explanation82" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 83 -->
+<div class="question">
+  <p class="ques">
+    <b>Q83.</b> Consider the following combinational function block involving four Boolean variables x, y, a, b where x, a, b are inputs and y is the output.
+  </p>
+
+  <p class="ques">
+    f (x, y, a, b)
+  </p>
+
+  <p class="ques">
+    {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;if (x is 1) y = a;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;else y = b;<br>
+    }
+  </p>
+
+  <p class="ques">
+    Which one of the following digital logic blocks is the most suitable for implementing this function?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(83, 'A', this)">A) Full adder</button>
+  <button class="option-btn" onclick="checkAnswer(83, 'B', this)">B) Priority encoder</button>
+  <button class="option-btn" onclick="checkAnswer(83, 'C', this)">C) Multiplexor</button>
+  <button class="option-btn" onclick="checkAnswer(83, 'D', this)">D) Flip-flop</button>
+
+  <p class="year"><i>2014 Session 3</i></p>
+  <div id="explanation83" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 84 -->
+<div class="question">
+  <p class="ques">
+    <b>Q84.</b> The above synchronous sequential circuit built using JK flip-flops is initialized with Q<sub>2</sub>Q<sub>1</sub>Q<sub>0</sub> = 000. The state sequence for this circuit for the next 3 clock cycles is
+  </p>
+
+  <svg width="700" height="260" viewBox="0 0 700 260"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Flip-flop 1 -->
+    <rect x="120" y="65" width="120" height="100"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="145" y="95" font-size="20">J</text>
+    <text x="145" y="145" font-size="20">K</text>
+    <text x="185" y="105" font-size="20">Q₂</text>
+    <text x="185" y="140" font-size="20">Q̄₂</text>
+    <text x="180" y="120" font-size="16">C</text>
+
+    <!-- Flip-flop 2 -->
+    <rect x="300" y="65" width="120" height="100"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="325" y="95" font-size="20">J</text>
+    <text x="325" y="145" font-size="20">K</text>
+    <text x="365" y="105" font-size="20">Q₁</text>
+    <text x="365" y="140" font-size="20">Q̄₁</text>
+    <text x="360" y="120" font-size="16">C</text>
+
+    <!-- Flip-flop 3 -->
+    <rect x="480" y="65" width="120" height="100"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="505" y="95" font-size="20">J</text>
+    <text x="505" y="145" font-size="20">K</text>
+    <text x="545" y="105" font-size="20">Q₀</text>
+    <text x="545" y="140" font-size="20">Q̄₀</text>
+    <text x="540" y="120" font-size="16">C</text>
+
+    <!-- Q2 to J of second FF -->
+    <line x1="240" y1="95" x2="300" y2="95"
+          stroke="black" stroke-width="2"/>
 
+    <!-- Q1 to J of third FF -->
+    <line x1="420" y1="95" x2="480" y2="95"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Top feedback Q0 to J1 -->
+    <path d="M600 95 L650 95 L650 25 L95 25 L95 95 L120 95"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Bottom feedback Qbar outputs -->
+    <path d="M240 140 L270 140 L270 205 L95 205 L95 145 L120 145"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <path d="M420 140 L450 140 L450 225 L275 225 L275 145"
+          fill="none" stroke="black" stroke-width="2"/>
 
+    <path d="M600 140 L635 140 L635 245 L450 245 L450 145"
+          fill="none" stroke="black" stroke-width="2"/>
 
+    <!-- Clock lines -->
+    <line x1="180" y1="165" x2="180" y2="185"
+          stroke="black" stroke-width="2"/>
+    <line x1="360" y1="165" x2="360" y2="185"
+          stroke="black" stroke-width="2"/>
+    <line x1="540" y1="165" x2="540" y2="185"
+          stroke="black" stroke-width="2"/>
 
+    <!-- Clock bus -->
+    <line x1="180" y1="185" x2="540" y2="185"
+          stroke="black" stroke-width="2"/>
+  </svg>
 
+  <p class="ques">
+    (a) 001, 010, 011
+  </p>
 
+  <p class="ques">
+    (b) 111, 110, 101
+  </p>
 
+  <p class="ques">
+    (c) 100, 110, 111
+  </p>
 
+  <p class="ques">
+    (d) 100, 011, 001
+  </p>
 
+  <p class="year"><i>2014 Session 3</i></p>
+  <div id="explanation84" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 85 -->
+<div class="question">
+  <p class="ques">
+    <b>Q85.</b> The dual of a Boolean function F(x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>, +, ·, ′), written as F<sup>D</sup>, is the same expression as that of F with + and · swapped. F is said to be self-dual if F = F<sup>D</sup>. The number of self-dual functions with n Boolean variables is
+  </p>
 
+  <button class="option-btn" onclick="checkAnswer(85, 'A', this)">A) 2<sup>n</sup></button>
+  <button class="option-btn" onclick="checkAnswer(85, 'B', this)">B) 2<sup>n−1</sup></button>
+  <button class="option-btn" onclick="checkAnswer(85, 'C', this)">C) 2<sup>2<sup>n</sup></sup></button>
+  <button class="option-btn" onclick="checkAnswer(85, 'D', this)">D) 2<sup>2<sup>n−1</sup></sup></button>
 
+  <p class="year"><i>2014 Session 2</i></p>
+  <div id="explanation85" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 86 -->
+<div class="question">
+  <p class="ques">
+    <b>Q86.</b> Let k = 2<sup>n</sup>. A circuit is built by giving the output of an n-bit binary counter as input to an n-to-2<sup>n</sup> bit decoder. This circuit is equivalent to a
+  </p>
 
+  <button class="option-btn" onclick="checkAnswer(86, 'A', this)">A) k-bit binary up counter.</button>
+  <button class="option-btn" onclick="checkAnswer(86, 'B', this)">B) k-bit binary down counter.</button>
+  <button class="option-btn" onclick="checkAnswer(86, 'C', this)">C) k-bit ring counter.</button>
+  <button class="option-btn" onclick="checkAnswer(86, 'D', this)">D) k-bit Johnson counter.</button>
 
+  <p class="year"><i>2014 Session 2</i></p>
+  <div id="explanation86" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 87 -->
+<div class="question">
+  <p class="ques">
+    <b>Q87.</b> Consider the equation (123)<sub>5</sub> = (x8)<sub>y</sub> with x and y as unknown. The number of possible solutions is ________.
+  </p>
 
+  <p class="year"><i>2014 Session 2</i></p>
+  <div id="explanation87" class="explanation"></div>
+</div>
 
 
+<!-- Question 88 -->
+<div class="question">
+  <p class="ques">
+    <b>Q88.</b> The value of a float type variable is represented using the single-precision 32-bit floating point format of IEEE-754 standard that uses 1 bit for sign, 8 bits for biased exponent and 23 bits for mantissa. A float type variable X is assigned the decimal value of −14.25. The representation of X in hexadecimal notation is
+  </p>
 
+  <button class="option-btn" onclick="checkAnswer(88, 'A', this)">A) C1640000H</button>
+  <button class="option-btn" onclick="checkAnswer(88, 'B', this)">B) 416C0000H</button>
+  <button class="option-btn" onclick="checkAnswer(88, 'C', this)">C) 41640000H</button>
+  <button class="option-btn" onclick="checkAnswer(88, 'D', this)">D) C16C0000H</button>
 
+  <p class="year"><i>2014 Session 2</i></p>
+  <div id="explanation88" class="explanation"></div>
+</div>
 
 
 
+<!-- Question 89 -->
+<div class="question">
+  <p class="ques">
+    <b>Q89.</b> Consider the following Boolean expression for <i>F</i>:
+  </p>
 
+  <p class="ques" style="text-align:center;">
+    <i>F</i>(P, Q, R, S) = PQ + P̄QR + P̄Q̄RS
+  </p>
 
+  <p class="ques">
+    The minimal sum-of-products form of <i>F</i> is
+  </p>
 
+  <button class="option-btn" onclick="checkAnswer(89, 'A', this)">
+    (a) PQ + QR + QS
+  </button>
 
+  <button class="option-btn" onclick="checkAnswer(89, 'B', this)">
+    (b) P + Q + R + S
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(89, 'C', this)">
+    (c) P̄ + Q̄ + R̄ + S̄
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(89, 'D', this)">
+    (d) P̄R + P̄RS + P
+  </button>
+
+  <p class="year"><i>2014 Session 1</i></p>
+  <div id="explanation89" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 89 -->
+<div class="question">
+  <p class="ques">
+    <b>Q89.</b> Consider the following Boolean expression for <i>F</i>:
+  </p>
+
+  <p class="ques" style="text-align:center;">
+    <i>F</i>(P, Q, R, S) = PQ + P̄QR + P̄Q̄RS
+  </p>
+
+  <p class="ques">
+    The minimal sum-of-products form of <i>F</i> is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(89, 'A', this)">
+    (a) PQ + QR + QS
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(89, 'B', this)">
+    (b) P + Q + R + S
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(89, 'C', this)">
+    (c) P̄ + Q̄ + R̄ + S̄
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(89, 'D', this)">
+    (d) P̄R + P̄RS + P
+  </button>
+
+  <p class="year"><i>2014 Session 1</i></p>
+  <div id="explanation89" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 90 -->
+<div class="question">
+  <p class="ques">
+    <b>Q90.</b> Consider the 4 to 1 multiplexer with two select lines S<sub>1</sub> and S<sub>0</sub> given below.
+  </p>
+
+  <svg width="700" height="330" viewBox="0 0 700 330"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- MUX -->
+    <rect x="200" y="45" width="270" height="210"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="335" y="115" text-anchor="middle" font-size="20">4-to-1</text>
+    <text x="335" y="140" text-anchor="middle" font-size="20">Multiplexer</text>
+
+    <!-- Inputs -->
+    <text x="145" y="78" font-size="18">0</text>
+    <line x1="165" y1="74" x2="200" y2="74"
+          stroke="black" stroke-width="2"/>
+    <text x="215" y="80" font-size="16">0</text>
+
+    <text x="145" y="120" font-size="18">1</text>
+    <line x1="165" y1="116" x2="200" y2="116"
+          stroke="black" stroke-width="2"/>
+    <text x="215" y="122" font-size="16">1</text>
+
+    <text x="140" y="162" font-size="18">R</text>
+    <line x1="165" y1="158" x2="200" y2="158"
+          stroke="black" stroke-width="2"/>
+    <text x="215" y="164" font-size="16">2</text>
+
+    <text x="135" y="204" font-size="18">R̄</text>
+    <line x1="165" y1="200" x2="200" y2="200"
+          stroke="black" stroke-width="2"/>
+    <text x="215" y="206" font-size="16">3</text>
+
+    <!-- Output -->
+    <line x1="470" y1="150" x2="525" y2="150"
+          stroke="black" stroke-width="2"/>
+    <text x="540" y="156" font-size="18">F</text>
+
+    <!-- Select lines -->
+    <line x1="300" y1="255" x2="300" y2="295"
+          stroke="black" stroke-width="2"/>
+    <text x="290" y="315" font-size="18">P</text>
+    <text x="290" y="275" font-size="16">S₁</text>
+
+    <line x1="370" y1="255" x2="370" y2="295"
+          stroke="black" stroke-width="2"/>
+    <text x="360" y="315" font-size="18">Q</text>
+    <text x="360" y="275" font-size="16">S₀</text>
+  </svg>
+
+  <p class="ques">
+    The minimal sum-of-products form of the Boolean expression for the output F of the multiplexer is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(90, 'A', this)">
+    (a) P̄Q + QR̄ + P̄QR
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(90, 'B', this)">
+    (b) P̄Q + P̄QR̄ + PQ̄R + PQR
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(90, 'C', this)">
+    (c) P̄QR + P̄Q̄R + Q̄R + PQ̄R
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(90, 'D', this)">
+    (d) PQR̄
+  </button>
+
+  <p class="year"><i>2014 Session 1</i></p>
+  <div id="explanation90" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 91 -->
+<div class="question">
+  <p class="ques">
+    <b>Q91.</b> The base (or radix) of the number system such that the following equation holds is __________.
+  </p>
+
+  <p class="ques" style="text-align:center;">
+    312/20 = 13.1
+  </p>
+
+  <p class="year"><i>2014 Session 1</i></p>
+  <div id="explanation91" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 92 -->
+<div class="question">
+  <p class="ques">
+    <b>Q92.</b> Which one of the following expression does NOT represent exclusive NOR of x and y?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(92, 'A', this)">
+    (a) xy + x′y′
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(92, 'B', this)">
+    (b) x ⊕ y′
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(92, 'C', this)">
+    (c) x′ ⊕ y
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(92, 'D', this)">
+    (d) x′ ⊕ y′
+  </button>
+
+  <p class="year"><i>2013</i></p>
+  <div id="explanation92" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 93 -->
+<div class="question">
+  <p class="ques">
+    <b>Q93.</b> In the following truth table, V = 1 if and only if the input is valid.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="4">Inputs</th>
+        <th colspan="3">Outputs</th>
+      </tr>
+      <tr>
+        <th>D<sub>0</sub></th>
+        <th>D<sub>1</sub></th>
+        <th>D<sub>2</sub></th>
+        <th>D<sub>3</sub></th>
+        <th>X<sub>0</sub></th>
+        <th>X<sub>1</sub></th>
+        <th>V</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td><td>0</td><td>0</td><td>0</td>
+        <td>x</td><td>x</td><td>0</td>
+      </tr>
+      <tr>
+        <td>1</td><td>0</td><td>0</td><td>0</td>
+        <td>0</td><td>0</td><td>1</td>
+      </tr>
+      <tr>
+        <td>x</td><td>1</td><td>0</td><td>0</td>
+        <td>0</td><td>1</td><td>1</td>
+      </tr>
+      <tr>
+        <td>x</td><td>x</td><td>1</td><td>0</td>
+        <td>1</td><td>0</td><td>1</td>
+      </tr>
+      <tr>
+        <td>x</td><td>x</td><td>x</td><td>1</td>
+        <td>1</td><td>1</td><td>1</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="ques">
+    What function does the truth table represent?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(93, 'A', this)">
+    (a) Priority encoder
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(93, 'B', this)">
+    (b) Decoder
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(93, 'C', this)">
+    (c) Multiplexer
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(93, 'D', this)">
+    (d) Demultiplexer
+  </button>
+
+  <p class="year"><i>2013</i></p>
+  <div id="explanation93" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 94 -->
+<div class="question">
+  <p class="ques">
+    <b>Q94.</b> The smallest integer that can be represent by an 8-bit number in 2’s complement form is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(94, 'A', this)">
+    (a) −256
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(94, 'B', this)">
+    (b) −128
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(94, 'C', this)">
+    (c) −127
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(94, 'D', this)">
+    (d) 0
+  </button>
+
+  <p class="year"><i>2013</i></p>
+  <div id="explanation94" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 95 -->
+<div class="question">
+  <p class="ques">
+    <b>Q95.</b> The decimal value 0.5 in IEEE single precision floating point representation has
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(95, 'A', this)">
+    (a) fraction bits of 000 ... 000 and exponent value of 0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(95, 'B', this)">
+    (b) fraction bits of 000 ... 000 and exponent value of −1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(95, 'C', this)">
+    (c) fraction bits of 100 ... 000 and exponent value of 0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(95, 'D', this)">
+    (d) no exact representation
+  </button>
+
+  <p class="year"><i>2012</i></p>
+  <div id="explanation95" class="explanation"></div>
+</div>
+
+
+<!-- Question 96 -->
+<div class="question">
+  <p class="ques">
+    <b>Q96.</b> What is the minimal form of the Karnaugh map shown below? Assume that X denotes a don’t care term.
+  </p>
+
+  <svg width="620" height="390" viewBox="0 0 620 390"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Labels -->
+    <text x="220" y="32" font-size="22">ab</text>
+    <text x="135" y="60" font-size="22">cd</text>
+
+    <!-- Column labels -->
+    <text x="220" y="62" text-anchor="middle" font-size="20">00</text>
+    <text x="280" y="62" text-anchor="middle" font-size="20">01</text>
+    <text x="340" y="62" text-anchor="middle" font-size="20">11</text>
+    <text x="400" y="62" text-anchor="middle" font-size="20">10</text>
+
+    <!-- Row labels -->
+    <text x="175" y="105" text-anchor="middle" font-size="20">00</text>
+    <text x="175" y="165" text-anchor="middle" font-size="20">01</text>
+    <text x="175" y="225" text-anchor="middle" font-size="20">11</text>
+    <text x="175" y="285" text-anchor="middle" font-size="20">10</text>
+
+    <!-- K-map grid -->
+    <rect x="190" y="75" width="240" height="240"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <line x1="250" y1="75" x2="250" y2="315" stroke="black" stroke-width="1.5"/>
+    <line x1="310" y1="75" x2="310" y2="315" stroke="black" stroke-width="1.5"/>
+    <line x1="370" y1="75" x2="370" y2="315" stroke="black" stroke-width="1.5"/>
+
+    <line x1="190" y1="135" x2="430" y2="135" stroke="black" stroke-width="1.5"/>
+    <line x1="190" y1="195" x2="430" y2="195" stroke="black" stroke-width="1.5"/>
+    <line x1="190" y1="255" x2="430" y2="255" stroke="black" stroke-width="1.5"/>
+
+    <!-- Values -->
+    <text x="220" y="112" text-anchor="middle" font-size="22">1</text>
+    <text x="280" y="112" text-anchor="middle" font-size="22">X</text>
+    <text x="340" y="112" text-anchor="middle" font-size="22">X</text>
+    <text x="400" y="112" text-anchor="middle" font-size="22">1</text>
+
+    <text x="220" y="172" text-anchor="middle" font-size="22">X</text>
+    <text x="400" y="172" text-anchor="middle" font-size="22">1</text>
+
+    <text x="220" y="292" text-anchor="middle" font-size="22">1</text>
+    <text x="400" y="292" text-anchor="middle" font-size="22">X</text>
+  </svg>
+
+  <button class="option-btn" onclick="checkAnswer(96, 'A', this)">
+    (a) b̄d̄
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(96, 'B', this)">
+    (b) b̄d̄ + b̄c̄
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(96, 'C', this)">
+    (c) b̄d̄ + ab̄c̄d
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(96, 'D', this)">
+    (d) b̄d̄ + b̄c̄ + c̄d̄
+  </button>
+
+  <p class="year"><i>2012</i></p>
+  <div id="explanation96" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 97 -->
+<div class="question">
+  <p class="ques">
+    <b>Q97.</b> The truth table
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>X</th>
+        <th>Y</th>
+        <th>f(X,Y)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="ques">
+    represents the Boolean function
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(97, 'A', this)">
+    (a) X
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(97, 'B', this)">
+    (b) X + Y
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(97, 'C', this)">
+    (c) X ⊕ Y
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(97, 'D', this)">
+    (d) Y
+  </button>
+
+  <p class="year"><i>2012</i></p>
+  <div id="explanation97" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 98 -->
+<div class="question">
+  <p class="ques">
+    <b>Q98.</b> Which one of the following circuits is NOT equivalent to a 2-input XNOR (exclusive NOR) gate?
+  </p>
+
+  <svg width="700" height="410" viewBox="0 0 700 410"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- ================= OPTION (a) ================= -->
+    <text x="20" y="55" font-size="22">(a)</text>
+
+    <!-- XOR gate -->
+    <path d="M90 25 Q125 55 90 85 Q115 82 145 55 Q115 28 90 25 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+    <path d="M80 25 Q105 55 80 85"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <line x1="55" y1="40" x2="90" y2="40" stroke="black" stroke-width="2"/>
+    <line x1="55" y1="70" x2="90" y2="70" stroke="black" stroke-width="2"/>
+
+    <!-- NOT -->
+    <polygon points="145,55 170,42 170,68" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="174" cy="55" r="5" fill="white" stroke="black" stroke-width="2"/>
+    <line x1="145" y1="55" x2="145" y2="55" stroke="black"/>
+    <line x1="179" y1="55" x2="205" y2="55" stroke="black" stroke-width="2"/>
+
+    <!-- ================= OPTION (b) ================= -->
+    <text x="20" y="145" font-size="22">(b)</text>
+
+    <!-- NOT input 1 -->
+    <polygon points="65,120 90,108 90,132" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="94" cy="120" r="5" fill="white" stroke="black" stroke-width="2"/>
+    <line x1="45" y1="120" x2="65" y2="120" stroke="black" stroke-width="2"/>
+
+    <!-- XOR -->
+    <path d="M120 90 Q155 120 120 150 Q145 147 175 120 Q145 93 120 90 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+    <path d="M110 90 Q135 120 110 150"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <line x1="99" y1="120" x2="120" y2="120" stroke="black" stroke-width="2"/>
+    <line x1="45" y1="145" x2="120" y2="145" stroke="black" stroke-width="2"/>
+    <line x1="175" y1="120" x2="205" y2="120" stroke="black" stroke-width="2"/>
+
+    <!-- ================= OPTION (c) ================= -->
+    <text x="20" y="235" font-size="22">(c)</text>
+
+    <!-- NOT input 1 -->
+    <polygon points="65,200 90,188 90,212" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="94" cy="200" r="5" fill="white" stroke="black" stroke-width="2"/>
+    <line x1="45" y1="200" x2="65" y2="200" stroke="black" stroke-width="2"/>
+
+    <!-- NOT input 2 -->
+    <polygon points="65,230 90,218 90,242" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="94" cy="230" r="5" fill="white" stroke="black" stroke-width="2"/>
+    <line x1="45" y1="230" x2="65" y2="230" stroke="black" stroke-width="2"/>
+
+    <!-- XOR -->
+    <path d="M120 175 Q155 215 120 255 Q150 250 180 215 Q150 180 120 175 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+    <path d="M110 175 Q135 215 110 255"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <line x1="99" y1="200" x2="120" y2="200" stroke="black" stroke-width="2"/>
+    <line x1="99" y1="230" x2="120" y2="230" stroke="black" stroke-width="2"/>
+
+    <!-- NOT output -->
+    <polygon points="180,215 205,202 205,228" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="209" cy="215" r="5" fill="white" stroke="black" stroke-width="2"/>
+    <line x1="214" y1="215" x2="240" y2="215" stroke="black" stroke-width="2"/>
+
+    <!-- ================= OPTION (d) ================= -->
+    <text x="20" y="335" font-size="22">(d)</text>
+
+    <!-- Input lines -->
+    <line x1="50" y1="295" x2="155" y2="295" stroke="black" stroke-width="2"/>
+    <line x1="50" y1="370" x2="90" y2="370" stroke="black" stroke-width="2"/>
+
+    <!-- Branch -->
+    <line x1="80" y1="295" x2="80" y2="370" stroke="black" stroke-width="2"/>
+
+    <!-- NOT on lower branch -->
+    <polygon points="90,370 115,357 115,383" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="119" cy="370" r="5" fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- AND upper -->
+    <path d="M155 275 L190 275 Q220 275 220 300 Q220 325 190 325 L155 325 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+    <line x1="80" y1="295" x2="155" y2="295" stroke="black" stroke-width="2"/>
+    <line x1="50" y1="370" x2="50" y2="315" stroke="black" stroke-width="2"/>
+    <line x1="50" y1="315" x2="155" y2="315" stroke="black" stroke-width="2"/>
+
+    <!-- OR lower -->
+    <path d="M155 345 Q180 370 155 395 Q190 392 220 370 Q190 348 155 345 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+    <line x1="119" y1="370" x2="155" y2="370" stroke="black" stroke-width="2"/>
+    <line x1="80" y1="370" x2="155" y2="350" stroke="black" stroke-width="2"/>
+
+    <!-- Upper AND inverter -->
+    <polygon points="220,300 245,287 245,313" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="249" cy="300" r="5" fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Final AND -->
+    <path d="M300 315 L335 315 Q365 315 365 340 Q365 365 335 365 L300 365 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <line x1="254" y1="300" x2="280" y2="300" stroke="black" stroke-width="2"/>
+    <line x1="280" y1="300" x2="280" y2="325" stroke="black" stroke-width="2"/>
+    <line x1="280" y1="325" x2="300" y2="325" stroke="black" stroke-width="2"/>
+
+    <line x1="220" y1="370" x2="280" y2="370" stroke="black" stroke-width="2"/>
+    <line x1="280" y1="370" x2="280" y2="355" stroke="black" stroke-width="2"/>
+    <line x1="280" y1="355" x2="300" y2="355" stroke="black" stroke-width="2"/>
+
+    <!-- Final NOT -->
+    <polygon points="365,340 390,327 390,353" fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="394" cy="340" r="5" fill="white" stroke="black" stroke-width="2"/>
+    <line x1="399" y1="340" x2="425" y2="340" stroke="black" stroke-width="2"/>
+  </svg>
+
+  <p class="year"><i>2011</i></p>
+  <div id="explanation98" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 99 -->
+<div class="question">
+  <p class="ques">
+    <b>Q99.</b> The minimum number of D flip-flops needed to design a mod-258 counter is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(99, 'A', this)">
+    (a) 9
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(99, 'B', this)">
+    (b) 8
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(99, 'C', this)">
+    (c) 512
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(99, 'D', this)">
+    (d) 258
+  </button>
+
+  <p class="year"><i>2011</i></p>
+  <div id="explanation99" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 100 -->
+<div class="question">
+  <p class="ques">
+    <b>Q100.</b> Consider the following circuit involving three D-type flip-flops used in a certain type of counter configuration
+  </p>
+
+  <svg width="760" height="620" viewBox="0 0 760 620"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- ================= TOP D FLIP-FLOP ================= -->
+    <rect x="300" y="70" width="150" height="115"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="325" y="120" font-size="22">D</text>
+    <text x="420" y="120" font-size="22">Q</text>
+    <text x="320" y="160" font-size="20">clock</text>
+
+    <!-- clock triangle -->
+    <path d="M300 135 L315 143 L300 151 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Q-bar -->
+    <text x="420" y="170" font-size="20">Q̄</text>
+
+    <!-- P output -->
+    <line x1="450" y1="110" x2="500" y2="110"
+          stroke="black" stroke-width="2"/>
+    <text x="505" y="116" font-size="20">P</text>
+
+    <!-- ================= MIDDLE D FLIP-FLOP ================= -->
+    <rect x="300" y="235" width="150" height="115"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="325" y="285" font-size="22">D</text>
+    <text x="420" y="285" font-size="22">Q</text>
+    <text x="320" y="325" font-size="20">clock</text>
+
+    <!-- clock triangle -->
+    <path d="M300 300 L315 308 L300 316 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Q-bar -->
+    <text x="420" y="335" font-size="20">Q̄</text>
+
+    <!-- Q output -->
+    <line x1="450" y1="275" x2="500" y2="275"
+          stroke="black" stroke-width="2"/>
+    <text x="505" y="281" font-size="20">Q</text>
+
+    <!-- ================= BOTTOM D FLIP-FLOP ================= -->
+    <rect x="300" y="420" width="150" height="115"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="325" y="470" font-size="22">D</text>
+    <text x="420" y="470" font-size="22">Q</text>
+    <text x="320" y="510" font-size="20">clock</text>
+
+    <!-- clock triangle -->
+    <path d="M300 485 L315 493 L300 501 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Q-bar -->
+    <text x="420" y="520" font-size="20">Q̄</text>
+
+    <!-- R output -->
+    <line x1="450" y1="460" x2="500" y2="460"
+          stroke="black" stroke-width="2"/>
+    <text x="505" y="466" font-size="20">R</text>
+
+
+    <!-- ================= OR GATE ================= -->
+    <path d="M170 255
+             Q205 255 235 290
+             Q205 325 170 325
+             Q190 290 170 255 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <circle cx="238" cy="290" r="5"
+            fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- OR inputs -->
+    <line x1="120" y1="270" x2="180" y2="270"
+          stroke="black" stroke-width="2"/>
+    <line x1="120" y1="310" x2="180" y2="310"
+          stroke="black" stroke-width="2"/>
+
+    <!-- OR output to middle D -->
+    <line x1="243" y1="290" x2="300" y2="290"
+          stroke="black" stroke-width="2"/>
+
+
+    <!-- ================= AND GATE ================= -->
+    <path d="M170 430
+             L205 430
+             Q240 430 240 465
+             Q240 500 205 500
+             L170 500 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- AND inputs -->
+    <line x1="120" y1="445" x2="170" y2="445"
+          stroke="black" stroke-width="2"/>
+    <line x1="120" y1="485" x2="170" y2="485"
+          stroke="black" stroke-width="2"/>
+
+    <!-- AND output -->
+    <line x1="240" y1="465" x2="300" y2="465"
+          stroke="black" stroke-width="2"/>
+
+
+    <!-- ================= FEEDBACK CONNECTIONS ================= -->
+
+    <!-- P feedback to OR -->
+    <path d="M500 110
+             L540 110
+             L540 40
+             L100 40
+             L100 270
+             L120 270"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Q feedback to OR -->
+    <path d="M500 275
+             L555 275
+             L555 310
+             L120 310"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- R feedback to top D -->
+    <path d="M500 460
+             L580 460
+             L580 80
+             L260 80
+             L260 120
+             L300 120"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- R feedback to AND -->
+    <path d="M500 460
+             L580 460
+             L580 550
+             L120 550
+             L120 485"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Q-bar feedback to AND -->
+    <path d="M450 335
+             L470 335
+             L470 390
+             L120 390
+             L120 445"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Clock common line -->
+    <line x1="100" y1="575" x2="560" y2="575"
+          stroke="black" stroke-width="2"/>
+
+    <line x1="315" y1="575" x2="315" y2="535"
+          stroke="black" stroke-width="2"/>
+    <line x1="315" y1="575" x2="315" y2="350"
+          stroke="black" stroke-width="2"/>
+    <line x1="315" y1="575" x2="315" y2="185"
+          stroke="black" stroke-width="2"/>
+
+  </svg>
+
+  <p class="ques">
+    If at some instance prior to the occurrence of the clock edge, P, Q and R have a value 0, 1 and 0 respectively, what shall be the value of PQR after the clock edge?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(100, 'A', this)">
+    (a) 000
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(100, 'B', this)">
+    (b) 001
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(100, 'C', this)">
+    (c) 010
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(100, 'D', this)">
+    (d) 011
+  </button>
+
+  <p class="year"><i>2011 </i></p>
+  <div id="explanation100" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 101 -->
+<div class="question">
+  <p class="ques">
+    <b>Q101.</b> Consider the following circuit involving three D-type flip-flops used in a certain type of counter configuration
+  </p>
+
+  <svg width="760" height="620" viewBox="0 0 760 620"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- ================= TOP D FLIP-FLOP ================= -->
+    <rect x="300" y="70" width="150" height="115"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="325" y="120" font-size="22">D</text>
+    <text x="420" y="120" font-size="22">Q</text>
+    <text x="320" y="160" font-size="20">clock</text>
+
+    <!-- clock triangle -->
+    <path d="M300 135 L315 143 L300 151 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Q-bar -->
+    <text x="420" y="170" font-size="20">Q̄</text>
+
+    <!-- P output -->
+    <line x1="450" y1="110" x2="500" y2="110"
+          stroke="black" stroke-width="2"/>
+    <text x="505" y="116" font-size="20">P</text>
+
+    <!-- ================= MIDDLE D FLIP-FLOP ================= -->
+    <rect x="300" y="235" width="150" height="115"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="325" y="285" font-size="22">D</text>
+    <text x="420" y="285" font-size="22">Q</text>
+    <text x="320" y="325" font-size="20">clock</text>
+
+    <!-- clock triangle -->
+    <path d="M300 300 L315 308 L300 316 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Q-bar -->
+    <text x="420" y="335" font-size="20">Q̄</text>
+
+    <!-- Q output -->
+    <line x1="450" y1="275" x2="500" y2="275"
+          stroke="black" stroke-width="2"/>
+    <text x="505" y="281" font-size="20">Q</text>
+
+    <!-- ================= BOTTOM D FLIP-FLOP ================= -->
+    <rect x="300" y="420" width="150" height="115"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="325" y="470" font-size="22">D</text>
+    <text x="420" y="470" font-size="22">Q</text>
+    <text x="320" y="510" font-size="20">clock</text>
+
+    <!-- clock triangle -->
+    <path d="M300 485 L315 493 L300 501 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Q-bar -->
+    <text x="420" y="520" font-size="20">Q̄</text>
+
+    <!-- R output -->
+    <line x1="450" y1="460" x2="500" y2="460"
+          stroke="black" stroke-width="2"/>
+    <text x="505" y="466" font-size="20">R</text>
+
+
+    <!-- ================= OR GATE ================= -->
+    <path d="M170 255
+             Q205 255 235 290
+             Q205 325 170 325
+             Q190 290 170 255 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <circle cx="238" cy="290" r="5"
+            fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- OR inputs -->
+    <line x1="120" y1="270" x2="180" y2="270"
+          stroke="black" stroke-width="2"/>
+    <line x1="120" y1="310" x2="180" y2="310"
+          stroke="black" stroke-width="2"/>
+
+    <!-- OR output to middle D -->
+    <line x1="243" y1="290" x2="300" y2="290"
+          stroke="black" stroke-width="2"/>
+
+
+    <!-- ================= AND GATE ================= -->
+    <path d="M170 430
+             L205 430
+             Q240 430 240 465
+             Q240 500 205 500
+             L170 500 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- AND inputs -->
+    <line x1="120" y1="445" x2="170" y2="445"
+          stroke="black" stroke-width="2"/>
+    <line x1="120" y1="485" x2="170" y2="485"
+          stroke="black" stroke-width="2"/>
+
+    <!-- AND output -->
+    <line x1="240" y1="465" x2="300" y2="465"
+          stroke="black" stroke-width="2"/>
+
+
+    <!-- ================= FEEDBACK CONNECTIONS ================= -->
+
+    <!-- P feedback to OR -->
+    <path d="M500 110
+             L540 110
+             L540 40
+             L100 40
+             L100 270
+             L120 270"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Q feedback to OR -->
+    <path d="M500 275
+             L555 275
+             L555 310
+             L120 310"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- R feedback to top D -->
+    <path d="M500 460
+             L580 460
+             L580 80
+             L260 80
+             L260 120
+             L300 120"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- R feedback to AND -->
+    <path d="M500 460
+             L580 460
+             L580 550
+             L120 550
+             L120 485"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Q-bar feedback to AND -->
+    <path d="M450 335
+             L470 335
+             L470 390
+             L120 390
+             L120 445"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Clock common line -->
+    <line x1="100" y1="575" x2="560" y2="575"
+          stroke="black" stroke-width="2"/>
+
+    <line x1="315" y1="575" x2="315" y2="535"
+          stroke="black" stroke-width="2"/>
+    <line x1="315" y1="575" x2="315" y2="350"
+          stroke="black" stroke-width="2"/>
+    <line x1="315" y1="575" x2="315" y2="185"
+          stroke="black" stroke-width="2"/>
+
+  </svg>
+
+  <p class="ques">
+      If all the flip-flops were reset to 0 at power on, what is the total number of distinct outputs (states) represented by PQR generated by the counter?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(101, 'A', this)">
+    (a) 3
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(101, 'B', this)">
+    (b) 4
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(101, 'C', this)">
+    (c) 5
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(101, 'D', this)">
+    (d) 6
+  </button>
+
+  <p class="year"><i>2011 : 2 Marks</i></p>
+  <div id="explanation101" class="explanation"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
