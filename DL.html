@@ -1021,8 +1021,583 @@ td {
 </div>
 
     
+
+
+<!-- Question 29 -->
+<div class="question">
+  <p class="ques">
+    <b>Q29.</b> The output of a 2-input multiplexer is connected back to one of its inputs as shown in the figure.
+  </p>
+
+  <svg width="700" height="300" viewBox="0 0 700 300"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Multiplexer -->
+    <rect x="265" y="65" width="120" height="150"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="298" y="95" font-size="18">Multiplexer</text>
+
+    <!-- Input 0 -->
+    <text x="310" y="125" font-size="18">0</text>
+    <line x1="250" y1="125" x2="265" y2="125"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Input 1 -->
+    <text x="310" y="175" font-size="18">1</text>
+    <line x1="250" y1="175" x2="265" y2="175"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Input dots -->
+    <circle cx="250" cy="125" r="4" fill="black"/>
+    <circle cx="250" cy="175" r="4" fill="black"/>
+
+    <!-- Select -->
+    <text x="325" y="205" font-size="18">S</text>
+    <line x1="345" y1="235" x2="345" y2="214"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Q output -->
+    <text x="395" y="150" font-size="18">Q</text>
+    <line x1="385" y1="145" x2="470" y2="145"
+          stroke="black" stroke-width="2"/>
+    <circle cx="470" cy="145" r="4" fill="black"/>
+
+    <!-- Feedback from Q to input 0 -->
+    <path d="M425 145 L425 45 L300 45 L300 125 L265 125"
+          fill="none" stroke="black" stroke-width="2"/>
+  </svg>
+
+  <p class="ques">
+    Match the functional equivalence of this circuit to one of the following options.
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(29, 'A', this)">A) D Flip-flop</button>
+  <button class="option-btn" onclick="checkAnswer(29, 'B', this)">B) D Latch</button>
+  <button class="option-btn" onclick="checkAnswer(29, 'C', this)">C) Half-adder</button>
+  <button class="option-btn" onclick="checkAnswer(29, 'D', this)">D) Demultiplexer</button>
+
+  <p class="year"><i>GATE CSE 2023</i></p>
+  <div id="explanation29" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 30 -->
+<div class="question">
+  <p class="ques">
+    <b>Q30.</b> A particular number is written as 132 in radix-4 representation. The same number in radix-5 representation is __________.
+  </p>
+
+  <p class="year"><i>GATE CSE 2023</i></p>
+  <div id="explanation30" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 31 -->
+<div class="question">
+  <p class="ques">
+    <b>Q31.</b> Consider a sequential digital circuit consisting of T flip-flops and D flip-flops as shown in the figure. CLKIN is the clock input to the circuit. At the beginning, Q1, Q2 and Q3 have values 0, 1 and 1, respectively.
+  </p>
+
+  <svg width="700" height="350" viewBox="0 0 700 350"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Feedback top line -->
+    <path d="M 570 75 L 570 35 L 75 35 L 75 75 L 115 75"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Feedback inverter -->
+    <path d="M 510 155 L 545 175 L 510 195 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+    <circle cx="552" cy="175" r="7"
+            fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Feedback from inverter -->
+    <path d="M 559 175 L 570 175 L 570 35"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- T Flip-Flop 1 -->
+    <rect x="115" y="75" width="90" height="145"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="130" y="110" font-size="18">T</text>
+    <text x="180" y="125" font-size="18">Q</text>
+    <text x="130" y="170" font-size="18">CLK</text>
+
+    <!-- CLK triangle -->
+    <path d="M 115 160 L 125 166 L 115 172 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Q1 -->
+    <line x1="205" y1="125" x2="250" y2="125"
+          stroke="black" stroke-width="2"/>
+    <text x="210" y="150" font-size="18">Q1</text>
+
+    <!-- D Flip-Flop -->
+    <rect x="250" y="75" width="100" height="145"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="290" y="110" font-size="18">D</text>
+    <text x="325" y="125" font-size="18">Q</text>
+    <text x="265" y="170" font-size="18">CLK</text>
+
+    <!-- CLK triangle -->
+    <path d="M 250 160 L 260 166 L 250 172 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Q2 -->
+    <line x1="350" y1="125" x2="395" y2="125"
+          stroke="black" stroke-width="2"/>
+    <text x="355" y="150" font-size="18">Q2</text>
+
+    <!-- T Flip-Flop 2 -->
+    <rect x="395" y="75" width="90" height="145"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="410" y="110" font-size="18">T</text>
+    <text x="460" y="125" font-size="18">Q</text>
+    <text x="410" y="170" font-size="18">CLK</text>
+
+    <!-- CLK triangle -->
+    <path d="M 395 160 L 405 166 L 395 172 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Q3 -->
+    <line x1="485" y1="125" x2="510" y2="125"
+          stroke="black" stroke-width="2"/>
+    <text x="490" y="150" font-size="18">Q3</text>
+
+    <!-- Q1 to D input -->
+    <path d="M 225 125 L 225 95 L 250 95"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Q2 to T input -->
+    <path d="M 375 125 L 375 95 L 395 95"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Common CLK line -->
+    <line x1="95" y1="255" x2="500" y2="255"
+          stroke="black" stroke-width="2"/>
+
+    <line x1="160" y1="220" x2="160" y2="255"
+          stroke="black" stroke-width="2"/>
+    <line x1="300" y1="220" x2="300" y2="255"
+          stroke="black" stroke-width="2"/>
+    <line x1="440" y1="220" x2="440" y2="255"
+          stroke="black" stroke-width="2"/>
+
+    <!-- CLKIN -->
+    <text x="25" y="260" font-size="18">CLKIN</text>
+    <line x1="75" y1="255" x2="95" y2="255"
+          stroke="black" stroke-width="2"/>
+    <polygon points="95,255 85,250 85,260" fill="black"/>
+  </svg>
+
+  <p class="ques">
+    Which one of the given values of (Q1, Q2, Q3) can NEVER be obtained with this digital circuit?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(31, 'A', this)">A) (0, 0, 1)</button>
+  <button class="option-btn" onclick="checkAnswer(31, 'B', this)">B) (1, 0, 0)</button>
+  <button class="option-btn" onclick="checkAnswer(31, 'C', this)">C) (1, 0, 1)</button>
+  <button class="option-btn" onclick="checkAnswer(31, 'D', this)">D) (1, 1, 1)</button>
+
+  <p class="year"><i>GATE CSE 2023</i></p>
+  <div id="explanation31" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 32 -->
+<div class="question">
+  <p class="ques">
+    <b>Q32.</b> A Boolean digital circuit is composed using two 4-input multiplexers (M1 and M2) and one 2-input multiplexer (M3) as shown in the figure. X0−X7 are the inputs of the multiplexers M1 and M2 and could be connected to either 0 or 1. The select lines of the multiplexers are connected to Boolean variables A, B and C as shown.
+  </p>
+
+  <svg width="700" height="500" viewBox="0 0 700 500"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- M1 -->
+    <rect x="150" y="50" width="100" height="150"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="170" y="75" font-size="18">Multiplexer</text>
+    <text x="185" y="105" font-size="18">M1</text>
+    <text x="225" y="130" font-size="18">Q</text>
+
+    <!-- M1 inputs -->
+    <text x="100" y="100" font-size="17">X0</text>
+    <text x="100" y="130" font-size="17">X1</text>
+    <text x="100" y="160" font-size="17">X2</text>
+    <text x="100" y="190" font-size="17">X3</text>
+    <line x1="125" y1="95" x2="150" y2="95" stroke="black" stroke-width="2"/>
+    <line x1="125" y1="125" x2="150" y2="125" stroke="black" stroke-width="2"/>
+    <line x1="125" y1="155" x2="150" y2="155" stroke="black" stroke-width="2"/>
+    <line x1="125" y1="185" x2="150" y2="185" stroke="black" stroke-width="2"/>
+
+    <text x="160" y="100" font-size="15">0</text>
+    <text x="160" y="130" font-size="15">1</text>
+    <text x="160" y="160" font-size="15">2</text>
+    <text x="160" y="190" font-size="15">3</text>
+
+    <text x="165" y="215" font-size="16">S1 S0</text>
+    <line x1="180" y1="250" x2="180" y2="200" stroke="black" stroke-width="2"/>
+    <text x="160" y="270" font-size="18">A</text>
+    <line x1="195" y1="250" x2="195" y2="200" stroke="black" stroke-width="2"/>
+    <text x="185" y="290" font-size="18">C</text>
+
+    <!-- M2 -->
+    <rect x="150" y="330" width="100" height="150"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="170" y="355" font-size="18">Multiplexer</text>
+    <text x="185" y="385" font-size="18">M2</text>
+    <text x="225" y="410" font-size="18">Q</text>
+
+    <!-- M2 inputs -->
+    <text x="100" y="370" font-size="17">X4</text>
+    <text x="100" y="400" font-size="17">X5</text>
+    <text x="100" y="430" font-size="17">X6</text>
+    <text x="100" y="460" font-size="17">X7</text>
+    <line x1="125" y1="365" x2="150" y2="365" stroke="black" stroke-width="2"/>
+    <line x1="125" y1="395" x2="150" y2="395" stroke="black" stroke-width="2"/>
+    <line x1="125" y1="425" x2="150" y2="425" stroke="black" stroke-width="2"/>
+    <line x1="125" y1="455" x2="150" y2="455" stroke="black" stroke-width="2"/>
+
+    <text x="160" y="370" font-size="15">0</text>
+    <text x="160" y="400" font-size="15">1</text>
+    <text x="160" y="430" font-size="15">2</text>
+    <text x="160" y="460" font-size="15">3</text>
+
+    <text x="165" y="495" font-size="16">S1 S0</text>
+
+    <!-- M3 -->
+    <rect x="430" y="190" width="100" height="150"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="450" y="215" font-size="18">Multiplexer</text>
+    <text x="465" y="245" font-size="18">M3</text>
+    <text x="505" y="275" font-size="18">Q</text>
+
+    <text x="440" y="245" font-size="15">0</text>
+    <text x="440" y="315" font-size="15">1</text>
+
+    <!-- M1 output to M3 input 0 -->
+    <path d="M250 125 L330 125 L330 245 L430 245"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- M2 output to M3 input 1 -->
+    <path d="M250 405 L350 405 L350 315 L430 315"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- M3 select -->
+    <text x="470" y="330" font-size="16">S</text>
+    <line x1="480" y1="380" x2="480" y2="340"
+          stroke="black" stroke-width="2"/>
+    <text x="475" y="400" font-size="18">B</text>
+
+    <!-- Output -->
+    <line x1="530" y1="275" x2="590" y2="275"
+          stroke="black" stroke-width="2"/>
+  </svg>
+
+  <p class="ques">
+    Which one of the following set of values of (X0, X1, X2, X3, X4, X5, X6, X7) will realise the Boolean function Ā + A.C̄ + A.B̄.C?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(32, 'A', this)">A) (1, 1, 0, 0, 1, 1, 1, 0)</button>
+  <button class="option-btn" onclick="checkAnswer(32, 'B', this)">B) (1, 1, 0, 0, 1, 1, 0, 1)</button>
+  <button class="option-btn" onclick="checkAnswer(32, 'C', this)">C) (1, 1, 0, 1, 1, 1, 0, 0)</button>
+  <button class="option-btn" onclick="checkAnswer(32, 'D', this)">D) (0, 0, 1, 1, 0, 1, 1, 1)</button>
+
+  <p class="year"><i>GATE CSE 2023</i></p>
+  <div id="explanation32" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 33 -->
+<div class="question">
+  <p class="ques">
+    <b>Q33.</b> Consider the IEEE-754 single precision floating point numbers P=0xC1800000 and Q=0x3F5C2EF4.<br>
+    Which one of the following corresponds to the product of these numbers (i.e., P × Q), represented in the IEEE-754 single precision format?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(33, 'A', this)">A) 0x404C2EF4</button>
+  <button class="option-btn" onclick="checkAnswer(33, 'B', this)">B) 0x405C2EF4</button>
+  <button class="option-btn" onclick="checkAnswer(33, 'C', this)">C) 0xC15C2EF4</button>
+  <button class="option-btn" onclick="checkAnswer(33, 'D', this)">D) 0xC14C2EF4</button>
+
+  <p class="year"><i>GATE CSE 2023</i></p>
+  <div id="explanation33" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 34 -->
+<div class="question">
+  <p class="ques">
+    <b>Q34.</b> Let R1 and R2 be two 4-bit registers that store numbers in 2’s complement form. For the operation R1+R2, which one of the following values of R1 and R2 gives an arithmetic overflow?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(34, 'A', this)">A) R1 = 1011 and R2 = 1110</button>
+  <button class="option-btn" onclick="checkAnswer(34, 'B', this)">B) R1 = 1100 and R2 = 1010</button>
+  <button class="option-btn" onclick="checkAnswer(34, 'C', this)">C) R1 = 0011 and R2 = 0100</button>
+  <button class="option-btn" onclick="checkAnswer(34, 'D', this)">D) R1 = 1001 and R2 = 1111</button>
+
+  <p class="year"><i>GATE CSE 2022</i></p>
+  <div id="explanation34" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 35 -->
+<div class="question">
+  <p class="ques">
+    <b>Q35.</b> Consider three floating point numbers A, B and C stored in registers R<sub>A</sub>, R<sub>B</sub> and R<sub>C</sub>, respectively as per IEEE-754 single precision floating point format. The 32-bit content stored in these registers (in hexadecimal form) are as follows.
+  </p>
+
+  <table style="border-collapse: collapse; margin: 20px auto; text-align: center; font-family: 'Times New Roman', serif;">
+    <tr>
+      <td style="border: 1px solid black; padding: 10px 30px;">R<sub>A</sub> = 0xC1400000</td>
+      <td style="border: 1px solid black; padding: 10px 30px;">R<sub>B</sub> = 0x42100000</td>
+      <td style="border: 1px solid black; padding: 10px 30px;">R<sub>C</sub> = 0x41400000</td>
+    </tr>
+  </table>
+
+  <p class="ques">
+    Which one of the following is FALSE?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(35, 'A', this)">A) A + C = 0</button>
+  <button class="option-btn" onclick="checkAnswer(35, 'B', this)">B) C = A + B</button>
+  <button class="option-btn" onclick="checkAnswer(35, 'C', this)">C) B = 3C</button>
+  <button class="option-btn" onclick="checkAnswer(35, 'D', this)">D) (B − C) &gt; 0</button>
+
+  <p class="year"><i>GATE CSE 2022</i></p>
+  <div id="explanation35" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 36 -->
+<div class="question">
+  <p class="ques">
+    <b>Q36.</b> The format of the single-precision floating-point representation of a real number as per the IEEE 754 standard is as follows:
+  </p>
+
+  <table style="border-collapse: collapse; margin: 20px auto; text-align: center; font-family: 'Times New Roman', serif;">
+    <tr>
+      <td style="border: 1px solid black; padding: 5px 12px;">sign</td>
+      <td style="border: 1px solid black; padding: 5px 12px;">exponent</td>
+      <td style="border: 1px solid black; padding: 5px 12px;">mantissa</td>
+    </tr>
+  </table>
+
+  <p class="ques">
+    Which one of the following choices is correct with respect to the <i>smallest normalized</i> positive number represented using the standard?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(36, 'A', this)">A) exponent = 00000000 and mantissa = 00000000000000000000000</button>
+  <button class="option-btn" onclick="checkAnswer(36, 'B', this)">B) exponent = 00000000 and mantissa = 00000000000000000000001</button>
+  <button class="option-btn" onclick="checkAnswer(36, 'C', this)">C) exponent = 00000001 and mantissa = 00000000000000000000000</button>
+  <button class="option-btn" onclick="checkAnswer(36, 'D', this)">D) exponent = 00000001 and mantissa = 00000000000000000000001</button>
+
+  <p class="year"><i>GATE CSE 2021 Session 2</i></p>
+  <div id="explanation36" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 37 -->
+<div class="question">
+  <p class="ques">
+    <b>Q37.</b> Which one of the following circuits implements the Boolean function given below?
+  </p>
+
+  <p class="ques">
+    f(x, y, z) = m<sub>0</sub> + m<sub>1</sub> + m<sub>3</sub> + m<sub>4</sub> + m<sub>5</sub> + m<sub>6</sub>, where m<sub>i</sub> is the i<sup>th</sup> minterm.
+  </p>
+
+  <svg width="700" height="850" viewBox="0 0 700 850"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Option A -->
+    <text x="25" y="35" font-size="18">A)</text>
+
+    <text x="180" y="65" font-size="18">1</text>
+    <text x="180" y="95" font-size="18">1</text>
+    <text x="180" y="125" font-size="18">x</text>
+    <text x="175" y="155" font-size="18">x′</text>
+
+    <line x1="195" y1="60" x2="270" y2="60" stroke="black" stroke-width="2"/>
+    <line x1="195" y1="90" x2="270" y2="90" stroke="black" stroke-width="2"/>
+    <line x1="195" y1="120" x2="270" y2="120" stroke="black" stroke-width="2"/>
+    <line x1="195" y1="150" x2="270" y2="150" stroke="black" stroke-width="2"/>
+
+    <rect x="270" y="45" width="100" height="130" fill="white" stroke="black" stroke-width="2"/>
+    <text x="280" y="65" font-size="15">0</text>
+    <text x="280" y="95" font-size="15">1</text>
+    <text x="280" y="125" font-size="15">2</text>
+    <text x="280" y="155" font-size="15">3</text>
+    <text x="305" y="105" font-size="16">4x1</text>
+    <text x="305" y="125" font-size="16">Mux</text>
+    <text x="315" y="165" font-size="15">S₁</text>
+    <text x="345" y="165" font-size="15">S₀</text>
+    <line x1="320" y1="205" x2="320" y2="175" stroke="black" stroke-width="2"/>
+    <line x1="350" y1="205" x2="350" y2="175" stroke="black" stroke-width="2"/>
+    <text x="315" y="220" font-size="18">y</text>
+    <text x="345" y="220" font-size="18">z</text>
+    <line x1="370" y1="110" x2="430" y2="110" stroke="black" stroke-width="2"/>
+    <text x="440" y="116" font-size="18">f</text>
+
+    <!-- Option B -->
+    <text x="25" y="255" font-size="18">B)</text>
+
+    <text x="180" y="285" font-size="18">x</text>
+    <text x="180" y="315" font-size="18">1</text>
+    <text x="175" y="345" font-size="18">x′</text>
+    <text x="180" y="375" font-size="18">1</text>
+
+    <line x1="195" y1="280" x2="270" y2="280" stroke="black" stroke-width="2"/>
+    <line x1="195" y1="310" x2="270" y2="310" stroke="black" stroke-width="2"/>
+    <line x1="195" y1="340" x2="270" y2="340" stroke="black" stroke-width="2"/>
+    <line x1="195" y1="370" x2="270" y2="370" stroke="black" stroke-width="2"/>
+
+    <rect x="270" y="265" width="100" height="130" fill="white" stroke="black" stroke-width="2"/>
+    <text x="280" y="285" font-size="15">0</text>
+    <text x="280" y="315" font-size="15">1</text>
+    <text x="280" y="345" font-size="15">2</text>
+    <text x="280" y="375" font-size="15">3</text>
+    <text x="305" y="325" font-size="16">4x1</text>
+    <text x="305" y="345" font-size="16">Mux</text>
+    <text x="315" y="385" font-size="15">S₁</text>
+    <text x="345" y="385" font-size="15">S₀</text>
+    <line x1="320" y1="425" x2="320" y2="395" stroke="black" stroke-width="2"/>
+    <line x1="350" y1="425" x2="350" y2="395" stroke="black" stroke-width="2"/>
+    <text x="315" y="440" font-size="18">y</text>
+    <text x="345" y="440" font-size="18">z</text>
+    <line x1="370" y1="330" x2="430" y2="330" stroke="black" stroke-width="2"/>
+    <text x="440" y="336" font-size="18">f</text>
+
+    <!-- Option C -->
+    <text x="25" y="475" font-size="18">C)</text>
+
+    <text x="180" y="505" font-size="18">1</text>
+    <text x="180" y="535" font-size="18">1</text>
+    <text x="175" y="565" font-size="18">x′</text>
+    <text x="180" y="595" font-size="18">x</text>
+
+    <line x1="195" y1="500" x2="270" y2="500" stroke="black" stroke-width="2"/>
+    <line x1="195" y1="530" x2="270" y2="530" stroke="black" stroke-width="2"/>
+    <line x1="195" y1="560" x2="270" y2="560" stroke="black" stroke-width="2"/>
+    <line x1="195" y1="590" x2="270" y2="590" stroke="black" stroke-width="2"/>
+
+    <rect x="270" y="485" width="100" height="130" fill="white" stroke="black" stroke-width="2"/>
+    <text x="280" y="505" font-size="15">0</text>
+    <text x="280" y="535" font-size="15">1</text>
+    <text x="280" y="565" font-size="15">2</text>
+    <text x="280" y="595" font-size="15">3</text>
+    <text x="305" y="545" font-size="16">4x1</text>
+    <text x="305" y="565" font-size="16">Mux</text>
+    <text x="315" y="605" font-size="15">S₁</text>
+    <text x="345" y="605" font-size="15">S₀</text>
+    <line x1="320" y1="645" x2="320" y2="615" stroke="black" stroke-width="2"/>
+    <line x1="350" y1="645" x2="350" y2="615" stroke="black" stroke-width="2"/>
+    <text x="315" y="660" font-size="18">y</text>
+    <text x="345" y="660" font-size="18">z</text>
+    <line x1="370" y1="550" x2="430" y2="550" stroke="black" stroke-width="2"/>
+    <text x="440" y="556" font-size="18">f</text>
+
+    <!-- Option D -->
+    <text x="25" y="695" font-size="18">D)</text>
+
+    <text x="180" y="725" font-size="18">x′</text>
+    <text x="180" y="755" font-size="18">1</text>
+    <text x="180" y="785" font-size="18">x</text>
+    <text x="180" y="815" font-size="18">1</text>
+
+    <line x1="195" y1="720" x2="270" y2="720" stroke="black" stroke-width="2"/>
+    <line x1="195" y1="750" x2="270" y2="750" stroke="black" stroke-width="2"/>
+    <line x1="195" y1="780" x2="270" y2="780" stroke="black" stroke-width="2"/>
+    <line x1="195" y1="810" x2="270" y2="810" stroke="black" stroke-width="2"/>
+
+    <rect x="270" y="705" width="100" height="130" fill="white" stroke="black" stroke-width="2"/>
+    <text x="280" y="725" font-size="15">0</text>
+    <text x="280" y="755" font-size="15">1</text>
+    <text x="280" y="785" font-size="15">2</text>
+    <text x="280" y="815" font-size="15">3</text>
+    <text x="305" y="765" font-size="16">4x1</text>
+    <text x="305" y="785" font-size="16">Mux</text>
+    <text x="315" y="825" font-size="15">S₁</text>
+    <text x="345" y="825" font-size="15">S₀</text>
+    <line x1="320" y1="865" x2="320" y2="835" stroke="black" stroke-width="2"/>
+    <line x1="350" y1="865" x2="350" y2="835" stroke="black" stroke-width="2"/>
+    <text x="315" y="880" font-size="18">y</text>
+    <text x="345" y="880" font-size="18">z</text>
+    <line x1="370" y1="770" x2="430" y2="770" stroke="black" stroke-width="2"/>
+    <text x="440" y="776" font-size="18">f</text>
+  </svg>
+
+  <p class="year"><i>GATE CSE 2021 Session 2</i></p>
+  <div id="explanation37" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 38 -->
+<div class="question">
+  <p class="ques">
+    <b>Q38.</b> If x and y are two decimal digits and (0.1101)<sub>2</sub> = (0.8xy5)<sub>10</sub>, the decimal value of x + y is __________.
+  </p>
+
+  <p class="year"><i>GATE CSE 2021 Session 2</i></p>
+  <div id="explanation38" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 39 -->
+<div class="question">
+  <p class="ques">
+    <b>Q39.</b> Consider a Boolean function <i>f</i>(w, x, y, z) such that
+  </p>
+
+  <p class="ques">
+    <i>f</i>(w, 0, z) = 1
+  </p>
+
+  <p class="ques">
+    <i>f</i>(1, x, 1, z) = x + z
+  </p>
+
+  <p class="ques">
+    <i>f</i>(w, 1, y, z) = wz + y
+  </p>
+
+  <p class="ques">
+    The number of literals in the minimal sum-of-products expression of <i>f</i> is __________.
+  </p>
+
+  <p class="year"><i>GATE CSE 2021 Session 2</i></p>
+  <div id="explanation39" class="explanation"></div>
+</div>
+
+
+
+
+
     
 
+
+
+    
+
+
+
+
+
+    
 
   
 </body>
