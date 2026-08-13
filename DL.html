@@ -10536,6 +10536,758 @@ td {
 
 
 
+<!-- Question 207 -->
+<div class="question">
+  <p class="ques">
+    <b>Q207.</b> What is the equivalent Boolean expression in product-of-sums form for the Karnaugh map given in figure
+  </p>
+
+  <!-- Karnaugh Map -->
+  <svg width="650" height="360" viewBox="0 0 650 360"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Labels -->
+    <text x="305" y="35" font-size="18">AB</text>
+    <text x="220" y="68" font-size="18">CD</text>
+
+    <!-- Column labels -->
+    <text x="275" y="68" text-anchor="middle" font-size="18">00</text>
+    <text x="325" y="68" text-anchor="middle" font-size="18">01</text>
+    <text x="375" y="68" text-anchor="middle" font-size="18">11</text>
+    <text x="425" y="68" text-anchor="middle" font-size="18">10</text>
+
+    <!-- Row labels -->
+    <text x="240" y="105" text-anchor="middle" font-size="18">00</text>
+    <text x="240" y="145" text-anchor="middle" font-size="18">01</text>
+    <text x="240" y="185" text-anchor="middle" font-size="18">11</text>
+    <text x="240" y="225" text-anchor="middle" font-size="18">10</text>
+
+    <!-- K-map -->
+    <rect x="250" y="75" width="200" height="160"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <line x1="300" y1="75" x2="300" y2="235" stroke="black"/>
+    <line x1="350" y1="75" x2="350" y2="235" stroke="black"/>
+    <line x1="400" y1="75" x2="400" y2="235" stroke="black"/>
+
+    <line x1="250" y1="115" x2="450" y2="115" stroke="black"/>
+    <line x1="250" y1="155" x2="450" y2="155" stroke="black"/>
+    <line x1="250" y1="195" x2="450" y2="195" stroke="black"/>
+
+    <!-- Row 00: 0 1 1 0 -->
+    <text x="275" y="102" text-anchor="middle" font-size="19">0</text>
+    <text x="325" y="102" text-anchor="middle" font-size="19">1</text>
+    <text x="375" y="102" text-anchor="middle" font-size="19">1</text>
+    <text x="425" y="102" text-anchor="middle" font-size="19">0</text>
+
+    <!-- Row 01: 1 0 0 1 -->
+    <text x="275" y="142" text-anchor="middle" font-size="19">1</text>
+    <text x="325" y="142" text-anchor="middle" font-size="19">0</text>
+    <text x="375" y="142" text-anchor="middle" font-size="19">0</text>
+    <text x="425" y="142" text-anchor="middle" font-size="19">1</text>
+
+    <!-- Row 11: 1 0 0 1 -->
+    <text x="275" y="182" text-anchor="middle" font-size="19">1</text>
+    <text x="325" y="182" text-anchor="middle" font-size="19">0</text>
+    <text x="375" y="182" text-anchor="middle" font-size="19">0</text>
+    <text x="425" y="182" text-anchor="middle" font-size="19">1</text>
+
+    <!-- Row 10: 0 1 1 0 -->
+    <text x="275" y="222" text-anchor="middle" font-size="19">0</text>
+    <text x="325" y="222" text-anchor="middle" font-size="19">1</text>
+    <text x="375" y="222" text-anchor="middle" font-size="19">1</text>
+    <text x="425" y="222" text-anchor="middle" font-size="19">0</text>
+  </svg>
+
+  <button class="option-btn" onclick="checkAnswer(207, 'A', this)">
+    (a) B̅D + B̅D
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(207, 'B', this)">
+    (b) (B + C̅ + D)(B̅ + C + D̅)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(207, 'C', this)">
+    (c) (B + D)(B̅ + D̅)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(207, 'D', this)">
+    (d) (B + D̅)(B̅ + D)
+  </button>
+
+  <p class="year"><i>1996</i></p>
+  <div id="explanation207" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 208 -->
+<div class="question">
+  <p class="ques">
+    <b>Q208.</b> A ROM is used to store the table for multiplication of two 8-bit unsigned integers. The size of ROM is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(208, 'A', this)">
+    (a) 256 × 16
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(208, 'B', this)">
+    (b) 64K × 8
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(208, 'C', this)">
+    (c) 4K × 16
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(208, 'D', this)">
+    (d) 64K × 16
+  </button>
+
+  <p class="year"><i>1996</i></p>
+  <div id="explanation208" class="explanation"></div>
+</div>
+
+
+<!-- Question 209 -->
+<div class="question">
+  <p class="ques">
+    <b>Q209.</b> Booth’s algorithm for integer multiplication gives worst performance when the multiplier pattern is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(209, 'A', this)">
+    (a) 101010......1010
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(209, 'B', this)">
+    (b) 100000......0001
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(209, 'C', this)">
+    (c) 111111......1111
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(209, 'D', this)">
+    (d) 011111......1110
+  </button>
+
+  <p class="year"><i>1996</i></p>
+  <div id="explanation209" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 210 -->
+<div class="question">
+  <p class="ques">
+    <b>Q210.</b> Consider the following floating point number representation
+  </p>
+
+  <!-- Floating Point Format Diagram -->
+  <svg width="650" height="190" viewBox="0 0 650 190"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Bit positions -->
+    <text x="145" y="30" font-size="18">31</text>
+    <text x="285" y="30" font-size="18">24</text>
+    <text x="335" y="30" font-size="18">23</text>
+    <text x="570" y="30" font-size="18">0</text>
+
+    <!-- Main box -->
+    <rect x="125" y="45" width="470" height="65"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Field division -->
+    <line x1="315" y1="45" x2="315" y2="110"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Labels -->
+    <text x="220" y="83" text-anchor="middle" font-size="20">
+      Exponent
+    </text>
+
+    <text x="455" y="83" text-anchor="middle" font-size="20">
+      Mantissa
+    </text>
+  </svg>
+
+  <p class="ques">
+    The exponent is in 2’s complement representation and mantissa is in the sign magnitude representation. The range of the magnitude of normalized numbers in this representation is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(210, 'A', this)">
+    (a) 0 to 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(210, 'B', this)">
+    (b) 0.5 to 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(210, 'C', this)">
+    (c) 2<sup>−23</sup> to 0.5
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(210, 'D', this)">
+    (d) 0.5 to (1 − 2<sup>−23</sup>)
+  </button>
+
+  <p class="year"><i>1996</i></p>
+  <div id="explanation210" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 211 -->
+<div class="question">
+  <p class="ques">
+    <b>Q211.</b> Consider the circuit in figure which has a four bit binary number b<sub>3</sub> b<sub>2</sub> b<sub>1</sub> b<sub>0</sub> as input and a five bit binary number d<sub>4</sub> d<sub>3</sub> d<sub>2</sub> d<sub>1</sub> d<sub>0</sub> as output. The circuit implements:
+  </p>
+
+  <!-- Circuit Diagram -->
+  <svg width="760" height="360" viewBox="0 0 760 360"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- 4-bit Binary Adder -->
+    <rect x="250" y="110" width="300" height="150"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="400" y="170" text-anchor="middle" font-size="20">
+      4-Bit
+    </text>
+    <text x="400" y="195" text-anchor="middle" font-size="20">
+      Binary
+    </text>
+    <text x="400" y="220" text-anchor="middle" font-size="20">
+      adder
+    </text>
+
+    <!-- Input bits -->
+    <text x="310" y="75" font-size="18">b₃</text>
+    <text x="355" y="75" font-size="18">b₂</text>
+    <text x="400" y="75" font-size="18">b₁</text>
+    <text x="445" y="75" font-size="18">b₀</text>
+
+    <line x1="315" y1="80" x2="315" y2="110"
+          stroke="black" stroke-width="2"/>
+    <line x1="360" y1="80" x2="360" y2="110"
+          stroke="black" stroke-width="2"/>
+    <line x1="405" y1="80" x2="405" y2="110"
+          stroke="black" stroke-width="2"/>
+    <line x1="450" y1="80" x2="450" y2="110"
+          stroke="black" stroke-width="2"/>
+
+    <!-- f input lines -->
+    <line x1="210" y1="90" x2="250" y2="90"
+          stroke="black" stroke-width="2"/>
+    <line x1="210" y1="100" x2="250" y2="100"
+          stroke="black" stroke-width="2"/>
+
+    <text x="190" y="95" font-size="18">f</text>
+
+    <!-- f generation -->
+    <path d="M145 70
+             Q165 55 185 70
+             Q165 85 145 70 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="160" y="74" font-size="15">f</text>
+
+    <line x1="185" y1="70" x2="210" y2="70"
+          stroke="black" stroke-width="2"/>
+    <line x1="210" y1="70" x2="210" y2="90"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Carry in -->
+    <text x="560" y="105" font-size="18">Cᵢₙ</text>
+    <line x1="550" y1="110" x2="550" y2="110"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Carry out -->
+    <text x="210" y="150" font-size="18">C<sub>out</sub></text>
+    <line x1="250" y1="150" x2="210" y2="150"
+          stroke="black" stroke-width="2"/>
+    <line x1="210" y1="150" x2="210" y2="290"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Output d4 -->
+    <text x="195" y="310" font-size="18">d₄</text>
+
+    <!-- Outputs -->
+    <text x="300" y="290" font-size="18">d₃</text>
+    <text x="355" y="290" font-size="18">d₂</text>
+    <text x="410" y="290" font-size="18">d₁</text>
+    <text x="465" y="290" font-size="18">d₀</text>
+
+    <line x1="315" y1="260" x2="315" y2="285"
+          stroke="black" stroke-width="2"/>
+    <line x1="370" y1="260" x2="370" y2="285"
+          stroke="black" stroke-width="2"/>
+    <line x1="425" y1="260" x2="425" y2="285"
+          stroke="black" stroke-width="2"/>
+    <line x1="480" y1="260" x2="480" y2="285"
+          stroke="black" stroke-width="2"/>
+
+    <!-- f output -->
+    <line x1="550" y1="185" x2="620" y2="185"
+          stroke="black" stroke-width="2"/>
+    <text x="635" y="192" font-size="20">f</text>
+  </svg>
+
+  <button class="option-btn" onclick="checkAnswer(211, 'A', this)">
+    (a) Binary to Hex conversion
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(211, 'B', this)">
+    (b) Binary to BCD conversion
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(211, 'C', this)">
+    (c) Binary to gray code conversion
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(211, 'D', this)">
+    (d) Binary to radix-12 conversion
+  </button>
+
+  <p class="year"><i>1996</i></p>
+  <div id="explanation211" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 212 -->
+<div class="question">
+  <p class="ques">
+    <b>Q212.</b> Find the maximum clock frequency at which the counter in figure, can be operated. Assume that the propagation delay through each flip-flop and AND gate is 10 ns. Also assume that the setup time for the JK inputs of the flip-flops is negligible.
+  </p>
+
+  <!-- Circuit Diagram -->
+  <svg width="900" height="330" viewBox="0 0 900 330"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Clock line -->
+    <text x="30" y="295" font-size="20">Clock</text>
+    <line x1="90" y1="285" x2="820" y2="285"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Flip-flop 0 -->
+    <rect x="120" y="120" width="150" height="110"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="135" y="150" font-size="19">J₀</text>
+    <text x="135" y="205" font-size="19">K₀, CLK</text>
+    <text x="230" y="150" font-size="19">Q₀</text>
+
+    <!-- FF0 clock -->
+    <line x1="195" y1="230" x2="195" y2="285"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Q0 output -->
+    <line x1="270" y1="150" x2="315" y2="150"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Input 1 -->
+    <text x="65" y="75" font-size="20">1</text>
+    <line x1="80" y1="70" x2="335" y2="70"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Vertical connection to K0 -->
+    <line x1="80" y1="70" x2="80" y2="190"
+          stroke="black" stroke-width="2"/>
+    <line x1="80" y1="190" x2="120" y2="190"
+          stroke="black" stroke-width="2"/>
+
+    <!-- AND gate 1 -->
+    <path d="M335 50
+             L370 50
+             Q395 70 370 90
+             L335 90 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- AND1 output -->
+    <line x1="395" y1="70" x2="450" y2="70"
+          stroke="black" stroke-width="2"/>
+
+    <!-- J1 connection -->
+    <line x1="450" y1="70" x2="450" y2="140"
+          stroke="black" stroke-width="2"/>
+    <line x1="450" y1="140" x2="470" y2="140"
+          stroke="black" stroke-width="2"/>
+
+    <!-- K1 connection -->
+    <line x1="450" y1="70" x2="450" y2="190"
+          stroke="black" stroke-width="2"/>
+    <line x1="450" y1="190" x2="470" y2="190"
+          stroke="black" stroke-width="2"/>
+
+    <!-- FF1 -->
+    <rect x="470" y="120" width="150" height="110"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="485" y="150" font-size="19">J₁</text>
+    <text x="485" y="205" font-size="19">K₁, CLK</text>
+    <text x="580" y="150" font-size="19">Q₁</text>
+
+    <!-- FF1 clock -->
+    <line x1="545" y1="230" x2="545" y2="285"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Q1 output -->
+    <line x1="620" y1="150" x2="665" y2="150"
+          stroke="black" stroke-width="2"/>
+
+    <!-- AND gate 2 -->
+    <path d="M665 50
+             L700 50
+             Q725 70 700 90
+             L665 90 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- AND2 output -->
+    <line x1="725" y1="70" x2="760" y2="70"
+          stroke="black" stroke-width="2"/>
+
+    <!-- J2/K2 branch -->
+    <line x1="760" y1="70" x2="760" y2="140"
+          stroke="black" stroke-width="2"/>
+    <line x1="760" y1="140" x2="780" y2="140"
+          stroke="black" stroke-width="2"/>
+
+    <line x1="760" y1="70" x2="760" y2="190"
+          stroke="black" stroke-width="2"/>
+    <line x1="760" y1="190" x2="780" y2="190"
+          stroke="black" stroke-width="2"/>
+
+    <!-- FF2 -->
+    <rect x="780" y="120" width="100" height="110"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="790" y="150" font-size="19">J₂</text>
+    <text x="790" y="205" font-size="19">K₂, CLK</text>
+    <text x="850" y="150" font-size="19">Q₂</text>
+
+    <!-- FF2 clock -->
+    <line x1="830" y1="230" x2="830" y2="285"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Input connections to AND gates -->
+    <line x1="315" y1="150" x2="315" y2="70"
+          stroke="black" stroke-width="2"/>
+
+    <line x1="665" y1="150" x2="665" y2="70"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Output dot -->
+    <circle cx="395" cy="70" r="5" fill="black"/>
+    <circle cx="725" cy="70" r="5" fill="black"/>
+    <circle cx="270" cy="150" r="5" fill="black"/>
+    <circle cx="620" cy="150" r="5" fill="black"/>
+  </svg>
+
+  <p class="year"><i>1991</i></p>
+  <div id="explanation212" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 213 -->
+<div class="question">
+  <p class="ques">
+    <b>Q213.</b> RAM is a combinational Circuit and PLA is a sequential circuit.
+  </p>
+
+  <p class="year"><i>1990</i></p>
+  <div id="explanation213" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 214 -->
+<div class="question">
+  <p class="ques">
+    <b>Q214.</b> Fill in the blanks:<br>
+    In the two bit full-adder/subtractor unit shown in figure, when the switch is in position 2, ...... using ........ arithmetic
+  </p>
+
+  <!-- Circuit Diagram -->
+  <svg width="850" height="390" viewBox="0 0 850 390"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- A1 -->
+    <text x="170" y="75" font-size="18">A₁</text>
+    <line x1="180" y1="80" x2="180" y2="145"
+          stroke="black" stroke-width="2"/>
+
+    <!-- A0 -->
+    <text x="310" y="75" font-size="18">A₀</text>
+    <line x1="320" y1="80" x2="320" y2="145"
+          stroke="black" stroke-width="2"/>
+
+    <!-- B1 -->
+    <text x="445" y="75" font-size="18">B₁</text>
+    <line x1="455" y1="80" x2="455" y2="125"
+          stroke="black" stroke-width="2"/>
+
+    <!-- B0 -->
+    <text x="575" y="75" font-size="18">B₀</text>
+    <line x1="585" y1="80" x2="585" y2="125"
+          stroke="black" stroke-width="2"/>
+
+    <!-- XOR gate 1 -->
+    <path d="M430 105
+             Q455 125 430 145
+             Q475 140 500 125
+             Q475 110 430 105 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+    <path d="M420 105 Q445 125 420 145"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- XOR gate 2 -->
+    <path d="M560 105
+             Q585 125 560 145
+             Q605 140 630 125
+             Q605 110 560 105 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+    <path d="M550 105 Q575 125 550 145"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- 2's complement label -->
+    <text x="575" y="95" font-size="17">2's complement</text>
+
+    <!-- B inputs to XORs -->
+    <line x1="455" y1="125" x2="430" y2="125"
+          stroke="black" stroke-width="2"/>
+    <line x1="585" y1="125" x2="560" y2="125"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Common control line -->
+    <line x1="350" y1="125" x2="430" y2="125"
+          stroke="black" stroke-width="2"/>
+    <line x1="350" y1="125" x2="350" y2="205"
+          stroke="black" stroke-width="2"/>
+
+    <!-- A0/B0 full adder input lines -->
+    <line x1="180" y1="145" x2="180" y2="205"
+          stroke="black" stroke-width="2"/>
+    <line x1="320" y1="145" x2="320" y2="205"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Full adder block -->
+    <rect x="170" y="205" width="440" height="100"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="390" y="245" text-anchor="middle" font-size="20">
+      2 bit full
+    </text>
+    <text x="390" y="270" text-anchor="middle" font-size="20">
+      adder sum
+    </text>
+
+    <!-- Ain / Bin / Cin -->
+    <text x="185" y="190" font-size="18">Aᵢₙ</text>
+    <text x="330" y="190" font-size="18">Bᵢₙ</text>
+    <text x="495" y="190" font-size="18">Cᵢₙ</text>
+
+    <!-- Input lines into adder -->
+    <line x1="180" y1="205" x2="180" y2="220"
+          stroke="black" stroke-width="2"/>
+    <line x1="320" y1="205" x2="320" y2="220"
+          stroke="black" stroke-width="2"/>
+    <line x1="500" y1="205" x2="500" y2="220"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Cin control -->
+    <line x1="500" y1="155" x2="500" y2="205"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Outputs -->
+    <line x1="270" y1="305" x2="270" y2="335"
+          stroke="black" stroke-width="2"/>
+    <line x1="385" y1="305" x2="385" y2="335"
+          stroke="black" stroke-width="2"/>
+    <line x1="470" y1="305" x2="470" y2="335"
+          stroke="black" stroke-width="2"/>
+
+    <text x="250" y="355" font-size="18">C₀</text>
+    <text x="370" y="355" font-size="18">S₁</text>
+    <text x="455" y="355" font-size="18">S₀</text>
+
+    <!-- Switch -->
+    <line x1="700" y1="105" x2="700" y2="145"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Position 1 -->
+    <circle cx="700" cy="145" r="5" fill="white" stroke="black" stroke-width="2"/>
+    <text x="670" y="150" font-size="18">1</text>
+
+    <!-- Ground -->
+    <line x1="700" y1="145" x2="700" y2="175"
+          stroke="black" stroke-width="2"/>
+    <line x1="685" y1="175" x2="715" y2="175"
+          stroke="black" stroke-width="2"/>
+    <line x1="690" y1="182" x2="710" y2="182"
+          stroke="black" stroke-width="2"/>
+    <line x1="695" y1="189" x2="705" y2="189"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Switch blade -->
+    <line x1="700" y1="105" x2="730" y2="145"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Position 2 -->
+    <circle cx="730" cy="145" r="5" fill="white" stroke="black" stroke-width="2"/>
+    <text x="740" y="150" font-size="18">2</text>
+
+    <!-- Vcc -->
+    <line x1="730" y1="145" x2="730" y2="95"
+          stroke="black" stroke-width="2"/>
+    <text x="735" y="85" font-size="18">V<sub>cc</sub></text>
+
+    <!-- Control connection -->
+    <line x1="500" y1="155" x2="650" y2="155"
+          stroke="black" stroke-width="2"/>
+    <line x1="650" y1="155" x2="650" y2="105"
+          stroke="black" stroke-width="2"/>
+    <line x1="650" y1="105" x2="700" y2="105"
+          stroke="black" stroke-width="2"/>
+  </svg>
+
+  <p class="year"><i>1990</i></p>
+  <div id="explanation214" class="explanation"></div>
+</div>
+    
+
+
+
+<!-- Question 215 -->
+<div class="question">
+  <p class="ques">
+    <b>Q215.</b> For the digital in figure, the expression for the output f is ......
+  </p>
+
+  <!-- Digital Circuit Diagram -->
+  <svg width="700" height="260" viewBox="0 0 700 260"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- x input -->
+    <text x="45" y="85" font-size="20">x</text>
+    <line x1="70" y1="80" x2="150" y2="80"
+          stroke="black" stroke-width="2"/>
+
+    <!-- x waveform -->
+    <path d="M150 80
+             L150 45
+             L205 45
+             L205 80
+             L280 80
+             L280 45
+             L335 45
+             L335 80
+             L405 80"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- y input -->
+    <text x="45" y="155" font-size="20">y</text>
+    <line x1="70" y1="150" x2="150" y2="150"
+          stroke="black" stroke-width="2"/>
+
+    <!-- y waveform -->
+    <path d="M150 150
+             L150 115
+             L205 115
+             L205 150
+             L280 150
+             L280 115
+             L335 115
+             L335 150
+             L405 150"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- a vertical control -->
+    <line x1="177" y1="45" x2="177" y2="115"
+          stroke="black" stroke-width="2"/>
+    <text x="170" y="30" font-size="20">a</text>
+
+    <!-- b vertical control -->
+    <line x1="307" y1="45" x2="307" y2="115"
+          stroke="black" stroke-width="2"/>
+    <text x="300" y="30" font-size="20">b</text>
+
+    <!-- f output -->
+    <line x1="405" y1="115" x2="480" y2="115"
+          stroke="black" stroke-width="2"/>
+    <text x="495" y="122" font-size="20">f</text>
+  </svg>
+
+  <p class="year"><i>1990</i></p>
+  <div id="explanation215" class="explanation"></div>
+</div>
+
+
+<!-- Question 216 -->
+<div class="question">
+  <p class="ques">
+    <b>Q216.</b> Consider the number given by the decimal expression.
+  </p>
+
+  <p class="ques">
+    16<sup>3</sup> × 9 + 16<sup>2</sup> × 7 + 16 × 5 + 3
+  </p>
+
+  <p class="ques">
+    The number of 1’s in the unsigned binary representation of the number is ......
+  </p>
+
+  <p class="year"><i>1990</i></p>
+  <div id="explanation216" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 217 -->
+<div class="question">
+  <p class="ques">
+    <b>Q217.</b> Using the 8087 arithmetic coprocessor with the 80186 CPU requires that the 8087 CPU is operated for ______
+  </p>
+
+  <div id="explanation217" class="explanation"></div>
+</div>
+
+
+<!-- Question 218 -->
+<div class="question">
+  <p class="ques">
+    <b>Q218.</b> When two 4-bit binary number A = a<sub>3</sub> a<sub>2</sub> a<sub>1</sub> a<sub>0</sub>,
+    B = b<sub>3</sub> b<sub>2</sub> b<sub>1</sub> b<sub>0</sub> are multiplied,
+    the digit c<sub>1</sub> of the product C is given by
+  </p>
+
+  <div id="explanation218" class="explanation"></div>
+</div>
+
+
+<!-- Question 219 -->
+<div class="question">
+  <p class="ques">
+    <b>Q219.</b> A 32-bit floating-point number is represented by a 7-bit signed exponent, and a 24-bit fractional mantissa. The base of the exponent is 16,
+  </p>
+
+  <p class="ques">
+    (a) the range of the exponent is ______
+  </p>
+
+  <p class="ques">
+    (b) the range of the exponent is ______ if the scale factor is represented in excess-64 format.
+  </p>
+
+  <p class="year"><i>1990</i></p>
+  <div id="explanation219" class="explanation"></div>
+</div>
 
 
 
@@ -10554,6 +11306,8 @@ td {
 
 
 
+
+    
     
 
 
