@@ -9118,18 +9118,1421 @@ td {
 
 
 
+<!-- Question 184 -->
+<div class="question">
+  <p class="ques">
+    <b>Q184.</b> Transform the following logic circuit (without expressing its switching function) into an equivalent logic circuit that employs only 6 NAND gates each 2-inputs.
+  </p>
+
+  <svg width="760" height="300" viewBox="0 0 760 300"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Top input -->
+    <line x1="70" y1="60" x2="150" y2="60"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Top AND gate -->
+    <path d="M150 40 L180 40
+             Q205 60 180 80
+             L150 80 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Middle input -->
+    <line x1="70" y1="120" x2="150" y2="120"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Middle AND gate -->
+    <path d="M150 100 L180 100
+             Q205 120 180 140
+             L150 140 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Bottom input -->
+    <line x1="70" y1="180" x2="150" y2="180"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Bottom AND gate -->
+    <path d="M150 160 L180 160
+             Q205 180 180 200
+             L150 200 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Top AND output -->
+    <line x1="205" y1="60" x2="280" y2="60"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Middle AND output -->
+    <line x1="205" y1="120" x2="245" y2="120"
+          stroke="black" stroke-width="2"/>
+    <line x1="245" y1="120" x2="245" y2="85"
+          stroke="black" stroke-width="2"/>
+    <line x1="245" y1="85" x2="280" y2="85"
+          stroke="black" stroke-width="2"/>
+
+    <!-- First OR gate -->
+    <path d="M280 35
+             Q310 72 280 110
+             Q330 105 360 72
+             Q330 40 280 35 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- First OR output -->
+    <line x1="360" y1="72" x2="425" y2="72"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Bottom branch to final OR -->
+    <line x1="205" y1="180" x2="400" y2="180"
+          stroke="black" stroke-width="2"/>
+    <line x1="400" y1="180" x2="400" y2="95"
+          stroke="black" stroke-width="2"/>
+    <line x1="400" y1="95" x2="425" y2="95"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Final OR gate -->
+    <path d="M425 50
+             Q455 85 425 120
+             Q475 115 505 85
+             Q475 55 425 50 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Output -->
+    <line x1="505" y1="85" x2="575" y2="85"
+          stroke="black" stroke-width="2"/>
+  </svg>
+
+  <p class="year"><i>2002</i></p>
+  <div id="explanation184" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 185 -->
+<div class="question">
+  <p class="ques">
+    <b>Q185.</b> The decimal value 0.25
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(185, 'A', this)">
+    (a) is equivalent to binary 0.1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(185, 'B', this)">
+    (b) is equivalent to binary 0.01
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(185, 'C', this)">
+    (c) is equivalent to binary 0.00111
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(185, 'D', this)">
+    (d) can not be represented precisely in binary
+  </button>
+
+  <p class="year"><i>2002</i></p>
+  <div id="explanation185" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 186 -->
+<div class="question">
+  <p class="ques">
+    <b>Q186.</b> The 2’s complement representation of the decimal value −15 is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(186, 'A', this)">
+    (a) 1111
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(186, 'B', this)">
+    (b) 11111
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(186, 'C', this)">
+    (c) 111111
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(186, 'D', this)">
+    (d) 10001
+  </button>
+
+  <p class="year"><i>2002</i></p>
+  <div id="explanation186" class="explanation"></div>
+</div>
+
+
+<!-- Question 187 -->
+<div class="question">
+  <p class="ques">
+    <b>Q187.</b> Sign extension is the step in
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(187, 'A', this)">
+    (a) Floating point multiplication
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(187, 'B', this)">
+    (b) Signed 16 bit integer addition
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(187, 'C', this)">
+    (c) Arithmetic left shift
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(187, 'D', this)">
+    (d) Converting a signed integer from one size to another
+  </button>
+
+  <p class="year"><i>2002</i></p>
+  <div id="explanation187" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 188 -->
+<div class="question">
+  <p class="ques">
+    <b>Q188.</b> Given the following Karnaugh map, which one of the following represents the minimal Sum-of-Products of the map?
+  </p>
+
+  <svg width="650" height="350" viewBox="0 0 650 350"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Labels -->
+    <text x="280" y="38" font-size="18">wx</text>
+    <text x="215" y="70" font-size="18">yz</text>
+
+    <!-- Column labels -->
+    <text x="270" y="70" text-anchor="middle" font-size="18">00</text>
+    <text x="320" y="70" text-anchor="middle" font-size="18">01</text>
+    <text x="370" y="70" text-anchor="middle" font-size="18">11</text>
+    <text x="420" y="70" text-anchor="middle" font-size="18">10</text>
+
+    <!-- Row labels -->
+    <text x="235" y="110" text-anchor="middle" font-size="18">00</text>
+    <text x="235" y="150" text-anchor="middle" font-size="18">01</text>
+    <text x="235" y="190" text-anchor="middle" font-size="18">11</text>
+    <text x="235" y="230" text-anchor="middle" font-size="18">10</text>
+
+    <!-- K-map -->
+    <rect x="245" y="80" width="200" height="160"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Vertical lines -->
+    <line x1="295" y1="80" x2="295" y2="240" stroke="black"/>
+    <line x1="345" y1="80" x2="345" y2="240" stroke="black"/>
+    <line x1="395" y1="80" x2="395" y2="240" stroke="black"/>
+
+    <!-- Horizontal lines -->
+    <line x1="245" y1="120" x2="445" y2="120" stroke="black"/>
+    <line x1="245" y1="160" x2="445" y2="160" stroke="black"/>
+    <line x1="245" y1="200" x2="445" y2="200" stroke="black"/>
+
+    <!-- Row 00: 0 X 0 X -->
+    <text x="270" y="107" text-anchor="middle" font-size="19">0</text>
+    <text x="320" y="107" text-anchor="middle" font-size="19">X</text>
+    <text x="370" y="107" text-anchor="middle" font-size="19">0</text>
+    <text x="420" y="107" text-anchor="middle" font-size="19">X</text>
+
+    <!-- Row 01: X 1 X 1 -->
+    <text x="270" y="147" text-anchor="middle" font-size="19">X</text>
+    <text x="320" y="147" text-anchor="middle" font-size="19">1</text>
+    <text x="370" y="147" text-anchor="middle" font-size="19">X</text>
+    <text x="420" y="147" text-anchor="middle" font-size="19">1</text>
+
+    <!-- Row 11: 0 X X 0 -->
+    <text x="270" y="187" text-anchor="middle" font-size="19">0</text>
+    <text x="320" y="187" text-anchor="middle" font-size="19">X</text>
+    <text x="370" y="187" text-anchor="middle" font-size="19">X</text>
+    <text x="420" y="187" text-anchor="middle" font-size="19">0</text>
+
+    <!-- Row 10: 0 1 X 0 -->
+    <text x="270" y="227" text-anchor="middle" font-size="19">0</text>
+    <text x="320" y="227" text-anchor="middle" font-size="19">1</text>
+    <text x="370" y="227" text-anchor="middle" font-size="19">X</text>
+    <text x="420" y="227" text-anchor="middle" font-size="19">0</text>
+  </svg>
+
+  <button class="option-btn" onclick="checkAnswer(188, 'A', this)">
+    (a) xy + y′z′
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(188, 'B', this)">
+    (b) wx′y′ + xy + xz
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(188, 'C', this)">
+    (c) w′x + y′z′ + xy
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(188, 'D', this)">
+    (d) xz + y
+  </button>
+
+  <p class="year"><i>2001</i></p>
+  <div id="explanation188" class="explanation"></div>
+</div>
 
 
 
 
+<!-- Question 189 -->
+<div class="question">
+  <p class="ques">
+    <b>Q189.</b> Consider the circuit shown below. The output of a 2 : 1 Mux is given by the function (ac′ + bc).
+  </p>
+
+  <svg width="760" height="330" viewBox="0 0 760 330"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- First MUX -->
+    <path d="M180 70 L180 190 L300 155 L300 105 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="205" y="100" font-size="20">a</text>
+    <text x="205" y="175" font-size="20">b</text>
+    <text x="205" y="135" font-size="18">2 : 1</text>
+    <text x="205" y="157" font-size="18">MUX</text>
+    <text x="260" y="195" font-size="18">c</text>
+
+    <!-- First MUX inputs -->
+    <text x="65" y="100" font-size="20">1</text>
+    <line x1="85" y1="95" x2="180" y2="95"
+          stroke="black" stroke-width="2"/>
+
+    <text x="65" y="175" font-size="20">0</text>
+    <line x1="85" y1="170" x2="180" y2="170"
+          stroke="black" stroke-width="2"/>
+
+    <!-- x1 select -->
+    <line x1="260" y1="190" x2="260" y2="245"
+          stroke="black" stroke-width="2"/>
+    <text x="250" y="265" font-size="20">x₁</text>
+
+    <!-- g output -->
+    <line x1="300" y1="130" x2="380" y2="130"
+          stroke="black" stroke-width="2"/>
+    <text x="350" y="120" font-size="20">g</text>
+
+    <!-- Connection from x1 to second MUX b -->
+    <path d="M260 245 L260 235 L455 235 L455 190"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Second MUX -->
+    <path d="M455 70 L455 190 L575 155 L575 105 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="480" y="100" font-size="20">a</text>
+    <text x="480" y="175" font-size="20">b</text>
+    <text x="480" y="135" font-size="18">2 : 1</text>
+    <text x="480" y="157" font-size="18">MUX</text>
+    <text x="535" y="195" font-size="18">c</text>
+
+    <!-- g to a -->
+    <line x1="380" y1="130" x2="455" y2="95"
+          stroke="black" stroke-width="2"/>
+
+    <!-- x2 select -->
+    <line x1="535" y1="190" x2="535" y2="245"
+          stroke="black" stroke-width="2"/>
+    <text x="525" y="265" font-size="20">x₂</text>
+
+    <!-- Output -->
+    <line x1="575" y1="130" x2="650" y2="130"
+          stroke="black" stroke-width="2"/>
+    <text x="665" y="137" font-size="20">f</text>
+  </svg>
+
+  <p class="ques">
+    Which of the following is true?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(189, 'A', this)">
+    (a) f = x₁′ + x₂
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(189, 'B', this)">
+    (b) f = x₁x₂ + x₁x₂′
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(189, 'C', this)">
+    (c) f = x₁x₂ + x₁′x₂′
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(189, 'D', this)">
+    (d) f = x₁ + x₂
+  </button>
+
+  <p class="year"><i>2001</i></p>
+  <div id="explanation189" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 190 -->
+<div class="question">
+  <p class="ques">
+    <b>Q190.</b> Consider the following circuit with initial state
+    Q<sub>0</sub> = Q<sub>1</sub> = 0. The D flip-flops are positive edged
+    triggered and have set up time 20 ns and hold time is 0 ns.
+  </p>
+
+  <!-- Circuit Diagram -->
+  <svg width="760" height="280" viewBox="0 0 760 280"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- D Flip-Flop 0 -->
+    <rect x="170" y="70" width="150" height="100"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="185" y="100" font-size="20">D₀</text>
+    <text x="265" y="100" font-size="20">Q̅₀</text>
+    <text x="205" y="145" font-size="18">Clock</text>
+
+    <!-- Clock input to FF0 -->
+    <line x1="100" y1="150" x2="170" y2="150"
+          stroke="black" stroke-width="2"/>
+
+    <!-- X input -->
+    <text x="45" y="105" font-size="20">X</text>
+    <line x1="70" y1="100" x2="170" y2="100"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Qbar feedback upward -->
+    <line x1="320" y1="105" x2="350" y2="105"
+          stroke="black" stroke-width="2"/>
+    <line x1="350" y1="105" x2="350" y2="35"
+          stroke="black" stroke-width="2"/>
+    <line x1="350" y1="35" x2="100" y2="35"
+          stroke="black" stroke-width="2"/>
+    <line x1="100" y1="35" x2="100" y2="100"
+          stroke="black" stroke-width="2"/>
+
+    <!-- X branch to AND -->
+    <line x1="100" y1="100" x2="100" y2="100"
+          stroke="black" stroke-width="2"/>
+    <line x1="100" y1="100" x2="390" y2="100"
+          stroke="black" stroke-width="2"/>
+
+    <!-- AND gate -->
+    <path d="M390 70
+             L425 70
+             Q465 100 425 130
+             L390 130 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Qbar to AND -->
+    <line x1="350" y1="105" x2="390" y2="105"
+          stroke="black" stroke-width="2"/>
+
+    <!-- AND output to D1 -->
+    <line x1="465" y1="100" x2="520" y2="100"
+          stroke="black" stroke-width="2"/>
+
+    <!-- D Flip-Flop 1 -->
+    <rect x="520" y="70" width="150" height="100"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="535" y="100" font-size="20">D₁</text>
+    <text x="635" y="100" font-size="20">Q₁</text>
+    <text x="550" y="145" font-size="18">Clock</text>
+
+    <!-- Y output -->
+    <line x1="670" y1="100" x2="725" y2="100"
+          stroke="black" stroke-width="2"/>
+    <text x="735" y="107" font-size="20">Y</text>
+
+    <!-- C clock line -->
+    <text x="45" y="220" font-size="20">C</text>
+    <line x1="70" y1="215" x2="570" y2="215"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Clock branches -->
+    <line x1="100" y1="150" x2="100" y2="215"
+          stroke="black" stroke-width="2"/>
+    <line x1="570" y1="170" x2="570" y2="215"
+          stroke="black" stroke-width="2"/>
+  </svg>
+
+
+  <p class="ques">
+    Consider the following timing diagrams of X and C; the clock period of C ≥ 40 nanosecond. Which one is the correct plot of Y?
+  </p>
+
+  <!-- Timing Diagram -->
+  <svg width="760" height="360" viewBox="0 0 760 360"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- C waveform -->
+    <text x="50" y="60" font-size="20">C</text>
+
+    <path d="M90 70
+             L115 70 L115 35 L140 35 L140 70
+             L165 70 L165 35 L190 35 L190 70
+             L215 70 L215 35 L240 35 L240 70
+             L265 70 L265 35 L290 35 L290 70
+             L315 70 L315 35 L340 35 L340 70
+             L365 70 L365 35 L390 35 L390 70
+             L415 70 L415 35 L440 35 L440 70
+             L465 70 L465 35 L490 35 L490 70"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- X waveform -->
+    <text x="50" y="125" font-size="20">X</text>
+
+    <path d="M90 140
+             L115 140 L115 105
+             L420 105 L420 140
+             L490 140"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Time axis -->
+    <text x="45" y="180" font-size="18">Time</text>
+    <text x="95" y="180" font-size="16">0</text>
+    <text x="145" y="180" font-size="16">1</text>
+    <text x="195" y="180" font-size="16">2</text>
+    <text x="245" y="180" font-size="16">3</text>
+    <text x="295" y="180" font-size="16">4</text>
+    <text x="345" y="180" font-size="16">5</text>
+    <text x="395" y="180" font-size="16">6</text>
+    <text x="445" y="180" font-size="16">7</text>
+    <text x="495" y="180" font-size="16">8</text>
+    <text x="545" y="180" font-size="16">9</text>
+    <text x="595" y="180" font-size="16">10</text>
+
+    <!-- Answer (a) -->
+    <text x="45" y="225" font-size="18">(a)</text>
+    <path d="M90 250
+             L135 250 L135 215
+             L175 215 L175 250
+             L600 250"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Answer (b) -->
+    <text x="45" y="270" font-size="18">(b)</text>
+    <path d="M90 295
+             L120 295 L120 260
+             L260 260 L260 295
+             L600 295"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Answer (c) -->
+    <text x="45" y="320" font-size="18">(c)</text>
+    <path d="M90 345
+             L120 345 L120 310
+             L160 310 L160 345
+             L600 345"
+          fill="none" stroke="black" stroke-width="2"/>
+
+  </svg>
+
+  <button class="option-btn" onclick="checkAnswer(190, 'A', this)">
+    (a)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(190, 'B', this)">
+    (b)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(190, 'C', this)">
+    (c)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(190, 'D', this)">
+    (d)
+  </button>
+
+  <p class="year"><i>2001</i></p>
+  <div id="explanation190" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 191 -->
+<div class="question">
+  <p class="ques">
+    <b>Q191.</b> Consider the circuit given below with initial state
+    Q<sub>0</sub> = 1, Q<sub>1</sub> = Q<sub>2</sub> = 0. The state of the circuit is given by the value 4Q<sub>2</sub> + 2Q<sub>1</sub> + Q<sub>0</sub>
+  </p>
+
+  <!-- Circuit Diagram -->
+  <svg width="760" height="300" viewBox="0 0 760 300"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- XOR gate -->
+    <path d="M430 45
+             Q455 70 430 95
+             Q470 92 495 70
+             Q470 48 430 45 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+    <path d="M420 45 Q445 70 420 95"
+          fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Feedback Q2 to XOR -->
+    <line x1="650" y1="120" x2="650" y2="25"
+          stroke="black" stroke-width="2"/>
+    <line x1="650" y1="25" x2="395" y2="25"
+          stroke="black" stroke-width="2"/>
+    <line x1="395" y1="25" x2="395" y2="60"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Feedback Q1 to XOR -->
+    <line x1="500" y1="120" x2="500" y2="70"
+          stroke="black" stroke-width="2"/>
+
+    <!-- XOR output to D0 -->
+    <line x1="430" y1="70" x2="170" y2="70"
+          stroke="black" stroke-width="2"/>
+    <line x1="170" y1="70" x2="170" y2="110"
+          stroke="black" stroke-width="2"/>
+
+    <!-- D Flip-Flop 0 -->
+    <rect x="130" y="110" width="120" height="90"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="145" y="140" font-size="20">D₀</text>
+    <text x="215" y="140" font-size="20">Q₀</text>
+    <text x="150" y="175" font-size="17">LSB</text>
+
+    <!-- Q0 to D1 -->
+    <line x1="250" y1="140" x2="330" y2="140"
+          stroke="black" stroke-width="2"/>
+    <line x1="330" y1="140" x2="330" y2="155"
+          stroke="black" stroke-width="2"/>
+    <line x1="330" y1="155" x2="370" y2="155"
+          stroke="black" stroke-width="2"/>
+
+    <!-- D Flip-Flop 1 -->
+    <rect x="370" y="110" width="120" height="90"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="385" y="140" font-size="20">D₁</text>
+    <text x="455" y="140" font-size="20">Q₁</text>
+
+    <!-- Q1 to D2 -->
+    <line x1="490" y1="140" x2="530" y2="140"
+          stroke="black" stroke-width="2"/>
+    <line x1="530" y1="140" x2="530" y2="155"
+          stroke="black" stroke-width="2"/>
+    <line x1="530" y1="155" x2="570" y2="155"
+          stroke="black" stroke-width="2"/>
+
+    <!-- D Flip-Flop 2 -->
+    <rect x="570" y="110" width="120" height="90"
+          fill="white" stroke="black" stroke-width="2"/>
+    <text x="585" y="140" font-size="20">D₂</text>
+    <text x="655" y="140" font-size="20">Q₂</text>
+    <text x="590" y="175" font-size="17">MSB</text>
+
+    <!-- Clock line -->
+    <text x="55" y="250" font-size="20">Clock</text>
+    <line x1="115" y1="245" x2="650" y2="245"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Clock connections -->
+    <line x1="170" y1="200" x2="170" y2="245"
+          stroke="black" stroke-width="2"/>
+    <line x1="430" y1="200" x2="430" y2="245"
+          stroke="black" stroke-width="2"/>
+    <line x1="630" y1="200" x2="630" y2="245"
+          stroke="black" stroke-width="2"/>
+  </svg>
+
+  <p class="ques">
+    Which one of the following is the correct state sequence of the circuit
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(191, 'A', this)">
+    (a) 1, 3, 4, 6, 7, 5, 2
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(191, 'B', this)">
+    (b) 1, 2, 5, 3, 7, 6, 4
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(191, 'C', this)">
+    (c) 1, 2, 7, 3, 5, 6, 4
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(191, 'D', this)">
+    (d) 1, 6, 5, 7, 2, 3, 4
+  </button>
+
+  <p class="year"><i>2001</i></p>
+  <div id="explanation191" class="explanation"></div>
+</div>
 
 
 
 
+<!-- Question 192 -->
+<div class="question">
+  <p class="ques">
+    <b>Q192.</b> The 2’s complement representation of (−539)<sub>10</sub> in hexadecimal is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(192, 'A', this)">
+    (a) ABE
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(192, 'B', this)">
+    (b) DBC
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(192, 'C', this)">
+    (c) DE5
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(192, 'D', this)">
+    (d) 9E7
+  </button>
+
+  <p class="year"><i>2001</i></p>
+  <div id="explanation192" class="explanation"></div>
+</div>
+
+
+    
+<!-- Question 193 -->
+<div class="question">
+  <p class="ques">
+    <b>Q193.</b> The simultaneous equations on the Boolean variables x, y, z and w,
+  </p>
+
+  <p class="ques">
+    x + y + z = 1
+  </p>
+
+  <p class="ques">
+    xy = 0
+  </p>
+
+  <p class="ques">
+    xz + w = 1
+  </p>
+
+  <p class="ques">
+    xy + z̅w = 0
+  </p>
+
+  <p class="ques">
+    have the following solution for x, y, z and w, respectively:
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(193, 'A', this)">
+    (a) 0100
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(193, 'B', this)">
+    (b) 1101
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(193, 'C', this)">
+    (c) 1011
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(193, 'D', this)">
+    (d) 1000
+  </button>
+
+  <p class="year"><i>2000</i></p>
+  <div id="explanation193" class="explanation"></div>
+</div>    
+    
+
+
+<!-- Question 194 -->
+<div class="question">
+  <p class="ques">
+    <b>Q194.</b> Which function does NOT implement the Karnaugh map given below?
+  </p>
+
+  <!-- Karnaugh Map -->
+  <svg width="650" height="360" viewBox="0 0 650 360"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Labels -->
+    <text x="300" y="38" font-size="18">wz →</text>
+    <text x="225" y="70" font-size="18">xy ↓</text>
+
+    <!-- Column labels -->
+    <text x="280" y="72" text-anchor="middle" font-size="18">00</text>
+    <text x="330" y="72" text-anchor="middle" font-size="18">01</text>
+    <text x="380" y="72" text-anchor="middle" font-size="18">11</text>
+    <text x="430" y="72" text-anchor="middle" font-size="18">10</text>
+
+    <!-- Row labels -->
+    <text x="245" y="112" text-anchor="middle" font-size="18">00</text>
+    <text x="245" y="152" text-anchor="middle" font-size="18">01</text>
+    <text x="245" y="192" text-anchor="middle" font-size="18">11</text>
+    <text x="245" y="232" text-anchor="middle" font-size="18">10</text>
+
+    <!-- K-map -->
+    <rect x="260" y="80" width="200" height="160"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Vertical lines -->
+    <line x1="310" y1="80" x2="310" y2="240" stroke="black"/>
+    <line x1="360" y1="80" x2="360" y2="240" stroke="black"/>
+    <line x1="410" y1="80" x2="410" y2="240" stroke="black"/>
+
+    <!-- Horizontal lines -->
+    <line x1="260" y1="120" x2="460" y2="120" stroke="black"/>
+    <line x1="260" y1="160" x2="460" y2="160" stroke="black"/>
+    <line x1="260" y1="200" x2="460" y2="200" stroke="black"/>
+
+    <!-- Row 00: 0 X 0 0 -->
+    <text x="285" y="107" text-anchor="middle" font-size="19">0</text>
+    <text x="335" y="107" text-anchor="middle" font-size="19">X</text>
+    <text x="385" y="107" text-anchor="middle" font-size="19">0</text>
+    <text x="435" y="107" text-anchor="middle" font-size="19">0</text>
+
+    <!-- Row 01: 0 X 1 1 -->
+    <text x="285" y="147" text-anchor="middle" font-size="19">0</text>
+    <text x="335" y="147" text-anchor="middle" font-size="19">X</text>
+    <text x="385" y="147" text-anchor="middle" font-size="19">1</text>
+    <text x="435" y="147" text-anchor="middle" font-size="19">1</text>
+
+    <!-- Row 11: 1 1 1 1 -->
+    <text x="285" y="187" text-anchor="middle" font-size="19">1</text>
+    <text x="335" y="187" text-anchor="middle" font-size="19">1</text>
+    <text x="385" y="187" text-anchor="middle" font-size="19">1</text>
+    <text x="435" y="187" text-anchor="middle" font-size="19">1</text>
+
+    <!-- Row 10: 0 X 0 0 -->
+    <text x="285" y="227" text-anchor="middle" font-size="19">0</text>
+    <text x="335" y="227" text-anchor="middle" font-size="19">X</text>
+    <text x="385" y="227" text-anchor="middle" font-size="19">0</text>
+    <text x="435" y="227" text-anchor="middle" font-size="19">0</text>
+  </svg>
+
+  <button class="option-btn" onclick="checkAnswer(194, 'A', this)">
+    (a) (w + x)y
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(194, 'B', this)">
+    (b) xy + yw
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(194, 'C', this)">
+    (c) (w + x)(w + y)(x + y)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(194, 'D', this)">
+    (d) None of the above
+  </button>
+
+  <p class="year"><i>2000</i></p>
+  <div id="explanation194" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 195 -->
+<div class="question">
+  <p class="ques">
+    <b>Q195.</b> The following arrangement of master-slave flip flops.
+  </p>
+
+  <!-- Circuit Diagram -->
+  <svg width="760" height="330" viewBox="0 0 760 330"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- P JK Flip-Flop -->
+    <rect x="190" y="75" width="150" height="105"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="205" y="105" font-size="20">P</text>
+    <text x="205" y="145" font-size="20">J</text>
+    <text x="290" y="145" font-size="20">K</text>
+
+    <!-- J and K = 1 -->
+    <text x="75" y="170" font-size="20">‘1’</text>
+    <line x1="110" y1="165" x2="190" y2="165"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Connections to J and K -->
+    <line x1="190" y1="145" x2="160" y2="145"
+          stroke="black" stroke-width="2"/>
+    <line x1="160" y1="145" x2="160" y2="165"
+          stroke="black" stroke-width="2"/>
+    <line x1="160" y1="165" x2="190" y2="165"
+          stroke="black" stroke-width="2"/>
+
+    <line x1="340" y1="145" x2="370" y2="145"
+          stroke="black" stroke-width="2"/>
+    <line x1="370" y1="145" x2="370" y2="165"
+          stroke="black" stroke-width="2"/>
+    <line x1="370" y1="165" x2="190" y2="165"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Feedback from P to D of Q -->
+    <line x1="265" y1="75" x2="265" y2="30"
+          stroke="black" stroke-width="2"/>
+    <line x1="265" y1="30" x2="470" y2="30"
+          stroke="black" stroke-width="2"/>
+    <line x1="470" y1="30" x2="470" y2="125"
+          stroke="black" stroke-width="2"/>
+    <line x1="470" y1="125" x2="535" y2="125"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Q D Flip-Flop -->
+    <rect x="535" y="75" width="140" height="105"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <text x="550" y="105" font-size="20">Q</text>
+    <text x="550" y="145" font-size="20">D</text>
+
+    <!-- Clock -->
+    <text x="60" y="235" font-size="20">CLK</text>
+    <line x1="105" y1="230" x2="700" y2="230"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Clock connection to P -->
+    <line x1="265" y1="180" x2="265" y2="230"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Clock connection to Q -->
+    <line x1="605" y1="180" x2="605" y2="230"
+          stroke="black" stroke-width="2"/>
+  </svg>
+
+  <p class="ques">
+    Has the initial state of P, Q as 0, 1 (respectively).<br>
+    After the clock cycles the output state P, Q is<br>
+    (respectively),
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(195, 'A', this)">
+    (a) 1, 0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(195, 'B', this)">
+    (b) 1, 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(195, 'C', this)">
+    (c) 0, 0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(195, 'D', this)">
+    (d) 0, 1
+  </button>
+
+  <p class="year"><i>2000</i></p>
+  <div id="explanation195" class="explanation"></div>
+</div>
 
 
 
 
+<!-- Question 196 -->
+<div class="question">
+  <p class="ques">
+    <b>Q196.</b> The number 43 in 2’s complement representation is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(196, 'A', this)">
+    (a) 01010101
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(196, 'B', this)">
+    (b) 11010101
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(196, 'C', this)">
+    (c) 00101011
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(196, 'D', this)">
+    (d) 10101011
+  </button>
+
+  <p class="year"><i>2000</i></p>
+  <div id="explanation196" class="explanation"></div>
+</div>
+
+
+<!-- Question 197 -->
+<div class="question">
+  <p class="ques">
+    <b>Q197.</b> Consider the values A = 2.0 × 10<sup>30</sup>, B = −2.0 × 10<sup>30</sup>,
+    C = 1.0 and the sequence. What will be the values of X and Y if the following sequence
+    of statements are carried out
+  </p>
+
+  <p class="ques">
+    X := A + B<br>
+    Y := A + C<br>
+    X := X + C<br>
+    Y := Y + B
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(197, 'A', this)">
+    (a) X = 1.0, Y = 1.0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(197, 'B', this)">
+    (b) X = 0.0, Y = 1.0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(197, 'C', this)">
+    (c) X = 1.0, Y = 0.0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(197, 'D', this)">
+    (d) X = 0.0, Y = 0.0
+  </button>
+
+  <p class="year"><i>2000</i></p>
+  <div id="explanation197" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 198 -->
+<div class="question">
+  <p class="ques">
+    <b>Q198.</b> Which of the following functions implements the Karnaugh map shown below?
+  </p>
+
+  <!-- Karnaugh Map -->
+  <svg width="650" height="330" viewBox="0 0 650 330"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- Column labels -->
+    <text x="285" y="45" font-size="18">AB＼CD</text>
+    <text x="350" y="45" font-size="18">00</text>
+    <text x="400" y="45" font-size="18">01</text>
+    <text x="450" y="45" font-size="18">11</text>
+    <text x="500" y="45" font-size="18">10</text>
+
+    <!-- Row labels -->
+    <text x="305" y="85" font-size="18">00</text>
+    <text x="305" y="125" font-size="18">01</text>
+    <text x="305" y="165" font-size="18">11</text>
+    <text x="305" y="205" font-size="18">10</text>
+
+    <!-- K-map -->
+    <rect x="330" y="55" width="200" height="160"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <line x1="380" y1="55" x2="380" y2="215" stroke="black"/>
+    <line x1="430" y1="55" x2="430" y2="215" stroke="black"/>
+    <line x1="480" y1="55" x2="480" y2="215" stroke="black"/>
+
+    <line x1="330" y1="95" x2="530" y2="95" stroke="black"/>
+    <line x1="330" y1="135" x2="530" y2="135" stroke="black"/>
+    <line x1="330" y1="175" x2="530" y2="175" stroke="black"/>
+
+    <!-- Row 00: 0 0 1 0 -->
+    <text x="355" y="82" text-anchor="middle" font-size="19">0</text>
+    <text x="405" y="82" text-anchor="middle" font-size="19">0</text>
+    <text x="455" y="82" text-anchor="middle" font-size="19">1</text>
+    <text x="505" y="82" text-anchor="middle" font-size="19">0</text>
+
+    <!-- Row 01: X X 1 X -->
+    <text x="355" y="122" text-anchor="middle" font-size="19">X</text>
+    <text x="405" y="122" text-anchor="middle" font-size="19">X</text>
+    <text x="455" y="122" text-anchor="middle" font-size="19">1</text>
+    <text x="505" y="122" text-anchor="middle" font-size="19">X</text>
+
+    <!-- Row 11: 0 1 1 0 -->
+    <text x="355" y="162" text-anchor="middle" font-size="19">0</text>
+    <text x="405" y="162" text-anchor="middle" font-size="19">1</text>
+    <text x="455" y="162" text-anchor="middle" font-size="19">1</text>
+    <text x="505" y="162" text-anchor="middle" font-size="19">0</text>
+
+    <!-- Row 10: 0 1 1 0 -->
+    <text x="355" y="202" text-anchor="middle" font-size="19">0</text>
+    <text x="405" y="202" text-anchor="middle" font-size="19">1</text>
+    <text x="455" y="202" text-anchor="middle" font-size="19">1</text>
+    <text x="505" y="202" text-anchor="middle" font-size="19">0</text>
+  </svg>
+
+  <button class="option-btn" onclick="checkAnswer(198, 'A', this)">
+    (a) A̅B + CD
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(198, 'B', this)">
+    (b) D(C + A)
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(198, 'C', this)">
+    (c) AD + A̅B
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(198, 'D', this)">
+    (d) (C + D)(C̅ + D)(A + B)
+  </button>
+
+  <p class="year"><i>1999</i></p>
+  <div id="explanation198" class="explanation"></div>
+</div>
+
+
+<!-- Question 199 -->
+<div class="question">
+  <p class="ques">
+    <b>Q199.</b> Which of the following sets of component(s) is/are sufficient to implement any arbitrary Boolean function?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(199, 'A', this)">
+    (a) XOR gates, NOT gates
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(199, 'B', this)">
+    (b) 2 to 1 multiplexors
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(199, 'C', this)">
+    (c) AND gates, XOR gates
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(199, 'D', this)">
+    (d) Three-input gates that output (A.B) + C for the inputs A, B and C.
+  </button>
+
+  <p class="year"><i>1999</i></p>
+  <div id="explanation199" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 200 -->
+<div class="question">
+  <p class="ques">
+    <b>Q200.</b> Booth’s coding in 8 bits for the decimal number −57 is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(200, 'A', this)">
+    (a) 0 − 100 + 1000
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(200, 'B', this)">
+    (b) 0 − 100 + 100 − 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(200, 'C', this)">
+    (c) 0 − 1 + 100 − 10 + 1
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(200, 'D', this)">
+    (d) 00 − 10 + 100 − 1
+  </button>
+
+  <p class="year"><i>1999</i></p>
+  <div id="explanation200" class="explanation"></div>
+</div>
+
+
+<!-- Question 201 -->
+<div class="question">
+  <p class="ques">
+    <b>Q201.</b> Zero has two representations in :
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(201, 'A', this)">
+    (a) Sign magnitude
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(201, 'B', this)">
+    (b) 1’s complement
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(201, 'C', this)">
+    (c) 2’s complement
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(201, 'D', this)">
+    (d) None of these
+  </button>
+
+  <p class="year"><i>1999</i></p>
+  <div id="explanation201" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 202 -->
+<div class="question">
+  <p class="ques">
+    <b>Q202.</b> Let * be defined as x*y = x̅ + y. Let z = x*x value of z*x is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(202, 'A', this)">
+    (a) x̅ + y
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(202, 'B', this)">
+    (b) x
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(202, 'C', this)">
+    (c) 0
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(202, 'D', this)">
+    (d) 1
+  </button>
+
+  <p class="year"><i>1997</i></p>
+  <div id="explanation202" class="explanation"></div>
+</div>
+
+
+<!-- Question 203 -->
+<div class="question">
+  <p class="ques">
+    <b>Q203.</b> Let f (x, y, z) = x̅y + y̅z + xz be a switching function. Which one of the following is valid?
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(203, 'A', this)">
+    (a) x̅y is a prime implicant of f
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(203, 'B', this)">
+    (b) xz is a minterm of f
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(203, 'C', this)">
+    (c) xz is an implicant of f
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(203, 'D', this)">
+    (d) y is a prime implicant of f
+  </button>
+
+  <p class="year"><i>1997</i></p>
+  <div id="explanation203" class="explanation"></div>
+</div>
+
+
+
+<!-- Question 204 -->
+<div class="question">
+  <p class="ques">
+    <b>Q204.</b> Consider the logic circuit shown in figure below.<br>
+    The function f<sub>1</sub>, f<sub>2</sub> and f(in canonical sum of products form in decimal notation) are
+  </p>
+
+  <!-- Circuit Diagram -->
+  <svg width="760" height="260" viewBox="0 0 760 260"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- f1 input -->
+    <text x="45" y="70" font-size="20">f₁</text>
+    <line x1="75" y1="65" x2="190" y2="65"
+          stroke="black" stroke-width="2"/>
+
+    <!-- f2 input -->
+    <text x="45" y="115" font-size="20">f₂</text>
+    <line x1="75" y1="110" x2="190" y2="110"
+          stroke="black" stroke-width="2"/>
+
+    <!-- AND gate -->
+    <path d="M190 45
+             L225 45
+             Q255 87 225 130
+             L190 130 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- AND output -->
+    <line x1="255" y1="87" x2="335" y2="87"
+          stroke="black" stroke-width="2"/>
+
+    <!-- f3 input -->
+    <text x="45" y="180" font-size="20">f₃ = ?</text>
+    <line x1="120" y1="175" x2="310" y2="175"
+          stroke="black" stroke-width="2"/>
+    <line x1="310" y1="175" x2="310" y2="105"
+          stroke="black" stroke-width="2"/>
+    <line x1="310" y1="105" x2="335" y2="105"
+          stroke="black" stroke-width="2"/>
+
+    <!-- OR gate -->
+    <path d="M335 55
+             Q365 87 335 120
+             Q385 115 415 87
+             Q385 60 335 55 Z"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- Output -->
+    <line x1="415" y1="87" x2="485" y2="87"
+          stroke="black" stroke-width="2"/>
+    <text x="500" y="94" font-size="20">f</text>
+  </svg>
+
+  <p class="ques">
+    f<sub>1</sub> (w, x, y, z) = Σ (8, 9, 10)
+  </p>
+
+  <p class="ques">
+    f<sub>2</sub> (w, x, y, z) = Σ (7, 8, 12, 13, 14, 15)
+  </p>
+
+  <p class="ques">
+    f (w, x, y, z) = Σ (8, 9)
+  </p>
+
+  <p class="ques">
+    The function f<sub>3</sub> is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(204, 'A', this)">
+    (a) Σ9, 10
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(204, 'B', this)">
+    (b) Σ9
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(204, 'C', this)">
+    (c) Σ1, 8, 9
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(204, 'D', this)">
+    (d) Σ8, 10, 18
+  </button>
+
+  <p class="year"><i>1997</i></p>
+  <div id="explanation204" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 205 -->
+<div class="question">
+  <p class="ques">
+    <b>Q205.</b> Given (√224)<sub>r</sub> = (13)<sub>r</sub>. The value of the radix r′ is
+  </p>
+
+  <button class="option-btn" onclick="checkAnswer(205, 'A', this)">
+    (a) 10
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(205, 'B', this)">
+    (b) 8
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(205, 'C', this)">
+    (c) 5
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(205, 'D', this)">
+    (d) 6
+  </button>
+
+  <p class="year"><i>1997</i></p>
+  <div id="explanation205" class="explanation"></div>
+</div>
+
+
+
+
+<!-- Question 206 -->
+<div class="question">
+  <p class="ques">
+    <b>Q206.</b> Consider the circuit in figure shown. f implements
+  </p>
+
+  <!-- Circuit Diagram -->
+  <svg width="760" height="360" viewBox="0 0 760 360"
+       xmlns="http://www.w3.org/2000/svg"
+       style="display:block; margin:20px auto; font-family:'Times New Roman', serif;">
+
+    <!-- MUX body -->
+    <rect x="245" y="45" width="270" height="245"
+          fill="white" stroke="black" stroke-width="2"/>
+
+    <!-- MUX label -->
+    <text x="380" y="145" text-anchor="middle" font-size="20">
+      4 to 1
+    </text>
+    <text x="380" y="170" text-anchor="middle" font-size="20">
+      multi-
+    </text>
+    <text x="380" y="195" text-anchor="middle" font-size="20">
+      plexer
+    </text>
+
+    <!-- Input labels -->
+    <text x="225" y="72" text-anchor="end" font-size="20">C</text>
+    <text x="225" y="117" text-anchor="end" font-size="20">C̅</text>
+    <text x="225" y="162" text-anchor="end" font-size="20">C̅</text>
+    <text x="225" y="207" text-anchor="end" font-size="20">C</text>
+
+    <!-- Input lines -->
+    <line x1="230" y1="67" x2="245" y2="67"
+          stroke="black" stroke-width="2"/>
+    <line x1="230" y1="112" x2="245" y2="112"
+          stroke="black" stroke-width="2"/>
+    <line x1="230" y1="157" x2="245" y2="157"
+          stroke="black" stroke-width="2"/>
+    <line x1="230" y1="202" x2="245" y2="202"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Input numbers -->
+    <text x="260" y="72" font-size="18">0</text>
+    <text x="260" y="117" font-size="18">1</text>
+    <text x="260" y="162" font-size="18">2</text>
+    <text x="260" y="207" font-size="18">3</text>
+
+    <!-- Select labels -->
+    <text x="330" y="280" font-size="18">S₁</text>
+    <text x="430" y="280" font-size="18">S₀</text>
+
+    <!-- Select lines -->
+    <line x1="350" y1="330" x2="350" y2="290"
+          stroke="black" stroke-width="2"/>
+    <line x1="450" y1="330" x2="450" y2="290"
+          stroke="black" stroke-width="2"/>
+
+    <!-- Arrowheads -->
+    <polygon points="345,295 350,285 355,295" fill="black"/>
+    <polygon points="445,295 450,285 455,295" fill="black"/>
+
+    <!-- Select inputs -->
+    <text x="342" y="350" font-size="20">A</text>
+    <text x="442" y="350" font-size="20">B</text>
+
+    <!-- Output -->
+    <line x1="515" y1="165" x2="590" y2="165"
+          stroke="black" stroke-width="2"/>
+    <text x="605" y="172" font-size="20">f</text>
+  </svg>
+
+  <button class="option-btn" onclick="checkAnswer(206, 'A', this)">
+    (a) A̅BC̅ + A̅BC + ABC
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(206, 'B', this)">
+    (b) A + B + C
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(206, 'C', this)">
+    (c) A ⊕ B ⊕ C
+  </button>
+
+  <button class="option-btn" onclick="checkAnswer(206, 'D', this)">
+    (d) AB + BC + CA
+  </button>
+
+  <p class="year"><i>1996</i></p>
+  <div id="explanation206" class="explanation"></div>
+</div>
 
 
 
@@ -9152,8 +10555,8 @@ td {
 
 
     
-    
-    
+
+
 
 
     
